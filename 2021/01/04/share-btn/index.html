@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Icarus用户指南 - 分享按钮 - Sea&#039;s Blog</title><link rel="manifest" href="/blogs/manifest.json"><meta name="application-name" content="Sea&#039;s Blog"><meta name="msapplication-TileImage" content="/images/black-cat.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Sea&#039;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="临时文章 先占个坑位 本文介绍Icarus 3支持的分享按钮的安装配置。   本文同时提供以下语言的翻译：English。"><meta property="og:type" content="blog"><meta property="og:title" content="Icarus用户指南 - 分享按钮"><meta property="og:url" content="http://example.com/2021/01/04/share-btn/"><meta property="og:site_name" content="Sea&#039;s Blog"><meta property="og:description" content="临时文章 先占个坑位 本文介绍Icarus 3支持的分享按钮的安装配置。   本文同时提供以下语言的翻译：English。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://example.com/blogs/gallery/screenshots/addthis-select-tool.png"><meta property="og:image" content="http://example.com/blogs/gallery/screenshots/addthis-select-tool-type.png"><meta property="og:image" content="http://example.com/blogs/gallery/screenshots/addthis-customize-share.png"><meta property="og:image" content="http://example.com/blogs/gallery/screenshots/addthis-get-code.png"><meta property="og:image" content="http://example.com/blogs/gallery/screenshots/addtoany-select-platform.png"><meta property="og:image" content="http://example.com/blogs/gallery/screenshots/addtoany-get-code.png"><meta property="og:image" content="http://example.com/blogs/gallery/screenshots/sharethis-choose-button-type.png"><meta property="og:image" content="http://example.com/blogs/gallery/screenshots/sharethis-choose-platform.png"><meta property="og:image" content="http://example.com/blogs/gallery/screenshots/sharethis-get-code.png"><meta property="article:published_time" content="2021-01-04T16:00:00.000Z"><meta property="article:modified_time" content="2021-01-04T09:57:07.197Z"><meta property="article:author" content="Sea"><meta property="article:tag" content="Icarus用户指南"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/blogs/gallery/screenshots/addthis-select-tool.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2021/01/04/share-btn/"},"headline":"Sea's Blog","image":["http://example.com/blogs/gallery/screenshots/addthis-select-tool.png","http://example.com/blogs/gallery/screenshots/addthis-select-tool-type.png","http://example.com/blogs/gallery/screenshots/addthis-customize-share.png","http://example.com/blogs/gallery/screenshots/addthis-get-code.png","http://example.com/blogs/gallery/screenshots/addtoany-select-platform.png","http://example.com/blogs/gallery/screenshots/addtoany-get-code.png","http://example.com/blogs/gallery/screenshots/sharethis-choose-button-type.png","http://example.com/blogs/gallery/screenshots/sharethis-choose-platform.png","http://example.com/blogs/gallery/screenshots/sharethis-get-code.png"],"datePublished":"2021-01-04T16:00:00.000Z","dateModified":"2021-01-04T09:57:07.197Z","author":{"@type":"Person","name":"Sea"},"description":"临时文章 先占个坑位 本文介绍Icarus 3支持的分享按钮的安装配置。   本文同时提供以下语言的翻译：English。"}</script><link rel="canonical" href="http://example.com/2021/01/04/share-btn/"><link rel="icon" href="/blogs/images/black-cat.svg"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/blogs/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/blogs/atom.xml" title="Sea's Blog" type="application/atom+xml">
+</head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/blogs/"><img src="/blogs/images/black-cat.svg" alt="Sea&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/blogs/">首页</a><a class="navbar-item" href="/blogs/archives">时间轴</a><a class="navbar-item" href="/blogs/categories">分类</a><a class="navbar-item" href="/blogs/tags">标签</a><a class="navbar-item" href="/blogs/messages">留言板</a><a class="navbar-item" href="/blogs/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/MrSeaWave/blogs"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-01-04T16:00:00.000Z" title="2021-01-04T16:00:00.000Z">2021-01-05</time>发表</span><span class="level-item"><time dateTime="2021-01-04T09:57:07.197Z" title="2021-01-04T09:57:07.197Z">2021-01-04</time>更新</span><span class="level-item"><a class="link-muted" href="/blogs/categories/Plugins/">Plugins</a><span> / </span><a class="link-muted" href="/blogs/categories/Plugins/Share/">Share</a></span><span class="level-item">10 分钟读完 (大约1445个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">Icarus用户指南 - 分享按钮</h1><div class="content"><p>临时文章 先占个坑位</p>
+<p>本文介绍Icarus 3支持的分享按钮的安装配置。</p>
+<article class="message message-immersive is-primary">
+<div class="message-body">
+<i class="fas fa-globe-americas mr-2"></i>本文同时提供以下语言的翻译：<a href="">English</a>。
+</div>
+</article>
+
+<a id="more"></a>
+
+<article class="message message-immersive is-primary">
+<div class="message-body">
+<i class="fas fa-info-circle mr-2"></i>下面的分享按钮由<a target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-component-inferno">ppoffice/hexo-component-inferno</a>提供，完整的支持按钮列表和配置详情以其为准。
+</div>
+</article>
+
+<style>
+.content ol:not([type]) {
+    list-style-type: simp-chinese-informal;
+}
+</style>
+
+
+<h2 id="AddThis"><a href="#AddThis" class="headerlink" title="AddThis"></a>AddThis</h2><article class="message message-immersive is-danger">
+<div class="message-body">
+<i class="fas fa-exclamation-triangle mr-2"></i>此分享按钮可能会被部分广告拦截浏览器扩展拦截，请酌情使用。
+</div>
+</article>
+
+<div>
+<strong>安装指南</strong>
+<a class="tag is-success" style="margin-left:.8em" href="">在线预览</a>
+</div>
+
+<ol>
+<li><p>注册<a target="_blank" rel="noopener" href="https://www.addthis.com/">AddThis</a>。<br>在提交注册表单后的“选择工具”(Select a Tool)页面选择“分享按钮”(Share Buttons)。</p>
+<img src="/blogs/gallery/screenshots/addthis-select-tool.png" class="box px-0 py-0 ml-auto mr-auto" width="360" title="选择工具 - AddThis" alt="选择工具 - AddThis">
+<br>
+</li>
+<li><p>在“选择工具类型”(Select a Tool Type)界面选择样式和按钮，点击“继续”(Continue)。</p>
+<img src="/blogs/gallery/screenshots/addthis-select-tool-type.png" class="box px-0 py-0 ml-auto mr-auto" width="360" title="选择工具类型 Type - AddThis" alt="选择工具类型 Type - AddThis">
+<br>
+</li>
+<li><p>在下一页面中进一步自定义分享按钮，完成时点击“激活工具”(Activate Tool)按钮。</p>
+<img src="/blogs/gallery/screenshots/addthis-customize-share.png" class="box px-0 py-0 ml-auto mr-auto" width="360" title="自定义分享按钮 - AddThis" alt="自定义分享按钮 - AddThis">
+<br>
+</li>
+<li><p>在”获取代码“(Get The Code)页面找到HTML代码，复制<code>src</code>属性值中的URL地址并填入分享按钮配置中。</p>
+<img src="/blogs/gallery/screenshots/addthis-get-code.png" class="box px-0 py-0 ml-auto mr-auto" width="360" title="获取代码 - AddThis" alt="获取代码 - AddThis">
+<br>
+
+<p>例如，下面AddThis代码中的URL：</p>
+ <figure class="highlight html"><figcaption><span>AddThis代码</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-xxxxxxxxxxxxx&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p> 对应如下的主题配置：</p>
+ <figure class="highlight yaml"><figcaption><span>_config.icarus.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">share:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">addthis</span></span><br><span class="line">    <span class="attr">install_url:</span> <span class="string">//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-xxxxxxxxxxxxx</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h2 id="AddToAny"><a href="#AddToAny" class="headerlink" title="AddToAny"></a>AddToAny</h2><div>
+<strong>安装指南</strong>
+<a class="tag is-success" style="margin-left:.8em" href="">在线预览</a>
+</div>
+
+<ol>
+<li><p>你可以启用AddToAny而无需注册用户。<br>仅需将下面的代码放到你的主题配置中：</p>
+ <figure class="highlight yaml"><figcaption><span>_config.icarus.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">share:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">addtoany</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>如果你想自定义分享按钮，请采用如下步骤：</p>
+<ol>
+<li><p>访问<a target="_blank" rel="noopener" href="https://www.addtoany.com/">AddToAny</a>官网并点击“获取分享按钮”(Get the Share Button)。</p>
+</li>
+<li><p>然后，选择“任意网站”(Any Website)并完成按钮的配置。</p>
+<img src="/blogs/gallery/screenshots/addtoany-select-platform.png" class="box px-0 py-0 ml-auto mr-auto" width="360" title="选择平台 - AddToAny" alt="选择平台 - AddToAny">
+<br>
+</li>
+<li><p>完成后点击“获取按钮代码”(Get Button Code)。</p>
+<img src="/blogs/gallery/screenshots/addtoany-get-code.png" class="box px-0 py-0 ml-auto mr-auto" width="360" title="获取代码 - AddToAny" alt="获取代码 - AddToAny">
+<br>
+</li>
+<li><p>由于分享按钮是由<a target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-component-inferno">ppoffice/hexo-component-inferno</a><br>提供，你需要将AddToAny的布局文件<a target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-component-inferno/blob/0.2.2/src/view/share/addtoany.jsx">src/view/share/addtoany.jsx</a>从这个仓库中复制到<code>&lt;icarus_directory&gt;/layout/share/addtoany.jsx</code>。<br>然后，替换<code>addtoany.jsx</code>中AddToAny代码并修正文件头部的包引用。</p>
+<p>例如，假设下面的代码是你从上一步获得的代码：</p>
+ <figure class="highlight html"><figcaption><span>AddToAny代码 >folded</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- AddToAny BEGIN --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;a2a_kit a2a_kit_size_32 a2a_default_style&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;a2a_dd&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://www.addtoany.com/share&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;a2a_button_facebook&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;a2a_button_twitter&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;a2a_button_email&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">&quot;https://static.addtoany.com/menu/page.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- AddToAny END --&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p> 那么你需要对<code>addtoany.jsx</code>做出如下修改：</p>
+ <figure class="highlight diff"><figcaption><span>&lt;icarus_directory&gt;/layout/share/addtoany.jsx >folded</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">const &#123; Component, Fragment &#125; = require(&#x27;inferno&#x27;);</span><br><span class="line"><span class="deletion">- const &#123; cacheComponent &#125; = require(&#x27;../../util/cache&#x27;);</span></span><br><span class="line"><span class="addition">+ const &#123; cacheComponent &#125; = require(&#x27;hexo-component-inferno/lib/util/cache&#x27;);</span></span><br><span class="line"></span><br><span class="line">...中间省略部分代码...</span><br><span class="line"></span><br><span class="line">class AddToAny extends Component &#123;</span><br><span class="line">    render() &#123;</span><br><span class="line">        return &lt;Fragment&gt;</span><br><span class="line"><span class="deletion">-            &lt;div class=&quot;a2a_kit a2a_kit_size_32 a2a_default_style&quot;&gt;</span></span><br><span class="line"><span class="deletion">-                &lt;a class=&quot;a2a_dd&quot; href=&quot;https://www.addtoany.com/share&quot;&gt;&lt;/a&gt;</span></span><br><span class="line"><span class="deletion">-                &lt;a class=&quot;a2a_button_facebook&quot;&gt;&lt;/a&gt;</span></span><br><span class="line"><span class="deletion">-                &lt;a class=&quot;a2a_button_twitter&quot;&gt;&lt;/a&gt;</span></span><br><span class="line"><span class="deletion">-                &lt;a class=&quot;a2a_button_telegram&quot;&gt;&lt;/a&gt;</span></span><br><span class="line"><span class="deletion">-                &lt;a class=&quot;a2a_button_whatsapp&quot;&gt;&lt;/a&gt;</span></span><br><span class="line"><span class="deletion">-                &lt;a class=&quot;a2a_button_reddit&quot;&gt;&lt;/a&gt;</span></span><br><span class="line"><span class="deletion">-            &lt;/div&gt;</span></span><br><span class="line"><span class="addition">+           刚刚获取的AddToAny HTML代码替换到这里</span></span><br><span class="line">            &lt;script src=&quot;https://static.addtoany.com/menu/page.js&quot; defer=&#123;true&#125;&gt;&lt;/script&gt;</span><br><span class="line">        &lt;/Fragment&gt;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">...下面省略部分代码...</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h2 id="百度分享"><a href="#百度分享" class="headerlink" title="百度分享"></a>百度分享</h2><article class="message message-immersive is-danger">
+<div class="message-body">
+<i class="fas fa-exclamation-triangle mr-2"></i>此分享按钮可能会被部分广告拦截浏览器扩展拦截，请酌情使用。
+</div>
+</article>
+
+<article class="message message-immersive is-danger">
+<div class="message-body">
+<i class="fas fa-exclamation-triangle mr-2"></i>百度分享按钮服务似乎已下线，建议使用其他分享按钮服务作为替代。
+</div>
+</article>
+
+<div>
+<strong>安装指南</strong>
+<a class="tag is-success" style="margin-left:.8em" href="">在线预览</a>
+</div>
+
+<ol>
+<li><p>你可以启用百度分享按钮而无需注册用户。<br>直接将下面的代码添加到你的主题配置中：</p>
+ <figure class="highlight yaml"><figcaption><span>_config.icarus.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">share:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">bdshare</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h2 id="Share-js"><a href="#Share-js" class="headerlink" title="Share.js"></a>Share.js</h2><article class="message message-immersive is-danger">
+<div class="message-body">
+<i class="fas fa-exclamation-triangle mr-2"></i>Share.js服务已停止维护，建议使用其他分享按钮服务作为替代。
+</div>
+</article>
+
+<div>
+<strong>安装指南</strong>
+<a class="tag is-success" style="margin-left:.8em" href="">在线预览</a>
+</div>
+
+<ol>
+<li><p>你可以启用百度分享按钮而无需用户注册。<br>直接将下面代码添加到主题配置中：</p>
+ <figure class="highlight yaml"><figcaption><span>_config.icarus.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">share:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">sharejs</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>(可选)请参照<a href="#AddToAny">AddToAny</a>部分的个性化步骤与<a target="_blank" rel="noopener" href="https://github.com/overtrue/share.js">share.js主页</a><br>来了解更多关于自定义分享按钮的信息。</p>
+</li>
+</ol>
+<h2 id="ShareThis"><a href="#ShareThis" class="headerlink" title="ShareThis"></a>ShareThis</h2><div>
+<strong>安装指南</strong>
+<a class="tag is-success" style="margin-left:.8em" href="">在线预览</a>
+</div>
+
+<ol>
+<li><p>访问<a target="_blank" rel="noopener" href="https://sharethis.com/">ShareThis</a>并点击页面上的“从分享按钮开始”(Start with Share Buttons)按钮。</p>
+</li>
+<li><p>在“选择分享按钮类型”(Choose type of sharing button)页面选择你需要的按钮类型。<br>不要启用”GDPR规范工具“，否则可能会导致一些问题。<br>你也可以点击“自定义你的分享按钮”(Customize your share buttons)链接来进行按钮的进一步配置。<br>完成后点击“下一步”(Next)。</p>
+<img src="/blogs/gallery/screenshots/sharethis-choose-button-type.png" class="box px-0 py-0 ml-auto mr-auto" width="360" title="选择按钮类型 - ShareThis" alt="选择按钮类型 - ShareThis">
+<br>
+</li>
+<li><p>在”选择你的CMS平台“(Choose your CMS platform)页面选择”HTML“并点击”下一步“(Next)。</p>
+<img src="/blogs/gallery/screenshots/sharethis-choose-platform.png" class="box px-0 py-0 ml-auto mr-auto" width="360" title="选择平台 - ShareThis" alt="选择平台 - ShareThis">
+<br>
+</li>
+<li><p>在“注册并获取代码”(Register and get the code!)页面输入邮箱和密码完成ShareThis的注册。</p>
+</li>
+<li><p>最后，从HTML代码段中复制<code>src</code>中的URL地址到分享按钮配置中。</p>
+<img src="/blogs/gallery/screenshots/sharethis-get-code.png" class="box px-0 py-0 ml-auto mr-auto" width="360" title="获取代码 - ShareThis" alt="获取代码 - ShareThis">
+<br>
+
+<p>例如，下面的ShareThis代码：</p>
+ <figure class="highlight html"><figcaption><span>AddThis代码</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;https://platform-api.sharethis.com/js/sharethis.js#property=xxxxxxxxxxxxx&amp;product=inline-share-buttons&quot;</span> <span class="attr">async</span>=<span class="string">&quot;async&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p> 对应下面的主题配置：</p>
+ <figure class="highlight yaml"><figcaption><span>_config.icarus.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">share:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">sharethis</span></span><br><span class="line">    <span class="attr">install_url:</span> <span class="string">https://platform-api.sharethis.com/js/sharethis.js#property=xxxxxxxxxxxxx&amp;product=inline-share-buttons</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<article class="message message-immersive is-warning">
+<div class="message-body">
+<i class="fas fa-question-circle mr-2"></i>文章内容有误？请点击<a target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-theme-icarus/edit/site/source/_posts/zh-CN/Share-Buttons.md">此处</a>提交修改。
+</div>
+</article>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Icarus用户指南 - 分享按钮</p><p><a href="http://example.com/2021/01/04/share-btn/">http://example.com/2021/01/04/share-btn/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>Sea</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-01-05</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2021-01-04</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/blogs/tags/Icarus%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/">Icarus用户指南</a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="/blogs/images/alipay.jpeg" alt="支付宝"></span></a><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="/blogs/images/wechat.jpeg" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/blogs/2021/01/04/hello-world/"><span class="level-item">Hello World</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div id="comment-container"></div><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/gitalk/1.6.2/gitalk.css"><script src="https://cdnjs.loli.net/ajax/libs/gitalk/1.6.2/gitalk.min.js"></script><script>var gitalk = new Gitalk({
+            id: "956770d719bd088490f21d9e7bf68333",
+            repo: "blogs",
+            owner: "MrSeaWave",
+            clientID: "e0c9fd5f9f7a55d3379f",
+            clientSecret: "10786db27751db3c1a6f741c960e6c337bf08a86",
+            admin: ["MrSeaWave"],
+            createIssueManually: false,
+            distractionFreeMode: false,
+            perPage: 20,
+            pagerDirection: "last",
+            
+            
+            enableHotKey: true,
+            language: "zh-CN",
+        })
+        gitalk.render('comment-container')</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/OiP0FB_早迟ZAO - 酔う (66260978) .jpg" alt="Sea"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Sea</p><p class="is-size-6 is-block">留七分正经，以度生；留三分痴呆，以防死</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Shanghai, China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/blogs/archives"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/blogs/categories"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/blogs/tags"><p class="title">1</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/MrSeaWave" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/MrSeaWave"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Email" href="mailto:MrDaemon@outlook.com"><i class="fas fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/blogs/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/blogs/categories/Plugins/"><span class="level-start"><span class="level-item">Plugins</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/blogs/categories/Plugins/Share/"><span class="level-start"><span class="level-item">Share</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/blogs/archives/2021/01/"><span class="level-start"><span class="level-item">一月 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/blogs/tags/Icarus%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/"><span class="tag">Icarus用户指南</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#AddThis"><span class="level-left"><span class="level-item">1</span><span class="level-item">AddThis</span></span></a></li><li><a class="level is-mobile" href="#AddToAny"><span class="level-left"><span class="level-item">2</span><span class="level-item">AddToAny</span></span></a></li><li><a class="level is-mobile" href="#百度分享"><span class="level-left"><span class="level-item">3</span><span class="level-item">百度分享</span></span></a></li><li><a class="level is-mobile" href="#Share-js"><span class="level-left"><span class="level-item">4</span><span class="level-item">Share.js</span></span></a></li><li><a class="level is-mobile" href="#ShareThis"><span class="level-left"><span class="level-item">5</span><span class="level-item">ShareThis</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/blogs/js/toc.js" defer></script></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-01-04T16:00:00.000Z">2021-01-05</time></p><p class="title"><a href="/blogs/2021/01/04/share-btn/">Icarus用户指南 - 分享按钮</a></p><p class="categories"><a href="/blogs/categories/Plugins/">Plugins</a> / <a href="/blogs/categories/Plugins/Share/">Share</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-01-04T09:57:07.197Z">2021-01-04</time></p><p class="title"><a href="/blogs/2021/01/04/hello-world/">Hello World</a></p></div></article></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=github/Ptyw&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="github/Ptyw" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div><p class="help">邮件订阅，更新早知道</p></form></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/blogs/"><img src="/blogs/images/black-cat.svg" alt="Sea&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2021 Sea</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" async></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/blogs/js/column.js"></script><script src="/blogs/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/blogs/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/js/lightgallery.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/blogs/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/blogs/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/blogs/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
