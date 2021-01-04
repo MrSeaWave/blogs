@@ -6,7 +6,7 @@ author: Sea
 language: zh-CN
 timezone: Asia/Shanghai
 url: 'http://example.com'
-root: /
+root: /blogs
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
 pretty_urls:
