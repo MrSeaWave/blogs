@@ -100,9 +100,10 @@ navbar:
     # Navigation menu items
     menu:
         首页: /
-        归档: /archives
+        时间轴: /archives
         分类: /categories
         标签: /tags
+        留言板: /messages
         关于: /about
     # Links to be shown on the right of the navigation bar
     links:
@@ -158,7 +159,7 @@ comment:
     client_secret: 10786db27751db3c1a6f741c960e6c337bf08a86
     repo: blogs
     owner: MrSeaWave
-    admin: MrSeaWave
+    admin: [MrSeaWave]
     per_page: 20                    # 可选填
     distraction_free_mode: false    # 可选填
     pager_direction: last           # 可选填
@@ -171,54 +172,55 @@ comment:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
     # "Afdian.net" donate button configurations
-    -
-        type: afdian
-        # URL to the "Afdian.net" personal page
-        url: ''
+#    -
+#        type: afdian
+#        # URL to the "Afdian.net" personal page
+#        url: ''
     # Alipay donate button configurations
     -
         type: alipay
         # Alipay qrcode image URL
-        qrcode: ''
+        qrcode: /images/alipay.jpeg
     # "Buy me a coffee" donate button configurations
-    -
-        type: buymeacoffee
-        # URL to the "Buy me a coffee" page
-        url: ''
+#    -
+#        type: buymeacoffee
+#        # URL to the "Buy me a coffee" page
+#        url: ''
     # Patreon donate button configurations
-    -
-        type: patreon
-        # URL to the Patreon page
-        url: ''
+#    -
+#        type: patreon
+#        # URL to the Patreon page
+#        url: ''
     # Paypal donate button configurations
-    -
-        type: paypal
-        # Paypal business ID or email address
-        business: ''
-        # Currency code
-        currency_code: USD
+#    -
+#        type: paypal
+#        # Paypal business ID or email address
+#        business: ''
+#        # Currency code
+#        currency_code: USD
     # Wechat donate button configurations
     -
         type: wechat
         # Wechat qrcode image URL
-        qrcode: ''
+        qrcode: /images/wechat.jpeg
+# 暂时关闭分享按钮
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
-share:
-    type: sharethis
-    # URL to the ShareThis share plugin script
-    install_url: ''
+#share:
+#    type: sharethis
+#    # URL to the ShareThis share plugin script
+#    install_url: ''
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
     # Left sidebar configurations
     left:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: false
+        sticky: true
     # Right sidebar configurations
     right:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: false
+        sticky: true
 # Sidebar widget configurations
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
 widgets:
@@ -255,7 +257,7 @@ widgets:
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: toc
         # Whether to show the index of each heading
         index: true
@@ -280,7 +282,7 @@ widgets:
     # Recent posts widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: recent_posts
     # Archives widget configurations
     -
@@ -295,7 +297,7 @@ widgets:
     # Google FeedBurner email subscription widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: subscribe_email
         # Hint text under the email input
         description: 邮件订阅，更新早知道
