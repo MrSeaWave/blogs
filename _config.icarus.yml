@@ -156,10 +156,9 @@ comment:
     type: gitalk
     client_id: e0c9fd5f9f7a55d3379f
     client_secret: 10786db27751db3c1a6f741c960e6c337bf08a86
-    repo: https://github.com/MrSeaWave/blogs
+    repo: blogs
     owner: MrSeaWave
-    admin:
-        - MrSeaWave
+    admin: MrSeaWave
     per_page: 20                    # 可选填
     distraction_free_mode: false    # 可选填
     pager_direction: last           # 可选填
