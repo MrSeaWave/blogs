@@ -5,7 +5,7 @@ keywords: sea,技术,代码,JS,Javascript,Typescript,ts,HTML,HTML5,H5,CSS,CSS3,E
 author: Sea
 language: zh-CN
 timezone: Asia/Shanghai
-url: 'http://example.com'
+url: https://mrseawave.github.io/blogs
 root: /blogs
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
@@ -74,6 +74,6 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
-  icon: icon.png
+  icon: /images/black-cat.svg
   autodiscovery: true
   template:
