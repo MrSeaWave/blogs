@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Sea&#39;s Blog</title>
-  <icon>http://example.com/icon.png</icon>
+  <icon>https://mrseawave.github.io/blogs/images/black-cat.svg</icon>
   <subtitle>海浪的博客</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2021-01-05T06:53:00.669Z</updated>
-  <id>http://example.com/</id>
+  <link href="https://mrseawave.github.io/blogs/"/>
+  <updated>2021-01-05T07:01:59.149Z</updated>
+  <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
     <name>Sea</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>myBlogTestEmail</title>
-    <link href="http://example.com/2021/01/05/myBlogTestEmail/"/>
-    <id>http://example.com/2021/01/05/myBlogTestEmail/</id>
+    <link href="https://mrseawave.github.io/blogs/2021/01/05/myBlogTestEmail/"/>
+    <id>https://mrseawave.github.io/blogs/2021/01/05/myBlogTestEmail/</id>
     <published>2021-01-05T06:51:59.000Z</published>
-    <updated>2021-01-05T06:53:00.669Z</updated>
+    <updated>2021-01-05T07:01:59.149Z</updated>
     
     
     
@@ -31,10 +31,10 @@
   
   <entry>
     <title>hexo如何生成一篇新的post</title>
-    <link href="http://example.com/2021/01/05/writing-hexo/"/>
-    <id>http://example.com/2021/01/05/writing-hexo/</id>
+    <link href="https://mrseawave.github.io/blogs/2021/01/05/writing-hexo/"/>
+    <id>https://mrseawave.github.io/blogs/2021/01/05/writing-hexo/</id>
     <published>2021-01-05T02:34:01.000Z</published>
-    <updated>2021-01-05T06:53:00.669Z</updated>
+    <updated>2021-01-05T07:01:59.149Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;关于如何新建博客，&lt;a href=&quot;https://hexo.io/zh-cn/docs/writing&quot;&gt;官网&lt;/a&gt;已经有了明确的介绍：&lt;/p&gt;
@@ -43,14 +43,14 @@
     
     
     
-    <category term="hexo" scheme="http://example.com/categories/hexo/"/>
+    <category term="hexo" scheme="https://mrseawave.github.io/blogs/categories/hexo/"/>
     
-    <category term="write" scheme="http://example.com/categories/hexo/write/"/>
+    <category term="write" scheme="https://mrseawave.github.io/blogs/categories/hexo/write/"/>
     
     
-    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    <category term="hexo" scheme="https://mrseawave.github.io/blogs/tags/hexo/"/>
     
-    <category term="write" scheme="http://example.com/tags/write/"/>
+    <category term="write" scheme="https://mrseawave.github.io/blogs/tags/write/"/>
     
   </entry>
   
