@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-05T06:29:22.608Z</updated>
+  <updated>2021-01-05T06:53:00.669Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,24 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>myBlogTestEmail</title>
+    <link href="http://example.com/2021/01/05/myBlogTestEmail/"/>
+    <id>http://example.com/2021/01/05/myBlogTestEmail/</id>
+    <published>2021-01-05T06:51:59.000Z</published>
+    <updated>2021-01-05T06:53:00.669Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>hexo如何生成一篇新的post</title>
     <link href="http://example.com/2021/01/05/writing-hexo/"/>
     <id>http://example.com/2021/01/05/writing-hexo/</id>
     <published>2021-01-05T02:34:01.000Z</published>
-    <updated>2021-01-05T06:29:22.608Z</updated>
+    <updated>2021-01-05T06:53:00.669Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;关于如何新建博客，&lt;a href=&quot;https://hexo.io/zh-cn/docs/writing&quot;&gt;官网&lt;/a&gt;已经有了明确的介绍：&lt;/p&gt;
