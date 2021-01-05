@@ -1,5 +1,5 @@
 ---
-title: hexo如何生成一篇新的post
+title: hexo new 生成新的文章
 author: Sea
 date: 2021-01-05 10:34:01
 toc: true
