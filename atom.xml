@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-04T09:57:07.197Z</updated>
+  <updated>2021-01-05T06:29:22.608Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,45 +17,27 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Icarus用户指南 - 分享按钮</title>
-    <link href="http://example.com/2021/01/04/share-btn/"/>
-    <id>http://example.com/2021/01/04/share-btn/</id>
-    <published>2021-01-04T16:00:00.000Z</published>
-    <updated>2021-01-04T09:57:07.197Z</updated>
+    <title>hexo如何生成一篇新的post</title>
+    <link href="http://example.com/2021/01/05/writing-hexo/"/>
+    <id>http://example.com/2021/01/05/writing-hexo/</id>
+    <published>2021-01-05T02:34:01.000Z</published>
+    <updated>2021-01-05T06:29:22.608Z</updated>
     
     
-    <summary type="html">&lt;p&gt;临时文章 先占个坑位&lt;/p&gt;
-&lt;p&gt;本文介绍Icarus 3支持的分享按钮的安装配置。&lt;/p&gt;
-&lt;article class=&quot;message message-immersive is-primary&quot;&gt;
-&lt;div class=&quot;message-body&quot;&gt;
-&lt;i class=&quot;fas fa-globe-americas mr-2&quot;&gt;&lt;/i&gt;本文同时提供以下语言的翻译：&lt;a href=&quot;&quot;&gt;English&lt;/a&gt;。
-&lt;/div&gt;
-&lt;/article&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;关于如何新建博客，&lt;a href=&quot;https://hexo.io/zh-cn/docs/writing&quot;&gt;官网&lt;/a&gt;已经有了明确的介绍：&lt;/p&gt;
+&lt;p&gt;你可以执行下列命令来创建一篇新文章或者新的页面。&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;figcaption&gt;&lt;span&gt;命令行&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new [layout] &amp;lt;title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
-    <category term="Plugins" scheme="http://example.com/categories/Plugins/"/>
+    <category term="hexo" scheme="http://example.com/categories/hexo/"/>
     
-    <category term="Share" scheme="http://example.com/categories/Plugins/Share/"/>
-    
-    
-    <category term="Icarus用户指南" scheme="http://example.com/tags/Icarus%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2021/01/04/hello-world/"/>
-    <id>http://example.com/2021/01/04/hello-world/</id>
-    <published>2021-01-04T09:57:07.197Z</published>
-    <updated>2021-01-04T09:57:07.197Z</updated>
+    <category term="write" scheme="http://example.com/categories/hexo/write/"/>
     
     
-    <summary type="html">&lt;p&gt;临时文章 先占个坑位&lt;/p&gt;
-&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
     
-    
-    
+    <category term="write" scheme="http://example.com/tags/write/"/>
     
   </entry>
   
