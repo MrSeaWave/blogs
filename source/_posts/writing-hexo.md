@@ -3,6 +3,7 @@ title: hexo如何生成一篇新的post
 author: Sea
 date: 2021-01-05 10:34:01
 toc: true
+cover: 
 tags: [hexo,write]
 categories:
   - [hexo, write]
