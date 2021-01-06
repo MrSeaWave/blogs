@@ -12,6 +12,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           persist-credentials: false
+      - name: Restore file modification time
+        run: find source/_posts -name '*.md' | while read file; do touch -d "$(git log -1 --format="@%ct" "$file")" "$file"; done
       - name: Install and Build 🔧
         run: |
           echo "Install && Publish site to github pages ..."
