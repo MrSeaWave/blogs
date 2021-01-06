@@ -16,7 +16,9 @@ jobs:
         run: |
           ls -l
           stat source/_posts/myBlogTestEmail.md
-          find source/_posts -name '*.md' | while read file; do touch -d "$(git log -1 --format="@%ct" "$file")" "$file"; done
+          echo "--------------->"
+          git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done
+          echo "<---------------"
           stat source/_posts/myBlogTestEmail.md
       - name: Install and Build 🔧
         run: |
