@@ -17,7 +17,7 @@ jobs:
           ls -l
           stat source/_posts/myBlogTestEmail.md
           echo "--------------->"
-          git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done
+          git ls-files | while read file; do touch -d $(git log -1 --format="@%ct" "$file") "$file"; done
           echo "<---------------"
           stat source/_posts/myBlogTestEmail.md
       - name: Install and Build 🔧
