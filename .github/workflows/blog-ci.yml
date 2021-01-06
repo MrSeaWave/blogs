@@ -14,10 +14,10 @@ jobs:
           persist-credentials: false
       - name: Restore file modification time
         run: |
-          ls
-          stat -f source/_posts/myBlogTestEmail.md
+          ls -l
+          stat source/_posts/myBlogTestEmail.md
           find source/_posts -name '*.md' | while read file; do touch -d "$(git log -1 --format="@%ct" "$file")" "$file"; done
-          stat -f source/_posts/myBlogTestEmail.md
+          stat source/_posts/myBlogTestEmail.md
       - name: Install and Build 🔧
         run: |
           echo "Install && Publish site to github pages ..."
