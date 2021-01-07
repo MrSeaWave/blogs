@@ -12,16 +12,14 @@ jobs:
         uses: actions/checkout@v2
         with:
           persist-credentials: false
+          # 0 indicates all history for all branches and tags.
           fetch-depth: 0
       - name: Restore file modification time
         run: |
-          echo "打印每个文件的提交日志记录-------->"
-          find source/_posts -name '*.md' | while read file;  do echo "$(git log -1 --format="@%ad"-- "$file")" "$file"; done
-          echo "<--------"
-          stat source/_posts/myBlogTestEmail.md
-          echo "--------------->"
-          find source/_posts -name 'myBlogTestEmail.md' | while read file; do touch -d "$(git log --format="@%ct" "$file")" "$file"; done
-          stat source/_posts/myBlogTestEmail.md
+#          echo "打印每个文件的提交日志记录-------->"
+#          find source/_posts -name '*.md' | while read file;  do echo "$(git log -1 --format="@%ad"-- "$file")" "$file"; done
+          echo "将每个文件的修改时间回复称该文件最新的提交时间"
+          find source/_posts -name '*.md' | while read file; do touch -d "$(git log --format="@%ct" "$file")" "$file"; done
       - name: Install and Build 🔧
         run: |
           echo "Install && Publish site to github pages ..."
