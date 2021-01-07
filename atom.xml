@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-01-07T07:40:04.757Z</updated>
+  <updated>2021-01-06T08:40:39.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://mrseawave.github.io/blogs/2021/01/06/start-github-actions/"/>
     <id>https://mrseawave.github.io/blogs/2021/01/06/start-github-actions/</id>
     <published>2021-01-06T02:27:18.000Z</published>
-    <updated>2021-01-07T07:40:04.757Z</updated>
+    <updated>2021-01-06T08:40:39.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/features/actions&quot;&gt;GitHub Actions&lt;/a&gt; 是 GitHub 的&lt;a href=&quot;http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html&quot;&gt;持续集成服务&lt;/a&gt;，于2018年10月&lt;a href=&quot;https://github.blog/changelog/2018-10-16-github-actions-limited-beta/&quot;&gt;推出&lt;/a&gt;。&lt;/p&gt;</summary>
@@ -59,7 +59,7 @@
     <link href="https://mrseawave.github.io/blogs/2021/01/05/writing-hexo/"/>
     <id>https://mrseawave.github.io/blogs/2021/01/05/writing-hexo/</id>
     <published>2021-01-05T02:34:01.000Z</published>
-    <updated>2021-01-07T07:40:04.757Z</updated>
+    <updated>2021-01-05T08:12:27.000Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;关于如何新建博客，&lt;a href=&quot;https://hexo.io/zh-cn/docs/writing&quot;&gt;官网&lt;/a&gt;已经有了明确的介绍：&lt;/p&gt;
