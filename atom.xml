@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-01-06T08:40:39.000Z</updated>
+  <updated>2021-01-07T08:54:34.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>修复 CI 构建博客造成的更新时间错误</title>
+    <link href="https://mrseawave.github.io/blogs/2021/01/07/ci-hexo-update-time/"/>
+    <id>https://mrseawave.github.io/blogs/2021/01/07/ci-hexo-update-time/</id>
+    <published>2021-01-07T07:53:16.000Z</published>
+    <updated>2021-01-07T08:54:34.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;当使用 &lt;code&gt;Travis CI&lt;/code&gt; or &lt;code&gt;Github Actions&lt;/code&gt; 自动化部署时，发现部署成功后，所有文章的更新时间都变成了此次提交修改的时间，但有些文章在上一次提交后是没有发生过任何修改的。&lt;/p&gt;
+&lt;p&gt;这是因为 &lt;code&gt;git&lt;/code&gt; 在推送更新时，并不记录保存文件的访问时间、修改时间等元信息，（&lt;a href=&quot;https://git.wiki.kernel.org/index.php/Git_FAQ?spm=a2c4e.10696291.0.0.671919a4OeAqE1#Why_isn.27t_Git_preserving_modification_time_on_files.3F&quot;&gt;原因在这里&lt;/a&gt;）所以每次使用 &lt;code&gt;git&lt;/code&gt; 把项目 &lt;code&gt;clone&lt;/code&gt; 下来时，文件的时间都是克隆时的时间。又因为如果没有在 &lt;code&gt;front-matter&lt;/code&gt; 中指定 &lt;code&gt;updated&lt;/code&gt;，&lt;code&gt;Hexo&lt;/code&gt; 会默认使用文件的最后修改时间作为文章的更新时间，所以会出现所有文章的更新时间都发生变化的情况。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="hexo" scheme="https://mrseawave.github.io/blogs/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://mrseawave.github.io/blogs/tags/hexo/"/>
+    
+    <category term="ci" scheme="https://mrseawave.github.io/blogs/tags/ci/"/>
+    
+  </entry>
   
   <entry>
     <title>github-actions入门</title>
