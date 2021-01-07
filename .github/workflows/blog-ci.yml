@@ -16,8 +16,8 @@ jobs:
           fetch-depth: 0
       - name: Restore file modification time
         run: |
-          echo "将每个文件的修改时间恢复成该文件最新的提交时间"
-          find source/_posts -name '*.md' | while read file; do touch -d "$(git log -1 --format="@%ct" "$file")" "$file"; done
+          echo "将source文件夹下的md文件的修改时间恢复成该文件最新的提交时间"
+          find source -name '*.md' | while read file; do touch -d "$(git log -1 --format="@%ct" "$file")" "$file"; done
       - name: Install and Build 🔧
         run: |
           echo "Install && Publish site to github pages ..."
