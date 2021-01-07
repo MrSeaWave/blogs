@@ -14,11 +14,12 @@ jobs:
           persist-credentials: false
       - name: Restore file modification time
         run: |
-          ls -l
+          echo "打印每个文件的提交日志记录-------->"
+          find source/_posts -name '*.md' | while read file;  do echo "$(git log -1 --format="@%ad"-- "$file")" "$file"; done
+          echor "<--------"
           stat source/_posts/myBlogTestEmail.md
           echo "--------------->"
-          git ls-files | while read file; do touch -d $(git log -1 --format="@%ct" "$file") "$file"; done
-          echo "<---------------"
+          find source/_posts -name 'myBlogTestEmail.md' | while read file; do touch -d "$(git log --format="@%ct" "$file")" "$file"; done
           stat source/_posts/myBlogTestEmail.md
       - name: Install and Build 🔧
         run: |
