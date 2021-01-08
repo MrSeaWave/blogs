@@ -7,7 +7,7 @@ language: zh-CN
 timezone: Asia/Shanghai
 url: https://mrseawave.github.io/blogs
 root: /blogs
-permalink: ":name/"
+permalink: "articles/:name/"
 permalink_defaults: null
 pretty_urls:
   trailing_index: true
