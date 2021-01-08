@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-01-07T08:54:34.000Z</updated>
+  <updated>2021-01-08T05:59:58.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo 相关问题以及优化配置</title>
+    <link href="https://mrseawave.github.io/blogs/2021/01/08/hexo-configuration/"/>
+    <id>https://mrseawave.github.io/blogs/2021/01/08/hexo-configuration/</id>
+    <published>2021-01-08T03:18:32.000Z</published>
+    <updated>2021-01-08T05:59:58.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本文记录一些 hexo 出现的问题及其解决方案，以及相关配置&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hexo&lt;/code&gt; 环境&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;figcaption&gt;&lt;span&gt;env&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo: 5.3.0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo-cli: 4.2.0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;os: Darwin 19.6.0 darwin x64&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;node: 15.2.1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="hexo" scheme="https://mrseawave.github.io/blogs/categories/hexo/"/>
+    
+    <category term="configuration" scheme="https://mrseawave.github.io/blogs/categories/hexo/configuration/"/>
+    
+    
+    <category term="hexo" scheme="https://mrseawave.github.io/blogs/tags/hexo/"/>
+    
+    <category term="configuration" scheme="https://mrseawave.github.io/blogs/tags/configuration/"/>
+    
+    <category term="questions" scheme="https://mrseawave.github.io/blogs/tags/questions/"/>
+    
+    <category term="SEO" scheme="https://mrseawave.github.io/blogs/tags/SEO/"/>
+    
+  </entry>
   
   <entry>
     <title>修复 CI 构建博客造成的更新时间错误</title>
