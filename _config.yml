@@ -77,3 +77,10 @@ feed:
   icon: /images/black-cat.svg
   autodiscovery: true
   template:
+
+# hexo-filter-nofollow
+nofollow:
+  enable: true
+  field: site
+  exclude:
+    - 'https://mrseawave.github.io'
