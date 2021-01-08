@@ -7,7 +7,7 @@ language: zh-CN
 timezone: Asia/Shanghai
 url: https://mrseawave.github.io/blogs
 root: /blogs
-permalink: ':year/:month/:day/:title/'
+permalink: ":name/"
 permalink_defaults: null
 pretty_urls:
   trailing_index: true
@@ -18,15 +18,15 @@ tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
-i18n_dir: ':lang'
+i18n_dir: ":lang"
 skip_render: null
-new_post_name: ':title.md'
+new_post_name: ":title.md"
 default_layout: post
 titlecase: false
 external_link:
   enable: true
   field: site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -36,24 +36,24 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: false
 prismjs:
   enable: false
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: ""
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
-  order_by: '-date'
+  order_by: "-date"
 default_category: uncategorized
 category_map: null
 tag_map: null
 meta_generator: true
 date_format: YYYY-MM-DD
-time_format: 'HH:mm:ss'
+time_format: "HH:mm:ss"
 updated_option: mtime
 per_page: 10
 pagination_dir: page
@@ -62,7 +62,7 @@ exclude: null
 ignore: null
 theme: icarus
 deploy:
-  type: ''
+  type: ""
 
 feed:
   enable: true
@@ -72,7 +72,7 @@ feed:
   hub:
   content:
   content_limit: 140
-  content_limit_delim: ' '
+  content_limit_delim: " "
   order_by: -date
   icon: /images/black-cat.svg
   autodiscovery: true
@@ -83,4 +83,4 @@ nofollow:
   enable: true
   field: site
   exclude:
-    - 'https://mrseawave.github.io'
+    - "https://mrseawave.github.io"
