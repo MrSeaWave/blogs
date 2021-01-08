@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-01-08T05:59:58.000Z</updated>
+  <updated>2021-01-08T07:32:23.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>hexo 相关问题以及优化配置</title>
-    <link href="https://mrseawave.github.io/blogs/2021/01/08/hexo-configuration/"/>
-    <id>https://mrseawave.github.io/blogs/2021/01/08/hexo-configuration/</id>
+    <link href="https://mrseawave.github.io/blogs/hexo-configuration/"/>
+    <id>https://mrseawave.github.io/blogs/hexo-configuration/</id>
     <published>2021-01-08T03:18:32.000Z</published>
-    <updated>2021-01-08T05:59:58.000Z</updated>
+    <updated>2021-01-08T07:32:23.000Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本文记录一些 hexo 出现的问题及其解决方案，以及相关配置&lt;/p&gt;
@@ -43,12 +43,14 @@
     
     <category term="SEO" scheme="https://mrseawave.github.io/blogs/tags/SEO/"/>
     
+    <category term="permalinks" scheme="https://mrseawave.github.io/blogs/tags/permalinks/"/>
+    
   </entry>
   
   <entry>
     <title>修复 CI 构建博客造成的更新时间错误</title>
-    <link href="https://mrseawave.github.io/blogs/2021/01/07/ci-hexo-update-time/"/>
-    <id>https://mrseawave.github.io/blogs/2021/01/07/ci-hexo-update-time/</id>
+    <link href="https://mrseawave.github.io/blogs/ci-hexo-update-time/"/>
+    <id>https://mrseawave.github.io/blogs/ci-hexo-update-time/</id>
     <published>2021-01-07T07:53:16.000Z</published>
     <updated>2021-01-07T08:54:34.000Z</updated>
     
@@ -69,8 +71,8 @@
   
   <entry>
     <title>github-actions入门</title>
-    <link href="https://mrseawave.github.io/blogs/2021/01/06/start-github-actions/"/>
-    <id>https://mrseawave.github.io/blogs/2021/01/06/start-github-actions/</id>
+    <link href="https://mrseawave.github.io/blogs/start-github-actions/"/>
+    <id>https://mrseawave.github.io/blogs/start-github-actions/</id>
     <published>2021-01-06T02:27:18.000Z</published>
     <updated>2021-01-06T08:40:39.000Z</updated>
     
@@ -94,8 +96,8 @@
   
   <entry>
     <title>myBlogTestEmail</title>
-    <link href="https://mrseawave.github.io/blogs/2021/01/05/myBlogTestEmail/"/>
-    <id>https://mrseawave.github.io/blogs/2021/01/05/myBlogTestEmail/</id>
+    <link href="https://mrseawave.github.io/blogs/myBlogTestEmail/"/>
+    <id>https://mrseawave.github.io/blogs/myBlogTestEmail/</id>
     <published>2021-01-05T06:51:59.000Z</published>
     <updated>2021-01-05T06:52:19.000Z</updated>
     
@@ -107,8 +109,8 @@
   
   <entry>
     <title>hexo new 生成新的文章</title>
-    <link href="https://mrseawave.github.io/blogs/2021/01/05/writing-hexo/"/>
-    <id>https://mrseawave.github.io/blogs/2021/01/05/writing-hexo/</id>
+    <link href="https://mrseawave.github.io/blogs/writing-hexo/"/>
+    <id>https://mrseawave.github.io/blogs/writing-hexo/</id>
     <published>2021-01-05T02:34:01.000Z</published>
     <updated>2021-01-05T08:12:27.000Z</updated>
     
