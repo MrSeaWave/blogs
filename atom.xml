@@ -18,8 +18,8 @@
   
   <entry>
     <title>hexo 相关问题以及优化配置</title>
-    <link href="https://mrseawave.github.io/blogs/hexo-configuration/"/>
-    <id>https://mrseawave.github.io/blogs/hexo-configuration/</id>
+    <link href="https://mrseawave.github.io/blogs/articles/hexo-configuration/"/>
+    <id>https://mrseawave.github.io/blogs/articles/hexo-configuration/</id>
     <published>2021-01-08T03:18:32.000Z</published>
     <updated>2021-01-08T07:32:23.000Z</updated>
     
@@ -49,8 +49,8 @@
   
   <entry>
     <title>修复 CI 构建博客造成的更新时间错误</title>
-    <link href="https://mrseawave.github.io/blogs/ci-hexo-update-time/"/>
-    <id>https://mrseawave.github.io/blogs/ci-hexo-update-time/</id>
+    <link href="https://mrseawave.github.io/blogs/articles/ci-hexo-update-time/"/>
+    <id>https://mrseawave.github.io/blogs/articles/ci-hexo-update-time/</id>
     <published>2021-01-07T07:53:16.000Z</published>
     <updated>2021-01-07T08:54:34.000Z</updated>
     
@@ -71,8 +71,8 @@
   
   <entry>
     <title>github-actions入门</title>
-    <link href="https://mrseawave.github.io/blogs/start-github-actions/"/>
-    <id>https://mrseawave.github.io/blogs/start-github-actions/</id>
+    <link href="https://mrseawave.github.io/blogs/articles/start-github-actions/"/>
+    <id>https://mrseawave.github.io/blogs/articles/start-github-actions/</id>
     <published>2021-01-06T02:27:18.000Z</published>
     <updated>2021-01-06T08:40:39.000Z</updated>
     
@@ -96,8 +96,8 @@
   
   <entry>
     <title>myBlogTestEmail</title>
-    <link href="https://mrseawave.github.io/blogs/myBlogTestEmail/"/>
-    <id>https://mrseawave.github.io/blogs/myBlogTestEmail/</id>
+    <link href="https://mrseawave.github.io/blogs/articles/myBlogTestEmail/"/>
+    <id>https://mrseawave.github.io/blogs/articles/myBlogTestEmail/</id>
     <published>2021-01-05T06:51:59.000Z</published>
     <updated>2021-01-05T06:52:19.000Z</updated>
     
@@ -109,8 +109,8 @@
   
   <entry>
     <title>hexo new 生成新的文章</title>
-    <link href="https://mrseawave.github.io/blogs/writing-hexo/"/>
-    <id>https://mrseawave.github.io/blogs/writing-hexo/</id>
+    <link href="https://mrseawave.github.io/blogs/articles/writing-hexo/"/>
+    <id>https://mrseawave.github.io/blogs/articles/writing-hexo/</id>
     <published>2021-01-05T02:34:01.000Z</published>
     <updated>2021-01-05T08:12:27.000Z</updated>
     
