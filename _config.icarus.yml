@@ -104,6 +104,7 @@ navbar:
         分类: /categories
         标签: /tags
         留言板: /messages
+        友人帐: /friends
         关于: /about
     # Links to be shown on the right of the navigation bar
     links:
