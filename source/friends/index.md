@@ -5,9 +5,8 @@ date: 2021-01-14 10:05:47
 
 <script type="text/javascript">
 function changeFrameHeight(){
-    console.log('weww')
     const ifm= document.getElementById("blogFriend"); 
-    ifm.height=document.documentElement.clientHeight
+    ifm.height=ifm.contentWindow.document.body.scrollHeight;
 };
 window.onresize=function(){  
  changeFrameHeight();
