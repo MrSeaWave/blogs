@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-01-08T07:32:23.000Z</updated>
+  <updated>2021-01-20T02:59:41.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>rust 安装</title>
+    <link href="https://mrseawave.github.io/blogs/articles/install-rust/"/>
+    <id>https://mrseawave.github.io/blogs/articles/install-rust/</id>
+    <published>2021-01-20T02:20:16.000Z</published>
+    <updated>2021-01-20T02:59:41.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Rust 通常被称为 rust-lang。Rust 是一个由 Mozilla Research 赞助的通用的、多范式、现代的、跨平台和开源系统编程语言。&lt;/p&gt;
+&lt;p&gt;它旨在实现安全性、速度和并发性等目标。&lt;/p&gt;
+&lt;p&gt;Rust 在语法上与 C++ 相似，但它的设计者希望它在保持性能的同时提供更好的内存安全性。&lt;/p&gt;
+&lt;p&gt;Rust 目前在许多组织中使用，例如 Firefox、Chef、Dropbox、Oracle、GNOME 等。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="install" scheme="https://mrseawave.github.io/blogs/categories/install/"/>
+    
+    <category term="rust" scheme="https://mrseawave.github.io/blogs/categories/install/rust/"/>
+    
+    <category term="rust" scheme="https://mrseawave.github.io/blogs/categories/rust/"/>
+    
+    <category term="install" scheme="https://mrseawave.github.io/blogs/categories/rust/install/"/>
+    
+    
+    <category term="install" scheme="https://mrseawave.github.io/blogs/tags/install/"/>
+    
+    <category term="rust" scheme="https://mrseawave.github.io/blogs/tags/rust/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo 相关问题以及优化配置</title>
