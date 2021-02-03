@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-01-20T02:59:41.000Z</updated>
+  <updated>2021-02-03T06:16:42.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微信小程序云开发获取用户手机号</title>
+    <link href="https://mrseawave.github.io/blogs/articles/wx-get-cellphone/"/>
+    <id>https://mrseawave.github.io/blogs/articles/wx-get-cellphone/</id>
+    <published>2021-02-03T05:39:49.000Z</published>
+    <updated>2021-02-03T06:16:42.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在网上搜索时，大部分微信小程序&lt;a href=&quot;https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html&quot;&gt;云开发&lt;/a&gt;获取手机号码的例子还都是需要通过&lt;code&gt;code&lt;/code&gt;获取&lt;code&gt;session_key&lt;/code&gt;来解密信息取得手机号码，总感觉哪里不对，官网上都已经说过，云开发是自动鉴权的，不应该还要解密,因此下面介绍如何使用云开发获取用户信息数据。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="小程序" scheme="https://mrseawave.github.io/blogs/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="微信小程序" scheme="https://mrseawave.github.io/blogs/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+    <category term="微信小程序" scheme="https://mrseawave.github.io/blogs/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="云开发" scheme="https://mrseawave.github.io/blogs/tags/%E4%BA%91%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
   
   <entry>
     <title>rust 安装</title>
