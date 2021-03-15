@@ -11360,6 +11360,9 @@ figure.highlight .section {
   background: $light-grey;
   color: $white-invert;
 }
+.level.is-multiline {
+  flex-wrap: wrap;
+}
 .donate {
   position: relative;
 }

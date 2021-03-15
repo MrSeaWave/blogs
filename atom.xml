@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-02-03T06:16:42.000Z</updated>
+  <updated>2021-03-15T06:32:05.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vs-code“实用插件”</title>
+    <link href="https://mrseawave.github.io/blogs/articles/vs-code-plugins/"/>
+    <id>https://mrseawave.github.io/blogs/articles/vs-code-plugins/</id>
+    <published>2021-03-15T02:21:49.000Z</published>
+    <updated>2021-03-15T06:32:05.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在&lt;code&gt;vs-code&lt;/code&gt;时，整理了一些好用的&lt;code&gt;vs-code&lt;/code&gt;插件分享。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="vs-code" scheme="https://mrseawave.github.io/blogs/categories/vs-code/"/>
+    
+    <category term="plugins" scheme="https://mrseawave.github.io/blogs/categories/vs-code/plugins/"/>
+    
+    
+    <category term="vs-code" scheme="https://mrseawave.github.io/blogs/tags/vs-code/"/>
+    
+    <category term="plugins" scheme="https://mrseawave.github.io/blogs/tags/plugins/"/>
+    
+    <category term="ide" scheme="https://mrseawave.github.io/blogs/tags/ide/"/>
+    
+  </entry>
   
   <entry>
     <title>微信小程序云开发获取用户手机号</title>
