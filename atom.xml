@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-03-15T06:32:05.000Z</updated>
+  <updated>2021-03-23T08:57:47.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac 上的 APP 推荐</title>
+    <link href="https://mrseawave.github.io/blogs/articles/mac-apps/"/>
+    <id>https://mrseawave.github.io/blogs/articles/mac-apps/</id>
+    <published>2021-03-23T07:55:15.000Z</published>
+    <updated>2021-03-23T08:57:47.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;值得推荐的 mac 软件&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>vs-code“实用插件”</title>
