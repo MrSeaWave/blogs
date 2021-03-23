@@ -4,11 +4,11 @@ author: Sea
 toc: true
 date: 2021-03-15 10:21:49
 cover: https://code.visualstudio.com/assets/home/home-screenshot-mac-2x.png
-tags: [vs-code,plugins,ide]
-categories: [vs-code,plugins]
+tags: [vs-code, plugins, ide, recommend]
+categories: [vs-code, plugins]
 ---
 
-在`vs-code`时，整理了一些好用的`vs-code`插件分享。
+在使用`vs-code`时，整理了一些好用的`vs-code`插件分享。
 
 <!-- more -->
 
@@ -36,7 +36,7 @@ categories: [vs-code,plugins]
 
 ### HTML Snippets 
 
-HTML代码片段，该插件可为你提供html标签的代码提示，不用键入尖括号了。
+HTML 代码片段，该插件可为你提供 html 标签的代码提示，不用键入尖括号了。
 
 ![alt text](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/pq9GwN_VOhBvHb.gif)
 
@@ -48,13 +48,13 @@ HTML代码片段，该插件可为你提供html标签的代码提示，不用键
 
 ### CSS Peek
 
-css样式查看器，可快速查看我们的css样式，非常方便快捷。
+css 样式查看器，可快速查看我们的 css 样式，非常方便快捷。
 
 ![working](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/UYG7Pl_working.gif)
 
 ### Npm Intellisense
 
-可自动完成导入语句中的npm模块。
+可自动完成导入语句中的 npm 模块。
 
 ![auto complete](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/q3absD_auto_complete.gif)
 
@@ -108,7 +108,7 @@ One Dark Theme based on Atom。
 
 ### Highlight Matching Tag
 
- 点击某 Tag 时对应的 Tag 下会有下划线标示，比较实用；
+点击某 Tag 时对应的 Tag 下会有下划线标示，比较实用；
 
 ![demo](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/FYBLzm_zIA1XCzK_o.gif)
 
@@ -120,13 +120,13 @@ One Dark Theme based on Atom。
 
 ### JavaScript (ES6) code snippets
 
-ES6语法智能提示，以及快速输入。
+ES6 语法智能提示，以及快速输入。
 
 ![image-20210315105937136](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/fEZVfu_image-20210315105937136.png)
 
 ### Vetur
 
-`VScode`官方钦定Vue插件，`Vue`开发者必备。内含语法高亮，智能提示，`emmet`，错误提示，格式化，自动补全，`debugger`等实用功能。
+`VScode`官方钦定 Vue 插件，`Vue`开发者必备。内含语法高亮，智能提示，`emmet`，错误提示，格式化，自动补全，`debugger`等实用功能。
 
 ![image-20210315110110462](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/teyTeu_image-20210315110110462.png)
 
@@ -146,7 +146,7 @@ Prettier 是一个“有态度”的代码格式化工具。，`prettier`支持�
 
 ### ESlint
 
-规范js代码书写规则，如果觉得太过严谨，可自定义规则。
+规范 js 代码书写规则，如果觉得太过严谨，可自定义规则。
 
 ![image-20210315111002050](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/HhVbit_image-20210315111002050.png)
 
@@ -232,7 +232,7 @@ extension.changeCase.upperFirst：更改大小写为“ upperFirst”：转换�
 
 ### GitHistory
 
-`GitHistory`可查看和搜索git日志以及图形和详细信息，同时还支持分支比较，分支管理等操作，非常方便。
+`GitHistory`可查看和搜索 git 日志以及图形和详细信息，同时还支持分支比较，分支管理等操作，非常方便。
 
 ![image-20210315113620629](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/HCdSPi_image-20210315113620629.png)
 
@@ -250,7 +250,7 @@ extension.changeCase.upperFirst：更改大小写为“ upperFirst”：转换�
 
 ### vscode-drawio
 
-这款神器可以让我们在`vscode`里面快乐的画流程图。新建 `.drawio` 后缀文件并拖入vscode中。
+这款神器可以让我们在`vscode`里面快乐的画流程图。新建 `.drawio` 后缀文件并拖入 vscode 中。
 
 ![image-20210315133629366](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/Ksri81_image-20210315133629366.png)
 
@@ -270,9 +270,9 @@ extension.changeCase.upperFirst：更改大小写为“ upperFirst”：转换�
 
 ### REST Client
 
-这款神器可以让我们在`vscode`里面进行接口调试，提供丰富的api配置方式，让我们不用离开编辑器也可以随时调用接口调试。
+这款神器可以让我们在`vscode`里面进行接口调试，提供丰富的 api 配置方式，让我们不用离开编辑器也可以随时调用接口调试。
 
-新建一个`.http`文件，写下基本的测试代码，点击` Send Request`即可在右边窗口查看接口返回结果，非常nice。
+新建一个`.http`文件，写下基本的测试代码，点击` Send Request`即可在右边窗口查看接口返回结果，非常 nice。
 
 ![rest-client](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/SZwzMz_usage-20210315134522075.gif)
 
@@ -284,9 +284,9 @@ extension.changeCase.upperFirst：更改大小写为“ upperFirst”：转换�
 
 ### JavaScript Booster
 
-这款神器可以在我们代码写的不规范或者有待调整的地方，在光标聚焦后，会有一个小灯泡，只需跟随灯泡💡，会提示对应的不合理原因和改进方案，极大的提高了我们的代码优雅度。
+这款神器可以在我们代码写的不规范或者有待调整的地方，在光标聚焦后，会有一个小灯泡，只需跟随灯泡 💡，会提示对应的不合理原因和改进方案，极大的提高了我们的代码优雅度。
 
-当在`JavaScript`（或`TypeScript / Flow`）中编辑代码时，此`VS Code`扩展提供了各种代码操作（快速修复）。只需注意左侧的灯泡💡，然后按一下它即可了解如何在光标下转换代码。
+当在`JavaScript`（或`TypeScript / Flow`）中编辑代码时，此`VS Code`扩展提供了各种代码操作（快速修复）。只需注意左侧的灯泡 💡，然后按一下它即可了解如何在光标下转换代码。
 
 ![Features](https://github.com/xsburg/vscode-javascript-booster/raw/master/resources/recording-v14.0.0.gif)
 
@@ -296,13 +296,11 @@ extension.changeCase.upperFirst：更改大小写为“ upperFirst”：转换�
 
 ![image-20210315135403897](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/UYQLr4_image-20210315135403897.png)
 
-预览版`vscode`自带配置同步功能，可以通过Microsoft账户或GitHub账户进行多机器同步。具体可参考[官网](https://code.visualstudio.com/docs/editor/settings-sync)
+预览版`vscode`自带配置同步功能，可以通过 Microsoft 账户或 GitHub 账户进行多机器同步。具体可参考[官网](https://code.visualstudio.com/docs/editor/settings-sync)
 
 ![image-20210315135851862](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/elzUx9_oL1x10_image-20210315135851862.png)
 
 ![Turn on Sync command](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/NwCrtQ_turn-on-sync.png)
-
-
 
 ### Vim
 

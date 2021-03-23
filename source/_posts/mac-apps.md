@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-03-23 15:55:15
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/bslW8t_kevin-gnutzmans-landscape-39.jpg
-tags:
-categories:
+tags: [Mac, Apps, recommend]
+categories: [Mac, recommend]
 ---
 
 值得推荐的 mac 软件
