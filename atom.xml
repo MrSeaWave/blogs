@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-03-23T08:57:47.000Z</updated>
+  <updated>2021-03-23T09:00:46.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -21,13 +21,23 @@
     <link href="https://mrseawave.github.io/blogs/articles/mac-apps/"/>
     <id>https://mrseawave.github.io/blogs/articles/mac-apps/</id>
     <published>2021-03-23T07:55:15.000Z</published>
-    <updated>2021-03-23T08:57:47.000Z</updated>
+    <updated>2021-03-23T09:00:46.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;值得推荐的 mac 软件&lt;/p&gt;</summary>
     
     
     
+    <category term="Mac" scheme="https://mrseawave.github.io/blogs/categories/Mac/"/>
+    
+    <category term="recommend" scheme="https://mrseawave.github.io/blogs/categories/Mac/recommend/"/>
+    
+    
+    <category term="Mac" scheme="https://mrseawave.github.io/blogs/tags/Mac/"/>
+    
+    <category term="Apps" scheme="https://mrseawave.github.io/blogs/tags/Apps/"/>
+    
+    <category term="recommend" scheme="https://mrseawave.github.io/blogs/tags/recommend/"/>
     
   </entry>
   
@@ -36,10 +46,10 @@
     <link href="https://mrseawave.github.io/blogs/articles/vs-code-plugins/"/>
     <id>https://mrseawave.github.io/blogs/articles/vs-code-plugins/</id>
     <published>2021-03-15T02:21:49.000Z</published>
-    <updated>2021-03-15T06:32:05.000Z</updated>
+    <updated>2021-03-23T09:00:46.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;在&lt;code&gt;vs-code&lt;/code&gt;时，整理了一些好用的&lt;code&gt;vs-code&lt;/code&gt;插件分享。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;在使用&lt;code&gt;vs-code&lt;/code&gt;时，整理了一些好用的&lt;code&gt;vs-code&lt;/code&gt;插件分享。&lt;/p&gt;</summary>
     
     
     
@@ -47,6 +57,8 @@
     
     <category term="plugins" scheme="https://mrseawave.github.io/blogs/categories/vs-code/plugins/"/>
     
+    
+    <category term="recommend" scheme="https://mrseawave.github.io/blogs/tags/recommend/"/>
     
     <category term="vs-code" scheme="https://mrseawave.github.io/blogs/tags/vs-code/"/>
     
