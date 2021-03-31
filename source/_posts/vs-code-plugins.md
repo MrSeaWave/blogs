@@ -1,16 +1,4 @@
----
-title: vs-code“实用插件”
-author: Sea
-toc: true
-date: 2021-03-15 10:21:49
-cover: https://code.visualstudio.com/assets/home/home-screenshot-mac-2x.png
-tags: [vs-code, plugins, ide, recommend]
-categories: [vs-code, plugins]
----
-
 在使用`vs-code`时，整理了一些好用的`vs-code`插件分享。
-
-<!-- more -->
 
 ## 基础必备
 
