@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-03-31T06:50:58.000Z</updated>
+  <updated>2021-03-31T07:56:10.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -17,24 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://mrseawave.github.io/blogs/articles/vs-code-plugins/"/>
-    <id>https://mrseawave.github.io/blogs/articles/vs-code-plugins/</id>
-    <published>2021-03-31T07:02:34.375Z</published>
-    <updated>2021-03-31T06:50:58.000Z</updated>
+    <title>工程化配置 git commit 规范</title>
+    <link href="https://mrseawave.github.io/blogs/articles/git-commit-cli/"/>
+    <id>https://mrseawave.github.io/blogs/articles/git-commit-cli/</id>
+    <published>2021-03-31T06:59:41.000Z</published>
+    <updated>2021-03-31T07:56:10.000Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在使用&lt;code&gt;vs-code&lt;/code&gt;时，整理了一些好用的&lt;code&gt;vs-code&lt;/code&gt;插件分享。&lt;/p&gt;
-&lt;h2 id=&quot;基础必备&quot;&gt;&lt;a href=&quot;#基础必备&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">&lt;p&gt;如果你团队的 &lt;code&gt;git commit&lt;/code&gt; 信息紊乱，太过糟糕，觉得有必要统一规范 &lt;code&gt;commit&lt;/code&gt;格式，又或者你是一个强迫症患者，有必要让 &lt;code&gt;commit&lt;/code&gt; 信息整整齐齐的展示。那么，你可以往下瞅瞅。&lt;/p&gt;</summary>
     
     
     
+    <category term="git" scheme="https://mrseawave.github.io/blogs/categories/git/"/>
+    
+    <category term="commit" scheme="https://mrseawave.github.io/blogs/categories/git/commit/"/>
+    
+    
+    <category term="git" scheme="https://mrseawave.github.io/blogs/tags/git/"/>
+    
+    <category term="commit" scheme="https://mrseawave.github.io/blogs/tags/commit/"/>
+    
+    <category term="cli" scheme="https://mrseawave.github.io/blogs/tags/cli/"/>
+    
+    <category term="lint" scheme="https://mrseawave.github.io/blogs/tags/lint/"/>
     
   </entry>
   
@@ -108,6 +113,33 @@
     <category term="Apps" scheme="https://mrseawave.github.io/blogs/tags/Apps/"/>
     
     <category term="recommend" scheme="https://mrseawave.github.io/blogs/tags/recommend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vs-code“实用插件”</title>
+    <link href="https://mrseawave.github.io/blogs/articles/vs-code-plugins/"/>
+    <id>https://mrseawave.github.io/blogs/articles/vs-code-plugins/</id>
+    <published>2021-03-15T02:21:49.000Z</published>
+    <updated>2021-03-31T07:56:10.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在使用&lt;code&gt;vs-code&lt;/code&gt;时，整理了一些好用的&lt;code&gt;vs-code&lt;/code&gt;插件分享。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="vs-code" scheme="https://mrseawave.github.io/blogs/categories/vs-code/"/>
+    
+    <category term="plugins" scheme="https://mrseawave.github.io/blogs/categories/vs-code/plugins/"/>
+    
+    
+    <category term="recommend" scheme="https://mrseawave.github.io/blogs/tags/recommend/"/>
+    
+    <category term="vs-code" scheme="https://mrseawave.github.io/blogs/tags/vs-code/"/>
+    
+    <category term="plugins" scheme="https://mrseawave.github.io/blogs/tags/plugins/"/>
+    
+    <category term="ide" scheme="https://mrseawave.github.io/blogs/tags/ide/"/>
     
   </entry>
   
