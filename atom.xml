@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-04-02T14:25:47.000Z</updated>
+  <updated>2021-04-02T14:28:18.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://mrseawave.github.io/blogs/articles/git-proxy/"/>
     <id>https://mrseawave.github.io/blogs/articles/git-proxy/</id>
     <published>2021-04-02T14:07:37.000Z</published>
-    <updated>2021-04-02T14:25:47.000Z</updated>
+    <updated>2021-04-02T14:28:18.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;因为种种原因，&lt;code&gt;github&lt;/code&gt;访问很困难，仓库代码的提交比较受限，因此想到通过挂代理的方式让代码可以正常提交。&lt;/p&gt;</summary>
@@ -46,7 +46,7 @@
     <link href="https://mrseawave.github.io/blogs/articles/terminal-proxy/"/>
     <id>https://mrseawave.github.io/blogs/articles/terminal-proxy/</id>
     <published>2021-04-02T13:48:21.000Z</published>
-    <updated>2021-04-02T14:25:47.000Z</updated>
+    <updated>2021-04-02T14:28:18.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文将介绍终端是如何挂代理的。&lt;/p&gt;</summary>
