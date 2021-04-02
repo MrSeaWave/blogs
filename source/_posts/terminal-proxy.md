@@ -4,7 +4,7 @@ author: Sea
 toc: true
 date: 2021-04-02 21:48:21
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/ENW7rf_liang-mark-rebort2222.jpg
-tags: [vpn,proxy,terminal]
+tags: [proxy, terminal, vpn]
 categories: [vpn]
 ---
 
@@ -14,7 +14,7 @@ categories: [vpn]
 
 ## 前提
 
-首先你需要类似于`shadowsocksX-NG-R8`的代理软件，本文以``shadowsocksX-NG-R8``为例
+首先你需要类似于`shadowsocksX-NG-R8`的代理软件，本文以`shadowsocksX-NG-R8`为例
 
 ![shadowsocksX-NG-R8](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/9rb9fj_image-20210402215036375.png)
 
@@ -25,7 +25,7 @@ categories: [vpn]
 以`zsh`作为说明
 
 ```bash .zshrc
-$ vim ~/.zshrc  
+$ vim ~/.zshrc
 ```
 
 第一种：
@@ -107,8 +107,6 @@ $ curl cip.cc
 IP	: 101.81.77.200
 ```
 
-
-
 ## 参考链接
 
-- [Mac OSX终端走shadowsocks代理 #18 ](https://github.com/mrdulin/blog/issues/18)
+- [Mac OSX 终端走 shadowsocks 代理 #18 ](https://github.com/mrdulin/blog/issues/18)
