@@ -37,7 +37,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push":"echo '---------' && exit 1"
+      "pre-push":"echo '---- push files ----' && exit 0"
     }
   },
   "lint-staged": {
