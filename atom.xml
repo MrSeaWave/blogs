@@ -119,6 +119,54 @@
   </entry>
   
   <entry>
+    <title>Chromium 历史版本离线安装包 - 下载方法</title>
+    <link href="https://mrseawave.github.io/blogs/articles/chrome-history-download/"/>
+    <id>https://mrseawave.github.io/blogs/articles/chrome-history-download/</id>
+    <published>2021-04-01T03:02:16.000Z</published>
+    <updated>2021-04-01T03:16:18.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Chrome(Chromium) 历史旧版本离线安装包下载方法。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="chrome" scheme="https://mrseawave.github.io/blogs/categories/chrome/"/>
+    
+    
+    <category term="chrome" scheme="https://mrseawave.github.io/blogs/tags/chrome/"/>
+    
+    <category term="download" scheme="https://mrseawave.github.io/blogs/tags/download/"/>
+    
+    <category term="chromium" scheme="https://mrseawave.github.io/blogs/tags/chromium/"/>
+    
+    <category term="history" scheme="https://mrseawave.github.io/blogs/tags/history/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vscode插件project-manager使用</title>
+    <link href="https://mrseawave.github.io/blogs/articles/vscode-project-manager/"/>
+    <id>https://mrseawave.github.io/blogs/articles/vscode-project-manager/</id>
+    <published>2021-03-31T09:57:26.000Z</published>
+    <updated>2021-03-31T10:15:36.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在项目开发的时候，我们经常需要同时操作多个项目，经常需要切换项目。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="vs-code" scheme="https://mrseawave.github.io/blogs/categories/vs-code/"/>
+    
+    <category term="plugins" scheme="https://mrseawave.github.io/blogs/categories/vs-code/plugins/"/>
+    
+    
+    <category term="vs-code" scheme="https://mrseawave.github.io/blogs/tags/vs-code/"/>
+    
+    <category term="plugins" scheme="https://mrseawave.github.io/blogs/tags/plugins/"/>
+    
+  </entry>
+  
+  <entry>
     <title>工程化配置 git commit 规范</title>
     <link href="https://mrseawave.github.io/blogs/articles/git-commit-cli/"/>
     <id>https://mrseawave.github.io/blogs/articles/git-commit-cli/</id>
