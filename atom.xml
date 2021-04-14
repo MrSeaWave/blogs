@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-04-06T03:24:06.000Z</updated>
+  <updated>2021-04-14T07:08:10.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Prettier: support &quot;overrides&quot; option on code styles import</title>
+    <link href="https://mrseawave.github.io/blogs/articles/idea-prettier/"/>
+    <id>https://mrseawave.github.io/blogs/articles/idea-prettier/</id>
+    <published>2021-04-14T06:54:53.000Z</published>
+    <updated>2021-04-14T07:08:10.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在直接调用 WebStorm 自带的 Prettier 去格式化 wxml / wxss / wxs 文件会提示：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;File xxx has unsupported type&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="idea" scheme="https://mrseawave.github.io/blogs/categories/idea/"/>
+    
+    
+    <category term="idea" scheme="https://mrseawave.github.io/blogs/tags/idea/"/>
+    
+    <category term="prettier" scheme="https://mrseawave.github.io/blogs/tags/prettier/"/>
+    
+    <category term="tools" scheme="https://mrseawave.github.io/blogs/tags/tools/"/>
+    
+    <category term="WebStorm" scheme="https://mrseawave.github.io/blogs/tags/WebStorm/"/>
+    
+    <category term="format" scheme="https://mrseawave.github.io/blogs/tags/format/"/>
+    
+    <category term="wx" scheme="https://mrseawave.github.io/blogs/tags/wx/"/>
+    
+  </entry>
   
   <entry>
     <title>谷歌浏览器历史版本下载</title>
