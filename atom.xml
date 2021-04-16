@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-04-14T07:08:10.000Z</updated>
+  <updated>2021-04-16T09:24:22.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何杀死lcasensor进程</title>
+    <link href="https://mrseawave.github.io/blogs/articles/kill-lcasensor/"/>
+    <id>https://mrseawave.github.io/blogs/articles/kill-lcasensor/</id>
+    <published>2021-04-16T09:13:04.000Z</published>
+    <updated>2021-04-16T09:24:22.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文讲述如何杀死 lcasensor（内网的监控软件，敏感数据监控）这个进程。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="lcasensor" scheme="https://mrseawave.github.io/blogs/categories/lcasensor/"/>
+    
+    
+    <category term="kill" scheme="https://mrseawave.github.io/blogs/tags/kill/"/>
+    
+    <category term="lcasensor" scheme="https://mrseawave.github.io/blogs/tags/lcasensor/"/>
+    
+    <category term="dlp" scheme="https://mrseawave.github.io/blogs/tags/dlp/"/>
+    
+  </entry>
   
   <entry>
     <title>Prettier: support &quot;overrides&quot; option on code styles import</title>
@@ -491,31 +514,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>hexo new 生成新的文章</title>
-    <link href="https://mrseawave.github.io/blogs/articles/writing-hexo/"/>
-    <id>https://mrseawave.github.io/blogs/articles/writing-hexo/</id>
-    <published>2021-01-05T02:34:01.000Z</published>
-    <updated>2021-01-05T08:12:27.000Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;关于如何新建博客，&lt;a href=&quot;https://hexo.io/zh-cn/docs/writing&quot;&gt;官网&lt;/a&gt;已经有了明确的介绍：&lt;/p&gt;
-&lt;p&gt;你可以执行下列命令来创建一篇新文章或者新的页面。&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;figcaption&gt;&lt;span&gt;命令行&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new [layout] &amp;lt;title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="hexo" scheme="https://mrseawave.github.io/blogs/categories/hexo/"/>
-    
-    <category term="write" scheme="https://mrseawave.github.io/blogs/categories/hexo/write/"/>
-    
-    
-    <category term="hexo" scheme="https://mrseawave.github.io/blogs/tags/hexo/"/>
-    
-    <category term="write" scheme="https://mrseawave.github.io/blogs/tags/write/"/>
     
   </entry>
   
