@@ -1,0 +1,13 @@
+# icarus 配置文件与优先级
+#_config.page.yml中的配置对所有自定义页面生效
+
+#widgets:
+#  -
+#    type: recent_posts
+#    position: left
+#  -
+#    type: categories
+#    position: left
+#  -
+#    type: tags
+#    position: left

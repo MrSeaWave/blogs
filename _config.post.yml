@@ -1,0 +1,17 @@
+# icarus 配置文件与优先级 https://ppoffice.github.io/hexo-theme-icarus/Configuration/icarus%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%8E%E4%BC%98%E5%85%88%E7%BA%A7
+#_config.post.yml中的配置对所有文章生效
+
+#widgets:
+#  - position: right
+#    type: toc
+#  -
+#    type: recent_posts
+#    position: left
+#  - # Where should the widget be placed, left sidebar or right sidebar
+#    position: right
+#    type: subscribe_email
+#    # Hint text under the email input
+#    description: 邮件订阅，更新早知道
+#    # Feedburner ID
+#    feedburner_id: github/Ptyw
+
