@@ -1,11 +1,11 @@
 ---
-yantitle: 如何在Hexo中对文章md文件分类
+title: 如何在Hexo中对文章md文件分类
 author: Sea
 toc: true
 date: 2021-06-25 16:23:31
-cover:
+cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/drGAnm_adrian-bush-21-06-18.jpg
 tags: [hexo, md]
-categories:
+categories: [hexo]
 ---
 
 本文将介绍如何在 Hexo 中对文章 md 文件按日期进行分类
@@ -36,14 +36,27 @@ new_post_name: ':year/:title.md'
 
 ## 整理
 
-现在新建文章的路径我们是已经处理好了，那以前创建的文章是不是要一个个手动分类呢？这里参考[此文章]](https://www.githang.com/2018/12/22/hexo-new-post-path/)，我们可以使用终端进行处理：
+现在新建文章的路径我们是已经处理好了，那以前创建的文章是不是要一个个手动分类呢？这里参考[此文章](https://www.githang.com/2018/12/22/hexo-new-post-path/)，我们可以使用终端进行处理：
 
 思路为：
 
 1. 找出 2021 年的文章
 2. 移动到`2021`文件夹下
-3. 使用`sed`命令批量修改文件内容
-4. 找出`2020`年的文章，按 1-3 步的方式处理……
+3. 找出`2020`年的文章，按 1-2 步的方式处理……
+
+```bash
+# 进入_post目录
+cd source/_post
+# 创建一个2021年1月1日的文件，用于过滤出2018年的文章
+touch -t 202101010000 timestamp
+# 创建2021文件夹
+mkdir 2021
+# 将2021年的文章移到2021文件夹下
+for file in `find . -type f -newer timestamp`; do mv $file 2021 ; done
+# 删除刚才创建的用于过滤的文件
+rm timestamp
+
+```
 
 ## 参考链接
 
