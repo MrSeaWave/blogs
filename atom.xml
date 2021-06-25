@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-06-25T09:04:01.000Z</updated>
+  <updated>2021-06-25T09:17:19.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -17,16 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>如何在Hexo中对文章md文件分类</title>
     <link href="https://mrseawave.github.io/blogs/articles/2021/06/25/hexo-new-post-path/"/>
     <id>https://mrseawave.github.io/blogs/articles/2021/06/25/hexo-new-post-path/</id>
     <published>2021-06-25T08:23:31.000Z</published>
-    <updated>2021-06-25T09:04:01.000Z</updated>
+    <updated>2021-06-25T09:17:19.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文将介绍如何在 Hexo 中对文章 md 文件按日期进行分类&lt;/p&gt;</summary>
     
     
+    
+    <category term="hexo" scheme="https://mrseawave.github.io/blogs/categories/hexo/"/>
     
     
     <category term="hexo" scheme="https://mrseawave.github.io/blogs/tags/hexo/"/>
