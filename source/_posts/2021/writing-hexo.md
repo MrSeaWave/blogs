@@ -3,8 +3,8 @@ title: hexo new 生成新的文章
 author: Sea
 date: 2021-01-05 10:34:01
 toc: true
-cover: 
-tags: [hexo,write]
+cover:
+tags: [hexo, write]
 categories:
   - [hexo, write]
 ---
@@ -41,7 +41,6 @@ $ hexo new [layout] <title>
 | `page`  |     `source`     |
 | `draft` | `source/_drafts` |
 
-
 ## layout 为 post 的情况
 
 以上面的情况为例，我们的命令是 `hexo new post myBlog` ，执行这个命令之后，你会发现命令行会有如下提示：
@@ -50,11 +49,11 @@ $ hexo new [layout] <title>
 
 它告诉你，在根目录的下的 `source` 文件夹中创建了一个` _post` 文件夹，并且在内生成了一个`myBlog.md`的文件。打开对应的文件夹，你会发现`myBlog.md`的文件，这就是你新生成的文件。你可以通过某种支持`markdown`的编辑器打开这个文件，然后使用`markdown`格式的方法书写这篇博客。
 
-##  layout 为 draft 的情况
+## layout 为 draft 的情况
 
 `Hexo` 的一种特殊布局：`draft`，这种布局在建立时会被保存到 `source/_drafts` 文件夹。
 
-接下来我们使用`hexo new draft myDraftBlog`，生成`myDrafaBlog.md`文件，这个md文件是草稿状态，也就是说，这篇文章仅仅是作为你的草稿而不是正式稿，所以不会发表在博客主页上。草稿就是需要你不断完善的文章，知道有一天你觉得这篇文章可以正式发表了，你可通过 `publish` 命令将草稿移动到 `source/_posts` 文件夹，该命令的使用方式与 `new` 十分类似，您也可在命令中指定`layout` 来指定布局。
+接下来我们使用`hexo new draft myDraftBlog`，生成`myDrafaBlog.md`文件，这个 md 文件是草稿状态，也就是说，这篇文章仅仅是作为你的草稿而不是正式稿，所以不会发表在博客主页上。草稿就是需要你不断完善的文章，知道有一天你觉得这篇文章可以正式发表了，你可通过 `publish` 命令将草稿移动到 `source/_posts` 文件夹，该命令的使用方式与 `new` 十分类似，您也可在命令中指定`layout` 来指定布局。
 
 ```bash publish
 $ hexo publish [layout] <title>
@@ -66,7 +65,7 @@ $ hexo publish [layout] <title>
 
 ## layout 为 page 的情况
 
-我们可以尝试一下下面这个命令`hexo new page "about"`，这个时候你打开`source`文件夹你会发现一个`about`的文件夹，里面会有一个`index.md`的文件。打开`http://localhost:4000/about`，这个时候你就会发现你刚才编辑的index.md的内容会出现在这里。
+我们可以尝试一下下面这个命令`hexo new page "about"`，这个时候你打开`source`文件夹你会发现一个`about`的文件夹，里面会有一个`index.md`的文件。打开`http://localhost:4000/about`，这个时候你就会发现你刚才编辑的 index.md 的内容会出现在这里。
 
 `layout` 为 `page`的时候，其实就是相当于生成一个新的路径，也就是我们说的`url`的`path`，或者也可以称作路由。通过这种方式，我们可以把我们的博客再进行细分各个内容版块，更有条理的组织我们的博客。
 
@@ -80,18 +79,19 @@ title: Hello World
 date: 2013/7/13 20:46:25
 ---
 ```
+
 以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。
 
-|参数|描述|默认值|
-|:--|:--|:--|
-|layout|	布局	|`config.default_layout`|
-|title|	标题|	文章的文件名|
-|date	|建立日期	|文件建立日期|
-|updated	|更新日期	|文件更新日期|
-|comments|	开启文章的评论功能|	true|
-|tags|	标签|（不适用于分页）|
-|categories|	分类|（不适用于分页）	|
-|permalink	|覆盖文章网址|
+| 参数       | 描述               | 默认值                  |
+| :--------- | :----------------- | :---------------------- |
+| layout     | 布局               | `config.default_layout` |
+| title      | 标题               | 文章的文件名            |
+| date       | 建立日期           | 文件建立日期            |
+| updated    | 更新日期           | 文件更新日期            |
+| comments   | 开启文章的评论功能 | true                    |
+| tags       | 标签               | （不适用于分页）        |
+| categories | 分类               | （不适用于分页）        |
+| permalink  | 覆盖文章网址       |
 
 ### 分类和标签
 
@@ -99,20 +99,21 @@ date: 2013/7/13 20:46:25
 
 ```yaml eg
 categories:
-- Diary
+  - Diary
 tags:
-- PS3
-- Games
+  - PS3
+  - Games
 ```
 
 如果你需要为文章添加多个分类，可以尝试以下 list 中的方法。
 
 ```yaml 分类Eg
 categories:
-- [Diary, PlayStation]
-- [Diary, Games]
-- [Life]
+  - [Diary, PlayStation]
+  - [Diary, Games]
+  - [Life]
 ```
+
 此时这篇文章同时包括三个分类： `PlayStation` 和 `Games` 分别都是父分类 `Diary` 的子分类，同时 `Life` 是一个没有子分类的分类。
 
 ## 标签插件

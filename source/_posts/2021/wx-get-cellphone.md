@@ -23,22 +23,22 @@ categories:
 
 2，文件`cellphone.js`
 
-```js  cellphone.js
+```js cellphone.js
 Page({
   getPhoneNumber(e) {
     console.log(e.detail);
     wx.cloud
       .callFunction({
-        name: "openapi",
+        name: 'openapi',
         data: {
-          action: "getcellphone",
-          id: e.detail.cloudID
-        }
+          action: 'getcellphone',
+          id: e.detail.cloudID,
+        },
       })
-      .then(res => {
-        console.log("res: ", res);
+      .then((res) => {
+        console.log('res: ', res);
       });
-  }
+  },
 });
 ```
 
@@ -46,12 +46,12 @@ Page({
 
 ```js index.js
 // 云函数入口文件
-const cloud = require("wx-server-sdk");
+const cloud = require('wx-server-sdk');
 cloud.init();
 // 云函数入口函数
 exports.main = async (event, context) => {
   switch (event.action) {
-    case "getcellphone": {
+    case 'getcellphone': {
       return getCellphone(event);
     }
     default: {
@@ -62,7 +62,7 @@ exports.main = async (event, context) => {
 
 async function getCellphone(event) {
   const res = await cloud.getOpenData({
-    list: [event.id]
+    list: [event.id],
   });
   return { res, event };
 }

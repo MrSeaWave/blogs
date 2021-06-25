@@ -4,12 +4,12 @@ author: Sea
 toc: true
 date: 2021-01-06 10:27:18
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/4p9haC_bg2019091201.jpg
-tags: [github,actions,workflow]
+tags: [github, actions, workflow]
 categories:
-- [github,actions]
+  - [github, actions]
 ---
 
-[GitHub Actions](https://github.com/features/actions) 是 GitHub 的[持续集成服务](http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html)，于2018年10月[推出](https://github.blog/changelog/2018-10-16-github-actions-limited-beta/)。
+[GitHub Actions](https://github.com/features/actions) 是 GitHub 的[持续集成服务](http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html)，于 2018 年 10 月[推出](https://github.blog/changelog/2018-10-16-github-actions-limited-beta/)。
 
 <!-- more -->
 
@@ -71,15 +71,15 @@ GitHub Ac­tions 为每个任务 (job) 都提供了一个虚拟机来执行，�
 
 使用限制：
 
-- 每个workflow的运行时限为 72 小时
-- 每小时可以调用1000次 GitHub API 。
-- 每个 job 最多可以执行6个小时。
-- 免费版的用户最大支持20个 job 并发执行，macOS 最大只支持5个。
-- 私有仓库 Linux 运行器每月累计使用时间为2000分钟，超过后$ 0.008/分钟，公共仓库则无限制。
+- 每个 workflow 的运行时限为 72 小时
+- 每小时可以调用 1000 次 GitHub API 。
+- 每个 job 最多可以执行 6 个小时。
+- 免费版的用户最大支持 20 个 job 并发执行，macOS 最大只支持 5 个。
+- 私有仓库 Linux 运行器每月累计使用时间为 2000 分钟，超过后$ 0.008/分钟，公共仓库则无限制。
 
-> **注：**  虽然名称叫持续集成，但当所有任务终止和完成时，虚拟环境内的数据会随之清空，并不会持续。即每个新任务都是一个全新的虚拟环境。
+> **注：** 虽然名称叫持续集成，但当所有任务终止和完成时，虚拟环境内的数据会随之清空，并不会持续。即每个新任务都是一个全新的虚拟环境。
 
-## Workflow 
+## Workflow
 
 GitHub Actions 的配置文件叫做 workflow 文件，存放在代码仓库的`.github/workflows`目录。
 
@@ -89,35 +89,33 @@ workflow 文件的配置字段非常多，详见[官方文档](https://docs.gith
 
 1. **`name`**
 
-     工作流程的名称。 GitHub 在仓库的操作页面上显示工作流程的名称。 如果省略 `name`，GitHub 将其设置为相对于仓库根目录的工作流程文件路径。
+   工作流程的名称。 GitHub 在仓库的操作页面上显示工作流程的名称。 如果省略 `name`，GitHub 将其设置为相对于仓库根目录的工作流程文件路径。
 
-     ```yaml name
-     name: GitHub Actions Demo
-     ```
-
-   
+   ```yaml name
+   name: GitHub Actions Demo
+   ```
 
 2. **`on`**
 
-     **必要** 触发workflow的 GitHub 事件的名称。 你可以提供单一事件 `string`、事件的 `array`、事件 `types` 的 `array` 或事件配置 `map`，以安排工作流程的运行，或将工作流程的执行限于特定文件、标记或分支更改。 有关可用事件的列表，请参阅“[触发工作流程的事件](https://docs.github.com/cn/free-pro-team@latest/actions/reference/events-that-trigger-workflows)”
+   **必要** 触发 workflow 的 GitHub 事件的名称。 你可以提供单一事件 `string`、事件的 `array`、事件 `types` 的 `array` 或事件配置 `map`，以安排工作流程的运行，或将工作流程的执行限于特定文件、标记或分支更改。 有关可用事件的列表，请参阅“[触发工作流程的事件](https://docs.github.com/cn/free-pro-team@latest/actions/reference/events-that-trigger-workflows)”
 
-     **使用单一事件**
+   **使用单一事件**
 
    ```yaml Example using a single event
      on: push
    ```
 
-     上面代码指定，`push`事件触发 workflow。
+   上面代码指定，`push`事件触发 workflow。
 
-     **使用事件列表的示例**
+   **使用事件列表的示例**
 
    ```yaml Example using a list of events
-     on: [push, pull_request]
+   on: [push, pull_request]
    ```
 
-     上面代码指定，`push`事件或`pull_request`事件都可以触发 workflow。
+   上面代码指定，`push`事件或`pull_request`事件都可以触发 workflow。
 
-     完整的事件列表，请查看[官方文档](https://docs.github.com/cn/free-pro-team@latest/actions/reference/events-that-trigger-workflows)。除了代码库事件，GitHub Actions 也支持外部事件触发，或者定时运行。
+   完整的事件列表，请查看[官方文档](https://docs.github.com/cn/free-pro-team@latest/actions/reference/events-that-trigger-workflows)。除了代码库事件，GitHub Actions 也支持外部事件触发，或者定时运行。
 
 3. **`on.<push|pull_request>.<tags|branches>`**
 
@@ -126,7 +124,7 @@ workflow 文件的配置字段非常多，详见[官方文档](https://docs.gith
    ```yaml
    on:
      push:
-       branches:    
+       branches:
          - master
    ```
 
@@ -144,7 +142,7 @@ workflow 文件的配置字段非常多，详见[官方文档](https://docs.gith
 
    `jobs`字段里面，需要写出每一项任务的`job_id`，具体名称自定义。`job_id`里面的`name`字段是任务的说明。
 
-   ```yaml 
+   ```yaml
    jobs:
      my_first_job:
        name: My first job
@@ -200,45 +198,45 @@ workflow 文件的配置字段非常多，详见[官方文档](https://docs.gith
    ```yaml workflow
    name: Greeting from Mona
    on: push
-   
+
    jobs:
      my-job:
        name: My Job
        runs-on: ubuntu-latest
        steps:
-       - name: Print a greeting
-         env:
-           MY_VAR: Hi there! My name is
-           FIRST_NAME: Mona
-           MIDDLE_NAME: The
-           LAST_NAME: Octocat
-         run: |
-           echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
+         - name: Print a greeting
+           env:
+             MY_VAR: Hi there! My name is
+             FIRST_NAME: Mona
+             MIDDLE_NAME: The
+             LAST_NAME: Octocat
+           run: |
+             echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
    ```
 
-      上面代码中，`steps`字段只包括一个步骤。该步骤先注入四个环境变量，然后执行一条 Bash 命令。
+   上面代码中，`steps`字段只包括一个步骤。该步骤先注入四个环境变量，然后执行一条 Bash 命令。
 
-9.  **`jobs.<job_id>.steps[*].uses`**
+9. **`jobs.<job_id>.steps[*].uses`**
 
-    选择要作为`job`中`step`的一部分运行的操作。 操作是一种可重复使用的代码单位。 你可以使用工作流程所在仓库中、公共仓库中或[发布 Docker 容器映像](https://hub.docker.com/)中定义的操作。
+   选择要作为`job`中`step`的一部分运行的操作。 操作是一种可重复使用的代码单位。 你可以使用工作流程所在仓库中、公共仓库中或[发布 Docker 容器映像](https://hub.docker.com/)中定义的操作。
 
-    ```yaml 示例
-    steps:    
-      # Reference a specific commit
-      - uses: actions/setup-node@74bc508
-      # Reference the major version of a release
-      - uses: actions/setup-node@v1
-      # Reference a minor version of a release
-      - uses: actions/setup-node@v1.2
-      # Reference a branch
-      - uses: actions/setup-node@main
-    ```
+   ```yaml 示例
+   steps:
+     # Reference a specific commit
+     - uses: actions/setup-node@74bc508
+     # Reference the major version of a release
+     - uses: actions/setup-node@v1
+     # Reference a minor version of a release
+     - uses: actions/setup-node@v1.2
+     # Reference a branch
+     - uses: actions/setup-node@main
+   ```
 
-    更多`uses`使用示例参考[官网](https://docs.github.com/cn/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsuses)
+   更多`uses`使用示例参考[官网](https://docs.github.com/cn/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsuses)
 
 ## 示例
 
-### 一个简单的workflow文件示例
+### 一个简单的 workflow 文件示例
 
 ```yaml workflow example
 name: Hello World
@@ -251,23 +249,23 @@ jobs:
     name: My first job
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
-      uses: actions/checkout@main
-      
-    - name: Run a single-line script
-      run: echo "Hello World!"
-      
+      - name: checkout
+        uses: actions/checkout@main
+
+      - name: Run a single-line script
+        run: echo "Hello World!"
+
   my_second_job:
     name: My second job
     runs-on: macos-latest
     steps:
-    - name: Run a multi-line script
-      env:
-        MY_VAR: Hello World!
-        MY_NAME: P3TERX
-      run: |
-        echo $MY_VAR
-        echo My name is $MY_NAME
+      - name: Run a multi-line script
+        env:
+          MY_VAR: Hello World!
+          MY_NAME: P3TERX
+        run: |
+          echo $MY_VAR
+          echo My name is $MY_NAME
 ```
 
 上面这个 workflow 文件的要点如下。
@@ -278,18 +276,18 @@ jobs:
 >       1. 第一步是获取源码，使用的 action 是`actions/checkout`。
 >       2. 第二步是运行一个简单的脚本：`echo "Hello World!"`
 >    2. My Second Job
->       1. 设定环境变量 ` MY_VAR ` 和`MY_NAME` 
->       2.  运行脚本打印环境变量
+>       1. 设定环境变量 `MY_VAR` 和`MY_NAME`
+>       2. 运行脚本打印环境变量
 
- 保存上面的文件后，将整个仓库推送到 GitHub。
+保存上面的文件后，将整个仓库推送到 GitHub。
 
-GitHub 发现了 workflow 文件以后，就会自动运行。你可以在网站上实时查看[运行日志](https://github.com/XmlySea/github-test-actions/runs/1654817598?check_suite_focus=true)，日志默认保存30天。
+GitHub 发现了 workflow 文件以后，就会自动运行。你可以在网站上实时查看[运行日志](https://github.com/XmlySea/github-test-actions/runs/1654817598?check_suite_focus=true)，日志默认保存 30 天。
 
 示例文件运行截图：
 
 ![image-20210106144952343](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/DcBIUp_image-20210106144952343.png)
 
-### react 项目发布到Github Pages
+### react 项目发布到 Github Pages
 
 [示例项目](https://github.com/XmlySea/github-test-actions/tree/react-branch)需要将构建成果发到 GitHub 仓库，因此需要 GitHub 密钥。按照[官方文档](https://docs.github.com/cn/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)，生成一个密钥。然后，将这个密钥储存到当前仓库的`Settings/Secrets`里面。
 
@@ -326,11 +324,11 @@ jobs:
           FOLDER: build # The folder the action should deploy.
 ```
 
->1. 整个流程在`react-branch`分支发生`push`事件时触发。
->2. 只有一个`job`，运行在虚拟机环境`ubuntu-latest`。
->3. 第一步是获取源码，使用的 action 是`actions/checkout`。
->4. 第二步是安装与构建。
->5. 第三步是部署，使用的 action 是`JamesIves/github-pages-deploy-action`，使用三个变量，分别为 GitHub 密钥、发布分支、构建成果所在目录。其中，只有 GitHub 密钥是变量，需要写在双括号里面，其他三个都可以直接写在文件里。
+> 1.  整个流程在`react-branch`分支发生`push`事件时触发。
+> 2.  只有一个`job`，运行在虚拟机环境`ubuntu-latest`。
+> 3.  第一步是获取源码，使用的 action 是`actions/checkout`。
+> 4.  第二步是安装与构建。
+> 5.  第三步是部署，使用的 action 是`JamesIves/github-pages-deploy-action`，使用三个变量，分别为 GitHub 密钥、发布分支、构建成果所在目录。其中，只有 GitHub 密钥是变量，需要写在双括号里面，其他三个都可以直接写在文件里。
 
 保存上面的文件后，将整个仓库推送到 GitHub。
 
@@ -357,5 +355,3 @@ jobs:
 - [actions/checkout](https://github.com/actions/checkout)
 
 - [github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
-
-  

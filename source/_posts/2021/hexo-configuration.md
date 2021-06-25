@@ -47,8 +47,8 @@ nofollow:
   enable: true
   field: site
   exclude:
-    - "exclude1.com"
-    - "exclude2.com"
+    - 'exclude1.com'
+    - 'exclude2.com'
 ```
 
 - **enable** - 是否启用插件，默认值为 `true`
