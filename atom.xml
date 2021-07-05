@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-06-25T09:21:29.000Z</updated>
+  <updated>2021-07-05T03:20:19.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>优化puppeteer</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/07/05/optimize-puppeteer/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/07/05/optimize-puppeteer/</id>
+    <published>2021-07-05T02:05:31.000Z</published>
+    <updated>2021-07-05T03:20:19.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文将讲述如何优化&lt;code&gt;puppeteer&lt;/code&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="puppeteer" scheme="https://mrseawave.github.io/blogs/categories/puppeteer/"/>
+    
+    
+    <category term="puppeteer" scheme="https://mrseawave.github.io/blogs/tags/puppeteer/"/>
+    
+    <category term="optimize" scheme="https://mrseawave.github.io/blogs/tags/optimize/"/>
+    
+  </entry>
   
   <entry>
     <title>如何在Hexo中对文章md文件分类</title>
@@ -476,33 +497,6 @@
     <category term="Apps" scheme="https://mrseawave.github.io/blogs/tags/Apps/"/>
     
     <category term="recommend" scheme="https://mrseawave.github.io/blogs/tags/recommend/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vs-code“实用插件”</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/03/15/vs-code-plugins/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/03/15/vs-code-plugins/</id>
-    <published>2021-03-15T02:21:49.000Z</published>
-    <updated>2021-06-25T09:04:01.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;在使用&lt;code&gt;vs-code&lt;/code&gt;时，整理了一些好用的&lt;code&gt;vs-code&lt;/code&gt;插件分享。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="vs-code" scheme="https://mrseawave.github.io/blogs/categories/vs-code/"/>
-    
-    <category term="plugins" scheme="https://mrseawave.github.io/blogs/categories/vs-code/plugins/"/>
-    
-    
-    <category term="recommend" scheme="https://mrseawave.github.io/blogs/tags/recommend/"/>
-    
-    <category term="vs-code" scheme="https://mrseawave.github.io/blogs/tags/vs-code/"/>
-    
-    <category term="plugins" scheme="https://mrseawave.github.io/blogs/tags/plugins/"/>
-    
-    <category term="ide" scheme="https://mrseawave.github.io/blogs/tags/ide/"/>
     
   </entry>
   
