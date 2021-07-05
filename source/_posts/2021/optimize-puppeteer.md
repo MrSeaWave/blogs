@@ -190,15 +190,17 @@ class PuppeteerHelper {
    * https://stackoverflow.com/questions/52431775/whats-the-performance-difference-of-puppeteer-launch-versus-puppeteer-connect
    * 当开启多个browser实例时，可以通过缓存wsEndpoint来达到复用的目的
    * */
-  async _init() {
-    console.log('【PuppeteerHelper】puppeteer config:', this.p_config);
-    for (let i = 0; i < this.MAX_WSE; i++) {
-      // 先通过 puppeteer.launch() 创建一个浏览器实例 Browser 对象
-      const browser = await puppeteer.launch(this.p_config);
-      // 存储浏览器 websocket 的地址
-      this.WSE_LIST[i] = await browser.wsEndpoint();
-    }
-    console.log('【PuppeteerHelper】WSE_LIST：', this.WSE_LIST);
+  _init() {
+    (async () => {
+      console.log('【PuppeteerHelper】puppeteer config:', this.p_config);
+      for (let i = 0; i < this.MAX_WSE; i++) {
+        // 先通过 puppeteer.launch() 创建一个浏览器实例 Browser 对象
+        const browser = await puppeteer.launch(this.p_config);
+        // 存储浏览器 websocket 的地址
+        this.WSE_LIST[i] = await browser.wsEndpoint();
+      }
+      console.log('【PuppeteerHelper】WSE_LIST：', this.WSE_LIST);
+    })();
   }
 
   /**
