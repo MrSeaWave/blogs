@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-07-05T03:32:59.000Z</updated>
+  <updated>2021-07-06T06:07:53.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>koa后端数据校验</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/07/06/koa-validator/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/07/06/koa-validator/</id>
+    <published>2021-07-06T05:30:24.000Z</published>
+    <updated>2021-07-06T06:07:53.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;对每个接口的传入参数进行校验，是一个 Web 后端项目的必备功能，本文将介绍 koa 中如何使用&lt;a href=&quot;https://github.com/sideway/joi&quot;&gt;&lt;code&gt;joi&lt;/code&gt;&lt;/a&gt;进行数据格式检验。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="koa" scheme="https://mrseawave.github.io/blogs/categories/koa/"/>
+    
+    <category term="validator" scheme="https://mrseawave.github.io/blogs/categories/koa/validator/"/>
+    
+    
+    <category term="koa" scheme="https://mrseawave.github.io/blogs/tags/koa/"/>
+    
+    <category term="validator" scheme="https://mrseawave.github.io/blogs/tags/validator/"/>
+    
+    <category term="JSON-Schema" scheme="https://mrseawave.github.io/blogs/tags/JSON-Schema/"/>
+    
+  </entry>
   
   <entry>
     <title>优化puppeteer</title>
@@ -240,9 +265,9 @@
     <category term="chrome" scheme="https://mrseawave.github.io/blogs/categories/chrome/"/>
     
     
-    <category term="download" scheme="https://mrseawave.github.io/blogs/tags/download/"/>
-    
     <category term="chrome" scheme="https://mrseawave.github.io/blogs/tags/chrome/"/>
+    
+    <category term="download" scheme="https://mrseawave.github.io/blogs/tags/download/"/>
     
     <category term="chromium" scheme="https://mrseawave.github.io/blogs/tags/chromium/"/>
     
@@ -367,9 +392,9 @@
     <category term="chrome" scheme="https://mrseawave.github.io/blogs/categories/chrome/"/>
     
     
-    <category term="download" scheme="https://mrseawave.github.io/blogs/tags/download/"/>
-    
     <category term="chrome" scheme="https://mrseawave.github.io/blogs/tags/chrome/"/>
+    
+    <category term="download" scheme="https://mrseawave.github.io/blogs/tags/download/"/>
     
     <category term="chromium" scheme="https://mrseawave.github.io/blogs/tags/chromium/"/>
     
@@ -472,31 +497,6 @@
     <category term="github" scheme="https://mrseawave.github.io/blogs/tags/github/"/>
     
     <category term="upic" scheme="https://mrseawave.github.io/blogs/tags/upic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac 上的 APP 推荐</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/03/23/mac-apps/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/03/23/mac-apps/</id>
-    <published>2021-03-23T07:55:15.000Z</published>
-    <updated>2021-06-25T09:04:01.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;值得推荐的 mac 软件&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Mac" scheme="https://mrseawave.github.io/blogs/categories/Mac/"/>
-    
-    <category term="recommend" scheme="https://mrseawave.github.io/blogs/categories/Mac/recommend/"/>
-    
-    
-    <category term="Mac" scheme="https://mrseawave.github.io/blogs/tags/Mac/"/>
-    
-    <category term="Apps" scheme="https://mrseawave.github.io/blogs/tags/Apps/"/>
-    
-    <category term="recommend" scheme="https://mrseawave.github.io/blogs/tags/recommend/"/>
     
   </entry>
   
