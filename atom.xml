@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-07-09T09:41:11.000Z</updated>
+  <updated>2021-07-13T02:41:30.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>node端生成水印图片</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/07/13/node-watermark/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/07/13/node-watermark/</id>
+    <published>2021-07-13T02:13:32.000Z</published>
+    <updated>2021-07-13T02:41:30.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在项目中通常会出现给图片增加水印的需求，本文将介绍如何在使用 node 时处理图片，增加水印功能。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="sharp" scheme="https://mrseawave.github.io/blogs/categories/sharp/"/>
+    
+    <category term="watermark" scheme="https://mrseawave.github.io/blogs/categories/sharp/watermark/"/>
+    
+    
+    <category term="node" scheme="https://mrseawave.github.io/blogs/tags/node/"/>
+    
+    <category term="img" scheme="https://mrseawave.github.io/blogs/tags/img/"/>
+    
+    <category term="sharp" scheme="https://mrseawave.github.io/blogs/tags/sharp/"/>
+    
+    <category term="watermark" scheme="https://mrseawave.github.io/blogs/tags/watermark/"/>
+    
+  </entry>
   
   <entry>
     <title>GoodNotes软件</title>
@@ -54,9 +81,9 @@
     
     <category term="js" scheme="https://mrseawave.github.io/blogs/tags/js/"/>
     
-    <category term="html" scheme="https://mrseawave.github.io/blogs/tags/html/"/>
-    
     <category term="watermark" scheme="https://mrseawave.github.io/blogs/tags/watermark/"/>
+    
+    <category term="html" scheme="https://mrseawave.github.io/blogs/tags/html/"/>
     
   </entry>
   
@@ -466,33 +493,6 @@
     <category term="vs-code" scheme="https://mrseawave.github.io/blogs/tags/vs-code/"/>
     
     <category term="plugins" scheme="https://mrseawave.github.io/blogs/tags/plugins/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>工程化配置 git commit 规范</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/03/31/git-commit-cli/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/03/31/git-commit-cli/</id>
-    <published>2021-03-31T06:59:41.000Z</published>
-    <updated>2021-06-25T09:04:01.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;如果你团队的 &lt;code&gt;git commit&lt;/code&gt; 信息紊乱，太过糟糕，觉得有必要统一规范 &lt;code&gt;commit&lt;/code&gt;格式，又或者你是一个强迫症患者，有必要让 &lt;code&gt;commit&lt;/code&gt; 信息整整齐齐的展示。那么，你可以往下瞅瞅。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="git" scheme="https://mrseawave.github.io/blogs/categories/git/"/>
-    
-    <category term="commit" scheme="https://mrseawave.github.io/blogs/categories/git/commit/"/>
-    
-    
-    <category term="git" scheme="https://mrseawave.github.io/blogs/tags/git/"/>
-    
-    <category term="commit" scheme="https://mrseawave.github.io/blogs/tags/commit/"/>
-    
-    <category term="cli" scheme="https://mrseawave.github.io/blogs/tags/cli/"/>
-    
-    <category term="lint" scheme="https://mrseawave.github.io/blogs/tags/lint/"/>
     
   </entry>
   
