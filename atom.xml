@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-07-13T08:41:12.000Z</updated>
+  <updated>2021-07-15T03:46:46.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>koa静态资源处理</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/07/15/koa-static/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/07/15/koa-static/</id>
+    <published>2021-07-15T01:57:01.000Z</published>
+    <updated>2021-07-15T03:46:46.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文将介绍 koa 静态资源处理。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="koa" scheme="https://mrseawave.github.io/blogs/categories/koa/"/>
+    
+    
+    <category term="koa" scheme="https://mrseawave.github.io/blogs/tags/koa/"/>
+    
+    <category term="static" scheme="https://mrseawave.github.io/blogs/tags/static/"/>
+    
+    <category term="basePath" scheme="https://mrseawave.github.io/blogs/tags/basePath/"/>
+    
+  </entry>
   
   <entry>
     <title>Node.js设置定时任务</title>
@@ -469,31 +492,6 @@
     <category term="vpn" scheme="https://mrseawave.github.io/blogs/tags/vpn/"/>
     
     <category term="terminal" scheme="https://mrseawave.github.io/blogs/tags/terminal/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Chromium 历史版本离线安装包 - 下载方法</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/04/01/chrome-history-download/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/04/01/chrome-history-download/</id>
-    <published>2021-04-01T03:02:16.000Z</published>
-    <updated>2021-06-25T09:04:01.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Chrome(Chromium) 历史旧版本离线安装包下载方法。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="chrome" scheme="https://mrseawave.github.io/blogs/categories/chrome/"/>
-    
-    
-    <category term="download" scheme="https://mrseawave.github.io/blogs/tags/download/"/>
-    
-    <category term="chrome" scheme="https://mrseawave.github.io/blogs/tags/chrome/"/>
-    
-    <category term="chromium" scheme="https://mrseawave.github.io/blogs/tags/chromium/"/>
-    
-    <category term="history" scheme="https://mrseawave.github.io/blogs/tags/history/"/>
     
   </entry>
   
