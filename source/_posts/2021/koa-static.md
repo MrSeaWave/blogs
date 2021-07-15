@@ -85,6 +85,22 @@ app.use(koaMount('/koa-static', koaStatic(path.resolve(__dirname, '../dist'))));
 
 ![image-20210715111612551](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/SZFnFd_image-20210715111612551.png)
 
+> 小 Tip：在部署打包好的 react 项目时，前端使用的是 HTML5 的 history，页面一刷新就 404 了，所以后端配置[koa-history-api-fallback](https://www.npmjs.com/package/koa-history-api-fallback)中间件来支持：（中间件实现的功能是如果 当 URL 匹配不到任何静态资源，返回指定的页面（中间件默认返回的是 index.html，配置参考[文档](https://www.npmjs.com/package/koa-history-api-fallback)）
+>
+> ```js
+> import historyApiFallback from 'koa-history-api-fallback';
+>
+> // 加载路由信息
+> app.use(router.routes());
+> app.use(router.allowedMethods());
+>
+> app.use(historyApiFallback());
+> app.use(koaStatic(path.resolve(__dirname, '../public')));
+> ```
+>
+> historyApiFallback 一定要放在所有接口路由后面，否则所有接口都是返回 index.html 了。
+> historyApiFallback 一定要在静态资源前面，否则资源找不到
+
 ## koa-static-cache
 
 这个中间件的目的也是帮助我们托管静态资源文件。按照配置的路径在浏览器的 URL 地址中输入带`prefix`前缀的路径就能访问到 static 目录下的文件。和`koa-static`区别是：
@@ -116,5 +132,7 @@ app.use(
 - [koa-static](https://www.npmjs.com/package/koa-static)
 - [koa-mount](https://www.npmjs.com/package/koa-mount)
 - [Koa : what is the difference between koa-route and koa-mount. When should I use each?](https://stackoverflow.com/questions/29892691/koa-what-is-the-difference-between-koa-route-and-koa-mount-when-should-i-use)
-
 - [koa-static-cache](https://www.npmjs.com/package/koa-static-cache)
+- [koa-history-api-fallback](https://www.npmjs.com/package/koa-history-api-fallback)
+
+- [react+koa 实现登陆、聊天、留言板功能后台](https://blog.csdn.net/qq_37860930/article/details/90019812)
