@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-07-15T06:21:02.000Z</updated>
+  <updated>2021-07-15T09:30:46.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>apidoc教程</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/07/15/apidoc/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/07/15/apidoc/</id>
+    <published>2021-07-15T07:06:23.000Z</published>
+    <updated>2021-07-15T09:30:46.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;apiDoc - 超简单的文档生成器，本文将讲述如何使用它。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="api" scheme="https://mrseawave.github.io/blogs/categories/api/"/>
+    
+    
+    <category term="api" scheme="https://mrseawave.github.io/blogs/tags/api/"/>
+    
+    <category term="doc" scheme="https://mrseawave.github.io/blogs/tags/doc/"/>
+    
+  </entry>
   
   <entry>
     <title>koa静态资源处理</title>
@@ -383,9 +404,9 @@
     <category term="chrome" scheme="https://mrseawave.github.io/blogs/categories/chrome/"/>
     
     
-    <category term="download" scheme="https://mrseawave.github.io/blogs/tags/download/"/>
-    
     <category term="chrome" scheme="https://mrseawave.github.io/blogs/tags/chrome/"/>
+    
+    <category term="download" scheme="https://mrseawave.github.io/blogs/tags/download/"/>
     
     <category term="chromium" scheme="https://mrseawave.github.io/blogs/tags/chromium/"/>
     
@@ -469,29 +490,6 @@
     <category term="proxy" scheme="https://mrseawave.github.io/blogs/tags/proxy/"/>
     
     <category term="vpn" scheme="https://mrseawave.github.io/blogs/tags/vpn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>终端如何挂代理</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/04/02/terminal-proxy/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/04/02/terminal-proxy/</id>
-    <published>2021-04-02T13:48:21.000Z</published>
-    <updated>2021-06-25T09:04:01.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文将介绍终端是如何挂代理的。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="vpn" scheme="https://mrseawave.github.io/blogs/categories/vpn/"/>
-    
-    
-    <category term="proxy" scheme="https://mrseawave.github.io/blogs/tags/proxy/"/>
-    
-    <category term="vpn" scheme="https://mrseawave.github.io/blogs/tags/vpn/"/>
-    
-    <category term="terminal" scheme="https://mrseawave.github.io/blogs/tags/terminal/"/>
     
   </entry>
   

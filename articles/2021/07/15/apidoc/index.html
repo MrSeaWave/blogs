@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>apidoc教程 - Sea&#039;s Blog</title><link rel="manifest" href="/blogs/manifest.json"><meta name="application-name" content="Sea&#039;s Blog"><meta name="msapplication-TileImage" content="/images/black-cat.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Sea&#039;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="apiDoc - 超简单的文档生成器，本文将讲述如何使用它。"><meta property="og:type" content="blog"><meta property="og:title" content="apidoc教程"><meta property="og:url" content="https://mrseawave.github.io/blogs/articles/2021/07/15/apidoc/"><meta property="og:site_name" content="Sea&#039;s Blog"><meta property="og:description" content="apiDoc - 超简单的文档生成器，本文将讲述如何使用它。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/OAgON3_michael-maurino-aegis-final.jpeg"><meta property="article:published_time" content="2021-07-15T07:06:23.000Z"><meta property="article:modified_time" content="2021-07-15T09:30:46.000Z"><meta property="article:author" content="Sea"><meta property="article:tag" content="api"><meta property="article:tag" content="doc"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/OAgON3_michael-maurino-aegis-final.jpeg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://mrseawave.github.io/blogs/articles/2021/07/15/apidoc/"},"headline":"apidoc教程","image":[],"datePublished":"2021-07-15T07:06:23.000Z","dateModified":"2021-07-15T09:30:46.000Z","author":{"@type":"Person","name":"Sea"},"publisher":{"@type":"Organization","name":"Sea's Blog","logo":{"@type":"ImageObject","url":"https://mrseawave.github.io/images/black-cat.svg"}},"description":"apiDoc - 超简单的文档生成器，本文将讲述如何使用它。"}</script><link rel="canonical" href="https://mrseawave.github.io/blogs/articles/2021/07/15/apidoc/"><link rel="icon" href="/blogs/images/black-cat.svg"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.loli.net/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/blogs/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blogs/atom.xml" title="Sea's Blog" type="application/atom+xml">
+</head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/blogs/"><img src="/blogs/images/black-cat.svg" alt="Sea&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/blogs/">首页</a><a class="navbar-item" href="/blogs/archives">时间轴</a><a class="navbar-item" href="/blogs/categories">分类</a><a class="navbar-item" href="/blogs/tags">标签</a><a class="navbar-item" href="/blogs/messages">留言板</a><a class="navbar-item" href="/blogs/friends">友人帐</a><a class="navbar-item" href="/blogs/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener external nofollow noreferrer" title="Download on GitHub" href="https://github.com/MrSeaWave/blogs"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;" rel="external nofollow noreferrer"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;" rel="external nofollow noreferrer"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/OAgON3_michael-maurino-aegis-final.jpeg" alt="apidoc教程"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-07-15T07:06:23.000Z" title="7/15/2021, 7:06:23 AM">2021-07-15</time>发表</span><span class="level-item"><time dateTime="2021-07-15T09:30:46.000Z" title="7/15/2021, 9:30:46 AM">2021-07-15</time>更新</span><span class="level-item"> Sea </span><span class="level-item"><a class="link-muted" href="/blogs/categories/api/">api</a></span><span class="level-item">25 分钟读完 (大约3694个字)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">apidoc教程</h1><div class="content"><p>apiDoc - 超简单的文档生成器，本文将讲述如何使用它。</p>
+<span id="more"></span>
+
+<p>市面上常用的 API 文档管理方式有 apiDoc、Swagger2、DocClear。</p>
+<p>Swagger2 有一个比较明显的缺点：代码侵入，开启注解时会影响原本的系统性能。</p>
+<p>同样 DocClear 也有一个比较明显的缺点：DocClear 本身只是一个接口信息管理平台，所有的接口信息需要开发人员在平台内进行录入。</p>
+<p>apiDoc 作为 API 文档工具是一款通过源代码中的 API 注释创建文档，支持 Java、JS、PHP、Tython 等语言，没有 Swagger2 那样代码侵入，而是通过 apiDoc 的程序对我们的源代码文件进行扫描，获取文件内的 apiDoc 注释信息来创建 API 文档，进而生成静态的 API 文档页面。接下来就从头到尾给大家讲解一下 apiDoc 如何使用。</p>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><ol>
+<li><p>装环境</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install apidoc -g</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>新建一个项目</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/dLftq8_image-20210715151417124.png" alt="image-20210715151417124"></p>
+<p><code>src/file.js</code>，不用纠结这些注释含义, 后面会详解</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// src/file.js</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;Get&#125;</span> </span>/user/get getUserInfo</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiGroup <span class="variable">User</span></span></span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiParam <span class="type">&#123;String&#125;</span> </span>name 文章名</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiParamExample <span class="type">&#123;json&#125;</span> <span class="variable">Request</span></span>-Example</span></span><br><span class="line"><span class="comment"> * &#123;</span></span><br><span class="line"><span class="comment"> *  &quot;userName&quot;: &quot;Eve&quot;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSuccessExample  <span class="type">&#123;json&#125;</span> <span class="variable">Response</span></span>-Example</span></span><br><span class="line"><span class="comment"> * &#123;</span></span><br><span class="line"><span class="comment"> *   &quot;userName&quot;: &quot;Eve&quot;,</span></span><br><span class="line"><span class="comment"> *   &quot;createTime&quot;: &quot;1568901681&quot;</span></span><br><span class="line"><span class="comment"> *   &quot;updateTime&quot;: &quot;1568901681&quot;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getUserInfo</span>(<span class="params">username</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 假如这个函数是根据用户名返回用户信息的</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>apidoc.json</code></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;apidoc-demo&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;You write something here to describe your project&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;title&quot;</span>: <span class="string">&quot;The title of this doc&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>执行命令，<code>-i</code>是指注释文件存放的地方,<code> -o</code>是指文档输出的位置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apidoc -i src/ -o apidoc/</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>接下来我们会发现多了一个文件夹<code>**apidoc**</code>. 这是自动生成的一个文件夹目录</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/DvdMAB_image-20210715151930178.png" alt="image-20210715151930178"></p>
+<p>双击打开<code>index.html</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/k5XhT0_image-20210715152307370.png" alt="image-20210715152307370"></p>
+<p>如 s 上简单三步即可生成一份 API 文档, 算是挺傻瓜式的，接下来将介绍具体字段含义。</p>
+<h2 id="配置-apidoc-json-详解"><a href="#配置-apidoc-json-详解" class="headerlink" title="配置(apidoc.json)详解"></a>配置(apidoc.json)详解</h2><p>每次导出接口文档都必须要让 apidoc 读取到 apidoc.json 文件(如果未添加配置文件，导出报错)，你可以在你项目的根目录下添加 apidoc.json 文件，这个文件主要包含一些项目的描述信息，比如标题、简短的描述、版本等，你也可以加入一些可选的配置项，比如页眉、页脚、模板等。</p>
+<p>配置项：</p>
+<table>
+<thead>
+<tr>
+<th><strong>参数</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>name</td>
+<td>工程名称如果 apidoc.json 文件中没有配置该参数，apidoc 会尝试从 pakcage.json 文件中读取</td>
+</tr>
+<tr>
+<td>version</td>
+<td>版本如果 apidoc.json 文件中没有配置该参数，apidoc 会尝试从 pakcage.json 文件中读取</td>
+</tr>
+<tr>
+<td>description</td>
+<td>工程描述如果 apidoc.json 文件中没有配置该参数，apidoc 会尝试从 pakcage.json 文件中读取</td>
+</tr>
+<tr>
+<td>title</td>
+<td>浏览器标题</td>
+</tr>
+<tr>
+<td>url</td>
+<td>api 路径前缀例如:<a target="_blank" rel="noopener external nofollow noreferrer" href="https://api.github.com/v1">https://api.github.com/v1</a></td>
+</tr>
+<tr>
+<td>sampleUrl</td>
+<td>如果设置了该参数，那么在文档中便可以看到用于测试接口的一个表单(详情可以查看参数@apiSampleReques)</td>
+</tr>
+<tr>
+<td>header.title</td>
+<td>页眉导航标题</td>
+</tr>
+<tr>
+<td>header.filename</td>
+<td>页眉文件名(markdown) (如：<code>header.md</code>)</td>
+</tr>
+<tr>
+<td>footer.title</td>
+<td>页脚导航标题</td>
+</tr>
+<tr>
+<td>footer.filename</td>
+<td>页脚文件名(markdown) (如：<code>footer.md</code>)</td>
+</tr>
+<tr>
+<td>order</td>
+<td>接口名称或接口组名称的排序列表如果未定义，那么所有名称会自动排序<code>&quot;order&quot;: [ &quot;Error&quot;, &quot;Define&quot;, &quot;PostTitleAndError&quot;, PostError&quot;]</code></td>
+</tr>
+</tbody></table>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://apidocjs.com/">更多详情</a></p>
+<h2 id="apidoc-注释参数"><a href="#apidoc-注释参数" class="headerlink" title="apidoc 注释参数"></a>apidoc 注释参数</h2><h3 id="api"><a href="#api" class="headerlink" title="@api"></a>@api</h3><p>【必填字段】否则，apidoc 会忽略该条注释</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@api &#123;method&#125; path [title]</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">method</td>
+<td align="left">yes</td>
+<td align="left">请求类型:<code>DELETE, GET, POST, PUT, ...更多</code></td>
+</tr>
+<tr>
+<td align="left">path</td>
+<td align="left">yes</td>
+<td align="left">请求路径</td>
+</tr>
+<tr>
+<td align="left">title</td>
+<td align="left">no</td>
+<td align="left">接口标题</td>
+</tr>
+</tbody></table>
+<p>例：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/getUserById/:id 获取用户数据 - 根据id</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiDefine"><a href="#apiDefine" class="headerlink" title="@apiDefine"></a>@apiDefine</h3><p>定义注释模块(类似于代码中定义一个常量)，对于一些通用可复用的注释模块(例如:接口错误响应模块)，只需要在源代码中定义一次，便可以在其他注释模块中随便引用，最后在文档导出时会自动替换所引用的注释模块，定义之后您可以通过<code>@apiUse</code>来引入所定义的注释模块。(注:可以同时使用<code>@apiVersion</code>来定义注释模块的版本)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@apiDefine name [title]</span><br><span class="line">                     [description]</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">name</td>
+<td align="left">yes</td>
+<td align="left">注释模块名称(唯一)，不同@apiVersion 可以定义相同名称的注释模块</td>
+</tr>
+<tr>
+<td align="left">title</td>
+<td align="left">no</td>
+<td align="left">注释模块标题</td>
+</tr>
+<tr>
+<td align="left">description</td>
+<td align="left">no</td>
+<td align="left">注释模块详细描述(详细描述另起一行，可包含多行)</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiDefine <span class="variable">MyError</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiError </span>UserNotFound The &lt;code&gt;id&lt;/code&gt; of the User was not found.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiUse <span class="variable">MyError</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiDefine </span>admin User access only</span></span><br><span class="line"><span class="comment"> * This optional description belong to to the group admin.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiPermission <span class="variable">admin</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiDeprecated"><a href="#apiDeprecated" class="headerlink" title="@apiDeprecated"></a>@apiDeprecated</h3><p>标注一个接口已经被弃用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@apiDeprecated [text]</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">text</td>
+<td align="left">yes</td>
+<td align="left">多行文字描述</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiDeprecated</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiDeprecated </span>use now (#Group:Name).</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * Example: to set a link to the GetDetails method of your group User</span></span><br><span class="line"><span class="comment"> * write (#User:GetDetails)</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiDescription"><a href="#apiDescription" class="headerlink" title="@apiDescription"></a>@apiDescription</h3><p>api 接口的详细描述</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@apiDescription [text]</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">text</td>
+<td align="left">yes</td>
+<td align="left">多行文字描述</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiDescription </span>This is the Description.</span></span><br><span class="line"><span class="comment"> * It is multiline capable.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * Last line of Description.</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiError"><a href="#apiError" class="headerlink" title="@apiError"></a>@apiError</h3><p>错误返回参数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@apiError [(group)] [&#123;type&#125;] field [description]</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">(group)</td>
+<td align="left">no</td>
+<td align="left">所有的参数都会通过这个参数进行分组，如果未设置，默认值为 Error 4xx</td>
+</tr>
+<tr>
+<td align="left">{type}</td>
+<td align="left">no</td>
+<td align="left">返回类型，例如<code>&#123;Boolean&#125;</code>， <code>&#123;Number&#125;</code>， <code>&#123;String&#125;</code>， <code>&#123;Object&#125;</code>，<code>&#123;String[]&#125;</code>（字符串数组），…</td>
+</tr>
+<tr>
+<td align="left">field</td>
+<td align="left">yes</td>
+<td align="left">返回 id</td>
+</tr>
+<tr>
+<td align="left">description</td>
+<td align="left">no</td>
+<td align="left">参数描述</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/getUserById/:id 获取用户数据 - 根据id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiError </span>UserNotFound The &lt;code&gt;id&lt;/code&gt; of the User was not found.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiError </span>(错误分组) &#123;Object&#125; xxx xxxxxxxx</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiErrorExample"><a href="#apiErrorExample" class="headerlink" title="@apiErrorExample"></a>@apiErrorExample</h3><p>接口错误返回示例(格式化输出)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@apiErrorExample [&#123;type&#125;] [title]</span><br><span class="line">                 example</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">type</td>
+<td align="left">no</td>
+<td align="left">响应类型</td>
+</tr>
+<tr>
+<td align="left">title</td>
+<td align="left">yes</td>
+<td align="left">示例标题</td>
+</tr>
+<tr>
+<td align="left">example</td>
+<td align="left">yes</td>
+<td align="left">示例详情(兼容多行)</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *<span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/getUserById/:id 获取用户数据 - 根据id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiErrorExample <span class="type">&#123;json&#125;</span> <span class="variable">Error</span></span>-Response:</span></span><br><span class="line"><span class="comment"> *     HTTP/1.1 404 Not Found</span></span><br><span class="line"><span class="comment"> *     &#123;</span></span><br><span class="line"><span class="comment"> *       &quot;error&quot;: &quot;UserNotFound&quot;</span></span><br><span class="line"><span class="comment"> *     &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiExample"><a href="#apiExample" class="headerlink" title="@apiExample"></a>@apiExample</h3><p>接口方式请求示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@apiExample [&#123;type&#125;] title</span><br><span class="line">            example</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">type</td>
+<td align="left">no</td>
+<td align="left">请求内容格式</td>
+</tr>
+<tr>
+<td align="left">title</td>
+<td align="left">yes</td>
+<td align="left">示例标题</td>
+</tr>
+<tr>
+<td align="left">example</td>
+<td align="left">yes</td>
+<td align="left">示例详情(兼容多行)</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/getUserById/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiExample <span class="type">&#123;curl&#125;</span> </span>Example usage:</span></span><br><span class="line"><span class="comment"> *     curl -i http://127.0.0.1/user/getUserById/1</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiGroup"><a href="#apiGroup" class="headerlink" title="@apiGroup"></a>@apiGroup</h3><p>定义接口所属的接口组，虽然接口定义里不需要这个参数，但是您应该在每个接口注释里都添加这个参数，因为导出的接口文档会以接口组的形式导航展示。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@apiGroup name</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">name</td>
+<td align="left">yes</td>
+<td align="left">接口组名称(用于导航,不支持中文)</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiGroup <span class="variable">User</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiHeader"><a href="#apiHeader" class="headerlink" title="@apiHeader"></a>@apiHeader</h3><p>描述接口请求头部需要的参数(功能类似<code>@apiParam</code>)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@apiHeader [(group)] [&#123;type&#125;] [field=defaultValue] [description]</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">(group)</td>
+<td align="left">no</td>
+<td align="left">所有的参数都会以该参数值进行分组(默认 Parameter)</td>
+</tr>
+<tr>
+<td align="left">{type}</td>
+<td align="left">no</td>
+<td align="left">返回类型(例如:{Boolean}, {Number}, {String}, {Object}, {String[]})</td>
+</tr>
+<tr>
+<td align="left">field</td>
+<td align="left">yes</td>
+<td align="left">参数名称(定义该头部参数为必填)</td>
+</tr>
+<tr>
+<td align="left">[field]</td>
+<td align="left">yes</td>
+<td align="left">参数名称(定义该头部参数为可选)</td>
+</tr>
+<tr>
+<td align="left">=defaultValue</td>
+<td align="left">no</td>
+<td align="left">参数默认值</td>
+</tr>
+<tr>
+<td align="left">description</td>
+<td align="left">no</td>
+<td align="left">参数描述</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiHeader <span class="type">&#123;String&#125;</span> <span class="variable">access</span></span>-key Users unique access-key.</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiHeaderExample"><a href="#apiHeaderExample" class="headerlink" title="@apiHeaderExample"></a>@apiHeaderExample</h3><p>请求头部参数示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@apiHeaderExample [&#123;type&#125;] [title]</span><br><span class="line">                   example</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">type</td>
+<td align="left">no</td>
+<td align="left">请求内容格式</td>
+</tr>
+<tr>
+<td align="left">title</td>
+<td align="left">no</td>
+<td align="left">请求示例标题</td>
+</tr>
+<tr>
+<td align="left">example</td>
+<td align="left">yes</td>
+<td align="left">请求示例详情(兼容多行)</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/getUserById/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiHeaderExample <span class="type">&#123;json&#125;</span> <span class="variable">Header</span></span>-Example:</span></span><br><span class="line"><span class="comment"> *     &#123;</span></span><br><span class="line"><span class="comment"> *       &quot;Accept-Encoding&quot;: &quot;Accept-Encoding: gzip, deflate&quot;</span></span><br><span class="line"><span class="comment"> *     &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiIgnore"><a href="#apiIgnore" class="headerlink" title="@apiIgnore"></a>@apiIgnore</h3><p>如果你需要使用该参数，请把它放到注释块的最前面。如果设置了该参数，那么该注释模块将不会被解析(当有些接口还未完成或未投入使用时，可以使用该字段)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@apiIgnore [hint]</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">hint</td>
+<td align="left">no</td>
+<td align="left">描接口忽略原因描述</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiIgnore </span>Not finished Method</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiName"><a href="#apiName" class="headerlink" title="@apiName"></a>@apiName</h3><p>接口名称，每一个接口注释里都应该添加该字段，在导出的接口文档里会已该字段值作为导航子标题，如果两个接口的<code>@apiVersion</code>和<code>@apiName</code>一样，那么有一个接口的注释将会被覆盖(接口文档里不会展示)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@apiName name</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">name</td>
+<td align="left">yes</td>
+<td align="left">接口名称(相同接口版本下所有接口名称应该是唯一的)</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiName <span class="variable">GetUser</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiParam"><a href="#apiParam" class="headerlink" title="@apiParam"></a>@apiParam</h3><p>接口请求体参数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@apiParam [(group)] [&#123;type&#125;] [field=defaultValue] [description]</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">(group)</td>
+<td align="left">no</td>
+<td align="left">所有的参数都会以该参数值进行分组(默认 Parameter)</td>
+</tr>
+<tr>
+<td align="left">{type}</td>
+<td align="left">no</td>
+<td align="left">返回类型(例如:{Boolean}, {Number}, {String}, {Object}, {String[]})</td>
+</tr>
+<tr>
+<td align="left">{type{size}}</td>
+<td align="left">no</td>
+<td align="left">返回类型,同时定义参数的范围{string{…5}}意为字符串长度不超过 5{string{2…5}}意为字符串长度介于 25 之间 <code>&#123;number&#123;100-999&#125;&#125;</code>意为数值介于 100999 之间</td>
+</tr>
+<tr>
+<td align="left">{type=allowedValues}</td>
+<td align="left">no</td>
+<td align="left">参数可选值{string=“small”}意为字符串仅允许值为”small”{string=“small”,“huge”}意为字符串允许值为”small”、“huge”{number=1,2,3,99}意为数值允许值为 1、2、3、99{string {…5}=“small”,”huge”意为字符串最大长度为 5 并且值允许为:“small”、“huge”</td>
+</tr>
+<tr>
+<td align="left">field</td>
+<td align="left">yes</td>
+<td align="left">参数名称(定义该请求体参数为必填)</td>
+</tr>
+<tr>
+<td align="left">[field]</td>
+<td align="left">yes</td>
+<td align="left">参数名称(定义该请求体参数为可选)</td>
+</tr>
+<tr>
+<td align="left">=defaultValue</td>
+<td align="left">no</td>
+<td align="left">参数默认值</td>
+</tr>
+<tr>
+<td align="left">description</td>
+<td align="left">no</td>
+<td align="left">参数描述</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiParam <span class="type">&#123;Number&#125;</span> </span>id Users unique ID.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;post&#125;</span> </span>/user/</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiParam <span class="type">&#123;String&#125;</span> </span>[firstname]       Optional Firstname of the User.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiParam <span class="type">&#123;String&#125;</span> </span>lastname          Mandatory Lastname.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiParam <span class="type">&#123;String&#125;</span> </span>country=&quot;DE&quot;      Mandatory with default value &quot;DE&quot;.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiParam <span class="type">&#123;Number&#125;</span> </span>[age=18]          Optional Age with default 18.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiParam </span>(Login) &#123;String&#125; pass      Only logged in users can post this.</span></span><br><span class="line"><span class="comment"> *                                      In generated documentation a separate</span></span><br><span class="line"><span class="comment"> *                                      &quot;Login&quot; Block will be generated.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiParam <span class="type">&#123;Object&#125;</span> </span>[address]         Optional nested address object.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiParam <span class="type">&#123;String&#125;</span> </span>[address[street]] Optional street and number.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiParam <span class="type">&#123;String&#125;</span> </span>[address[zip]]    Optional zip code.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiParam <span class="type">&#123;String&#125;</span> </span>[address[city]]   Optional city.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiParam <span class="type">&#123;Object&#125;</span> </span>[data]   					data</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiParam <span class="type">&#123;Object&#125;</span> </span>[data.a]   				data.a</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiParamExample"><a href="#apiParamExample" class="headerlink" title="@apiParamExample"></a>@apiParamExample</h3><p>请求体参数示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@apiParamExample [&#123;type&#125;] [title]</span><br><span class="line">                   example</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">type</td>
+<td align="left">no</td>
+<td align="left">请求内容格式</td>
+</tr>
+<tr>
+<td align="left">title</td>
+<td align="left">no</td>
+<td align="left">请求示例标题</td>
+</tr>
+<tr>
+<td align="left">example</td>
+<td align="left">yes</td>
+<td align="left">请求示例详情(兼容多行)</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiParamExample <span class="type">&#123;json&#125;</span> <span class="variable">Request</span></span>-Example:</span></span><br><span class="line"><span class="comment"> *     &#123;</span></span><br><span class="line"><span class="comment"> *       &quot;id&quot;: 4711</span></span><br><span class="line"><span class="comment"> *     &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiPermission"><a href="#apiPermission" class="headerlink" title="@apiPermission"></a>@apiPermission</h3><p>允许访问该接口的角色名称</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@apiPermission name</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">name</td>
+<td align="left">yes</td>
+<td align="left">允许访问的角色名称(唯一)</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiPermission <span class="variable">admin</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiPrivate"><a href="#apiPrivate" class="headerlink" title="@apiPrivate"></a>@apiPrivate</h3><p>定义私有接口，对于定义为私有的接口，可以在生成接口文档的时候，通过在命令行中设置参数 <code>--private false|true</code>来决定导出的文档中是否包含私有接口</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@apiPrivate</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiPrivate</span></span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiSampleRequest"><a href="#apiSampleRequest" class="headerlink" title="@apiSampleRequest"></a>@apiSampleRequest</h3><p>设置了该参数后，导出的 html 接口文档中会包含模拟接口请求的 form 表单；如果在配置文件<code>apidoc.json</code>中设置了参数<code>sampleUrl</code>，那么导出的文档中每一个接口都会包含模拟接口请求的 form 表单，如果既设置了<code>sampleUrl</code>参数，同时不希望当前这个接口包含模拟接口请求的 form 表单，可以使用<code>@apiSampleRequest off</code>来关闭。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@apiSampleRequest url</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">url</td>
+<td align="left">yes</td>
+<td align="left">模拟接口请求的 url<code>@apiSampleRequest http://www.example.com</code>意为覆盖<code>apidoc.json</code>中的<code>sampleUrl</code>参数，<code>@apiSampleRequest off</code>意为关闭接口测试功能</td>
+</tr>
+</tbody></table>
+<p>例：<br>发送测试请求到:<strong><a target="_blank" rel="noopener external nofollow noreferrer" href="http://api.github.com/user/:id">http://api.github.com/user/:id</a></strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Configuration parameter sampleUrl: <span class="string">&quot;http://api.github.com&quot;</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<p>请求发送到<strong><a target="_blank" rel="noopener external nofollow noreferrer" href="http://test.github.com/some_path/user/:id%E3%80%82">http://test.github.com/some_path/user/:id。</a></strong><br>它将覆盖 sampleUrl。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Configuration parameter sampleUrl: <span class="string">&quot;http://api.github.com&quot;</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSampleRequest </span>http://test.github.com/some_path/</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<p>请求发送到<strong><a target="_blank" rel="noopener external nofollow noreferrer" href="http://api.github.com/test/user/:id%E3%80%82">http://api.github.com/test/user/:id。</a></strong><br>它扩展了 sampleUrl。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Configuration parameter sampleUrl: <span class="string">&quot;http://api.github.com&quot;</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSampleRequest </span>/test</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<p>禁用此 api 方法的 api 请求。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Configuration parameter sampleUrl: <span class="string">&quot;http://api.github.com&quot;</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSampleRequest <span class="variable">off</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<p>请求发送到<strong><a target="_blank" rel="noopener external nofollow noreferrer" href="http://api.github.com/some_path/user/:id">http://api.github.com/some_path/user/:id</a></strong>，因为未设置 sampleUrl，所以仅激活此方法的请求。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Configuration parameter sampleUrl is not set</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSampleRequest </span>http://api.github.com/some_path/</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiSuccess"><a href="#apiSuccess" class="headerlink" title="@apiSuccess"></a>@apiSuccess</h3><p>接口成功返回参数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@apiSuccess [(group)] [&#123;type&#125;] field [description]</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">(group)</td>
+<td align="left">no</td>
+<td align="left">所有的参数都会以该参数值进行分组,默认值:Success 200</td>
+</tr>
+<tr>
+<td align="left">{type}</td>
+<td align="left">no</td>
+<td align="left">返回类型(例如:{Boolean}, {Number}, {String}, {Object}, {String[]})</td>
+</tr>
+<tr>
+<td align="left">field</td>
+<td align="left">yes</td>
+<td align="left">返回值(返回成功码)</td>
+</tr>
+<tr>
+<td align="left">=defaultValue</td>
+<td align="left">no</td>
+<td align="left">参数默认值</td>
+</tr>
+<tr>
+<td align="left">description</td>
+<td align="left">no</td>
+<td align="left">参数描述</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSuccess <span class="type">&#123;String&#125;</span> </span>firstname Firstname of the User.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSuccess <span class="type">&#123;String&#125;</span> </span>lastname  Lastname of the User.</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<p>包含(group):</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSuccess </span>(200) &#123;String&#125; firstname Firstname of the User.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSuccess </span>(200) &#123;String&#125; lastname  Lastname of the User.</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<p>返回参数中有对象:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSuccess <span class="type">&#123;Boolean&#125;</span> </span>active        Specify if the account is active.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSuccess <span class="type">&#123;Object&#125;</span>  </span>profile       User profile information.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSuccess <span class="type">&#123;Number&#125;</span>  </span>profile.age   Users age.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSuccess <span class="type">&#123;String&#125;</span>  </span>profile.image Avatar-Image.</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<p>返回参数中有数组：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/users</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSuccess <span class="type">&#123;Object[]&#125;</span> </span>profiles       List of user profiles.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSuccess <span class="type">&#123;Number&#125;</span>   </span>profiles.age   Users age.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSuccess <span class="type">&#123;String&#125;</span>   </span>profiles.image Avatar-Image.</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiSuccessExample"><a href="#apiSuccessExample" class="headerlink" title="@apiSuccessExample"></a>@apiSuccessExample</h3><p>返回成功示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@apiSuccessExample [&#123;type&#125;] [title]</span><br><span class="line">                   example</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">type</td>
+<td align="left">no</td>
+<td align="left">返回内容格式</td>
+</tr>
+<tr>
+<td align="left">title</td>
+<td align="left">no</td>
+<td align="left">返回示例标题</td>
+</tr>
+<tr>
+<td align="left">example</td>
+<td align="left">yes</td>
+<td align="left">返回示例详情(兼容多行)</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSuccessExample <span class="type">&#123;json&#125;</span> <span class="variable">Success</span></span>-Response:</span></span><br><span class="line"><span class="comment"> *     HTTP/1.1 200 OK</span></span><br><span class="line"><span class="comment"> *     &#123;</span></span><br><span class="line"><span class="comment"> *       &quot;firstname&quot;: &quot;John&quot;,</span></span><br><span class="line"><span class="comment"> *       &quot;lastname&quot;: &quot;Doe&quot;</span></span><br><span class="line"><span class="comment"> *     &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiUse"><a href="#apiUse" class="headerlink" title="@apiUse"></a>@apiUse</h3><p>引入注释模块，如果当前模块定义了@apiVersion,那么版本相同或版本最近的注释模块会被引入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@apiUse name</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">name</td>
+<td align="left">yes</td>
+<td align="left">引入注释模块的名称</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiDefine <span class="variable">MySuccess</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSuccess <span class="type">&#123;string&#125;</span> </span>firstname The users firstname.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiSuccess <span class="type">&#123;number&#125;</span> </span>age The users age.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiUse <span class="variable">MySuccess</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="apiVersion"><a href="#apiVersion" class="headerlink" title="@apiVersion"></a>@apiVersion</h3><p>定义接口/注释模块版本</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@apiVersion version</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">必填</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">version</td>
+<td align="left">yes</td>
+<td align="left">版本号(支持<a target="_blank" rel="noopener external nofollow noreferrer" href="https://semver.org/">semver</a>版本规范)</td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@api <span class="type">&#123;get&#125;</span> </span>/user/:id</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@apiVersion </span>1.6.2</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Tips:</p>
+<p>把接口中的通用部分利用<code>@apiDefine</code>摘出来，放在一个公共文件``define.js<code>中，之后可以利用</code>@apiUse`去调用。</p>
+<p>历史 api 可以存放在<code>history.js</code>中</p>
+</blockquote>
+<h2 id="生成-API-文档"><a href="#生成-API-文档" class="headerlink" title="生成 API 文档"></a>生成 API 文档</h2><p>当然你注释参数写好了之后它也不会帮你自动生成，你需要自己运行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apidoc -i [项目完整路径] -o apidoc/</span><br></pre></td></tr></table></figure>
+
+<p>参数列表:</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>-c, --config</code></td>
+<td align="left">指定使用的配置文件. (默认根目录的 apidoc.json apidoc.json ) 例： <code>apidoc -c path/to/apidoc.json</code></td>
+</tr>
+<tr>
+<td align="left"><code>-e, --exclude-filters</code></td>
+<td align="left">输出文件时排除文件。 (默认: []) 例: <code>apidoc -e node_modules</code></td>
+</tr>
+<tr>
+<td align="left"><code>-f, --file-filters</code></td>
+<td align="left">RegEx-Filter，选择要解析的文件（可以使用许多<code>-f</code>）。默认<code>.cs</code> <code>.dart</code> <code>.erl</code> <code>.go</code> <code>.java</code> <code>.js</code> <code>.php</code> <code>.py</code> <code>.rb</code> <code>.ts</code>. 示例（仅解析.js 和.ts 文件）： <code>apidoc -f &quot;.*\\.js$&quot; -f &quot;.*\\.ts$&quot;</code></td>
+</tr>
+<tr>
+<td align="left"><code>-i, --input</code></td>
+<td align="left">输入/源目录名。项目文件的位置。例：<code>apidoc -i myapp/</code></td>
+</tr>
+<tr>
+<td align="left"><code>-o, --output</code></td>
+<td align="left">输出目录名。放置生成的文档的位置，例：<code>apidoc -o apidoc/</code></td>
+</tr>
+<tr>
+<td align="left"><code>-t, --template</code></td>
+<td align="left">使用模板输出文件。您可以创建和使用自己的模板。例：<code>apidoc -t mytemplate/</code></td>
+</tr>
+<tr>
+<td align="left"><code>-h, --help</code></td>
+<td align="left">查看帮助文档</td>
+</tr>
+</tbody></table>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/apidoc/apidoc">apidoc</a></li>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://zhuanlan.zhihu.com/p/83487114">apiDoc - 超简单的文档生成器</a></li>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/qq_32352777/article/details/102746237">apiDoc 教程</a></li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>apidoc教程</p><p><a href="https://mrseawave.github.io/blogs/articles/2021/07/15/apidoc/">https://mrseawave.github.io/blogs/articles/2021/07/15/apidoc/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>Sea</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-07-15</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2021-07-15</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener external nofollow noreferrer" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener external nofollow noreferrer" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener external nofollow noreferrer" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/blogs/tags/api/">api</a><a class="link-muted mr-2" rel="tag" href="/blogs/tags/doc/">doc</a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="/blogs/images/alipay.jpeg" alt="支付宝"></span></a><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="/blogs/images/wechat.jpeg" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/blogs/articles/2021/07/15/koa-static/"><span class="level-item">koa静态资源处理</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div id="comment-container"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script>var gitalk = new Gitalk({
+            id: "45afb583fa2c7d050b42637b002e4d1a",
+            repo: "blogs",
+            owner: "MrSeaWave",
+            clientID: "e0c9fd5f9f7a55d3379f",
+            clientSecret: "10786db27751db3c1a6f741c960e6c337bf08a86",
+            admin: ["MrSeaWave"],
+            createIssueManually: false,
+            distractionFreeMode: false,
+            perPage: 20,
+            pagerDirection: "last",
+            
+            
+            enableHotKey: true,
+            language: "zh-CN",
+        })
+        gitalk.render('comment-container')</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/OiP0FB_早迟ZAO - 酔う (66260978) .jpg" alt="Sea"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Sea</p><p class="is-size-6 is-block">留七分正经，以度生；留三分痴呆，以防死</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Shanghai, China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/blogs/archives"><p class="title">35</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/blogs/categories"><p class="title">36</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/blogs/tags"><p class="title">77</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/MrSeaWave" target="_blank" rel="noopener external nofollow noreferrer">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener external nofollow noreferrer" title="Github" href="https://github.com/MrSeaWave"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener external nofollow noreferrer" title="Email" href="mailto:MrDaemon@outlook.com"><i class="fas fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/blogs/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/blogs/categories/Mac/"><span class="level-start"><span class="level-item">Mac</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/blogs/categories/Mac/recommend/"><span class="level-start"><span class="level-item">recommend</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/blogs/categories/api/"><span class="level-start"><span class="level-item">api</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blogs/categories/app/"><span class="level-start"><span class="level-item">app</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blogs/categories/apple/"><span class="level-start"><span class="level-item">apple</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blogs/categories/chrome/"><span class="level-start"><span class="level-item">chrome</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/blogs/categories/cron/"><span class="level-start"><span class="level-item">cron</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blogs/categories/css/"><span class="level-start"><span class="level-item">css</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blogs/categories/git/"><span class="level-start"><span class="level-item">git</span></span><span class="level-end"><span class="level-item tag">5</span></span></a><ul><li><a class="level is-mobile" href="/blogs/categories/git/commit/"><span class="level-start"><span class="level-item">commit</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></li><li><a class="level is-mobile" href="/blogs/categories/github/"><span class="level-start"><span class="level-item">github</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/blogs/categories/github/actions/"><span class="level-start"><span class="level-item">actions</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/blogs/categories/hexo/"><span class="level-start"><span class="level-item">hexo</span></span><span class="level-end"><span class="level-item tag">4</span></span></a><ul><li><a class="level is-mobile" href="/blogs/categories/hexo/configuration/"><span class="level-start"><span class="level-item">configuration</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blogs/categories/hexo/write/"><span class="level-start"><span class="level-item">write</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/blogs/categories/idea/"><span class="level-start"><span class="level-item">idea</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blogs/categories/install/"><span class="level-start"><span class="level-item">install</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/blogs/categories/install/rust/"><span class="level-start"><span class="level-item">rust</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/blogs/categories/js/"><span class="level-start"><span class="level-item">js</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/blogs/categories/koa/"><span class="level-start"><span class="level-item">koa</span></span><span class="level-end"><span class="level-item tag">2</span></span></a><ul><li><a class="level is-mobile" href="/blogs/categories/koa/validator/"><span class="level-start"><span class="level-item">validator</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/blogs/categories/lcasensor/"><span class="level-start"><span class="level-item">lcasensor</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blogs/categories/lerna/"><span class="level-start"><span class="level-item">lerna</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blogs/categories/puppeteer/"><span class="level-start"><span class="level-item">puppeteer</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blogs/categories/rust/"><span class="level-start"><span class="level-item">rust</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/blogs/categories/rust/install/"><span class="level-start"><span class="level-item">install</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/blogs/categories/sharp/"><span class="level-start"><span class="level-item">sharp</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/blogs/categories/sharp/watermark/"><span class="level-start"><span class="level-item">watermark</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/blogs/categories/upic/"><span class="level-start"><span class="level-item">upic</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/blogs/categories/upic/github/"><span class="level-start"><span class="level-item">github</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/blogs/categories/vpn/"><span class="level-start"><span class="level-item">vpn</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blogs/categories/vs-code/"><span class="level-start"><span class="level-item">vs-code</span></span><span class="level-end"><span class="level-item tag">2</span></span></a><ul><li><a class="level is-mobile" href="/blogs/categories/vs-code/plugins/"><span class="level-start"><span class="level-item">plugins</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></li><li><a class="level is-mobile" href="/blogs/categories/webpack/"><span class="level-start"><span class="level-item">webpack</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blogs/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"><span class="level-start"><span class="level-item">小程序</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/blogs/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"><span class="level-start"><span class="level-item">微信小程序</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/blogs/tags/Apps/"><span class="tag">Apps</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/GoodNotes/"><span class="tag">GoodNotes</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/JSON-Schema/"><span class="tag">JSON-Schema</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/Mac/"><span class="tag">Mac</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/SEO/"><span class="tag">SEO</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/WebStorm/"><span class="tag">WebStorm</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/actions/"><span class="tag">actions</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/api/"><span class="tag">api</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/app/"><span class="tag">app</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/apple/"><span class="tag">apple</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/basePath/"><span class="tag">basePath</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/card/"><span class="tag">card</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/chrome/"><span class="tag">chrome</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/chromium/"><span class="tag">chromium</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/ci/"><span class="tag">ci</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/cli/"><span class="tag">cli</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/commit/"><span class="tag">commit</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/configuration/"><span class="tag">configuration</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/cron/"><span class="tag">cron</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/css/"><span class="tag">css</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/dlp/"><span class="tag">dlp</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/doc/"><span class="tag">doc</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/download/"><span class="tag">download</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/empty/"><span class="tag">empty</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/export/"><span class="tag">export</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/export-default/"><span class="tag">export default</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/format/"><span class="tag">format</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/gift/"><span class="tag">gift</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/git/"><span class="tag">git</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/github/"><span class="tag">github</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/hexo/"><span class="tag">hexo</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/history/"><span class="tag">history</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/hooks/"><span class="tag">hooks</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/html/"><span class="tag">html</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/husky/"><span class="tag">husky</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/ide/"><span class="tag">ide</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/idea/"><span class="tag">idea</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/img/"><span class="tag">img</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/import/"><span class="tag">import</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/install/"><span class="tag">install</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/js/"><span class="tag">js</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/kill/"><span class="tag">kill</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/koa/"><span class="tag">koa</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/lcasensor/"><span class="tag">lcasensor</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/lerna/"><span class="tag">lerna</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/lint/"><span class="tag">lint</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/md/"><span class="tag">md</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/monorepo/"><span class="tag">monorepo</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/node/"><span class="tag">node</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/optimize/"><span class="tag">optimize</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/permalinks/"><span class="tag">permalinks</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/plugins/"><span class="tag">plugins</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/prettier/"><span class="tag">prettier</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/proxy/"><span class="tag">proxy</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/puppeteer/"><span class="tag">puppeteer</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/questions/"><span class="tag">questions</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/recommend/"><span class="tag">recommend</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/repository/"><span class="tag">repository</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/rgb/"><span class="tag">rgb</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/rust/"><span class="tag">rust</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/schedule/"><span class="tag">schedule</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/sharp/"><span class="tag">sharp</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/sourceTree/"><span class="tag">sourceTree</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/static/"><span class="tag">static</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/terminal/"><span class="tag">terminal</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/tools/"><span class="tag">tools</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/upic/"><span class="tag">upic</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/validator/"><span class="tag">validator</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/vpn/"><span class="tag">vpn</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/vs-code/"><span class="tag">vs-code</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/watermark/"><span class="tag">watermark</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/webpack/"><span class="tag">webpack</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/workflow/"><span class="tag">workflow</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/write/"><span class="tag">write</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/wx/"><span class="tag">wx</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/%E4%BA%91%E5%BC%80%E5%8F%91/"><span class="tag">云开发</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/blogs/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"><span class="tag">微信小程序</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/blogs/archives/2021/07/"><span class="level-start"><span class="level-item">七月 2021</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/blogs/archives/2021/06/"><span class="level-start"><span class="level-item">六月 2021</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/blogs/archives/2021/04/"><span class="level-start"><span class="level-item">四月 2021</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/blogs/archives/2021/03/"><span class="level-start"><span class="level-item">三月 2021</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/blogs/archives/2021/02/"><span class="level-start"><span class="level-item">二月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/blogs/archives/2021/01/"><span class="level-start"><span class="level-item">一月 2021</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li></ul></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener external nofollow noreferrer"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener external nofollow noreferrer"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#快速开始"><span class="level-left"><span class="level-item">1</span><span class="level-item">快速开始</span></span></a></li><li><a class="level is-mobile" href="#配置-apidoc-json-详解"><span class="level-left"><span class="level-item">2</span><span class="level-item">配置(apidoc.json)详解</span></span></a></li><li><a class="level is-mobile" href="#apidoc-注释参数"><span class="level-left"><span class="level-item">3</span><span class="level-item">apidoc 注释参数</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#api"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">@api</span></span></a></li><li><a class="level is-mobile" href="#apiDefine"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">@apiDefine</span></span></a></li><li><a class="level is-mobile" href="#apiDeprecated"><span class="level-left"><span class="level-item">3.3</span><span class="level-item">@apiDeprecated</span></span></a></li><li><a class="level is-mobile" href="#apiDescription"><span class="level-left"><span class="level-item">3.4</span><span class="level-item">@apiDescription</span></span></a></li><li><a class="level is-mobile" href="#apiError"><span class="level-left"><span class="level-item">3.5</span><span class="level-item">@apiError</span></span></a></li><li><a class="level is-mobile" href="#apiErrorExample"><span class="level-left"><span class="level-item">3.6</span><span class="level-item">@apiErrorExample</span></span></a></li><li><a class="level is-mobile" href="#apiExample"><span class="level-left"><span class="level-item">3.7</span><span class="level-item">@apiExample</span></span></a></li><li><a class="level is-mobile" href="#apiGroup"><span class="level-left"><span class="level-item">3.8</span><span class="level-item">@apiGroup</span></span></a></li><li><a class="level is-mobile" href="#apiHeader"><span class="level-left"><span class="level-item">3.9</span><span class="level-item">@apiHeader</span></span></a></li><li><a class="level is-mobile" href="#apiHeaderExample"><span class="level-left"><span class="level-item">3.10</span><span class="level-item">@apiHeaderExample</span></span></a></li><li><a class="level is-mobile" href="#apiIgnore"><span class="level-left"><span class="level-item">3.11</span><span class="level-item">@apiIgnore</span></span></a></li><li><a class="level is-mobile" href="#apiName"><span class="level-left"><span class="level-item">3.12</span><span class="level-item">@apiName</span></span></a></li><li><a class="level is-mobile" href="#apiParam"><span class="level-left"><span class="level-item">3.13</span><span class="level-item">@apiParam</span></span></a></li><li><a class="level is-mobile" href="#apiParamExample"><span class="level-left"><span class="level-item">3.14</span><span class="level-item">@apiParamExample</span></span></a></li><li><a class="level is-mobile" href="#apiPermission"><span class="level-left"><span class="level-item">3.15</span><span class="level-item">@apiPermission</span></span></a></li><li><a class="level is-mobile" href="#apiPrivate"><span class="level-left"><span class="level-item">3.16</span><span class="level-item">@apiPrivate</span></span></a></li><li><a class="level is-mobile" href="#apiSampleRequest"><span class="level-left"><span class="level-item">3.17</span><span class="level-item">@apiSampleRequest</span></span></a></li><li><a class="level is-mobile" href="#apiSuccess"><span class="level-left"><span class="level-item">3.18</span><span class="level-item">@apiSuccess</span></span></a></li><li><a class="level is-mobile" href="#apiSuccessExample"><span class="level-left"><span class="level-item">3.19</span><span class="level-item">@apiSuccessExample</span></span></a></li><li><a class="level is-mobile" href="#apiUse"><span class="level-left"><span class="level-item">3.20</span><span class="level-item">@apiUse</span></span></a></li><li><a class="level is-mobile" href="#apiVersion"><span class="level-left"><span class="level-item">3.21</span><span class="level-item">@apiVersion</span></span></a></li></ul></li><li><a class="level is-mobile" href="#生成-API-文档"><span class="level-left"><span class="level-item">4</span><span class="level-item">生成 API 文档</span></span></a></li><li><a class="level is-mobile" href="#参考链接"><span class="level-left"><span class="level-item">5</span><span class="level-item">参考链接</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/blogs/js/toc.js" defer></script></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-07-15T07:06:23.000Z">2021-07-15</time></p><p class="title"><a href="/blogs/articles/2021/07/15/apidoc/">apidoc教程</a></p><p class="categories"><a href="/blogs/categories/api/">api</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-07-15T01:57:01.000Z">2021-07-15</time></p><p class="title"><a href="/blogs/articles/2021/07/15/koa-static/">koa静态资源处理</a></p><p class="categories"><a href="/blogs/categories/koa/">koa</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-07-13T07:49:23.000Z">2021-07-13</time></p><p class="title"><a href="/blogs/articles/2021/07/13/node-schedule/">Node.js设置定时任务</a></p><p class="categories"><a href="/blogs/categories/cron/">cron</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-07-13T02:13:32.000Z">2021-07-13</time></p><p class="title"><a href="/blogs/articles/2021/07/13/node-watermark/">node端生成水印图片</a></p><p class="categories"><a href="/blogs/categories/sharp/">sharp</a> / <a href="/blogs/categories/sharp/watermark/">watermark</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-07-09T09:35:01.000Z">2021-07-09</time></p><p class="title"><a href="/blogs/articles/2021/07/09/GoodNotes/">GoodNotes软件</a></p><p class="categories"><a href="/blogs/categories/app/">app</a></p></div></article></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=github/Ptyw&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="github/Ptyw" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div><p class="help">邮件订阅，更新早知道</p></form></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/blogs/"><img src="/blogs/images/black-cat.svg" alt="Sea&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2021 Sea</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener external nofollow noreferrer">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener external nofollow noreferrer">Icarus</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener external nofollow noreferrer" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener external nofollow noreferrer" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener external nofollow noreferrer" title="Download on GitHub" href="https://github.com/MrSeaWave/blogs"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/blogs/js/column.js"></script><script src="/blogs/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;" rel="external nofollow noreferrer"><i class="fas fa-chevron-up"></i></a><script src="/blogs/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/blogs/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;" rel="external nofollow noreferrer">×</a></div><div class="searchbox-body"></div></div></div><script src="/blogs/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/blogs/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
