@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-07-15T09:30:46.000Z</updated>
+  <updated>2021-07-20T08:13:59.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pm2进程间通信</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/07/20/pm2-ipc/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/07/20/pm2-ipc/</id>
+    <published>2021-07-20T07:44:42.000Z</published>
+    <updated>2021-07-20T08:13:59.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文将介绍 pm2 进程间如何通信&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="pm2" scheme="https://mrseawave.github.io/blogs/categories/pm2/"/>
+    
+    
+    <category term="pm2" scheme="https://mrseawave.github.io/blogs/tags/pm2/"/>
+    
+    <category term="ipc" scheme="https://mrseawave.github.io/blogs/tags/ipc/"/>
+    
+  </entry>
   
   <entry>
     <title>apidoc教程</title>
@@ -465,31 +486,6 @@
     <category term="gift" scheme="https://mrseawave.github.io/blogs/tags/gift/"/>
     
     <category term="card" scheme="https://mrseawave.github.io/blogs/tags/card/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git仓库的代理</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/04/02/git-proxy/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/04/02/git-proxy/</id>
-    <published>2021-04-02T14:07:37.000Z</published>
-    <updated>2021-06-25T09:04:01.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;因为种种原因，&lt;code&gt;github&lt;/code&gt;访问很困难，仓库代码的提交比较受限，因此想到通过挂代理的方式让代码可以正常提交。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="git" scheme="https://mrseawave.github.io/blogs/categories/git/"/>
-    
-    
-    <category term="git" scheme="https://mrseawave.github.io/blogs/tags/git/"/>
-    
-    <category term="github" scheme="https://mrseawave.github.io/blogs/tags/github/"/>
-    
-    <category term="proxy" scheme="https://mrseawave.github.io/blogs/tags/proxy/"/>
-    
-    <category term="vpn" scheme="https://mrseawave.github.io/blogs/tags/vpn/"/>
     
   </entry>
   
