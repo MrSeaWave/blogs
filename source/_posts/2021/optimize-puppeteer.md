@@ -158,6 +158,12 @@ class PuppeteerHelper {
     this.MAX_WSE = 4;
     // 存储browser.WSEndpoint列表
     this.WSE_LIST = [];
+    // 限定页面打开次数
+    this.PAGE_COUNT = 1000;
+    // 存储浏览器打开页面次数
+    this.PAGE_NUM = [];
+    // 重启浏览器的timer
+    this.replaceTimer = [];
     // puppeteer 配置
     this.p_config = {
       headless: true, // 以 无头模式（隐藏浏览器界面）运行浏览器
@@ -194,13 +200,68 @@ class PuppeteerHelper {
     (async () => {
       console.log('【PuppeteerHelper】puppeteer config:', this.p_config);
       for (let i = 0; i < this.MAX_WSE; i++) {
-        // 先通过 puppeteer.launch() 创建一个浏览器实例 Browser 对象
-        const browser = await puppeteer.launch(this.p_config);
-        // 存储浏览器 websocket 的地址
-        this.WSE_LIST[i] = await browser.wsEndpoint();
+        await this._generateBrowser(i);
       }
       console.log('【PuppeteerHelper】WSE_LIST：', this.WSE_LIST);
     })();
+  }
+
+  /**
+   * @desc 生成指定编号的浏览器
+   * @param {number} num 编号
+   * */
+  async _generateBrowser(num) {
+    // 先通过 puppeteer.launch() 创建一个浏览器实例 Browser 对象
+    const browser = await puppeteer.launch(this.p_config);
+    // 存储浏览器 websocket 的地址
+    this.WSE_LIST[num] = await browser.wsEndpoint();
+    // 初始化打开次数,因为浏览器会打开一个空白页
+    this.PAGE_NUM[num] = 1;
+
+    return browser;
+  }
+
+  /**
+   * @desc 替换当前浏览器实例
+   * @param {Promise<Browser>} browser 当前浏览器实例
+   * @param {number} num 当前浏览器编号
+   * @param {number} retries 重试次数，超过这个次数直接关闭浏览器
+   * */
+  async _replaceBrowserInstance(browser, num, retries = 2) {
+    clearTimeout(this.replaceTimer[num]);
+
+    const pageNum = this.PAGE_NUM[num];
+
+    // 当前浏览器处于打开的页面个数
+    const openPages = await browser.pages();
+    const oneMinute = 60 * 1000;
+    // 因为浏览器会打开一个空白页，如果当前浏览器还有任务在执行，一分钟后再关闭
+    if (openPages && openPages.length > 1 && retries > 0) {
+      const nextRetries = retries - 1;
+      console.log(
+        '【PuppeteerHelper】当前使用浏览器编号：%s，browser.pages：%s，retries',
+        num,
+        openPages.length,
+        retries
+      );
+      this.replaceTimer[num] = setTimeout(() => this._replaceBrowserInstance(browser, num, nextRetries), oneMinute);
+      // 返回旧的浏览器使用
+      return browser;
+    }
+
+    // 关闭浏览器
+    browser.close();
+
+    // 使用新的浏览器
+    const newBrowser = await this._generateBrowser(num);
+    console.log(
+      '【PuppeteerHelper】当前使用浏览器编号：%s 已打开页面总次数（%s）超过上限，创建新实例，新的wsEndpoint：%s',
+      num,
+      pageNum,
+      this.WSE_LIST[num]
+    );
+
+    return newBrowser;
   }
 
   /**
@@ -210,16 +271,26 @@ class PuppeteerHelper {
     // 通过随机数做简单的负载均衡,确定使用的第几台浏览器
     const tmp = Math.floor(Math.random() * this.MAX_WSE);
     const browserWSEndpoint = this.WSE_LIST[tmp];
-    console.log('【PuppeteerHelper】当前使用浏览器编号：%s ，wsEndpoint：%s', tmp, browserWSEndpoint);
+    const pageNum = this.PAGE_NUM[tmp];
+    console.log(
+      '【PuppeteerHelper】当前使用浏览器编号：%s ，wsEndpoint：%s，过去已打开页面总次数 %s',
+      tmp,
+      browserWSEndpoint,
+      pageNum
+    );
 
     let browser;
     try {
       // 使用节点来重新建立连接
       browser = await puppeteer.connect({ browserWSEndpoint });
+
+      // 如果当前浏览器超过规定次数，则替换浏览器
+      if (this.PAGE_NUM[tmp] > this.PAGE_COUNT) {
+        browser = this._replaceBrowserInstance(browser, tmp);
+      }
     } catch (err) {
       // 连接失败重新创建新的浏览器实例
-      browser = await puppeteer.launch(this.p_config);
-      this.WSE_LIST[tmp] = browser.wsEndpoint();
+      browser = await this._generateBrowser(tmp);
       console.log(
         '【PuppeteerHelper】当前使用浏览器编号：%s 连接失败，创建新实例，新的wsEndpoint：%s',
         tmp,
@@ -227,51 +298,129 @@ class PuppeteerHelper {
       );
       console.log('【PuppeteerHelper】WSE_LIST：', this.WSE_LIST);
     }
+
+    // 增加打开页面次数
+    this.PAGE_NUM[tmp]++;
+
     return browser;
+  }
+
+  /**
+   * @desc 自定义等待
+   * @param  page 页面
+   * @param {number} [timeout] 自定义等待时长，单位ms，默认30S
+   * */
+  async _waitRender(page, timeout) {
+    console.log('【_waitRender】开启自定义等待,自定义等待时长：%s ms,（默认30s）', timeout);
+    // 在页面中定义自己认为加载完的事件，在合适的时间点我们将该事件设置为 true
+    // 如果 _renderDone 出现且为 true 那么就截图，如果是 Object，说明页面加载出错了，可以捕获该异常进行提示
+    const renderDoneHandle = await page.waitForFunction('window._renderDone', {
+      polling: 120,
+      timeout: timeout,
+    });
+
+    const renderDone = await renderDoneHandle.jsonValue();
+    if (typeof renderDone === 'object') {
+      console.log(`【_waitRender】加载页面失败： -- ${renderDone.msg}`);
+      await page.close();
+
+      throw new Error(`客户端请求重试： -- ${renderDone.msg}`);
+    } else {
+      console.log('【_waitRender】页面加载成功');
+    }
+  }
+
+  /**
+   * @desc 水印
+   * @param page
+   * @param {string} text 水印文字
+   * @return {Promise<void>}
+   * @private
+   */
+  async _watermark(page, text) {
+    // 将 content 中的字符内容作为 script 添加到 head 中.
+    await page.addScriptTag({ content: htmlGenWaterMark.toString() });
+    await page.evaluate(
+      (options) => {
+        window.htmlGenWaterMark(options);
+      },
+      { text: text }
+    );
   }
 
   /**
    * @desc 截图
    * @param {string} url 网址链接
+   * @param {string} filePath 图片保存路径,如果未提供，则保存在当前程序运行下的example.png
    * @param {number} width 可视区域宽度，截图设定fullPage,可滚动，因此此设定可能对截图无意义
    * @param {number} height 可视区域高度，截图设定fullPage,可滚动，因此此设定暂时对截图无意义
+   * @param {boolean} openWait 是否开启等待
+   * @param {number} waitTimeout 自定义等待时长
+   * @param {boolean} openWatermark 是否开启等待
+   * @param {string} watermarkText 是否开启等待
    * */
-  async screenshot({ url, width = 800, height = 600 }) {
+  async screenshot({
+    url,
+    filePath = './example.png',
+    width = 800,
+    height = 600,
+    openWait,
+    waitTimeout,
+    openWatermark,
+    watermarkText = '水印',
+  }) {
+    console.log('【PuppeteerHelper】开始截图');
     // 获得可以使用的一台浏览器
     const browser = await this._currentBrowser();
     // 然后通过 Browser 对象创建页面 Page 对象
     const page = await browser.newPage();
-    // 设置可视区域大小,默认的页面大小为800x600分辨率
-    await page.setViewport({ width, height });
-    // 然后 page.goto() 跳转到指定的页面
-    await page.goto(url, {
-      // 不再有网络连接时触发（至少500毫秒后）,认为页面跳转完成
-      waitUtil: 'networkidle0',
-    });
-    // 在浏览器环境中执行函数, 获取页面的宽度和高度
-    const documentSize = await page.evaluate(() => {
-      return {
-        width: document.documentElement.clientWidth,
-        height: document.body.clientHeight,
-      };
-    });
-    // 调用 page.screenshot() 对页面进行截图
-    const picture = await page.screenshot({
-      // 截图保存路径
-      path: './example.png',
-      fullPage: true,
-      // clip: {
-      //   x: 0,
-      //   y: 0,
-      //   height: documentSize.height,
-      //   width: documentSize.width
-      // }
-    });
+    try {
+      // 设置可视区域大小,默认的页面大小为800x600分辨率
+      await page.setViewport({ width, height });
+      // 设定请求头
+      // await page.setExtraHTTPHeaders({ 'xmly-login-user': '7597' });
+      // 然后 page.goto() 跳转到指定的页面
+      await page.goto(url, {
+        // 不再有网络连接时触发（至少500毫秒后）,认为页面跳转完成
+        waitUtil: 'networkidle0',
+      });
+      // 在浏览器环境中执行函数, 获取页面的宽度和高度
+      // eslint-disable-next-line no-unused-vars
+      const documentSize = await page.evaluate(() => {
+        return {
+          width: document.documentElement.clientWidth,
+          // document.body.scrollHeight
+          height: document.body.clientHeight,
+        };
+      });
+      // 加载自定义等待时间
+      openWait && (await this._waitRender(page, waitTimeout));
+      // 加载水印
+      openWatermark && (await this._watermark(page, watermarkText));
 
-    // 关闭当前页面,减少内存的占用。
-    await page.close();
+      // 针对body元素进行截图
+      // const element = await page.$('body');
+      // const picture = await page.screenshot({ path: filePath });
 
-    return picture;
+      // 调用 page.screenshot() 对页面进行截图
+      const picture = await page.screenshot({
+        // 截图保存路径
+        path: filePath,
+        fullPage: true,
+        // clip: {
+        //   x: 0,
+        //   y: 0,
+        //   height: documentSize.height,
+        //   width: documentSize.width
+        // }
+      });
+
+      return picture;
+    } finally {
+      console.log('【PuppeteerHelper】结束截图，关闭当前页面');
+      // 无论截图失败还是成功都会关闭当前页面
+      await page.close();
+    }
   }
 }
 
