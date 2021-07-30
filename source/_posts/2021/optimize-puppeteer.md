@@ -150,6 +150,7 @@ app.get('/', function (req, res) {
  * 请求到达 -> 连接 Chromium -> 打开 tab 页 -> 运行代码 -> 关闭 tab 页 -> 返回数据
  * */
 import puppeteer from 'puppeteer';
+import { htmlGenWaterMark } from './watermark';
 
 class PuppeteerHelper {
   constructor() {
@@ -354,6 +355,10 @@ class PuppeteerHelper {
    * @param {string} filePath 图片保存路径,如果未提供，则保存在当前程序运行下的example.png
    * @param {number} width 可视区域宽度，截图设定fullPage,可滚动，因此此设定可能对截图无意义
    * @param {number} height 可视区域高度，截图设定fullPage,可滚动，因此此设定暂时对截图无意义
+   * @param {string} screenshotType 截图类型
+   * @param {string} selector 选择器
+   * @param {number} altitudeCompensation 高度补偿
+   * @param {object} headers 每个 HTTP 请求都会带上这些请求头。值必须是字符串
    * @param {boolean} openWait 是否开启等待
    * @param {number} waitTimeout 自定义等待时长
    * @param {boolean} openWatermark 是否开启等待
@@ -364,6 +369,10 @@ class PuppeteerHelper {
     filePath = './example.png',
     width = 800,
     height = 600,
+    screenshotType = 'default',
+    selector,
+    altitudeCompensation = 0,
+    headers,
     openWait,
     waitTimeout,
     openWatermark,
@@ -378,7 +387,7 @@ class PuppeteerHelper {
       // 设置可视区域大小,默认的页面大小为800x600分辨率
       await page.setViewport({ width, height });
       // 设定请求头
-      // await page.setExtraHTTPHeaders({ 'xmly-login-user': '7597' });
+      headers && (await page.setExtraHTTPHeaders(headers));
       // 然后 page.goto() 跳转到指定的页面
       await page.goto(url, {
         // 不再有网络连接时触发（至少500毫秒后）,认为页面跳转完成
@@ -403,23 +412,81 @@ class PuppeteerHelper {
       // const picture = await page.screenshot({ path: filePath });
 
       // 调用 page.screenshot() 对页面进行截图
-      const picture = await page.screenshot({
-        // 截图保存路径
-        path: filePath,
-        fullPage: true,
-        // clip: {
-        //   x: 0,
-        //   y: 0,
-        //   height: documentSize.height,
-        //   width: documentSize.width
-        // }
-      });
+      const picture = await this._capture(page, { screenshotType, filePath, selector, altitudeCompensation });
 
       return picture;
     } finally {
       console.log('【PuppeteerHelper】结束截图，关闭当前页面');
       // 无论截图失败还是成功都会关闭当前页面
       await page.close();
+    }
+  }
+
+  /**
+   * @desc 按照截图类型获取指定区域图片
+   * @param page
+   * @param {string} screenshotType 截图类型
+   * @param {string} filePath 图片保存路径,如果未提供，则保存在当前程序运行下的example.png
+   * @param {string} selector 选择器
+   * @param {number} altitudeCompensation 高度补偿
+   * @return {Promise<Buffer>}
+   * @private
+   */
+  async _capture(page, { screenshotType, filePath, selector, altitudeCompensation = 0 }) {
+    switch (screenshotType) {
+      case 'selector': {
+        const element = await page.$(selector);
+        const boundingBox = await element.boundingBox();
+        const picture = await element.screenshot({ path: filePath, clip: boundingBox });
+        return picture;
+      }
+      case 'scrollBody': {
+        // page.evaluate方法遍历所有div节点，找到一个scrollHeight大于视口高度的节点，将其标记为滚动节点。如果所有元素节点的scrollHeight都不大于视口高度，则body为滚动节点。
+        const { scrollHeight, isBody, width } = await page.evaluate(() => {
+          const clientHeight = document.documentElement.clientHeight;
+          const clientWidth = document.documentElement.clientWidth;
+          const divs = [...document.querySelectorAll('div')];
+          const len = divs.length;
+          let isBody = false;
+          let boxEl = null;
+          let i = 0;
+          for (; i < len; i++) {
+            const div = divs[i];
+            if (div.scrollHeight > clientHeight) {
+              boxEl = div;
+              break;
+            }
+          }
+          if (!boxEl && i === len) {
+            boxEl = document.querySelector('body');
+            isBody = true;
+          }
+          return { scrollHeight: boxEl.scrollHeight, isBody: isBody, width: clientWidth };
+        });
+        // 有新的滚动节点时设定可视区域高度
+        !isBody && (await page.setViewport({ height: scrollHeight + altitudeCompensation, width: width }));
+        // 截图
+        const picture = await page.screenshot({
+          path: filePath,
+          fullPage: true,
+        });
+        return picture;
+      }
+      case 'default':
+      default: {
+        const picture = await page.screenshot({
+          // 截图保存路径
+          path: filePath,
+          fullPage: true,
+          // clip: {
+          //   x: 0,
+          //   y: 0,
+          //   height: documentSize.height,
+          //   width: documentSize.width
+          // }
+        });
+        return picture;
+      }
     }
   }
 }
