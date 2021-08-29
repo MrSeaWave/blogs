@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-07-20T08:13:59.000Z</updated>
+  <updated>2021-08-29T05:06:34.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>remote Support for password authentication was removed on August 13, 2021</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/08/29/github-login-token/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/08/29/github-login-token/</id>
+    <published>2021-08-29T03:58:38.000Z</published>
+    <updated>2021-08-29T05:06:34.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文主要介绍 github 开发人员在七夕搞事情：&lt;code&gt;remote: Support for password authentication was removed on August 13, 2021.&lt;/code&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="github" scheme="https://mrseawave.github.io/blogs/categories/github/"/>
+    
+    
+    <category term="github" scheme="https://mrseawave.github.io/blogs/tags/github/"/>
+    
+    <category term="token" scheme="https://mrseawave.github.io/blogs/tags/token/"/>
+    
+  </entry>
   
   <entry>
     <title>pm2进程间通信</title>
@@ -460,32 +481,6 @@
     <category term="husky" scheme="https://mrseawave.github.io/blogs/tags/husky/"/>
     
     <category term="sourceTree" scheme="https://mrseawave.github.io/blogs/tags/sourceTree/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何从Apple 美区官网购买礼品卡</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/04/02/apple-gift-card/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/04/02/apple-gift-card/</id>
-    <published>2021-04-02T14:42:14.000Z</published>
-    <updated>2021-06-25T09:04:01.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;淘宝上怕有黑卡，那么我们现在可以通过美区官方的通道购买礼品卡，当然，你需要至少有个 &lt;strong&gt;双币信用卡&lt;/strong&gt; 。按理应该 visa 卡都能用。大家可以试试看。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;PS ：这个方法不是马上会收到，需要一点时间，官方写的是 4 小时以内，我大概不到 1 个小时就收到了。&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="apple" scheme="https://mrseawave.github.io/blogs/categories/apple/"/>
-    
-    
-    <category term="apple" scheme="https://mrseawave.github.io/blogs/tags/apple/"/>
-    
-    <category term="gift" scheme="https://mrseawave.github.io/blogs/tags/gift/"/>
-    
-    <category term="card" scheme="https://mrseawave.github.io/blogs/tags/card/"/>
     
   </entry>
   
