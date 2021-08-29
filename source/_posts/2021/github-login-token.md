@@ -3,7 +3,7 @@ title: remote Support for password authentication was removed on August 13, 2021
 author: Sea
 toc: true
 date: 2021-08-29 11:58:38
-cover:
+cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/SROeDJ_alex-jay-brady-r2b.jpg
 tags: [github, token]
 categories: [github]
 ---
