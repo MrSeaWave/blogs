@@ -107,6 +107,10 @@ $ curl cip.cc
 IP	: 101.81.77.200
 ```
 
+> Clash 设定代理后访问`curl cip.cc`时，如果返回的依然是直连的 IP 信息，可能是因为你的代理有规则判断，cip.cc 是国内域名，直连了。建议直接走`curl -vv https://www.google.com`
+
 ## 参考链接
 
 - [Mac OSX 终端走 shadowsocks 代理 #18 ](https://github.com/mrdulin/blog/issues/18)
+
+- [请问 clashx 怎么设置终端代理呢？](https://github.com/Dreamacro/clash/issues/592)
