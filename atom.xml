@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-09-01T07:55:55.000Z</updated>
+  <updated>2021-10-26T01:45:54.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ssh-key</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/10/26/ssh-key/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/10/26/ssh-key/</id>
+    <published>2021-10-26T01:34:11.000Z</published>
+    <updated>2021-10-26T01:45:54.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文将介绍的是如何在 mac 上上配置 SSH Key 中的 private key。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="ssh" scheme="https://mrseawave.github.io/blogs/categories/ssh/"/>
+    
+    <category term="github" scheme="https://mrseawave.github.io/blogs/categories/ssh/github/"/>
+    
+    
+    <category term="github" scheme="https://mrseawave.github.io/blogs/tags/github/"/>
+    
+    <category term="ssh" scheme="https://mrseawave.github.io/blogs/tags/ssh/"/>
+    
+    <category term="key" scheme="https://mrseawave.github.io/blogs/tags/key/"/>
+    
+    <category term="gitlab" scheme="https://mrseawave.github.io/blogs/tags/gitlab/"/>
+    
+  </entry>
   
   <entry>
     <title>Charles 手机抓包设置</title>
@@ -441,29 +468,6 @@
     <category term="export" scheme="https://mrseawave.github.io/blogs/tags/export/"/>
     
     <category term="export default" scheme="https://mrseawave.github.io/blogs/tags/export-default/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何杀死lcasensor进程</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/04/16/kill-lcasensor/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/04/16/kill-lcasensor/</id>
-    <published>2021-04-16T09:13:04.000Z</published>
-    <updated>2021-06-25T09:04:01.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文讲述如何杀死 lcasensor（内网的监控软件，敏感数据监控）这个进程。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="lcasensor" scheme="https://mrseawave.github.io/blogs/categories/lcasensor/"/>
-    
-    
-    <category term="kill" scheme="https://mrseawave.github.io/blogs/tags/kill/"/>
-    
-    <category term="lcasensor" scheme="https://mrseawave.github.io/blogs/tags/lcasensor/"/>
-    
-    <category term="dlp" scheme="https://mrseawave.github.io/blogs/tags/dlp/"/>
     
   </entry>
   
