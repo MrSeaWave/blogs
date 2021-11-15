@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-10-26T01:45:54.000Z</updated>
+  <updated>2021-11-15T06:31:38.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git-pull-default</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/11/15/git-pull-default/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/11/15/git-pull-default/</id>
+    <published>2021-11-15T05:48:30.000Z</published>
+    <updated>2021-11-15T06:31:38.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;问题背景&quot;&gt;&lt;a href=&quot;#问题背景&quot; class=&quot;headerlink&quot; title=&quot;问题背景&quot;&gt;&lt;/a&gt;问题背景&lt;/h2&gt;&lt;p&gt;当使用 git 版本为 2.27.0 以上时，使用&lt;code&gt;git pull&lt;/code&gt;命令出现以下的警告：&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hint: Pulling without specifying how to reconcile divergent branches is&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hint: discouraged. You can squelch this message by running one of the following&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hint: commands sometime before your next pull:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hint:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hint:   git config pull.rebase false  # merge (the default strategy)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hint:   git config pull.rebase true   # rebase&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hint:   git config pull.ff only       # fast-forward only&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hint:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hint: You can replace &amp;quot;git config&amp;quot; with &amp;quot;git config --global&amp;quot; to set a default&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hint: preference for all repositories. You can also pass --rebase, --no-rebase,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hint: or --ff-only on the command line to override the configured default per&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hint: invocation.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="git" scheme="https://mrseawave.github.io/blogs/categories/git/"/>
+    
+    
+    <category term="git" scheme="https://mrseawave.github.io/blogs/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>ssh-key</title>
@@ -445,29 +465,6 @@
     <category term="empty" scheme="https://mrseawave.github.io/blogs/tags/empty/"/>
     
     <category term="repository" scheme="https://mrseawave.github.io/blogs/tags/repository/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>export 与 export default 的区别</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/06/03/export-export-default/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/06/03/export-export-default/</id>
-    <published>2021-06-03T07:58:01.000Z</published>
-    <updated>2021-06-25T09:04:01.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文将介绍 export 与 export default 的差异性。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="js" scheme="https://mrseawave.github.io/blogs/categories/js/"/>
-    
-    
-    <category term="js" scheme="https://mrseawave.github.io/blogs/tags/js/"/>
-    
-    <category term="export" scheme="https://mrseawave.github.io/blogs/tags/export/"/>
-    
-    <category term="export default" scheme="https://mrseawave.github.io/blogs/tags/export-default/"/>
     
   </entry>
   
