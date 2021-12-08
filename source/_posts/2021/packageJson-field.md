@@ -232,5 +232,5 @@ yarn 中带的字段
 
 ### 参考
 
-- [npm 官方文档-更全](https://link.juejin.cn/?target=https%3A%2F%2Fdocs.npmjs.com%2Ffiles%2Fpackage.json.html)
+- [npm 官方文档-更全](https://docs.npmjs.com/cli/v8/configuring-npm/package-json)
 - [掘金-package.json 各字段的作用](https://juejin.cn/post/6844903975825702926)
