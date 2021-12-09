@@ -26,6 +26,7 @@ categories: [Mac, recommend]
 - Mac OS 命令行工具
   - [Homebrew](https://brew.sh/index_zh-cn.html)：Mac OS（或 Linux）缺失的软件包的管理器。
   - [Oh My Zsh](https://ohmyz.sh/)：oh my zsh
+  - [Fig](https://github.com/withfig/autocomplete)： 终端自动补全工具
 
 ## 基本软件
 
