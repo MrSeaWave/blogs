@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-12-08T06:04:35.000Z</updated>
+  <updated>2021-12-10T06:23:19.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>npm publish过滤部分文件</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/12/10/npm-publish-filter/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/12/10/npm-publish-filter/</id>
+    <published>2021-12-10T06:13:38.000Z</published>
+    <updated>2021-12-10T06:23:19.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;npm publish&lt;/strong&gt; 的时候会把项目目录里面所有的文件都&lt;code&gt;publish&lt;/code&gt;到&lt;code&gt;npm&lt;/code&gt;仓库中， 但是往往有一部分目录和文件不想发布上去，比如项目的源码、编译脚本等等信息。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="npm" scheme="https://mrseawave.github.io/blogs/categories/npm/"/>
+    
+    
+    <category term="npm" scheme="https://mrseawave.github.io/blogs/tags/npm/"/>
+    
+    <category term="publish" scheme="https://mrseawave.github.io/blogs/tags/publish/"/>
+    
+  </entry>
   
   <entry>
     <title>package.json 各字段的作用</title>
@@ -437,28 +458,6 @@
     <category term="rgb" scheme="https://mrseawave.github.io/blogs/tags/rgb/"/>
     
     <category term="css" scheme="https://mrseawave.github.io/blogs/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lerna</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/06/07/lerna/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/06/07/lerna/</id>
-    <published>2021-06-07T06:42:42.000Z</published>
-    <updated>2021-11-16T09:45:38.000Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;lerna-demo&quot;&gt;&lt;a href=&quot;#lerna-demo&quot; class=&quot;headerlink&quot; title=&quot;lerna-demo&quot;&gt;&lt;/a&gt;lerna-demo&lt;/h1&gt;&lt;p&gt;Lerna 是一个工具，它优化了使用 git 和 npm 管理多包存储库的工作流。&lt;/p&gt;
-&lt;p&gt;本文通过一个示例讲述了如何基于 Lerna 管理多个 package，并和其它工具整合，打造高效、完美的工作流，最终形成一个最佳实践。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="lerna" scheme="https://mrseawave.github.io/blogs/categories/lerna/"/>
-    
-    
-    <category term="lerna" scheme="https://mrseawave.github.io/blogs/tags/lerna/"/>
-    
-    <category term="monorepo" scheme="https://mrseawave.github.io/blogs/tags/monorepo/"/>
     
   </entry>
   
