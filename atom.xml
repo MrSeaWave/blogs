@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-12-10T06:23:19.000Z</updated>
+  <updated>2021-12-13T01:53:56.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IDEA粘贴多行代码时，总是自动缩进</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/12/13/idea-reformat-on-paste/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/12/13/idea-reformat-on-paste/</id>
+    <published>2021-12-13T01:43:46.000Z</published>
+    <updated>2021-12-13T01:53:56.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;当我们在使用 IntelliJ IDEA 去粘贴多行代码时，会发现总是自动缩进，或者被格式化。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="idea" scheme="https://mrseawave.github.io/blogs/categories/idea/"/>
+    
+    
+    <category term="idea" scheme="https://mrseawave.github.io/blogs/tags/idea/"/>
+    
+    <category term="tools" scheme="https://mrseawave.github.io/blogs/tags/tools/"/>
+    
+  </entry>
   
   <entry>
     <title>npm publish过滤部分文件</title>
@@ -437,27 +458,6 @@
     <category term="webpack" scheme="https://mrseawave.github.io/blogs/tags/webpack/"/>
     
     <category term="import" scheme="https://mrseawave.github.io/blogs/tags/import/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>RGB颜色插值渐变原理</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/06/11/rgb-color-gradient-interpolation-principle-and-algorithm/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/06/11/rgb-color-gradient-interpolation-principle-and-algorithm/</id>
-    <published>2021-06-11T08:18:10.000Z</published>
-    <updated>2021-06-25T09:04:01.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文将要讲述 RGB 颜色插值渐变原理及其实现。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="css" scheme="https://mrseawave.github.io/blogs/categories/css/"/>
-    
-    
-    <category term="rgb" scheme="https://mrseawave.github.io/blogs/tags/rgb/"/>
-    
-    <category term="css" scheme="https://mrseawave.github.io/blogs/tags/css/"/>
     
   </entry>
   
