@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-12-13T01:53:56.000Z</updated>
+  <updated>2021-12-16T03:27:05.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何使用Github Action 自动 lerna publish</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/12/16/lerna-npm-auto-publish/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/12/16/lerna-npm-auto-publish/</id>
+    <published>2021-12-16T01:46:00.000Z</published>
+    <updated>2021-12-16T03:27:05.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文讲述的是如何利用&lt;code&gt;Github Action&lt;/code&gt;自动化执行 &lt;code&gt;lerna publish&lt;/code&gt;。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="lerna" scheme="https://mrseawave.github.io/blogs/categories/lerna/"/>
+    
+    <category term="github" scheme="https://mrseawave.github.io/blogs/categories/lerna/github/"/>
+    
+    
+    <category term="github" scheme="https://mrseawave.github.io/blogs/tags/github/"/>
+    
+    <category term="lerna" scheme="https://mrseawave.github.io/blogs/tags/lerna/"/>
+    
+    <category term="publish" scheme="https://mrseawave.github.io/blogs/tags/publish/"/>
+    
+    <category term="npm" scheme="https://mrseawave.github.io/blogs/tags/npm/"/>
+    
+    <category term="actions" scheme="https://mrseawave.github.io/blogs/tags/actions/"/>
+    
+  </entry>
   
   <entry>
     <title>IDEA粘贴多行代码时，总是自动缩进</title>
@@ -52,9 +81,9 @@
     <category term="npm" scheme="https://mrseawave.github.io/blogs/categories/npm/"/>
     
     
-    <category term="npm" scheme="https://mrseawave.github.io/blogs/tags/npm/"/>
-    
     <category term="publish" scheme="https://mrseawave.github.io/blogs/tags/publish/"/>
+    
+    <category term="npm" scheme="https://mrseawave.github.io/blogs/tags/npm/"/>
     
   </entry>
   
@@ -437,27 +466,6 @@
     <category term="hexo" scheme="https://mrseawave.github.io/blogs/tags/hexo/"/>
     
     <category term="md" scheme="https://mrseawave.github.io/blogs/tags/md/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>webpack import() 动态加载模块踩坑</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/06/23/webpack-import/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/06/23/webpack-import/</id>
-    <published>2021-06-23T08:09:42.000Z</published>
-    <updated>2021-06-25T09:04:01.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文是关于 webpack 中使用 import 时的踩坑记录。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="webpack" scheme="https://mrseawave.github.io/blogs/categories/webpack/"/>
-    
-    
-    <category term="webpack" scheme="https://mrseawave.github.io/blogs/tags/webpack/"/>
-    
-    <category term="import" scheme="https://mrseawave.github.io/blogs/tags/import/"/>
     
   </entry>
   
