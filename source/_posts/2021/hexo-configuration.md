@@ -135,6 +135,61 @@ abbrlink:
 
 使用这种方法生成 `permalink` 时，在每次提交修改前，最好先执行 `hexo clean && hexo g`，确保提交前你所有的文章的 `front-matter` 中都包含 `abbrlink` ，避免因 `title` 的改变导致生成 `abbrlink` 不一致（如果已存在 `abbrlink`，就不会重新生成，不论`title` 是否发生变化）。
 
+## 如何引用自己撰写的文章
+
+文章中，有时候需要自己给自己引流，所以经常要引用自己的文章，最好的方法就是在生成系统之内直接引用。
+
+Hexo 提供了 [标签插件](https://hexo.io/zh-cn/docs/tag-plugins.html) 来完成这个功能。
+
+```
+{% post_path filename %}
+{% post_link filename [title] [escape] %}
+```
+
+在使用此标签时可以忽略文章文件所在的路径或者文章的永久链接信息、如语言、日期。
+
+例如，在文章中使用 `{% post_link how-to-bake-a-cake %}` 时，只需有一个名为 `how-to-bake-a-cake.md` 的文章文件即可。即使这个文件位于站点文件夹的 `source/posts/2015-02-my-family-holiday` 目录下、或者文章的永久链接是 `2018/en/how-to-bake-a-cake`，都没有影响。
+
+默认链接文字是文章的标题，你也可以自定义要显示的文本。
+
+默认对文章的标题和自定义标题里的特殊字符进行转义。可以使用`escape`选项，禁止对特殊字符进行转义。
+
+**链接使用文章的标题**
+
+```
+{% post_link hexo-3-8-released %}
+```
+
+[Hexo 3.8.0 Released](https://hexo.io/news/2018/10/19/hexo-3-8-released/)
+
+**链接使用自定义文字**
+
+```
+{% post_link hexo-3-8-released '通往文章的链接' %}
+```
+
+[通往文章的链接](https://hexo.io/news/2018/10/19/hexo-3-8-released/)
+
+**对标题的特殊字符进行转义**
+
+```
+{% post_link hexo-4-released 'How to use <b> tag in title' %}
+```
+
+[How to use tag in title](https://hexo.io/news/2019/10/14/hexo-4-released/)
+
+**禁止对标题的特殊字符进行转义**
+
+```
+{% post_link hexo-4-released '<b>bold</b> custom title' false %}
+```
+
+[**bold** custom title](https://hexo.io/news/2019/10/14/hexo-4-released/)
+
+> 注，使用 post_path 时不能用在 md 语法中
+>
+> ![image-20211216113248493](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/y4ISIo_image-20211216113248493.png)
+
 ## 参考链接
 
 - [Hexo 相关问题和优化](https://wylu.me/posts/78c745f0/)
@@ -142,3 +197,4 @@ abbrlink:
 - [Hexo 永久链接管理](https://clearsky.me/hexo-permalinks.html)
 - [永久链接（Permalinks）](https://hexo.io/zh-cn/docs/permalinks.html)
 - [hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink)
+- [标签插件（Tag Plugins）](https://hexo.io/zh-cn/docs/tag-plugins.html)
