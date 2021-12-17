@@ -1,5 +1,5 @@
 ---
-title: GitHub Actions 手动触发方式
+title: GitHub Actions 如何手动触发
 author: Sea
 toc: true
 date: 2021-12-17 09:48:53
