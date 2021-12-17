@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-12-17T03:02:03.000Z</updated>
+  <updated>2021-12-17T06:13:15.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>github-actions-cache</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/12/17/github-actions-cache/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/12/17/github-actions-cache/</id>
+    <published>2021-12-17T05:31:17.000Z</published>
+    <updated>2021-12-17T06:13:15.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;在之前的文章中 《&lt;a href=&quot;/blogs/articles/2021/01/06/start-github-actions/&quot; title=&quot;github-actions入门&quot;&gt;github-actions入门&lt;/a&gt;》《 &lt;a href=&quot;/blogs/articles/2021/12/16/github-actions-auto-publish/&quot; title=&quot;如何使用Github Action 自动 lerna publish&quot;&gt;如何使用Github Action 自动 lerna publish&lt;/a&gt; 》中，介绍了 Github Actions 的一些用法，其中在构建过程中，会安装很多第三方依赖，而这些依赖会很耗时，因此可以考虑是否有优化的空间，并不需要每次都重新下载，而是可以将这些依赖缓存起来，加快构建速度。&lt;/p&gt;
+&lt;p&gt;这里专门开一篇文章，来记录 Github Actions 的缓存优化相关的知识。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="github" scheme="https://mrseawave.github.io/blogs/categories/github/"/>
+    
+    
+    <category term="github" scheme="https://mrseawave.github.io/blogs/tags/github/"/>
+    
+    <category term="actions" scheme="https://mrseawave.github.io/blogs/tags/actions/"/>
+    
+    <category term="cache" scheme="https://mrseawave.github.io/blogs/tags/cache/"/>
+    
+  </entry>
   
   <entry>
     <title>GitHub Actions 手动触发方式</title>
@@ -41,10 +65,10 @@
   
   <entry>
     <title>如何使用Github Action 自动 lerna publish</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/12/16/lerna-npm-auto-publish/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/12/16/lerna-npm-auto-publish/</id>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/12/16/github-actions-auto-publish/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/12/16/github-actions-auto-publish/</id>
     <published>2021-12-16T01:46:00.000Z</published>
-    <updated>2021-12-16T03:27:05.000Z</updated>
+    <updated>2021-12-17T06:13:15.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文讲述的是如何利用&lt;code&gt;Github Action&lt;/code&gt;自动化执行 &lt;code&gt;lerna publish&lt;/code&gt;。&lt;/p&gt;</summary>
@@ -58,13 +82,13 @@
     
     <category term="github" scheme="https://mrseawave.github.io/blogs/tags/github/"/>
     
-    <category term="actions" scheme="https://mrseawave.github.io/blogs/tags/actions/"/>
-    
     <category term="lerna" scheme="https://mrseawave.github.io/blogs/tags/lerna/"/>
     
     <category term="publish" scheme="https://mrseawave.github.io/blogs/tags/publish/"/>
     
     <category term="npm" scheme="https://mrseawave.github.io/blogs/tags/npm/"/>
+    
+    <category term="actions" scheme="https://mrseawave.github.io/blogs/tags/actions/"/>
     
   </entry>
   
@@ -447,27 +471,6 @@
     <category term="validator" scheme="https://mrseawave.github.io/blogs/tags/validator/"/>
     
     <category term="JSON-Schema" scheme="https://mrseawave.github.io/blogs/tags/JSON-Schema/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>优化puppeteer</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/07/05/optimize-puppeteer/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/07/05/optimize-puppeteer/</id>
-    <published>2021-07-05T02:05:31.000Z</published>
-    <updated>2021-07-30T02:11:35.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文将讲述如何优化&lt;code&gt;puppeteer&lt;/code&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="puppeteer" scheme="https://mrseawave.github.io/blogs/categories/puppeteer/"/>
-    
-    
-    <category term="puppeteer" scheme="https://mrseawave.github.io/blogs/tags/puppeteer/"/>
-    
-    <category term="optimize" scheme="https://mrseawave.github.io/blogs/tags/optimize/"/>
     
   </entry>
   
