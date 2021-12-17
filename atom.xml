@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-12-16T03:27:05.000Z</updated>
+  <updated>2021-12-17T03:02:03.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GitHub Actions 手动触发方式</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/12/17/github-actions-manual-trigger/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/12/17/github-actions-manual-trigger/</id>
+    <published>2021-12-17T01:48:53.000Z</published>
+    <updated>2021-12-17T03:02:03.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;GitHub Ac­tions 在早期可能是处于初级开发阶段，它的功能非常原生，甚至没有直接提供一个手动触发按钮。一般的触发方式为代码变动（&lt;code&gt;push&lt;/code&gt; 、&lt;code&gt;pull_request&lt;/code&gt;），发布文件（&lt;code&gt;release&lt;/code&gt;）或者定时（&lt;code&gt;schedule&lt;/code&gt;）等，这些属于自动触发方式。如果我们需要在 GitHub 仓库没有任何变动的情况下&lt;strong&gt;手动触发&lt;/strong&gt;就需要使用一些奇技淫巧。经历了漫长的功能迭代，官方最终正式带来了手动触发功能，这也宣告了一个瞎折腾时代的结束，一个崭新的折腾时代开始。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="github" scheme="https://mrseawave.github.io/blogs/categories/github/"/>
+    
+    
+    <category term="github" scheme="https://mrseawave.github.io/blogs/tags/github/"/>
+    
+    <category term="actions" scheme="https://mrseawave.github.io/blogs/tags/actions/"/>
+    
+    <category term="manual" scheme="https://mrseawave.github.io/blogs/tags/manual/"/>
+    
+  </entry>
   
   <entry>
     <title>如何使用Github Action 自动 lerna publish</title>
@@ -35,13 +58,13 @@
     
     <category term="github" scheme="https://mrseawave.github.io/blogs/tags/github/"/>
     
+    <category term="actions" scheme="https://mrseawave.github.io/blogs/tags/actions/"/>
+    
     <category term="lerna" scheme="https://mrseawave.github.io/blogs/tags/lerna/"/>
     
     <category term="publish" scheme="https://mrseawave.github.io/blogs/tags/publish/"/>
     
     <category term="npm" scheme="https://mrseawave.github.io/blogs/tags/npm/"/>
-    
-    <category term="actions" scheme="https://mrseawave.github.io/blogs/tags/actions/"/>
     
   </entry>
   
@@ -445,27 +468,6 @@
     <category term="puppeteer" scheme="https://mrseawave.github.io/blogs/tags/puppeteer/"/>
     
     <category term="optimize" scheme="https://mrseawave.github.io/blogs/tags/optimize/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何在Hexo中对文章md文件分类</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/06/25/hexo-new-post-path/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/06/25/hexo-new-post-path/</id>
-    <published>2021-06-25T08:23:31.000Z</published>
-    <updated>2021-06-25T09:21:29.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文将介绍如何在 Hexo 中对文章 md 文件按日期进行分类&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="hexo" scheme="https://mrseawave.github.io/blogs/categories/hexo/"/>
-    
-    
-    <category term="hexo" scheme="https://mrseawave.github.io/blogs/tags/hexo/"/>
-    
-    <category term="md" scheme="https://mrseawave.github.io/blogs/tags/md/"/>
     
   </entry>
   
