@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-12-17T06:46:45.000Z</updated>
+  <updated>2021-12-30T02:35:19.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nodejs 中基于 Stream 的多文件合并实现</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/12/30/node-combine-more-files/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/12/30/node-combine-more-files/</id>
+    <published>2021-12-30T01:31:23.000Z</published>
+    <updated>2021-12-30T02:35:19.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近在做关于&lt;a href=&quot;https://github.com/LackZero/rocket-upload-server&quot;&gt;node 端的上传文件&lt;/a&gt;时，碰到一个问题，如何将多个文件合并至一个文件呢？（前端上传的切割文件在服务端进行合并）&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="node" scheme="https://mrseawave.github.io/blogs/categories/node/"/>
+    
+    
+    <category term="node" scheme="https://mrseawave.github.io/blogs/tags/node/"/>
+    
+    <category term="stream" scheme="https://mrseawave.github.io/blogs/tags/stream/"/>
+    
+    <category term="combine" scheme="https://mrseawave.github.io/blogs/tags/combine/"/>
+    
+  </entry>
   
   <entry>
     <title>GitHub Actions 如何使用缓存</title>
@@ -370,9 +393,9 @@
     <category term="cron" scheme="https://mrseawave.github.io/blogs/categories/cron/"/>
     
     
-    <category term="cron" scheme="https://mrseawave.github.io/blogs/tags/cron/"/>
-    
     <category term="node" scheme="https://mrseawave.github.io/blogs/tags/node/"/>
+    
+    <category term="cron" scheme="https://mrseawave.github.io/blogs/tags/cron/"/>
     
     <category term="schedule" scheme="https://mrseawave.github.io/blogs/tags/schedule/"/>
     
@@ -446,31 +469,6 @@
     <category term="watermark" scheme="https://mrseawave.github.io/blogs/tags/watermark/"/>
     
     <category term="html" scheme="https://mrseawave.github.io/blogs/tags/html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>koa后端数据校验</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/07/06/koa-validator/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/07/06/koa-validator/</id>
-    <published>2021-07-06T05:30:24.000Z</published>
-    <updated>2021-07-06T06:07:53.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;对每个接口的传入参数进行校验，是一个 Web 后端项目的必备功能，本文将介绍 koa 中如何使用&lt;a href=&quot;https://github.com/sideway/joi&quot;&gt;&lt;code&gt;joi&lt;/code&gt;&lt;/a&gt;进行数据格式检验。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="koa" scheme="https://mrseawave.github.io/blogs/categories/koa/"/>
-    
-    <category term="validator" scheme="https://mrseawave.github.io/blogs/categories/koa/validator/"/>
-    
-    
-    <category term="koa" scheme="https://mrseawave.github.io/blogs/tags/koa/"/>
-    
-    <category term="validator" scheme="https://mrseawave.github.io/blogs/tags/validator/"/>
-    
-    <category term="JSON-Schema" scheme="https://mrseawave.github.io/blogs/tags/JSON-Schema/"/>
     
   </entry>
   
