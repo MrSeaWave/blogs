@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2021-12-30T02:35:19.000Z</updated>
+  <updated>2021-12-31T02:21:34.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何在MAC上安装Mysql</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2021/12/31/mysql-install/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2021/12/31/mysql-install/</id>
+    <published>2021-12-31T01:43:49.000Z</published>
+    <updated>2021-12-31T02:21:34.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文将介绍如何在 Mac 上安装 Mysql。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="mysql" scheme="https://mrseawave.github.io/blogs/categories/mysql/"/>
+    
+    
+    <category term="install" scheme="https://mrseawave.github.io/blogs/tags/install/"/>
+    
+    <category term="mySql" scheme="https://mrseawave.github.io/blogs/tags/mySql/"/>
+    
+  </entry>
   
   <entry>
     <title>Nodejs 中基于 Stream 的多文件合并实现</title>
@@ -446,29 +467,6 @@
     <category term="app" scheme="https://mrseawave.github.io/blogs/tags/app/"/>
     
     <category term="GoodNotes" scheme="https://mrseawave.github.io/blogs/tags/GoodNotes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端页面添加水印</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/07/09/watermark/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/07/09/watermark/</id>
-    <published>2021-07-09T02:31:32.000Z</published>
-    <updated>2021-07-09T07:07:42.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;为防止信息泄露，给网页加水印是一种常见的方法。本篇文章将介绍一种添加明水印的方法。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="js" scheme="https://mrseawave.github.io/blogs/categories/js/"/>
-    
-    
-    <category term="js" scheme="https://mrseawave.github.io/blogs/tags/js/"/>
-    
-    <category term="watermark" scheme="https://mrseawave.github.io/blogs/tags/watermark/"/>
-    
-    <category term="html" scheme="https://mrseawave.github.io/blogs/tags/html/"/>
     
   </entry>
   
