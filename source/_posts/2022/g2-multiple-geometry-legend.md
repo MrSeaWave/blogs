@@ -457,12 +457,12 @@ chart.on('legend-item:click', (ev) => {
   console.log('item', item);
   console.log('filed item.value', item.value);
   // 获取当前图表
-  const currentView = chart.geometries.find((w: any) => {
+  const currentGeometry = chart.geometries.find((w: any) => {
     return w.getAttribute('position').getFields()[1] === item.value;
   });
-  if (currentView) {
+  if (currentGeometry) {
     // 更改图展示状态
-    currentView.changeVisible(!currentView.visible);
+    currentGeometry.changeVisible(!currentGeometry.visible);
   }
 });
 
@@ -599,12 +599,12 @@ chart.on('legend-item:click', (ev) => {
   console.log('item', item);
   console.log('filed item.value', item.value);
   // 获取当前图表
-  const currentView = chart.geometries.find((w: any) => {
+  const currentGeometry = chart.geometries.find((w: any) => {
     return w.getAttribute('position').getFields()[1] === item.value;
   });
-  if (currentView) {
+  if (currentGeometry) {
     // 更改图展示状态
-    currentView.changeVisible(!currentView.visible);
+    currentGeometry.changeVisible(!currentGeometry.visible);
   }
   // 更改图例状态
   delegateObject.item.unchecked = !originUnchecked;
