@@ -1,5 +1,5 @@
 ---
-title: G2多图形图例问题
+title: G2 多图形图例问题
 author: Sea
 toc: true
 date: 2022-01-07 13:48:34
