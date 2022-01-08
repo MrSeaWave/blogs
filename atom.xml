@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2022-01-08T08:50:04.000Z</updated>
+  <updated>2022-01-08T09:16:03.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阅读 install-pkg 源码</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2022/01/08/install-pkg/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2022/01/08/install-pkg/</id>
+    <published>2022-01-08T09:00:28.000Z</published>
+    <updated>2022-01-08T09:16:03.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文是在看到&lt;a href=&quot;https://github.com/lxchuan12/install-pkg-analysis&quot;&gt;Vue 团队核心成员开发的 39 行小工具 install-pkg 安装包，值得一学！&lt;/a&gt;文章后，对&lt;a href=&quot;https://github.com/antfu/install-pkg#readme&quot;&gt;@antfu/install-pkg&lt;/a&gt;进行的一次源码阅读。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="analysis" scheme="https://mrseawave.github.io/blogs/categories/analysis/"/>
+    
+    
+    <category term="install-pkg" scheme="https://mrseawave.github.io/blogs/tags/install-pkg/"/>
+    
+    <category term="analysis" scheme="https://mrseawave.github.io/blogs/tags/analysis/"/>
+    
+  </entry>
   
   <entry>
     <title>用 Node 编写跨平台 spawn 语句</title>
@@ -439,30 +460,6 @@
     <category term="static" scheme="https://mrseawave.github.io/blogs/tags/static/"/>
     
     <category term="basePath" scheme="https://mrseawave.github.io/blogs/tags/basePath/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Node.js设置定时任务</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/07/13/node-schedule/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/07/13/node-schedule/</id>
-    <published>2021-07-13T07:49:23.000Z</published>
-    <updated>2021-07-13T08:41:12.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;在实际开发项目中，会遇到很多定时任务的工作。比如：定时导出某些数据、定时发送消息或邮件给用户、定时备份什么类型的文件等等&amp;gt;&lt;/p&gt;
-&lt;p&gt;一般可以写个定时器，来完成相应的需求，在 node.js 中自已实现也非常容易，接下来要介绍的是&lt;a href=&quot;https://www.npmjs.com/package/node-schedule&quot;&gt;&lt;code&gt;node-schedule&lt;/code&gt;&lt;/a&gt;来完成定时任务&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="cron" scheme="https://mrseawave.github.io/blogs/categories/cron/"/>
-    
-    
-    <category term="node" scheme="https://mrseawave.github.io/blogs/tags/node/"/>
-    
-    <category term="cron" scheme="https://mrseawave.github.io/blogs/tags/cron/"/>
-    
-    <category term="schedule" scheme="https://mrseawave.github.io/blogs/tags/schedule/"/>
     
   </entry>
   
