@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2022-01-07T07:20:28.000Z</updated>
+  <updated>2022-01-08T08:50:04.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用 Node 编写跨平台 spawn 语句</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2022/01/08/cross-spawn/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2022/01/08/cross-spawn/</id>
+    <published>2022-01-08T08:30:01.000Z</published>
+    <updated>2022-01-08T08:50:04.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文将会讲述如何跨平台来使用&lt;code&gt;spawn&lt;/code&gt;语句呢？（可以利用&lt;a href=&quot;https://www.npmjs.com/package/cross-spawn&quot;&gt;cross-spawn&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="node" scheme="https://mrseawave.github.io/blogs/categories/node/"/>
+    
+    
+    <category term="node" scheme="https://mrseawave.github.io/blogs/tags/node/"/>
+    
+    <category term="cross" scheme="https://mrseawave.github.io/blogs/tags/cross/"/>
+    
+    <category term="spawn" scheme="https://mrseawave.github.io/blogs/tags/spawn/"/>
+    
+  </entry>
   
   <entry>
     <title>G2 多图形图例问题</title>
@@ -440,33 +463,6 @@
     <category term="cron" scheme="https://mrseawave.github.io/blogs/tags/cron/"/>
     
     <category term="schedule" scheme="https://mrseawave.github.io/blogs/tags/schedule/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>node端生成水印图片</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/07/13/node-watermark/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/07/13/node-watermark/</id>
-    <published>2021-07-13T02:13:32.000Z</published>
-    <updated>2021-07-13T02:41:30.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;在项目中通常会出现给图片增加水印的需求，本文将介绍如何在使用 node 时处理图片，增加水印功能。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="sharp" scheme="https://mrseawave.github.io/blogs/categories/sharp/"/>
-    
-    <category term="watermark" scheme="https://mrseawave.github.io/blogs/categories/sharp/watermark/"/>
-    
-    
-    <category term="node" scheme="https://mrseawave.github.io/blogs/tags/node/"/>
-    
-    <category term="img" scheme="https://mrseawave.github.io/blogs/tags/img/"/>
-    
-    <category term="sharp" scheme="https://mrseawave.github.io/blogs/tags/sharp/"/>
-    
-    <category term="watermark" scheme="https://mrseawave.github.io/blogs/tags/watermark/"/>
     
   </entry>
   
