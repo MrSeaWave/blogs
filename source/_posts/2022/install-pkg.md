@@ -4,11 +4,12 @@ author: Sea
 toc: true
 date: 2022-01-08 17:00:28
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/pLHqhA_inhyuk-lee-1.jpg
-tags: [install-pkg, analysis]
-categories: [analysis]
+tags: [ install-pkg, analysis ]
+categories: [ analysis ]
+
 ---
 
-本文是在看到[Vue 团队核心成员开发的 39 行小工具 install-pkg 安装包，值得一学！](https://github.com/lxchuan12/install-pkg-analysis)文章后，对[@antfu/install-pkg](https://github.com/antfu/install-pkg#readme)进行的一次源码阅读。
+本文是在看到 [《Vue团队核心成员开发的39行小工具 install-pkg 安装包，值得一学！》](https://github.com/lxchuan12/install-pkg-analysis) 文章后，对 [@antfu/install-pkg](https://github.com/antfu/install-pkg#readme) 进行的一次源码阅读。
 
 <!--more-->
 
@@ -23,9 +24,9 @@ npm i @antfu/install-pkg
 ```
 
 ```ts
-import { installPackage } from '@antfu/install-pkg';
+import { installPackage } from '@antfu/install-pkg'
 
-await installPackage('vite', { silent: true });
+await installPackage('vite', { silent: true })
 ```
 
 ## 源码
@@ -35,8 +36,8 @@ await installPackage('vite', { silent: true });
 导出所有
 
 ```ts
-export * from './detect';
-export * from './install';
+export * from './detect'
+export * from './install'
 ```
 
 ### install.ts installPackage 安装包
@@ -44,36 +45,45 @@ export * from './install';
 支持指定包管理器，支持安装多个依赖，支持额外的参数。
 
 ```ts
-import execa from 'execa';
-import { detectPackageManager } from '.';
+import execa from 'execa'
+import { detectPackageManager } from '.'
 
 export interface InstallPackageOptions {
-  cwd?: string;
-  dev?: boolean;
-  silent?: boolean;
-  packageManager?: string;
-  preferOffline?: boolean;
-  additionalArgs?: string[];
+  cwd?: string
+  dev?: boolean
+  silent?: boolean
+  packageManager?: string
+  preferOffline?: boolean
+  additionalArgs?: string[]
 }
 
 export async function installPackage(names: string | string[], options: InstallPackageOptions = {}) {
   // 包管理器
-  const agent = options.packageManager || (await detectPackageManager(options.cwd)) || 'npm';
-  if (!Array.isArray(names)) names = [names];
+  const agent = options.packageManager || await detectPackageManager(options.cwd) || 'npm'
+  if (!Array.isArray(names))
+    names = [names]
 
   // 额外的依赖
-  const args = options.additionalArgs || [];
+  const args = options.additionalArgs || []
 
-  if (options.preferOffline) args.unshift('--prefer-offline');
+  if (options.preferOffline)
+    args.unshift('--prefer-offline')
 
   return execa(
     agent,
-    [agent === 'yarn' ? 'add' : 'install', options.dev ? '-D' : '', ...args, ...names].filter(Boolean),
+    [
+      agent === 'yarn'
+        ? 'add'
+        : 'install',
+      options.dev ? '-D' : '',
+      ...args,
+      ...names,
+    ].filter(Boolean),
     {
       stdio: options.silent ? 'ignore' : 'inherit',
       cwd: options.cwd,
-    }
-  );
+    },
+  )
 }
 ```
 
@@ -88,35 +98,39 @@ yarn add -D react react-dom
 根据当前的锁文件(yarn.lock or package-lock.json or pnpm-lock.yaml )判断是哪个包管理器
 
 ```ts
-import path from 'path';
-import findUp from 'find-up';
+import path from 'path'
+import findUp from 'find-up'
 
-export type PackageManager = 'pnpm' | 'yarn' | 'npm';
+export type PackageManager = 'pnpm' | 'yarn' | 'npm'
 
 const LOCKS: Record<string, PackageManager> = {
   'pnpm-lock.yaml': 'pnpm',
   'yarn.lock': 'yarn',
   'package-lock.json': 'npm',
-};
+}
 
 // process.cwd()是 返回当前工作目录。如：调用node命令执行脚本时的目录。
 export async function detectPackageManager(cwd = process.cwd()) {
   // 通过findUp 获取当前目录lock文件
-  const result = await findUp(Object.keys(LOCKS), { cwd });
-  const agent = result ? LOCKS[path.basename(result)] : null;
-  return agent;
+  const result = await findUp(Object.keys(LOCKS), { cwd })
+  const agent = (result ? LOCKS[path.basename(result)] : null)
+  return agent
 }
+
 ```
 
-其中需要注意的一些 node 相关的知识：
+其中需要注意的一些node相关的知识：
 
-- `process.cwd()`: 返回当前工作目录。如：调用 node 命令执行脚本时的目录。
+- `process.cwd()`: 返回当前工作目录。如：调用node命令执行脚本时的目录。
+
 - `__dirname`: 返回源代码所在的目录。
+
 - `path.basename()`: 返回 path 的最后一部分
+
   ```js
   path.basename('/foo/bar/baz/asdf/quux.html');
   // 返回: 'quux.html'
-
+  
   path.basename('/foo/bar/baz/asdf/quux.html', '.html');
   // 返回: 'quux'
   ```
@@ -136,7 +150,7 @@ export async function detectPackageManager(cwd = process.cwd()) {
 
 ```js
 import path from 'node:path';
-import { findUp, pathExists } from 'find-up';
+import {findUp, pathExists} from 'find-up';
 
 console.log(await findUp('unicorn.png'));
 //=> '/Users/sindresorhus/unicorn.png'
@@ -144,23 +158,18 @@ console.log(await findUp('unicorn.png'));
 console.log(await findUp(['rainbow.png', 'unicorn.png']));
 //=> '/Users/sindresorhus/unicorn.png'
 
-console.log(
-  await findUp(
-    async (directory) => {
-      const hasUnicorns = await pathExists(path.join(directory, 'unicorn.png'));
-      return hasUnicorns && directory;
-    },
-    { type: 'directory' }
-  )
-);
+console.log(await findUp(async directory => {
+	const hasUnicorns = await pathExists(path.join(directory, 'unicorn.png'));
+	return hasUnicorns && directory;
+}, {type: 'directory'}));
 //=> '/Users/sindresorhus'
 ```
 
-所以在有`yarn.lock`文件的项目中，`detectPackageManager` 函数最终返回 agent 的是`yarn`。
+所以在有`yarn.lock`文件的项目中，`detectPackageManager` 函数最终返回agent的是`yarn`。
 
 至此，`install-pkg`的源码已经看完，可以总结原理为：
 
-> 通过 lock 文件自动检测，确定使用哪一个包管理器（npm、yarn、pnpm），最终用 [execa](https://github.com/sindresorhus/execa) 执行类似如下的命令。
+> 通过lock文件自动检测，确定使用哪一个包管理器（npm、yarn、pnpm），最终用 [execa](https://github.com/sindresorhus/execa) 执行类似如下的命令。
 >
 > ```
 > yarn add -D react react-dom
@@ -230,14 +239,14 @@ nci
 ```js
 #!/usr/bin/env node
 
-const spawn = require('cross-spawn');
-const spawnSync = spawn.sync;
+const spawn = require('cross-spawn')
+const spawnSync = spawn.sync
 
-const register = require.resolve('esbuild-register');
+const register = require.resolve('esbuild-register')
 
-const argv = process.argv.slice(2);
+const argv = process.argv.slice(2)
 
-process.exit(spawnSync('node', ['-r', register, ...argv], { stdio: 'inherit' }).status);
+process.exit(spawnSync('node', ['-r', register, ...argv], { stdio: 'inherit' }).status)
 ```
 
 [esbuild-register](https://github.com/egoist/esbuild-register) 简单说：使用 esbuild 即时传输 JSX、TypeScript 和 esnext 功能
@@ -266,4 +275,4 @@ process.exit(spawnSync('node', ['-r', register, ...argv], { stdio: 'inherit' }).
 
 ## 参考链接
 
-- [Vue 团队核心成员开发的 39 行小工具 install-pkg 安装包，值得一学！](https://github.com/lxchuan12/install-pkg-analysis)
+- [Vue团队核心成员开发的39行小工具 install-pkg 安装包，值得一学！](
