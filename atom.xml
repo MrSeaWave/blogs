@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2022-01-10T09:14:23.000Z</updated>
+  <updated>2022-01-11T03:17:03.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sequelize 入门使用指南</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2022/01/11/sequelize-start/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2022/01/11/sequelize-start/</id>
+    <published>2022-01-11T01:53:44.000Z</published>
+    <updated>2022-01-11T03:17:03.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Sequelize 是一个基于 promise 的 Node.js &lt;a href=&quot;https://en.wikipedia.org/wiki/Object-relational_mapping&quot;&gt;ORM&lt;/a&gt;, 目前支持 &lt;a href=&quot;https://en.wikipedia.org/wiki/PostgreSQL&quot;&gt;Postgres&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/MySQL&quot;&gt;MySQL&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/MariaDB&quot;&gt;MariaDB&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/SQLite&quot;&gt;SQLite&lt;/a&gt; 以及 &lt;a href=&quot;https://en.wikipedia.org/wiki/Microsoft_SQL_Server&quot;&gt;Microsoft SQL Server&lt;/a&gt;. 它具有强大的事务支持, 关联关系, 预读和延迟加载,读取复制等功能。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Sequelize" scheme="https://mrseawave.github.io/blogs/categories/Sequelize/"/>
+    
+    
+    <category term="Sequelize" scheme="https://mrseawave.github.io/blogs/tags/Sequelize/"/>
+    
+    <category term="mysql" scheme="https://mrseawave.github.io/blogs/tags/mysql/"/>
+    
+    <category term="orm" scheme="https://mrseawave.github.io/blogs/tags/orm/"/>
+    
+  </entry>
   
   <entry>
     <title>软删除和唯一索引</title>
@@ -33,9 +56,9 @@
     <category term="mysql" scheme="https://mrseawave.github.io/blogs/categories/database/mysql/"/>
     
     
-    <category term="sql" scheme="https://mrseawave.github.io/blogs/tags/sql/"/>
-    
     <category term="mysql" scheme="https://mrseawave.github.io/blogs/tags/mysql/"/>
+    
+    <category term="sql" scheme="https://mrseawave.github.io/blogs/tags/sql/"/>
     
   </entry>
   
@@ -439,27 +462,6 @@
     <category term="pm2" scheme="https://mrseawave.github.io/blogs/tags/pm2/"/>
     
     <category term="ipc" scheme="https://mrseawave.github.io/blogs/tags/ipc/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>apidoc教程</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/07/15/apidoc/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/07/15/apidoc/</id>
-    <published>2021-07-15T07:06:23.000Z</published>
-    <updated>2021-07-15T09:30:46.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;apiDoc - 超简单的文档生成器，本文将讲述如何使用它。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="api" scheme="https://mrseawave.github.io/blogs/categories/api/"/>
-    
-    
-    <category term="api" scheme="https://mrseawave.github.io/blogs/tags/api/"/>
-    
-    <category term="doc" scheme="https://mrseawave.github.io/blogs/tags/doc/"/>
     
   </entry>
   
