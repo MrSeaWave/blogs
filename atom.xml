@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2022-01-11T03:17:03.000Z</updated>
+  <updated>2022-01-25T08:27:31.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阅读 only-allow</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2022/01/25/only-allow/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2022/01/25/only-allow/</id>
+    <published>2022-01-25T09:00:00.000Z</published>
+    <updated>2022-01-25T08:27:31.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;一行代码统一规范包管理器&lt;/strong&gt;: &lt;a href=&quot;https://github.com/pnpm/only-allow&quot;&gt;only-allow&lt;/a&gt;，强制在项目上使用特定的包管理器&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="analysis" scheme="https://mrseawave.github.io/blogs/categories/analysis/"/>
+    
+    
+    <category term="analysis" scheme="https://mrseawave.github.io/blogs/tags/analysis/"/>
+    
+    <category term="only-allow" scheme="https://mrseawave.github.io/blogs/tags/only-allow/"/>
+    
+  </entry>
   
   <entry>
     <title>Sequelize 入门使用指南</title>
@@ -441,27 +462,6 @@
     <category term="github" scheme="https://mrseawave.github.io/blogs/tags/github/"/>
     
     <category term="token" scheme="https://mrseawave.github.io/blogs/tags/token/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pm2进程间通信</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/07/20/pm2-ipc/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/07/20/pm2-ipc/</id>
-    <published>2021-07-20T07:44:42.000Z</published>
-    <updated>2021-07-20T08:13:59.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文将介绍 pm2 进程间如何通信&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="pm2" scheme="https://mrseawave.github.io/blogs/categories/pm2/"/>
-    
-    
-    <category term="pm2" scheme="https://mrseawave.github.io/blogs/tags/pm2/"/>
-    
-    <category term="ipc" scheme="https://mrseawave.github.io/blogs/tags/ipc/"/>
     
   </entry>
   
