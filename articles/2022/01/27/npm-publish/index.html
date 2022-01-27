@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>怎么发布 NPM 包 - Sea&#039;s Blog</title><link rel="manifest" href="/blogs/manifest.json"><meta name="application-name" content="Sea&#039;s Blog"><meta name="msapplication-TileImage" content="/images/black-cat.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Sea&#039;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="将包发布到 NPM（node package manager）上很简单，只需要 2 步：  创建包 发布包"><meta property="og:type" content="blog"><meta property="og:title" content="怎么发布 NPM 包"><meta property="og:url" content="https://mrseawave.github.io/blogs/articles/2022/01/27/npm-publish/"><meta property="og:site_name" content="Sea&#039;s Blog"><meta property="og:description" content="将包发布到 NPM（node package manager）上很简单，只需要 2 步：  创建包 发布包"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/NTckRw_andrew-lim-aum-image-02-1200px-by-andrew-lim.jpg"><meta property="article:published_time" content="2022-01-27T01:41:47.000Z"><meta property="article:modified_time" content="2022-01-27T02:20:19.000Z"><meta property="article:author" content="Sea"><meta property="article:tag" content="publish"><meta property="article:tag" content="npm"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/NTckRw_andrew-lim-aum-image-02-1200px-by-andrew-lim.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://mrseawave.github.io/blogs/articles/2022/01/27/npm-publish/"},"headline":"怎么发布 NPM 包","image":["https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/NTckRw_andrew-lim-aum-image-02-1200px-by-andrew-lim.jpg"],"datePublished":"2022-01-27T01:41:47.000Z","dateModified":"2022-01-27T02:20:19.000Z","author":{"@type":"Person","name":"Sea"},"publisher":{"@type":"Organization","name":"Sea's Blog","logo":{"@type":"ImageObject","url":"https://mrseawave.github.io/images/black-cat.svg"}},"description":"将包发布到 NPM（node package manager）上很简单，只需要 2 步：  创建包 发布包"}</script><link rel="canonical" href="https://mrseawave.github.io/blogs/articles/2022/01/27/npm-publish/"><link rel="icon" href="/blogs/images/black-cat.svg"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.loli.net/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/blogs/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.1"><link rel="alternate" href="/blogs/atom.xml" title="Sea's Blog" type="application/atom+xml">
+</head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/blogs/"><img src="/blogs/images/black-cat.svg" alt="Sea&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/blogs/">首页</a><a class="navbar-item" href="/blogs/archives">时间轴</a><a class="navbar-item" href="/blogs/categories">分类</a><a class="navbar-item" href="/blogs/tags">标签</a><a class="navbar-item" href="/blogs/messages">留言板</a><a class="navbar-item" href="/blogs/friends">友人帐</a><a class="navbar-item" href="/blogs/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener external nofollow noreferrer" title="Download on GitHub" href="https://github.com/MrSeaWave/blogs"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;" rel="external nofollow noreferrer"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;" rel="external nofollow noreferrer"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/NTckRw_andrew-lim-aum-image-02-1200px-by-andrew-lim.jpg" alt="怎么发布 NPM 包"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-01-27T01:41:47.000Z" title="1/27/2022, 1:41:47 AM">2022-01-27</time>发表</span><span class="level-item"><time dateTime="2022-01-27T02:20:19.000Z" title="1/27/2022, 2:20:19 AM">2022-01-27</time>更新</span><span class="level-item"> Sea </span><span class="level-item"><a class="link-muted" href="/blogs/categories/npm/">npm</a></span><span class="level-item">12 分钟读完 (大约1840个字)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">怎么发布 NPM 包</h1><div class="content"><p>将包发布到 NPM（node package manager）上很简单，只需要 2 步：</p>
+<ol>
+<li>创建包</li>
+<li>发布包</li>
+</ol>
+<span id="more"></span>
+
+<h2 id="前置动作"><a href="#前置动作" class="headerlink" title="前置动作"></a>前置动作</h2><ol>
+<li><strong>你需要一个 NPM 账号。</strong>如果没有的话，<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.npmjs.com/signup">点此创建</a>。</li>
+<li><strong>通过命令行登录你的 npm 账号</strong>。</li>
+</ol>
+<h3 id="添加用户"><a href="#添加用户" class="headerlink" title="添加用户"></a>添加用户</h3><p>添加注册表用户账户</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ npm adduser</span><br><span class="line">Username:</span><br><span class="line">Password:</span><br><span class="line">Email:</span><br></pre></td></tr></table></figure>
+
+<h3 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h3><p>npm login 是 add user 的别名，并且行为完全相同。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ npm login</span><br><span class="line">Username:</span><br><span class="line">Password:</span><br><span class="line">Emial:</span><br></pre></td></tr></table></figure>
+
+<h2 id="创建包"><a href="#创建包" class="headerlink" title="创建包"></a>创建包</h2><p>像这样创建一个文件夹，之后进入到该文件夹内。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir pub-test</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> pub-test</span><br></pre></td></tr></table></figure>
+
+<p>下一步，通过运行 <code>npm init</code>命令生成 <code>package.json</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm init</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/LkAGna_image-20220127095031235.png" alt="image-20220127095031235"></p>
+<h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><p>最后一步，在要发布的文件目录下，<strong>用 <code>npm publish</code>发布该项目</strong></p>
+<blockquote>
+<p>仅仅当 package.json 文件中的 version 变化时才能发布，不然 npm 会认为当前版本没有变动</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm publish</span><br></pre></td></tr></table></figure>
+
+<p>如果发布的包和别人同名，则可能会出现以下报错：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/UKgiV7_image-20220127095714820.png" alt="image-20220127095714820"></p>
+<p>可以通过</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm search pub-test</span><br></pre></td></tr></table></figure>
+
+<p>查看是否被占用</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/Gjc4Qe_image-20220127100455641.png" alt="image-20220127100455641"></p>
+<p>修改包名重新发布，如下修改为：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;pub-test-demo-1&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;1.0.0&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;main&quot;</span>: <span class="string">&quot;index.js&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;test&quot;</span>: <span class="string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">&quot;author&quot;</span>: <span class="string">&quot;Sea &lt;MrDaemon@outlook.com&gt;&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;license&quot;</span>: <span class="string">&quot;MIT&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>发布成功如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/vhcxme_image-20220127100818620.png" alt="image-20220127100818620"></p>
+<h2 id="取消发布"><a href="#取消发布" class="headerlink" title="取消发布"></a>取消发布</h2><p>有了发布，那么必然有取消发布</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm unpublish</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm unpublish [&lt;@scope&gt;/]&lt;pkg&gt;@&lt;version&gt;</span><br><span class="line">npm unpublish [&lt;@scope&gt;/]&lt;pkg&gt; --force</span><br></pre></td></tr></table></figure>
+
+<p>对于取消发布，仅仅能在发布后的 <code>24</code> 小时内取消。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/QguKiD_image-20220127101219164.png" alt="image-20220127101219164"></p>
+<h2 id="npm-测试包"><a href="#npm-测试包" class="headerlink" title="npm 测试包"></a>npm 测试包</h2><p>开发阶段测试</p>
+<ol>
+<li><p>当本地写完 npm 包的代码时，如果是业务依赖或者有服务依赖想简单跑个主流程，很简单我们就在本地项目引入这个本地 npm 包，比如 B 项目 依赖 本地开发的 npm 包 A，那我们开始安装一下：</p>
+<ul>
+<li><p>方法一</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save ../A/packages/modules</span><br></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add ../A/packages/modules</span><br></pre></td></tr></table></figure>
+<p>即可，安装成功后会 发现 B 项目的 package.json 中显示依赖如下 “A”: “file:../A/packages/modules” 注意：modules 文件夹下需要包含 package.json 文件并在文件夹中申明 包名和入口文件如下：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;A&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;0.0.1&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;基础库&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;main&quot;</span>: <span class="string">&quot;index.js&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;test&quot;</span>: <span class="string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">&quot;license&quot;</span>: <span class="string">&quot;MIT&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>方法二<br>在这里，我们有两个项目，一个是<code>npm-link-module</code>，是我们要开发的<code>npm</code>模块，另一个是<code>npm-link-example</code>，是我们要运行<code>npm</code>模块的项目<br>首先，进入<code>npm-link-module</code>项目，执行<code>npm link</code>（<code>yarn</code>也是一样）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd npm-link-module</span><br><span class="line">$ npm link</span><br></pre></td></tr></table></figure>
+
+<p>然后，进入<code>npm-link-example</code>项目，执行<code>npm link npm-link-module</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd npm-link-example</span><br><span class="line">$ npm link npm-link-module</span><br></pre></td></tr></table></figure>
+
+<p>卸载</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm unlink npm-link-module</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>开发的自动化测试</p>
+<p>使用 jest 测试</p>
+</li>
+<li><p>人工测试</p>
+</li>
+</ol>
+<h2 id="npm-部分命令"><a href="#npm-部分命令" class="headerlink" title="npm 部分命令"></a>npm 部分命令</h2><h3 id="npm-view"><a href="#npm-view" class="headerlink" title="npm view"></a>npm view</h3><ul>
+<li>查看包的信息</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm view 包名</span><br></pre></td></tr></table></figure>
+
+<h3 id="npm-info"><a href="#npm-info" class="headerlink" title="npm info"></a>npm info</h3><ul>
+<li>在当前包下查看包的信息</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm info</span><br></pre></td></tr></table></figure>
+
+<h3 id="npm-dist-tag"><a href="#npm-dist-tag" class="headerlink" title="npm dist-tag"></a>npm dist-tag</h3><ul>
+<li><p>显示所有的 tag 信息</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm dist-tag ls [&lt;pkg&gt;]</span><br></pre></td></tr></table></figure>
+
+<p>即<code>npm dist-tag</code>获取到所有的最新的版本，包括<code>prerelease</code>与稳定版本</p>
+</li>
+<li><p>切换 tag</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm dist-tag add &lt;pkg&gt;@&lt;version&gt; latest</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="发布一个带-tag-的版本"><a href="#发布一个带-tag-的版本" class="headerlink" title="发布一个带 tag 的版本"></a>发布一个带 tag 的版本</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm publish --tag next</span><br></pre></td></tr></table></figure>
+
+<p>增加<code>--tag</code>参数和后面的<code>tag</code>名字即可</p>
+<h3 id="版本号"><a href="#版本号" class="headerlink" title="版本号"></a>版本号</h3><p>npm 使用的是一种叫做 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://semver.org/">semantic version</a> 的规范，它的规则很简单，总结起来就是下面几条：</p>
+<ul>
+<li><p>使用 semver 的软件必须定义公开、严谨、易于理解的 API。也就是模块要提供功能给用户。</p>
+</li>
+<li><p>版本号格式为：<code>X.Y.Z</code>，并且 <code>X、Y、Z</code> 均为正整数并且不断递增。X 表示大版本（major）、Y 表示小版本（minor）、Z 表示补丁版本（patch）。</p>
+</li>
+<li><p>一个版本发布后，此版本内容不能再变更，变更必须再发布一个新版本。也就是不能覆盖发布。</p>
+</li>
+<li><p><code>0.Y.Z</code> 表示初始版本，这种版本下的 API 不能保证稳定，随时可能变更。</p>
+</li>
+<li><p>当进行了向后兼容的 bug 修复时，补丁版本 Z 必须增加。</p>
+</li>
+<li><p>当引入了向后兼容的新功能时，小版本 Y 必须增加，同时 Z 必须重置为 0（小版本里面可能会包含 bug 修复）。</p>
+</li>
+<li><p>当引入了不兼容的变更时，大版本 X 必须增加，同时 Y、Z 必须重置为 0（大版本里面可能会包含小版本或者补丁版本的改动）。</p>
+</li>
+<li><p><code>X.Y.Z</code> 后面还可以加预发布版本号、构建信息，格式为：<code>X.Y.Z-pre_lease+build_meta</code>，比如：<code>1.0.0-alpha+20151226</code>、<code>1.0.0-beta.2+20151230</code>。</p>
+</li>
+<li><p>进行版本号比较时，遵循下面的规则：</p>
+<ul>
+<li>1）依次按数值比较 X、Y、Z 的值，直到第一个不同的位置；</li>
+<li>2）如果两个版本的 X、Y、Z 都相等，含有 pre-release 版本号的较小；</li>
+<li>3）如果两个版本的 X、Y、Z 都相等并且都含有 pre-release 版本号，要单独比较 pre-release 版本。比如：<code>1.0.0</code> &lt; <code>2.0.0</code> &lt; <code>2.1.0</code> &lt; <code>2.1.1</code>，<code>1.0.0-alpha</code> &lt; <code>1.0.0</code>，<code>1.0.0-alpha</code> &lt; <code>1.0.0-alpha.1</code> &lt; <code>1.0.0-alpha.beta</code> &lt; <code>1.0.0-beta</code> &lt; <code>1.0.0-beta.2</code></li>
+</ul>
+</li>
+</ul>
+<p>直接使用 npm version <update_type>命令自动搞定版本号的更改</p>
+<table>
+<thead>
+<tr>
+<th align="center">npm version</th>
+<th align="left">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">major</td>
+<td align="left">- 如果没有预发布号，则直接升级一位大号，其他位都置为 0 <br/> - 如果有预发布号： <br/> – 中号和小号都为 0，则不升级大号，而将预发布号删掉。即 2.0.0-1 变成 2.0.0，这就是预发布的作用 <br/> – 如果中号和小号有任意一个不是 0，那边会升级一位大号，其他位都置为 0，清空预发布号。即 2.0.1-0 变成 3.0.0</td>
+</tr>
+<tr>
+<td align="center">minor</td>
+<td align="left">- 如果没有预发布号，则升级一位中号，大号不动，小号置为空 <br/> - 如果有预发布号: <br/> – 如果小号为 0，则不升级中号，将预发布号去掉 <br/> – 如果小号不为 0，同理没有预发布号</td>
+</tr>
+<tr>
+<td align="center">patch</td>
+<td align="left">- 如果没有预发布号：直接升级小号，去掉预发布号 <br/> - 如果有预发布号：去掉预发布号，其他不动</td>
+</tr>
+<tr>
+<td align="center">premajor</td>
+<td align="left">- 直接升级大号，中号和小号置为 0，增加预发布号为 0</td>
+</tr>
+<tr>
+<td align="center">preminor</td>
+<td align="left">- 直接升级中号，小号置为 0，增加预发布号为 0</td>
+</tr>
+<tr>
+<td align="center">prepatch</td>
+<td align="left">- 直接升级小号，增加预发布号为 0</td>
+</tr>
+<tr>
+<td align="center">prerelease</td>
+<td align="left">- 如果没有预发布号：增加小号，增加预发布号为 0 <br/> - 如果有预发布号，则升级预发布号</td>
+</tr>
+</tbody></table>
+<p>版本号的三位分别是 大号.中号.小号-预发布号<br>如果执行了<code>prerelease</code>，版本号会从<code>1.1.1-0</code>变成 <code>1.1.1-1</code><br>或者<code>1.0.5-alpha.1</code>–&gt;<code>1.0.5-alpha.2</code><br><code>v1.0.6-alpha</code>—&gt;<code>v1.0.6-alpha.0</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm version patch =&gt; z+1</span><br><span class="line">npm version minor =&gt; y+1 &amp;&amp; z=0</span><br><span class="line">npm version major =&gt; x+1 &amp;&amp; y=0 &amp;&amp; z=0</span><br></pre></td></tr></table></figure>
+
+<p>如果项目是 GIT</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm version patch -m &quot;Upgrade to %s for reasons&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="package-json-文件"><a href="#package-json-文件" class="headerlink" title="package.json 文件"></a>package.json 文件</h3><p>一般通过<code>npm init</code></p>
+<h3 id="小图标"><a href="#小图标" class="headerlink" title="小图标"></a>小图标</h3><p>可以使用 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://shields.io/">shields.io</a> 生成小图标使用，比如：</p>
+<p><img src="https://img.shields.io/badge/matrixChange-1.2.1-blue.svg" alt="ex"></p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://yarnpkg.com/lang/zh-hans/docs/dependency-types/">yarn</a></li>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://segmentfault.com/a/1190000015448278">npm 发包小记</a></li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>怎么发布 NPM 包</p><p><a href="https://mrseawave.github.io/blogs/articles/2022/01/27/npm-publish/">https://mrseawave.github.io/blogs/articles/2022/01/27/npm-publish/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>Sea</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2022-01-27</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2022-01-27</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener external nofollow noreferrer" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener external nofollow noreferrer" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener external nofollow noreferrer" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/blogs/tags/publish/">publish</a><a class="link-muted mr-2" rel="tag" href="/blogs/tags/npm/">npm</a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="/blogs/images/alipay.jpeg" alt="支付宝"></span></a><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="/blogs/images/wechat.jpeg" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/blogs/articles/2022/01/25/only-allow/"><span class="level-item">阅读 only-allow</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><script src="https://utteranc.es/client.js" repo="MrSeaWave/blogs" issue-term="og:title" label="comments" theme="github-light" crossorigin="anonymous" async></script></div></div></div><!--!--><div class="column column-right is-4-tablet is-4-desktop is-4-widescreen  order-3 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#前置动作"><span class="level-left"><span class="level-item">1</span><span class="level-item">前置动作</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#添加用户"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">添加用户</span></span></a></li><li><a class="level is-mobile" href="#登录"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">登录</span></span></a></li></ul></li><li><a class="level is-mobile" href="#创建包"><span class="level-left"><span class="level-item">2</span><span class="level-item">创建包</span></span></a></li><li><a class="level is-mobile" href="#发布"><span class="level-left"><span class="level-item">3</span><span class="level-item">发布</span></span></a></li><li><a class="level is-mobile" href="#取消发布"><span class="level-left"><span class="level-item">4</span><span class="level-item">取消发布</span></span></a></li><li><a class="level is-mobile" href="#npm-测试包"><span class="level-left"><span class="level-item">5</span><span class="level-item">npm 测试包</span></span></a></li><li><a class="level is-mobile" href="#npm-部分命令"><span class="level-left"><span class="level-item">6</span><span class="level-item">npm 部分命令</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#npm-view"><span class="level-left"><span class="level-item">6.1</span><span class="level-item">npm view</span></span></a></li><li><a class="level is-mobile" href="#npm-info"><span class="level-left"><span class="level-item">6.2</span><span class="level-item">npm info</span></span></a></li><li><a class="level is-mobile" href="#npm-dist-tag"><span class="level-left"><span class="level-item">6.3</span><span class="level-item">npm dist-tag</span></span></a></li></ul></li><li><a class="level is-mobile" href="#其他"><span class="level-left"><span class="level-item">7</span><span class="level-item">其他</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#发布一个带-tag-的版本"><span class="level-left"><span class="level-item">7.1</span><span class="level-item">发布一个带 tag 的版本</span></span></a></li><li><a class="level is-mobile" href="#版本号"><span class="level-left"><span class="level-item">7.2</span><span class="level-item">版本号</span></span></a></li><li><a class="level is-mobile" href="#package-json-文件"><span class="level-left"><span class="level-item">7.3</span><span class="level-item">package.json 文件</span></span></a></li><li><a class="level is-mobile" href="#小图标"><span class="level-left"><span class="level-item">7.4</span><span class="level-item">小图标</span></span></a></li></ul></li><li><a class="level is-mobile" href="#参考链接"><span class="level-left"><span class="level-item">8</span><span class="level-item">参考链接</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/blogs/js/toc.js" defer></script></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=github/Ptyw&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="github/Ptyw" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div><p class="help">邮件订阅，更新早知道</p></form></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/blogs/"><img src="/blogs/images/black-cat.svg" alt="Sea&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2022 Sea</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener external nofollow noreferrer">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener external nofollow noreferrer">Icarus</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener external nofollow noreferrer" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener external nofollow noreferrer" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener external nofollow noreferrer" title="Download on GitHub" href="https://github.com/MrSeaWave/blogs"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/blogs/js/column.js"></script><script src="/blogs/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;" rel="external nofollow noreferrer"><i class="fas fa-chevron-up"></i></a><script src="/blogs/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/blogs/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;" rel="external nofollow noreferrer">×</a></div><div class="searchbox-body"></div></div></div><script src="/blogs/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/blogs/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
