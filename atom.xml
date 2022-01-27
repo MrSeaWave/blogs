@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2022-01-27T03:41:04.000Z</updated>
+  <updated>2022-01-27T06:46:13.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Npm Script</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2022/01/27/npm-script/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2022/01/27/npm-script/</id>
+    <published>2022-01-27T05:38:31.000Z</published>
+    <updated>2022-01-27T06:46:13.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文将介绍如何使用 npm 脚本（npm scripts）。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="npm" scheme="https://mrseawave.github.io/blogs/categories/npm/"/>
+    
+    
+    <category term="npm" scheme="https://mrseawave.github.io/blogs/tags/npm/"/>
+    
+    <category term="script" scheme="https://mrseawave.github.io/blogs/tags/script/"/>
+    
+  </entry>
   
   <entry>
     <title>使用 np 快速发布 npm 包</title>
@@ -440,30 +461,6 @@
     
     
     <category term="Charles" scheme="https://mrseawave.github.io/blogs/tags/Charles/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>oh-my-zsh</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/08/29/oh-my-zsh/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/08/29/oh-my-zsh/</id>
-    <published>2021-08-29T07:20:03.000Z</published>
-    <updated>2021-08-29T09:08:55.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文将介绍一款顺手的&lt;code&gt;shell&lt;/code&gt; —— &lt;code&gt;zsh &lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;主要介绍的是 oh my zsh&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="zsh" scheme="https://mrseawave.github.io/blogs/categories/zsh/"/>
-    
-    
-    <category term="install" scheme="https://mrseawave.github.io/blogs/tags/install/"/>
-    
-    <category term="zsh" scheme="https://mrseawave.github.io/blogs/tags/zsh/"/>
     
   </entry>
   
