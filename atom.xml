@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2022-01-27T06:46:13.000Z</updated>
+  <updated>2022-01-27T09:15:23.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>定制 Github 主页</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2022/01/27/github-profile-readme/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2022/01/27/github-profile-readme/</id>
+    <published>2022-01-27T06:55:10.000Z</published>
+    <updated>2022-01-27T09:15:23.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Github 作为一个资源托管平台，我们有没有想过在主页锦上添花否？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这不，你可以通过 yourUsername/yourUsername 来制作你的名片。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;先跟大家展示下我最终实现的效果，在线体验地址：&lt;a href=&quot;https://github.com/MrSeaWave&quot;&gt;Github 主页&lt;/a&gt;。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="github" scheme="https://mrseawave.github.io/blogs/categories/github/"/>
+    
+    
+    <category term="github" scheme="https://mrseawave.github.io/blogs/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>Npm Script</title>
@@ -442,25 +465,6 @@
     <category term="key" scheme="https://mrseawave.github.io/blogs/tags/key/"/>
     
     <category term="gitlab" scheme="https://mrseawave.github.io/blogs/tags/gitlab/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Charles 手机抓包设置</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/09/01/charles-proxy/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/09/01/charles-proxy/</id>
-    <published>2021-09-01T06:48:43.000Z</published>
-    <updated>2021-09-01T07:55:55.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文主要讲述的是如何使用 Charles 对手机进行抓包。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Charles" scheme="https://mrseawave.github.io/blogs/categories/Charles/"/>
-    
-    
-    <category term="Charles" scheme="https://mrseawave.github.io/blogs/tags/Charles/"/>
     
   </entry>
   
