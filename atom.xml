@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2022-01-27T02:20:19.000Z</updated>
+  <updated>2022-01-27T03:41:04.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 np 快速发布 npm 包</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2022/01/27/np-publish/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2022/01/27/np-publish/</id>
+    <published>2022-01-27T02:00:00.000Z</published>
+    <updated>2022-01-27T03:41:04.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在之前的文章中 《&lt;a href=&quot;/blogs/articles/2022/01/27/npm-publish/&quot; title=&quot;怎么发布 NPM 包&quot;&gt;怎么发布 NPM 包&lt;/a&gt;》中，已经介绍了如何使用 npm 进行发包，本文将会介绍一款发包工具 &lt;a href=&quot;https://www.npmjs.com/package/np&quot;&gt;np&lt;/a&gt; ，它是由 &lt;a href=&quot;https://github.com/sindresorhus&quot;&gt;sindresorhus&lt;/a&gt; 大神所创造的一套 npm published 工具，比 npm 原生的 &lt;code&gt;npm publish&lt;/code&gt; 多了更多方便的功能！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="npm" scheme="https://mrseawave.github.io/blogs/categories/npm/"/>
+    
+    
+    <category term="publish" scheme="https://mrseawave.github.io/blogs/tags/publish/"/>
+    
+    <category term="npm" scheme="https://mrseawave.github.io/blogs/tags/npm/"/>
+    
+    <category term="np" scheme="https://mrseawave.github.io/blogs/tags/np/"/>
+    
+  </entry>
   
   <entry>
     <title>怎么发布 NPM 包</title>
@@ -441,31 +464,6 @@
     <category term="install" scheme="https://mrseawave.github.io/blogs/tags/install/"/>
     
     <category term="zsh" scheme="https://mrseawave.github.io/blogs/tags/zsh/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在nodejs中使用ES6</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/08/29/node-with-es6/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/08/29/node-with-es6/</id>
-    <published>2021-08-29T06:37:03.000Z</published>
-    <updated>2021-08-29T07:16:27.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文将介绍如何在 nodejs 中使用 ES6 的功能。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="babel" scheme="https://mrseawave.github.io/blogs/categories/babel/"/>
-    
-    
-    <category term="js" scheme="https://mrseawave.github.io/blogs/tags/js/"/>
-    
-    <category term="node" scheme="https://mrseawave.github.io/blogs/tags/node/"/>
-    
-    <category term="babel" scheme="https://mrseawave.github.io/blogs/tags/babel/"/>
-    
-    <category term="es6" scheme="https://mrseawave.github.io/blogs/tags/es6/"/>
     
   </entry>
   
