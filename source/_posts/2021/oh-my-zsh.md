@@ -278,6 +278,20 @@ After: ![after1-smaller](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profil
 > - **Oh My Zsh** 的自动更新提示误触关掉了解决办法
 >   - 打开终端输入：`upgrade_oh_my_zsh`
 
+### jsontools
+
+[jsontools](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/jsontools/README.md) 格式化 json 数据的命令行工具
+
+如下数据：
+
+![image-20220210113113326](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/0Ijijm_image-20220210113113326.png)
+
+加上`pp_json`后，输入格式化后的 json 文件：
+
+![image-20220210113201000](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/VFwu1l_image-20220210113201000.png)
+
+更多用法查看[官网](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/jsontools/README.md)
+
 ## 参考链接
 
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
