@@ -296,10 +296,8 @@ After: ![after1-smaller](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profil
 
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 - [程序员内功系列--iTerm 与 Zsh 篇](https://xiaozhou.net/learn-the-command-line-iterm-and-zsh-2017-06-23.html)
-
 - [Oh My Zsh, 『 安装 & 配置 』](https://zhuanlan.zhihu.com/p/35283688)
 - [oh-my-zsh 配置你的 zsh 提高 shell 逼格终极选择](https://yijiebuyi.com/blog/b9b5e1ebb719f22475c38c4819ab8151.html)
-
 - [How to change zsh-autosuggestions color](https://stackoverflow.com/questions/47310537/how-to-change-zsh-autosuggestions-color)
-
 - [Mac 安装 oh my zsh 插件](https://juejin.cn/post/6878188289958871053)
+- [Top 10 Oh My Zsh Plugins For Productive Developers](https://travis.media/top-10-oh-my-zsh-plugins-for-productive-developers/#20210719-json)
