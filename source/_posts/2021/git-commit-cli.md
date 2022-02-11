@@ -38,7 +38,7 @@ $ <commit-icon>: <commit-message>
   - docs：文档相关。
   - feat：添加新功能。
   - fix：修复 bug。
-  - pref：性能相关。
+  - perf：性能相关。
   - refactor：代码重构，一般如果不是其他类型的 commit，都可以归为重构。
   - revert：分支回溯。
   - style：样式相关。
@@ -50,7 +50,7 @@ $ <commit-icon>: <commit-message>
 
 - `<commit-icon>` 用图标来替代 `<commit-type>` 所表示的功能。
 
-具体规范信息格式在[这里](https://mrseawave.github.io/blogs/articles/git-commit-message/)查看（这里不做过多阐述）
+具体规范信息格式在{% post_link git-commit-message 这里 %}查看（这里不做过多阐述）
 
 ## 用于 commit 规范的工具
 
