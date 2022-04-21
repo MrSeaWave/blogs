@@ -51,7 +51,7 @@ jobs:
     steps:
       - name: Restore file modification time
         run: |
-          git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done
+          git ls-files -z | while read -d '' path; do touch -d "$(git log -1 --format="@%ct" "$path")" "$path"; done
 ```
 
 当然`git ls-files` 如果不好用可以改成 `find`：
