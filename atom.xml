@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2022-02-10T03:14:23.000Z</updated>
+  <updated>2022-06-28T07:19:23.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从零安装必备软件</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2022/06/28/begin-install/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2022/06/28/begin-install/</id>
+    <published>2022-06-28T06:27:32.000Z</published>
+    <updated>2022-06-28T07:19:23.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今日打算重新组装系统，因此需要从零开始安装在 Mac 上的必备的一些软件。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Mac" scheme="https://mrseawave.github.io/blogs/categories/Mac/"/>
+    
+    
+    <category term="app" scheme="https://mrseawave.github.io/blogs/tags/app/"/>
+    
+    <category term="Mac" scheme="https://mrseawave.github.io/blogs/tags/Mac/"/>
+    
+  </entry>
   
   <entry>
     <title>使用 depcheck 清理 package.json 中用不到的依赖</title>
@@ -445,25 +466,6 @@
     <category term="publish" scheme="https://mrseawave.github.io/blogs/tags/publish/"/>
     
     <category term="npm" scheme="https://mrseawave.github.io/blogs/tags/npm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>package.json 各字段的作用</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/12/08/packageJson-field/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/12/08/packageJson-field/</id>
-    <published>2021-12-08T02:28:52.000Z</published>
-    <updated>2021-12-08T06:04:35.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;package.json 文件可以使你的 npm 包对于其他人来说更容易管理和下载。发布 npm 包也是必须要有该文件的。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="package.json" scheme="https://mrseawave.github.io/blogs/categories/package-json/"/>
-    
-    
-    <category term="package.json" scheme="https://mrseawave.github.io/blogs/tags/package-json/"/>
     
   </entry>
   
