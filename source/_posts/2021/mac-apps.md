@@ -81,6 +81,7 @@ categories: [Mac, recommend]
   - [倒计时](https://github.com/soffes/Countdown) [CountDown](https://github.com/MrSeaWave/MacApp/blob/master/localeMac/Countdown.saver-0.1.0.zip)
   - [翻页式钟表](https://fliqlo.com/#about) [fliqlo](https://github.com/MrSeaWave/MacApp/blob/master/localeMac/fliqlo_171.dmg)
 - [Sip](http://sipapp.io/)（屏幕取色工具
+- [colorsnapper](https://colorsnapper.com/): 屏幕取色工具
 - [IINA](https://iina.io/)（视频播放工具
 - [Paste](https://pasteapp.io/)（剪贴板
 - [ScreenFlow](https://www.telestream.net/screenflow/overview.htm)（屏幕录像&&视频剪辑
