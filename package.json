@@ -7,7 +7,8 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server"
+    "server": "hexo server",
+    "prepare": "husky install"
   },
   "hexo": {
     "version": "5.4.2"
@@ -30,15 +31,9 @@
     "hexo-theme-landscape": "^0.0.3"
   },
   "devDependencies": {
-    "husky": "4.3.8",
+    "husky": "8.0.1",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "echo '---- push files ----' && exit 0"
-    }
   },
   "lint-staged": {
     "**/*.{js,ts,json,css,md}": [
