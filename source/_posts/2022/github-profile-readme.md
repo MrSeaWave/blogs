@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2022-01-27 14:55:10
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/CRyaoA_image-20220127171125602.png
-tags: [github]
-categories: [github]
+tags: [GitHub]
+categories: [技术]
 ---
 
 Github 作为一个资源托管平台，我们有没有想过在主页锦上添花否？

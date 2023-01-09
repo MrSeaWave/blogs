@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2022-11-16 21:00:11
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/UfwFAW_will-murai-kiriko-mom-005.jpg
-tags: [git, GitHub, Gitlab]
-categories: [git]
+tags: [Git, GitHub, GitLab]
+categories: [技术]
 ---
 
 随着时间的推移，Git 存储库变得越来越大，或者自己误操作，把 `node_moduoles`、`.yarn`、`.DS_Sore `这种大文件上传到远程仓库中，虽然后期把他们移除了，但还是会使仓库体积变大，获取仓库变得更慢，每个人都必须下载文件，因此我们需要缩减 Git 仓库体积。

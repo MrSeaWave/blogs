@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2022-02-09 09:56:19
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/rzF1La_renovate.jpeg
-tags: [update, dependency, renovate]
-categories: [dependency]
+tags: [Monitor, Dependencies]
+categories: [技术]
 ---
 
 ## 背景

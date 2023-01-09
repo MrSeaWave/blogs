@@ -80,7 +80,7 @@
 - Pnpm
 - Yarn
 - Optimize
-- Orm
+- ORM
 - Plugins
 - PM2
 - IPC
@@ -97,6 +97,7 @@
 - Schedule
 - Cron
 - Script
+- Cross
 - Spawn
 - SQL
 - SSH
@@ -111,3 +112,5 @@
 - Mini-Programs
 - File
 - Color
+- Clean
+- Source Code

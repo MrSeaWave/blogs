@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2022-01-27 13:38:31
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/XqC8pr_marcin-jakubowski-hellriderhd.jpg
-tags: [script, npm]
-categories: [npm]
+tags: [NPM, Script]
+categories: [技术]
 ---
 
 本文将介绍如何使用 npm 脚本（npm scripts）。

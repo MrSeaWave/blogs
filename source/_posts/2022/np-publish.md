@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2022-01-27 10:00:00
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/NTckRw_andrew-lim-aum-image-02-1200px-by-andrew-lim.jpg
-tags: [np, publish, npm]
-categories: [npm]
+tags: [NPM, Publish]
+categories: [技术]
 ---
 
 在之前的文章中 《{% post_link npm-publish 怎么发布 NPM 包 %}》中，已经介绍了如何使用 npm 进行发包，本文将会介绍一款发包工具 [np](https://www.npmjs.com/package/np) ，它是由 [sindresorhus](https://github.com/sindresorhus) 大神所创造的一套 npm published 工具，比 npm 原生的 `npm publish` 多了更多方便的功能！

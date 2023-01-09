@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2022-01-11 09:53:44
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/r7hprs_logo-small-844fb9182c0fbf41931de2246fa9c496.png
-tags: [Sequelize, mysql, orm]
-categories: [Sequelize]
+tags: [Sequelize, MySQL, ORM]
+categories: [技术]
 ---
 
 Sequelize 是一个基于 promise 的 Node.js [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping), 目前支持 [Postgres](https://en.wikipedia.org/wiki/PostgreSQL), [MySQL](https://en.wikipedia.org/wiki/MySQL), [MariaDB](https://en.wikipedia.org/wiki/MariaDB), [SQLite](https://en.wikipedia.org/wiki/SQLite) 以及 [Microsoft SQL Server](https://en.wikipedia.org/wiki/Microsoft_SQL_Server). 它具有强大的事务支持, 关联关系, 预读和延迟加载,读取复制等功能。

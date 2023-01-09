@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2022-01-27 09:41:47
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/NTckRw_andrew-lim-aum-image-02-1200px-by-andrew-lim.jpg
-tags: [npm, publish]
-categories: [npm]
+tags: [NPM, Publish]
+categories: [技术]
 ---
 
 将包发布到 NPM（node package manager）上很简单，只需要 2 步：
@@ -126,6 +126,7 @@ npm unpublish [<@scope>/]<pkg> --force
 开发阶段测试
 
 1. 当本地写完 npm 包的代码时，如果是业务依赖或者有服务依赖想简单跑个主流程，很简单我们就在本地项目引入这个本地 npm 包，比如 B 项目 依赖 本地开发的 npm 包 A，那我们开始安装一下：
+
    - 方法一
      ```
      $ npm install --save ../A/packages/modules
@@ -168,6 +169,7 @@ npm unpublish [<@scope>/]<pkg> --force
      ```
      $ npm unlink npm-link-module
      ```
+
 2. 开发的自动化测试
 
    使用 jest 测试

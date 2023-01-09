@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2022-02-10 10:39:06
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/LTI6FJ_nikita-s-shot1.jpeg
-tags: [package.json, check, dependencies]
-categories: [package.json]
+tags: [Pkg, Dependencies, Clean]
+categories: [技术]
 ---
 
 ## 背景
