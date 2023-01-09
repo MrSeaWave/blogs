@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-12-13 09:43:46
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/X1m0VR_image-20211213095119532.png
-tags: [idea, tools]
-categories: [idea]
+tags: [JetBrains, Format]
+categories: [Tools]
 ---
 
 当我们在使用 IntelliJ IDEA 去粘贴多行代码时，会发现总是自动缩进，或者被格式化。

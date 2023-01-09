@@ -4,9 +4,8 @@ author: Sea
 date: 2021-01-05 10:34:01
 toc: true
 cover:
-tags: [hexo, write]
-categories:
-  - [hexo, write]
+tags: [Hexo]
+categories: [技术]
 ---
 
 ## 介绍

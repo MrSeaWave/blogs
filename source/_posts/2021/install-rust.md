@@ -4,10 +4,8 @@ author: Sea
 toc: true
 date: 2021-01-20 10:20:16
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/yYqer8_image-20210120105733511.png
-tags: [install, rust]
-categories:
-  - [install, rust]
-  - [rust, install]
+tags: [Install, Rust]
+categories: [技术]
 ---
 
 Rust 通常被称为 rust-lang。Rust 是一个由 Mozilla Research 赞助的通用的、多范式、现代的、跨平台和开源系统编程语言。

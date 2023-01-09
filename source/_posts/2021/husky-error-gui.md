@@ -4,8 +4,10 @@ author: Sea
 toc: true
 date: 2021-04-02 23:28:00
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/VgzPiK_louise-meijer-conc-envmistyhills3.jpg
-tags: [git, github, hooks, husky, sourceTree]
-categories: [git]
+tags: [Git, GitHub, Hooks, Husky, Sourcetree]
+categories:
+  - [技术]
+  - [Tools]
 ---
 
 在`sourceTree`遇到使用`husky` 会报错的情况：

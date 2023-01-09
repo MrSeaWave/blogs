@@ -1,11 +1,11 @@
 ---
-title: 如何从Apple 美区官网购买礼品卡
+title: 如何从 Apple 美区官网购买礼品卡
 author: Sea
 toc: true
 date: 2021-04-02 22:42:14
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/5iR0ii_apple-gift-cards-landing-202006.jpeg
-tags: [apple, gift, card]
-categories: [apple]
+tags: [Apple, Gift]
+categories: [Other]
 ---
 
 淘宝上怕有黑卡，那么我们现在可以通过美区官方的通道购买礼品卡，当然，你需要至少有个 **双币信用卡** 。按理应该 visa 卡都能用。大家可以试试看。

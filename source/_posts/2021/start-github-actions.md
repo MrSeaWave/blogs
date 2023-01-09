@@ -1,12 +1,11 @@
 ---
-title: github-actions入门
+title: github-actions 入门
 author: Sea
 toc: true
 date: 2021-01-06 10:27:18
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/4p9haC_bg2019091201.jpg
-tags: [github, actions, workflow]
-categories:
-  - [github, actions]
+tags: [GitHub, Actions, Workflow, CI/CD]
+categories: [技术]
 ---
 
 [GitHub Actions](https://github.com/features/actions) 是 GitHub 的[持续集成服务](http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html)，于 2018 年 10 月[推出](https://github.blog/changelog/2018-10-16-github-actions-limited-beta/)。

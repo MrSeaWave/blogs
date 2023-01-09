@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-03-31 14:42:43
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/Ba67IE_min-yum-cloud-tree.jpg
-tags: [git, commit, lint]
-categories: [git, commit]
+tags: [Git, Lint]
+categories: [技术]
 ---
 
 Git 每次提交代码，都要写 Commit message（提交说明）

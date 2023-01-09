@@ -6,11 +6,12 @@
 
 > 如无必要，尽量减少新增
 
-- 技术：存放技术相关的一些文章
-- 随笔：一些想法，或者某个论点
-- Tools：各种生产力工具的介绍与讨论
-- Reviews：各种主题性的回顾内容
-- Weekly：每周食堂，定期分享与总结每周有趣的“食物”
+- 技术: 存放技术相关的一些文章
+- 随笔: 一些想法，或者某个论点
+- Tools: 各种生产力工具的介绍与讨论
+- Reviews: 各种主题性的回顾内容
+- Weekly: 每周食堂，定期分享与总结每周有趣的“食物”
+- Other: ...
 
 ## Tag
 
@@ -22,15 +23,15 @@
 - WebStorm
 - Ide
 - JetBrains
-- Upic
+- uPic
 - VPN
 - VS Code
 - GoodNotes
 - Chrome
 - Terminal
-- SourceTree
+- Sourcetree
 - Install
-
+- Gift
 - Git
 - GitHub
 - GitLab
@@ -43,9 +44,9 @@
 - Api
 - Apple
 - Babel
-- BasePath
 - Cache
 - Pkg
+- Engineered
 - CI/CD
 - Cli
 - Dependencies
@@ -75,13 +76,14 @@
 - MultiRepo
 - MySQL
 - Node
-- Npm
+- NPM
 - Pnpm
 - Yarn
 - Optimize
 - Orm
 - Plugins
-- Pm2
+- PM2
+- IPC
 - Eslint
 - Prettier
 - Proxy
@@ -107,3 +109,5 @@
 - WX
 - ZSH
 - Mini-Programs
+- File
+- Color

@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-03-31 14:59:41
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/ChQ1JY_rudy-siswanto-starnheim-unleashed-artstation.jpg
-tags: [git, commit, cli, lint]
-categories: [git, commit]
+tags: [Git, Lint, Engineered, CI/CD]
+categories: [技术]
 ---
 
 如果你团队的 `git commit` 信息紊乱，太过糟糕，觉得有必要统一规范 `commit`格式，又或者你是一个强迫症患者，有必要让 `commit` 信息整整齐齐的展示。那么，你可以往下瞅瞅。

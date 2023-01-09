@@ -1,11 +1,11 @@
 ---
-title: vscode插件project-manager使用
+title: vscode 插件 project-manager 使用
 author: Sea
 toc: true
 date: 2021-03-31 17:57:26
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/KwlX2Q_vscode-project-manager-logo-readme.png
-tags: [vs-code, plugins]
-categories: [vs-code, plugins]
+tags: [VS Code, Plugins]
+categories: [Tools]
 ---
 
 在项目开发的时候，我们经常需要同时操作多个项目，经常需要切换项目。

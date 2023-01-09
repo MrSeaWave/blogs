@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-04-06 10:41:56
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/GkcsTA_image-20210406112204323.png
-tags: [download, chrome, chromium, history]
-categories: [chrome]
+tags: [Chrome, Download, History]
+categories: [技术]
 ---
 
 本文将介绍谷歌浏览器历史版本如何下载及其代码仓库原理介绍。

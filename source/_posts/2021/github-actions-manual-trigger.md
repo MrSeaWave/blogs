@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-12-17 09:48:53
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/qq8Lk4_bg2019091201.jpeg
-tags: [github, actions, manual]
-categories: [github]
+tags: [GitHub, Actions, Workflow, CI/CD, Manual]
+categories: [技术]
 ---
 
 ## 前言

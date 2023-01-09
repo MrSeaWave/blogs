@@ -4,8 +4,10 @@ author: Sea
 toc: true
 date: 2021-12-31 09:43:49
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/yp69M9_labs.mysql.com_common_logos_mysql-logo.svg_v2.png
-tags: [mySql, install]
-categories: [mysql]
+tags: [MySQL, Install]
+categories:
+  - [技术]
+  - [Tools]
 ---
 
 本文将介绍如何在 Mac 上安装 Mysql。

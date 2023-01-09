@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-12-16 09:46:00
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/CJpYL9_image-20211216105358905.png
-tags: [lerna, github, publish, npm, actions]
-categories: [lerna, github]
+tags: [Lerna, GitHub, Publish, NPM, Actions, Workflow, CI/CD]
+categories: [技术]
 ---
 
 本文讲述的是如何利用`Github Action`自动化执行 `lerna publish`。

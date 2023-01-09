@@ -1,11 +1,11 @@
 ---
-title: 在nodejs中使用ES6
+title: 在 nodejs 中使用ES6
 author: Sea
 toc: true
 date: 2021-08-29 14:37:03
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/DUut73_adrian-bush-21-06-16.jpg
-tags: [babel, es6, js, node]
-categories: [babel]
+tags: [Babel, JS, Node]
+categories: [技术]
 ---
 
 本文将介绍如何在 nodejs 中使用 ES6 的功能。

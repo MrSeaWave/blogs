@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-06-23 16:09:42
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/gMY9Re_wenjun-lin-asset.jpg
-tags: [webpack, import]
-categories: [webpack]
+tags: [Webpack]
+categories: [技术]
 ---
 
 本文是关于 webpack 中使用 import 时的踩坑记录。

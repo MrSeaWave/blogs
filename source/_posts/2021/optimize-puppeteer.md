@@ -1,11 +1,11 @@
 ---
-title: 优化puppeteer
+title: 优化 puppeteer
 author: Sea
 toc: true
 date: 2021-07-05 10:05:31
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/pkrgHH_bruce-yu-wewew.jpg
-tags: [puppeteer, optimize]
-categories: [puppeteer]
+tags: [Puppeteer, Optimize]
+categories: [技术]
 ---
 
 本文将讲述如何优化`puppeteer`

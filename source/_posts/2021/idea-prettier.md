@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-04-14 14:54:53
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/Fj8B7I_chris-campbell-skeeziks-daughter-of-cernunnos.jpg
-tags: [idea, prettier, tools, WebStorm, format, wx]
-categories: [idea]
+tags: [JetBrains, Prettier, WebStorm, Format, WX]
+categories: [Tools]
 ---
 
 在直接调用 WebStorm 自带的 Prettier 去格式化 wxml / wxss / wxs 文件会提示：

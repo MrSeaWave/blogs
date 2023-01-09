@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-11-15 13:48:30
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/m5c0Xy_u310ya-desert.jpeg
-tags: [git]
-categories: [git]
+tags: [Git]
+categories: [技术]
 ---
 
 ## 问题背景

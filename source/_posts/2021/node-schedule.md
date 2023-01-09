@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-07-13 15:49:23
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/kAPfPH_leo-aveiro-qw-01-a.jpg
-tags: [cron, node, schedule]
-categories: [cron]
+tags: [Node, Cron, Schedule]
+categories: [技术]
 ---
 
 在实际开发项目中，会遇到很多定时任务的工作。比如：定时导出某些数据、定时发送消息或邮件给用户、定时备份什么类型的文件等等>

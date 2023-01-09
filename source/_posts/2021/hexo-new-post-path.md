@@ -1,11 +1,11 @@
 ---
-title: 如何在Hexo中对文章md文件分类
+title: 如何在 Hexo 中对文章 md 文件分类
 author: Sea
 toc: true
 date: 2021-06-25 16:23:31
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/drGAnm_adrian-bush-21-06-18.jpg
-tags: [hexo, md]
-categories: [hexo]
+tags: [Hexo, MD]
+categories: [技术]
 ---
 
 本文将介绍如何在 Hexo 中对文章 md 文件按日期进行分类

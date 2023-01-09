@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-06-11 16:18:10
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/C1EAax_baptiste-boutie-floating-house-high.jpg
-tags: [rgb, css]
-categories: [css]
+tags: [RGB, CSS, Color]
+categories: [技术]
 ---
 
 本文将要讲述 RGB 颜色插值渐变原理及其实现。
@@ -103,7 +103,8 @@ B = (255 - 150) / 100 = 1.05;
         }
 
         let finalValue = toRGB.value;
-        let patternRGB = /^(([0-9])|([1-9]\d)|(1[0-9]{2})|(2[0-4][0-9])|(25[0-5]))[,](([0-9])|([1-9]\d)|(1[0-9]{2})|(2[0-4][0-9])|(25[0-5]))[,](([0-9])|([1-9]\d)|(1[0-9]{2})|(2[0-4][0-9])|(25[0-5]))$/;
+        let patternRGB =
+          /^(([0-9])|([1-9]\d)|(1[0-9]{2})|(2[0-4][0-9])|(25[0-5]))[,](([0-9])|([1-9]\d)|(1[0-9]{2})|(2[0-4][0-9])|(25[0-5]))[,](([0-9])|([1-9]\d)|(1[0-9]{2})|(2[0-4][0-9])|(25[0-5]))$/;
 
         if (!patternRGB.test(finalValue)) {
           alert('Format is not correct, you should enter a value like 255,255,255');

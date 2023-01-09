@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-06-03 15:58:01
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/dKTlYJ_-1.gif
-tags: [js, export, export default]
-categories: [js]
+tags: [JS]
+categories: [技术]
 ---
 
 本文将介绍 export 与 export default 的差异性。
