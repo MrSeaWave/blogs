@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2022-11-17T05:05:02.000Z</updated>
+  <updated>2023-01-10T03:39:36.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -21,21 +21,21 @@
     <link href="https://mrseawave.github.io/blogs/articles/2022/11/16/reduce-git-repo/"/>
     <id>https://mrseawave.github.io/blogs/articles/2022/11/16/reduce-git-repo/</id>
     <published>2022-11-16T13:00:11.000Z</published>
-    <updated>2022-11-17T05:05:02.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;随着时间的推移，Git 存储库变得越来越大，或者自己误操作，把 &lt;code&gt;node_moduoles&lt;/code&gt;、&lt;code&gt;.yarn&lt;/code&gt;、&lt;code&gt;.DS_Sore &lt;/code&gt;这种大文件上传到远程仓库中，虽然后期把他们移除了，但还是会使仓库体积变大，获取仓库变得更慢，每个人都必须下载文件，因此我们需要缩减 Git 仓库体积。&lt;/p&gt;</summary>
     
     
     
-    <category term="git" scheme="https://mrseawave.github.io/blogs/categories/git/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="git" scheme="https://mrseawave.github.io/blogs/tags/git/"/>
+    <category term="Git" scheme="https://mrseawave.github.io/blogs/tags/Git/"/>
     
     <category term="GitHub" scheme="https://mrseawave.github.io/blogs/tags/GitHub/"/>
     
-    <category term="Gitlab" scheme="https://mrseawave.github.io/blogs/tags/Gitlab/"/>
+    <category term="GitLab" scheme="https://mrseawave.github.io/blogs/tags/GitLab/"/>
     
   </entry>
   
@@ -44,17 +44,15 @@
     <link href="https://mrseawave.github.io/blogs/articles/2022/06/28/begin-install/"/>
     <id>https://mrseawave.github.io/blogs/articles/2022/06/28/begin-install/</id>
     <published>2022-06-28T06:27:32.000Z</published>
-    <updated>2022-06-28T07:19:23.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;今日打算重新组装系统，因此需要从零开始安装在 Mac 上的必备的一些软件。&lt;/p&gt;</summary>
     
     
     
-    <category term="Mac" scheme="https://mrseawave.github.io/blogs/categories/Mac/"/>
+    <category term="Tools" scheme="https://mrseawave.github.io/blogs/categories/Tools/"/>
     
-    
-    <category term="app" scheme="https://mrseawave.github.io/blogs/tags/app/"/>
     
     <category term="Mac" scheme="https://mrseawave.github.io/blogs/tags/Mac/"/>
     
@@ -65,21 +63,21 @@
     <link href="https://mrseawave.github.io/blogs/articles/2022/02/10/depcheck/"/>
     <id>https://mrseawave.github.io/blogs/articles/2022/02/10/depcheck/</id>
     <published>2022-02-10T02:39:06.000Z</published>
-    <updated>2022-02-10T03:14:23.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;随着时间的推移，项目中 package.json 中的依赖越来越臃肿，安装依赖的速度越来越慢，各种奇奇怪怪的包，不一定都会用到，因此我们可以为项目减负，使用 &lt;a href=&quot;https://www.npmjs.com/package/depcheck&quot;&gt;depcheck&lt;/a&gt; 检测项目中不用的依赖包，然后移除它们。&lt;/p&gt;</summary>
     
     
     
-    <category term="package.json" scheme="https://mrseawave.github.io/blogs/categories/package-json/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="package.json" scheme="https://mrseawave.github.io/blogs/tags/package-json/"/>
+    <category term="Pkg" scheme="https://mrseawave.github.io/blogs/tags/Pkg/"/>
     
-    <category term="check" scheme="https://mrseawave.github.io/blogs/tags/check/"/>
+    <category term="Dependencies" scheme="https://mrseawave.github.io/blogs/tags/Dependencies/"/>
     
-    <category term="dependencies" scheme="https://mrseawave.github.io/blogs/tags/dependencies/"/>
+    <category term="Clean" scheme="https://mrseawave.github.io/blogs/tags/Clean/"/>
     
   </entry>
   
@@ -88,21 +86,19 @@
     <link href="https://mrseawave.github.io/blogs/articles/2022/02/09/renovate/"/>
     <id>https://mrseawave.github.io/blogs/articles/2022/02/09/renovate/</id>
     <published>2022-02-09T01:56:19.000Z</published>
-    <updated>2022-02-09T03:02:08.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;当一个公共依赖包的使用者数量逐渐庞大的时候，如何保证当此包发布新版本时，所有使用者都能尽可能快地得到更新？或者如何保证自己仓库的使用的第三方库一直保持&lt;strong&gt;安全情况下&lt;/strong&gt;的最新状态呢？&lt;/p&gt;</summary>
     
     
     
-    <category term="dependency" scheme="https://mrseawave.github.io/blogs/categories/dependency/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="update" scheme="https://mrseawave.github.io/blogs/tags/update/"/>
+    <category term="Dependencies" scheme="https://mrseawave.github.io/blogs/tags/Dependencies/"/>
     
-    <category term="dependency" scheme="https://mrseawave.github.io/blogs/tags/dependency/"/>
-    
-    <category term="renovate" scheme="https://mrseawave.github.io/blogs/tags/renovate/"/>
+    <category term="Monitor" scheme="https://mrseawave.github.io/blogs/tags/Monitor/"/>
     
   </entry>
   
@@ -111,7 +107,7 @@
     <link href="https://mrseawave.github.io/blogs/articles/2022/01/27/github-profile-readme/"/>
     <id>https://mrseawave.github.io/blogs/articles/2022/01/27/github-profile-readme/</id>
     <published>2022-01-27T06:55:10.000Z</published>
-    <updated>2022-01-27T09:15:23.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;Github 作为一个资源托管平台，我们有没有想过在主页锦上添花否？&lt;/p&gt;
@@ -122,10 +118,10 @@
     
     
     
-    <category term="github" scheme="https://mrseawave.github.io/blogs/categories/github/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="github" scheme="https://mrseawave.github.io/blogs/tags/github/"/>
+    <category term="GitHub" scheme="https://mrseawave.github.io/blogs/tags/GitHub/"/>
     
   </entry>
   
@@ -134,19 +130,19 @@
     <link href="https://mrseawave.github.io/blogs/articles/2022/01/27/npm-script/"/>
     <id>https://mrseawave.github.io/blogs/articles/2022/01/27/npm-script/</id>
     <published>2022-01-27T05:38:31.000Z</published>
-    <updated>2022-01-27T06:46:13.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文将介绍如何使用 npm 脚本（npm scripts）。&lt;/p&gt;</summary>
     
     
     
-    <category term="npm" scheme="https://mrseawave.github.io/blogs/categories/npm/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="npm" scheme="https://mrseawave.github.io/blogs/tags/npm/"/>
+    <category term="NPM" scheme="https://mrseawave.github.io/blogs/tags/NPM/"/>
     
-    <category term="script" scheme="https://mrseawave.github.io/blogs/tags/script/"/>
+    <category term="Script" scheme="https://mrseawave.github.io/blogs/tags/Script/"/>
     
   </entry>
   
@@ -155,21 +151,19 @@
     <link href="https://mrseawave.github.io/blogs/articles/2022/01/27/np-publish/"/>
     <id>https://mrseawave.github.io/blogs/articles/2022/01/27/np-publish/</id>
     <published>2022-01-27T02:00:00.000Z</published>
-    <updated>2022-01-27T03:41:04.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;在之前的文章中 《&lt;a href=&quot;/blogs/articles/2022/01/27/npm-publish/&quot; title=&quot;怎么发布 NPM 包&quot;&gt;怎么发布 NPM 包&lt;/a&gt;》中，已经介绍了如何使用 npm 进行发包，本文将会介绍一款发包工具 &lt;a href=&quot;https://www.npmjs.com/package/np&quot;&gt;np&lt;/a&gt; ，它是由 &lt;a href=&quot;https://github.com/sindresorhus&quot;&gt;sindresorhus&lt;/a&gt; 大神所创造的一套 npm published 工具，比 npm 原生的 &lt;code&gt;npm publish&lt;/code&gt; 多了更多方便的功能！&lt;/p&gt;</summary>
     
     
     
-    <category term="npm" scheme="https://mrseawave.github.io/blogs/categories/npm/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="publish" scheme="https://mrseawave.github.io/blogs/tags/publish/"/>
+    <category term="Publish" scheme="https://mrseawave.github.io/blogs/tags/Publish/"/>
     
-    <category term="npm" scheme="https://mrseawave.github.io/blogs/tags/npm/"/>
-    
-    <category term="np" scheme="https://mrseawave.github.io/blogs/tags/np/"/>
+    <category term="NPM" scheme="https://mrseawave.github.io/blogs/tags/NPM/"/>
     
   </entry>
   
@@ -178,7 +172,7 @@
     <link href="https://mrseawave.github.io/blogs/articles/2022/01/27/npm-publish/"/>
     <id>https://mrseawave.github.io/blogs/articles/2022/01/27/npm-publish/</id>
     <published>2022-01-27T01:41:47.000Z</published>
-    <updated>2022-01-27T02:20:19.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;将包发布到 NPM（node package manager）上很简单，只需要 2 步：&lt;/p&gt;
@@ -189,12 +183,12 @@
     
     
     
-    <category term="npm" scheme="https://mrseawave.github.io/blogs/categories/npm/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="publish" scheme="https://mrseawave.github.io/blogs/tags/publish/"/>
+    <category term="Publish" scheme="https://mrseawave.github.io/blogs/tags/Publish/"/>
     
-    <category term="npm" scheme="https://mrseawave.github.io/blogs/tags/npm/"/>
+    <category term="NPM" scheme="https://mrseawave.github.io/blogs/tags/NPM/"/>
     
   </entry>
   
@@ -203,19 +197,19 @@
     <link href="https://mrseawave.github.io/blogs/articles/2022/01/25/only-allow/"/>
     <id>https://mrseawave.github.io/blogs/articles/2022/01/25/only-allow/</id>
     <published>2022-01-25T09:00:00.000Z</published>
-    <updated>2022-01-25T08:27:31.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;strong&gt;一行代码统一规范包管理器&lt;/strong&gt;: &lt;a href=&quot;https://github.com/pnpm/only-allow&quot;&gt;only-allow&lt;/a&gt;，强制在项目上使用特定的包管理器&lt;/p&gt;</summary>
     
     
     
-    <category term="analysis" scheme="https://mrseawave.github.io/blogs/categories/analysis/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="analysis" scheme="https://mrseawave.github.io/blogs/tags/analysis/"/>
+    <category term="Source Code" scheme="https://mrseawave.github.io/blogs/tags/Source-Code/"/>
     
-    <category term="only-allow" scheme="https://mrseawave.github.io/blogs/tags/only-allow/"/>
+    <category term="Analysis" scheme="https://mrseawave.github.io/blogs/tags/Analysis/"/>
     
   </entry>
   
@@ -224,21 +218,21 @@
     <link href="https://mrseawave.github.io/blogs/articles/2022/01/11/sequelize-start/"/>
     <id>https://mrseawave.github.io/blogs/articles/2022/01/11/sequelize-start/</id>
     <published>2022-01-11T01:53:44.000Z</published>
-    <updated>2022-01-11T03:17:03.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;Sequelize 是一个基于 promise 的 Node.js &lt;a href=&quot;https://en.wikipedia.org/wiki/Object-relational_mapping&quot;&gt;ORM&lt;/a&gt;, 目前支持 &lt;a href=&quot;https://en.wikipedia.org/wiki/PostgreSQL&quot;&gt;Postgres&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/MySQL&quot;&gt;MySQL&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/MariaDB&quot;&gt;MariaDB&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/SQLite&quot;&gt;SQLite&lt;/a&gt; 以及 &lt;a href=&quot;https://en.wikipedia.org/wiki/Microsoft_SQL_Server&quot;&gt;Microsoft SQL Server&lt;/a&gt;. 它具有强大的事务支持, 关联关系, 预读和延迟加载,读取复制等功能。&lt;/p&gt;</summary>
     
     
     
-    <category term="Sequelize" scheme="https://mrseawave.github.io/blogs/categories/Sequelize/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
+    
+    <category term="MySQL" scheme="https://mrseawave.github.io/blogs/tags/MySQL/"/>
     
     <category term="Sequelize" scheme="https://mrseawave.github.io/blogs/tags/Sequelize/"/>
     
-    <category term="mysql" scheme="https://mrseawave.github.io/blogs/tags/mysql/"/>
-    
-    <category term="orm" scheme="https://mrseawave.github.io/blogs/tags/orm/"/>
+    <category term="ORM" scheme="https://mrseawave.github.io/blogs/tags/ORM/"/>
     
   </entry>
   
@@ -247,21 +241,19 @@
     <link href="https://mrseawave.github.io/blogs/articles/2022/01/10/soft-deleted-and-unique-index/"/>
     <id>https://mrseawave.github.io/blogs/articles/2022/01/10/soft-deleted-and-unique-index/</id>
     <published>2022-01-10T08:20:28.000Z</published>
-    <updated>2022-01-10T09:14:23.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;目前基本上在使用数据库时，都会使用到软删除（逻辑删除），但当软删除与唯一索引（&lt;code&gt;unique-key&lt;/code&gt;）一起存在时可能会导致一些问题。&lt;/p&gt;</summary>
     
     
     
-    <category term="database" scheme="https://mrseawave.github.io/blogs/categories/database/"/>
-    
-    <category term="mysql" scheme="https://mrseawave.github.io/blogs/categories/database/mysql/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="mysql" scheme="https://mrseawave.github.io/blogs/tags/mysql/"/>
+    <category term="MySQL" scheme="https://mrseawave.github.io/blogs/tags/MySQL/"/>
     
-    <category term="sql" scheme="https://mrseawave.github.io/blogs/tags/sql/"/>
+    <category term="SQL" scheme="https://mrseawave.github.io/blogs/tags/SQL/"/>
     
   </entry>
   
@@ -270,19 +262,21 @@
     <link href="https://mrseawave.github.io/blogs/articles/2022/01/08/install-pkg/"/>
     <id>https://mrseawave.github.io/blogs/articles/2022/01/08/install-pkg/</id>
     <published>2022-01-08T09:00:28.000Z</published>
-    <updated>2022-01-10T03:13:24.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;本文是在看到 &lt;a href=&quot;https://github.com/lxchuan12/install-pkg-analysis&quot;&gt;《Vue团队核心成员开发的39行小工具 install-pkg 安装包，值得一学！》&lt;/a&gt; 文章后，对 &lt;a href=&quot;https://github.com/antfu/install-pkg#readme&quot;&gt;@antfu/install-pkg&lt;/a&gt; 进行的一次源码阅读。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;本文是在看到 &lt;a href=&quot;https://github.com/lxchuan12/install-pkg-analysis&quot;&gt;《Vue 团队核心成员开发的 39 行小工具 install-pkg 安装包，值得一学！》&lt;/a&gt; 文章后，对 &lt;a href=&quot;https://github.com/antfu/install-pkg#readme&quot;&gt;@antfu/install-pkg&lt;/a&gt; 进行的一次源码阅读。&lt;/p&gt;</summary>
     
     
     
-    <category term="analysis" scheme="https://mrseawave.github.io/blogs/categories/analysis/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="install-pkg" scheme="https://mrseawave.github.io/blogs/tags/install-pkg/"/>
+    <category term="Pkg" scheme="https://mrseawave.github.io/blogs/tags/Pkg/"/>
     
-    <category term="analysis" scheme="https://mrseawave.github.io/blogs/tags/analysis/"/>
+    <category term="Source Code" scheme="https://mrseawave.github.io/blogs/tags/Source-Code/"/>
+    
+    <category term="Analysis" scheme="https://mrseawave.github.io/blogs/tags/Analysis/"/>
     
   </entry>
   
@@ -291,21 +285,21 @@
     <link href="https://mrseawave.github.io/blogs/articles/2022/01/08/cross-spawn/"/>
     <id>https://mrseawave.github.io/blogs/articles/2022/01/08/cross-spawn/</id>
     <published>2022-01-08T08:30:01.000Z</published>
-    <updated>2022-01-08T08:50:04.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文将会讲述如何跨平台来使用&lt;code&gt;spawn&lt;/code&gt;语句呢？（可以利用&lt;a href=&quot;https://www.npmjs.com/package/cross-spawn&quot;&gt;cross-spawn&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
-    <category term="node" scheme="https://mrseawave.github.io/blogs/categories/node/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="node" scheme="https://mrseawave.github.io/blogs/tags/node/"/>
+    <category term="Node" scheme="https://mrseawave.github.io/blogs/tags/Node/"/>
     
-    <category term="cross" scheme="https://mrseawave.github.io/blogs/tags/cross/"/>
+    <category term="Cross" scheme="https://mrseawave.github.io/blogs/tags/Cross/"/>
     
-    <category term="spawn" scheme="https://mrseawave.github.io/blogs/tags/spawn/"/>
+    <category term="Spawn" scheme="https://mrseawave.github.io/blogs/tags/Spawn/"/>
     
   </entry>
   
@@ -314,19 +308,19 @@
     <link href="https://mrseawave.github.io/blogs/articles/2022/01/07/g2-multiple-geometry-legend/"/>
     <id>https://mrseawave.github.io/blogs/articles/2022/01/07/g2-multiple-geometry-legend/</id>
     <published>2022-01-07T05:48:34.000Z</published>
-    <updated>2022-01-07T07:20:28.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;谨以此文记录下如何利用 G2 在同一个坐标系内绘制多图时使用图例问题。如无特殊说明，当前 G2 版本为：&lt;code&gt;4.1.37&lt;/code&gt;&lt;/p&gt;</summary>
     
     
     
-    <category term="G2" scheme="https://mrseawave.github.io/blogs/categories/G2/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
     <category term="G2" scheme="https://mrseawave.github.io/blogs/tags/G2/"/>
     
-    <category term="legend" scheme="https://mrseawave.github.io/blogs/tags/legend/"/>
+    <category term="Legend" scheme="https://mrseawave.github.io/blogs/tags/Legend/"/>
     
   </entry>
   
@@ -335,19 +329,21 @@
     <link href="https://mrseawave.github.io/blogs/articles/2021/12/31/mysql-install/"/>
     <id>https://mrseawave.github.io/blogs/articles/2021/12/31/mysql-install/</id>
     <published>2021-12-31T01:43:49.000Z</published>
-    <updated>2021-12-31T02:21:34.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文将介绍如何在 Mac 上安装 Mysql。&lt;/p&gt;</summary>
     
     
     
-    <category term="mysql" scheme="https://mrseawave.github.io/blogs/categories/mysql/"/>
+    <category term="Tools" scheme="https://mrseawave.github.io/blogs/categories/Tools/"/>
+    
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="install" scheme="https://mrseawave.github.io/blogs/tags/install/"/>
+    <category term="Install" scheme="https://mrseawave.github.io/blogs/tags/Install/"/>
     
-    <category term="mySql" scheme="https://mrseawave.github.io/blogs/tags/mySql/"/>
+    <category term="MySQL" scheme="https://mrseawave.github.io/blogs/tags/MySQL/"/>
     
   </entry>
   
@@ -356,21 +352,21 @@
     <link href="https://mrseawave.github.io/blogs/articles/2021/12/30/node-combine-more-files/"/>
     <id>https://mrseawave.github.io/blogs/articles/2021/12/30/node-combine-more-files/</id>
     <published>2021-12-30T01:31:23.000Z</published>
-    <updated>2021-12-30T02:35:19.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;最近在做关于&lt;a href=&quot;https://github.com/LackZero/rocket-upload-server&quot;&gt;node 端的上传文件&lt;/a&gt;时，碰到一个问题，如何将多个文件合并至一个文件呢？（前端上传的切割文件在服务端进行合并）&lt;/p&gt;</summary>
     
     
     
-    <category term="node" scheme="https://mrseawave.github.io/blogs/categories/node/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="node" scheme="https://mrseawave.github.io/blogs/tags/node/"/>
+    <category term="Node" scheme="https://mrseawave.github.io/blogs/tags/Node/"/>
     
-    <category term="stream" scheme="https://mrseawave.github.io/blogs/tags/stream/"/>
+    <category term="Stream" scheme="https://mrseawave.github.io/blogs/tags/Stream/"/>
     
-    <category term="combine" scheme="https://mrseawave.github.io/blogs/tags/combine/"/>
+    <category term="File" scheme="https://mrseawave.github.io/blogs/tags/File/"/>
     
   </entry>
   
@@ -379,7 +375,7 @@
     <link href="https://mrseawave.github.io/blogs/articles/2021/12/17/github-actions-cache/"/>
     <id>https://mrseawave.github.io/blogs/articles/2021/12/17/github-actions-cache/</id>
     <published>2021-12-17T05:31:17.000Z</published>
-    <updated>2021-12-17T06:46:45.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;在之前的文章中 《&lt;a href=&quot;/blogs/articles/2021/01/06/start-github-actions/&quot; title=&quot;github-actions入门&quot;&gt;github-actions入门&lt;/a&gt;》《 &lt;a href=&quot;/blogs/articles/2021/12/16/github-actions-auto-publish/&quot; title=&quot;如何使用Github Action 自动 lerna publish&quot;&gt;如何使用Github Action 自动 lerna publish&lt;/a&gt; 》中，介绍了 Github Actions 的一些用法，其中在构建过程中，会安装很多第三方依赖，而这些依赖会很耗时，因此可以考虑是否有优化的空间，并不需要每次都重新下载，而是可以将这些依赖缓存起来，加快构建速度。&lt;/p&gt;
@@ -387,14 +383,18 @@
     
     
     
-    <category term="github" scheme="https://mrseawave.github.io/blogs/categories/github/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="github" scheme="https://mrseawave.github.io/blogs/tags/github/"/>
+    <category term="CI/CD" scheme="https://mrseawave.github.io/blogs/tags/CI-CD/"/>
     
-    <category term="actions" scheme="https://mrseawave.github.io/blogs/tags/actions/"/>
+    <category term="GitHub" scheme="https://mrseawave.github.io/blogs/tags/GitHub/"/>
     
-    <category term="cache" scheme="https://mrseawave.github.io/blogs/tags/cache/"/>
+    <category term="Actions" scheme="https://mrseawave.github.io/blogs/tags/Actions/"/>
+    
+    <category term="Workflow" scheme="https://mrseawave.github.io/blogs/tags/Workflow/"/>
+    
+    <category term="Cache" scheme="https://mrseawave.github.io/blogs/tags/Cache/"/>
     
   </entry>
   
@@ -403,21 +403,25 @@
     <link href="https://mrseawave.github.io/blogs/articles/2021/12/17/github-actions-manual-trigger/"/>
     <id>https://mrseawave.github.io/blogs/articles/2021/12/17/github-actions-manual-trigger/</id>
     <published>2021-12-17T01:48:53.000Z</published>
-    <updated>2021-12-17T06:46:45.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;GitHub Ac­tions 在早期可能是处于初级开发阶段，它的功能非常原生，甚至没有直接提供一个手动触发按钮。一般的触发方式为代码变动（&lt;code&gt;push&lt;/code&gt; 、&lt;code&gt;pull_request&lt;/code&gt;），发布文件（&lt;code&gt;release&lt;/code&gt;）或者定时（&lt;code&gt;schedule&lt;/code&gt;）等，这些属于自动触发方式。如果我们需要在 GitHub 仓库没有任何变动的情况下&lt;strong&gt;手动触发&lt;/strong&gt;就需要使用一些奇技淫巧。经历了漫长的功能迭代，官方最终正式带来了手动触发功能，这也宣告了一个瞎折腾时代的结束，一个崭新的折腾时代开始。&lt;/p&gt;</summary>
     
     
     
-    <category term="github" scheme="https://mrseawave.github.io/blogs/categories/github/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="github" scheme="https://mrseawave.github.io/blogs/tags/github/"/>
+    <category term="CI/CD" scheme="https://mrseawave.github.io/blogs/tags/CI-CD/"/>
     
-    <category term="actions" scheme="https://mrseawave.github.io/blogs/tags/actions/"/>
+    <category term="GitHub" scheme="https://mrseawave.github.io/blogs/tags/GitHub/"/>
     
-    <category term="manual" scheme="https://mrseawave.github.io/blogs/tags/manual/"/>
+    <category term="Actions" scheme="https://mrseawave.github.io/blogs/tags/Actions/"/>
+    
+    <category term="Workflow" scheme="https://mrseawave.github.io/blogs/tags/Workflow/"/>
+    
+    <category term="Manual" scheme="https://mrseawave.github.io/blogs/tags/Manual/"/>
     
   </entry>
   
@@ -426,27 +430,29 @@
     <link href="https://mrseawave.github.io/blogs/articles/2021/12/16/github-actions-auto-publish/"/>
     <id>https://mrseawave.github.io/blogs/articles/2021/12/16/github-actions-auto-publish/</id>
     <published>2021-12-16T01:46:00.000Z</published>
-    <updated>2021-12-17T06:13:15.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文讲述的是如何利用&lt;code&gt;Github Action&lt;/code&gt;自动化执行 &lt;code&gt;lerna publish&lt;/code&gt;。&lt;/p&gt;</summary>
     
     
     
-    <category term="lerna" scheme="https://mrseawave.github.io/blogs/categories/lerna/"/>
-    
-    <category term="github" scheme="https://mrseawave.github.io/blogs/categories/lerna/github/"/>
+    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="github" scheme="https://mrseawave.github.io/blogs/tags/github/"/>
+    <category term="CI/CD" scheme="https://mrseawave.github.io/blogs/tags/CI-CD/"/>
     
-    <category term="lerna" scheme="https://mrseawave.github.io/blogs/tags/lerna/"/>
+    <category term="GitHub" scheme="https://mrseawave.github.io/blogs/tags/GitHub/"/>
     
-    <category term="publish" scheme="https://mrseawave.github.io/blogs/tags/publish/"/>
+    <category term="Lerna" scheme="https://mrseawave.github.io/blogs/tags/Lerna/"/>
     
-    <category term="npm" scheme="https://mrseawave.github.io/blogs/tags/npm/"/>
+    <category term="Publish" scheme="https://mrseawave.github.io/blogs/tags/Publish/"/>
     
-    <category term="actions" scheme="https://mrseawave.github.io/blogs/tags/actions/"/>
+    <category term="NPM" scheme="https://mrseawave.github.io/blogs/tags/NPM/"/>
+    
+    <category term="Actions" scheme="https://mrseawave.github.io/blogs/tags/Actions/"/>
+    
+    <category term="Workflow" scheme="https://mrseawave.github.io/blogs/tags/Workflow/"/>
     
   </entry>
   
@@ -455,19 +461,19 @@
     <link href="https://mrseawave.github.io/blogs/articles/2021/12/13/idea-reformat-on-paste/"/>
     <id>https://mrseawave.github.io/blogs/articles/2021/12/13/idea-reformat-on-paste/</id>
     <published>2021-12-13T01:43:46.000Z</published>
-    <updated>2021-12-13T01:53:56.000Z</updated>
+    <updated>2023-01-10T03:39:36.000Z</updated>
     
     
     <summary type="html">&lt;p&gt;当我们在使用 IntelliJ IDEA 去粘贴多行代码时，会发现总是自动缩进，或者被格式化。&lt;/p&gt;</summary>
     
     
     
-    <category term="idea" scheme="https://mrseawave.github.io/blogs/categories/idea/"/>
+    <category term="Tools" scheme="https://mrseawave.github.io/blogs/categories/Tools/"/>
     
     
-    <category term="idea" scheme="https://mrseawave.github.io/blogs/tags/idea/"/>
+    <category term="JetBrains" scheme="https://mrseawave.github.io/blogs/tags/JetBrains/"/>
     
-    <category term="tools" scheme="https://mrseawave.github.io/blogs/tags/tools/"/>
+    <category term="Format" scheme="https://mrseawave.github.io/blogs/tags/Format/"/>
     
   </entry>
   
