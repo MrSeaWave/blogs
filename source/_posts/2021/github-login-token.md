@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-08-29 11:58:38
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/SROeDJ_alex-jay-brady-r2b.jpg
-tags: [github, token]
-categories: [github]
+tags: [GitHub, Token]
+categories: [技术]
 ---
 
 本文主要介绍 github 开发人员在七夕搞事情：`remote: Support for password authentication was removed on August 13, 2021.`

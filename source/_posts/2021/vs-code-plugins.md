@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-03-15 10:21:49
 cover: https://code.visualstudio.com/assets/home/home-screenshot-mac-2x.png
-tags: [vs-code, plugins, ide, recommend]
-categories: [vs-code, plugins]
+tags: [VS Code, Plugins, Ide, Recommend]
+categories: [Tools]
 ---
 
 在使用`vs-code`时，整理了一些好用的`vs-code`插件分享。

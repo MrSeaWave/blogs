@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2022-01-08 16:30:01
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/X4kA0A_alejandro-burdisio-congurbano-manchines-hell-s-chori-s-artstation.jpg
-tags: [node, cross, spawn]
-categories: [node]
+tags: [Node, Cross, Spawn]
+categories: [技术]
 ---
 
 本文将会讲述如何跨平台来使用`spawn`语句呢？（可以利用[cross-spawn](https://www.npmjs.com/package/cross-spawn)

@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-07-09 17:35:01
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/wpg1jL_syncdevices@2x.jpeg
-tags: [app, GoodNotes]
-categories: [app]
+tags: [Mac, GoodNotes]
+categories: [Tools]
 ---
 
 今天安利一款软件：GoodNotes

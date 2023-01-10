@@ -1,11 +1,11 @@
 ---
-title: apidoc教程
+title: apiDoc 教程
 author: Sea
 toc: true
 date: 2021-07-15 15:06:23
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/OAgON3_michael-maurino-aegis-final.jpeg
-tags: [api, doc]
-categories: [api]
+tags: [Api, Doc]
+categories: [技术]
 ---
 
 apiDoc - 超简单的文档生成器，本文将讲述如何使用它。

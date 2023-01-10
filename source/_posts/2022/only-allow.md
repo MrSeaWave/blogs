@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2022-01-25 17:00:00
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/pLHqhA_inhyuk-lee-1.jpg
-tags: [only-allow, analysis]
-categories: [analysis]
+tags: [Analysis, Source Code]
+categories: [技术]
 ---
 
 **一行代码统一规范包管理器**: [only-allow](https://github.com/pnpm/only-allow)，强制在项目上使用特定的包管理器
@@ -51,22 +51,18 @@ categories: [analysis]
 
 ```js
 #!/usr/bin/env node
-const whichPMRuns = require("which-pm-runs");
-const boxen = require("boxen");
+const whichPMRuns = require('which-pm-runs');
+const boxen = require('boxen');
 
 const argv = process.argv.slice(2);
 if (argv.length === 0) {
-  console.log(
-    "Please specify the wanted package manager: only-allow <npm|pnpm|yarn>"
-  );
+  console.log('Please specify the wanted package manager: only-allow <npm|pnpm|yarn>');
   process.exit(1);
 }
 // 用户规定的包管理器，例如 npx only-allow yarn ，那么wantedPM 为 yarn
 const wantedPM = argv[0];
-if (wantedPM !== "npm" && wantedPM !== "pnpm" && wantedPM !== "yarn") {
-  console.log(
-    `"${wantedPM}" is not a valid package manager. Available package managers are: npm, pnpm, or yarn.`
-  );
+if (wantedPM !== 'npm' && wantedPM !== 'pnpm' && wantedPM !== 'yarn') {
+  console.log(`"${wantedPM}" is not a valid package manager. Available package managers are: npm, pnpm, or yarn.`);
   process.exit(1);
 }
 
@@ -81,14 +77,12 @@ const usedPM = whichPMRuns();
 if (usedPM && usedPM.name !== wantedPM) {
   // boxenOPts: boxen 的配置
   // boxen 能让terminal的输出展示盒装的样式,让终端提示更明显
-  const boxenOpts = { borderColor: "red", borderStyle: "double", padding: 1 };
+  const boxenOpts = { borderColor: 'red', borderStyle: 'double', padding: 1 };
   switch (wantedPM) {
-    case "npm":
-      console.log(
-        boxen('Use "npm install" for installation in this project', boxenOpts)
-      );
+    case 'npm':
+      console.log(boxen('Use "npm install" for installation in this project', boxenOpts));
       break;
-    case "pnpm":
+    case 'pnpm':
       console.log(
         boxen(
           `Use "pnpm install" for installation in this project.
@@ -99,7 +93,7 @@ For more details, go to https://pnpm.js.org/`,
         )
       );
       break;
-    case "yarn":
+    case 'yarn':
       console.log(
         boxen(
           `Use "yarn" for installation in this project.
@@ -125,7 +119,7 @@ For more details, go to https://yarnpkg.com/`,
 源码比较简单，这里一起讲下：
 
 ```js
-"use strict";
+'use strict';
 
 module.exports = function () {
   if (!process.env.npm_config_user_agent) {
@@ -137,8 +131,8 @@ module.exports = function () {
 // process.env.npm_config_user_agent: pnpm/6.22.2 npm/? node/v14.18.1 darwin x64
 // 获取到当前运行脚本的包管理器和版本号
 function pmFromUserAgent(userAgent) {
-  const pmSpec = userAgent.split(" ")[0];
-  const separatorPos = pmSpec.lastIndexOf("/");
+  const pmSpec = userAgent.split(' ')[0];
+  const separatorPos = pmSpec.lastIndexOf('/');
   return {
     name: pmSpec.substr(0, separatorPos),
     version: pmSpec.substr(separatorPos + 1),

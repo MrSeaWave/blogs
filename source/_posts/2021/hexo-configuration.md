@@ -4,9 +4,8 @@ author: Sea
 toc: true
 date: 2021-01-08 11:18:32
 cover:
-tags: [hexo, configuration, questions, SEO, permalinks]
-categories:
-  - [hexo, configuration]
+tags: [Hexo, SEO]
+categories: [技术]
 ---
 
 ## 前言

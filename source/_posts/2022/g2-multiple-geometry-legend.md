@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2022-01-07 13:48:34
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/7mlvQj_A_wo_LToatmbwAAAAAAAAAAABkARQnAQ.png
-tags: [G2, legend]
-categories: [G2]
+tags: [G2, Legend]
+categories: [技术]
 ---
 
 谨以此文记录下如何利用 G2 在同一个坐标系内绘制多图时使用图例问题。如无特殊说明，当前 G2 版本为：`4.1.37`

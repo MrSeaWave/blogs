@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2022-06-28 14:27:32
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/EGMtcL_joon-ahn-skylines-20.jpeg
-tags: [Mac, app]
-categories: [Mac]
+tags: [Mac]
+categories: [Tools]
 ---
 
 今日打算重新组装系统，因此需要从零开始安装在 Mac 上的必备的一些软件。

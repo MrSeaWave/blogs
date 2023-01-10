@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-04-01 11:02:16
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/O4cFpL_min-yum-blue.jpg
-tags: [chrome, download, chromium, history]
-categories: [chrome]
+tags: [Chrome, Download, History]
+categories: [Tools]
 ---
 
 Chrome(Chromium) 历史旧版本离线安装包下载方法。

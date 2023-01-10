@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2022-01-10 16:20:28
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2022/vrWNnT_jennifer-park-e-mlf6ouyai977a.jpg
-tags: [sql, mysql]
-categories: [database, mysql]
+tags: [SQL, MySQL]
+categories: [技术]
 ---
 
 ## 背景

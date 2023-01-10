@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-07-09 10:31:32
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/xATenx_long-zhang-sirius-longzhang.jpg
-tags: [js, html, watermark]
-categories: [js]
+tags: [JS, Html, Watermark]
+categories: [技术]
 ---
 
 为防止信息泄露，给网页加水印是一种常见的方法。本篇文章将介绍一种添加明水印的方法。

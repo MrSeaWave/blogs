@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-06-07 14:42:42
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/ujISC8_felicia-chen-hellmtn1.jpg
-tags: [lerna, monorepo]
-categories: [lerna]
+tags: [Lerna, Monorepo, MultiRepo]
+categories: [技术]
 ---
 
 # lerna-demo

@@ -1,11 +1,11 @@
 ---
-title: 如何杀死lcasensor进程
+title: 如何杀死 lcasensor 进程
 author: Sea
 toc: true
 date: 2021-04-16 17:13:04
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/uGWzme_Raphaelle_Maniere_11bis.jpeg
-tags: [kill, lcasensor, dlp]
-categories: [lcasensor]
+tags: [Process]
+categories: [技术]
 ---
 
 本文讲述如何杀死 lcasensor（内网的监控软件，敏感数据监控）这个进程。

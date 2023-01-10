@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-03-24 10:34:14
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/RayPEt_GSO_Light_Age_-_07_A_Mirror_Image__colour__online.jpeg
-tags: [upic, github]
-categories: [upic, github]
+tags: [uPic, GitHub]
+categories: [Tools]
 ---
 
 ## 简介

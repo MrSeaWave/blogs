@@ -1,11 +1,11 @@
 ---
-title: koa静态资源处理
+title: koa 静态资源处理
 author: Sea
 toc: true
 date: 2021-07-15 09:57:01
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/HeqXUk_christophe-young-90.jpg
-tags: [koa, static, basePath]
-categories: [koa]
+tags: [Koa, Static]
+categories: [技术]
 ---
 
 本文将介绍 koa 静态资源处理。

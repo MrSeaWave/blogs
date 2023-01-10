@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-04-02 22:07:37
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/FmwyKJ_cole-eastburn-forestkeyart-2048x1152.jpeg
-tags: [git, github, proxy, vpn]
-categories: [git]
+tags: [Git, GitHub, Proxy, VPN]
+categories: [技术]
 ---
 
 因为种种原因，`github`访问很困难，仓库代码的提交比较受限，因此想到通过挂代理的方式让代码可以正常提交。

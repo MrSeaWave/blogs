@@ -4,8 +4,10 @@ author: Sea
 toc: true
 date: 2021-08-29 15:20:03
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/vEdGKO_porforever-phuchong-chavapun-05-strolling.jpg
-tags: [zsh, install]
-categories: [zsh]
+tags: [ZSH, Install]
+categories:
+  - [技术]
+  - [Tools]
 ---
 
 本文将介绍一款顺手的`shell` ------ `zsh `

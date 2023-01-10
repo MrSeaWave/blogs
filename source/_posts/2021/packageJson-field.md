@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-12-08 10:28:52
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/sc87DK_johannes-voss-417093-carpet-of-flowers-web.jpg
-tags: [package.json]
-categories: [package.json]
+tags: [JS, Pkg]
+categories: [技术]
 ---
 
 package.json 文件可以使你的 npm 包对于其他人来说更容易管理和下载。发布 npm 包也是必须要有该文件的。

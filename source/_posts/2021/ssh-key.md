@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-10-26 09:34:11
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/SuHn36_roman-gaydakov-old-mech.jpg
-tags: [ssh, key, github, gitlab]
-categories: [ssh, github]
+tags: [SSH, Key, GitHub, GitLab]
+categories: [技术]
 ---
 
 本文将介绍的是如何在 mac 上上配置 SSH Key 中的 private key。

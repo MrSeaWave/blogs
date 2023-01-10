@@ -1,11 +1,11 @@
 ---
-title: npm publish过滤部分文件
+title: npm publish 过滤部分文件
 author: Sea
 toc: true
 date: 2021-12-10 14:13:38
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/aCqWjl_camille-sule-bg-loulou-frames-00.jpg
-tags: [npm, publish]
-categories: [npm]
+tags: [NPM, Publish]
+categories: [技术]
 ---
 
 **npm publish** 的时候会把项目目录里面所有的文件都`publish`到`npm`仓库中， 但是往往有一部分目录和文件不想发布上去，比如项目的源码、编译脚本等等信息。

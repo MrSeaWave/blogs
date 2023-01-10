@@ -1,11 +1,11 @@
 ---
-title: pm2进程间通信
+title: pm2 进程间通信
 author: Sea
 toc: true
 date: 2021-07-20 15:44:42
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/BlZSEv_ichi-wang-asset.jpg
-tags: [pm2, ipc]
-categories: [pm2]
+tags: [PM2, IPC]
+categories: [技术]
 ---
 
 本文将介绍 pm2 进程间如何通信

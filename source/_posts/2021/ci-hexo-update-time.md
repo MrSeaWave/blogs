@@ -4,9 +4,10 @@ author: Sea
 toc: true
 date: 2021-01-07 15:53:16
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/dtAx7s_image-20210107155558692.png
-tags: [hexo, ci]
+tags: [Hexo, CI/CD]
 categories:
-  - [hexo]
+  - [技术]
+  - [Tools]
 ---
 
 当使用 `Travis CI` or `Github Actions` 自动化部署时，发现部署成功后，所有文章的更新时间都变成了此次提交修改的时间，但有些文章在上一次提交后是没有发生过任何修改的。

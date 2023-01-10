@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-07-06 13:30:24
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/YwmESN_bu-zhou-313131310.jpg
-tags: [koa, validator, JSON-Schema]
-categories: [koa, validator]
+tags: [Koa, Validator, JSON-Schema]
+categories: [技术]
 ---
 
 对每个接口的传入参数进行校验，是一个 Web 后端项目的必备功能，本文将介绍 koa 中如何使用[`joi`](https://github.com/sideway/joi)进行数据格式检验。

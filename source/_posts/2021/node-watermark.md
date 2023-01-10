@@ -1,11 +1,11 @@
 ---
-title: node端生成水印图片
+title: node 端生成水印图片
 author: Sea
 toc: true
 date: 2021-07-13 10:13:32
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/tSFpeW_kontorn-boonyanate-screenshot006.jpg
-tags: [node, img, sharp, watermark]
-categories: [sharp, watermark]
+tags: [Node, Image, Watermark]
+categories: [技术]
 ---
 
 在项目中通常会出现给图片增加水印的需求，本文将介绍如何在使用 node 时处理图片，增加水印功能。

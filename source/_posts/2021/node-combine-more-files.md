@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-12-30 09:31:23
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/nhPVsc_min-yum-pastel.jpg
-tags: [node, stream, combine]
-categories: [node]
+tags: [Node, Stream, File]
+categories: [技术]
 ---
 
 最近在做关于[node 端的上传文件](https://github.com/LackZero/rocket-upload-server)时，碰到一个问题，如何将多个文件合并至一个文件呢？（前端上传的切割文件在服务端进行合并）

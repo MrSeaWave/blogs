@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-04-02 21:48:21
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/ENW7rf_liang-mark-rebort2222.jpg
-tags: [proxy, terminal, vpn]
-categories: [vpn]
+tags: [Proxy, Terminal, VPN]
+categories: [技术]
 ---
 
 本文将介绍终端是如何挂代理的。

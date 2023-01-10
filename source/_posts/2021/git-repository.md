@@ -4,8 +4,8 @@ author: Sea
 toc: true
 date: 2021-06-03 17:04:48
 cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2021/fqdGaY_sergey-vasnev-temple2.jpeg
-tags: [git, empty, repository, github]
-categories: [git]
+tags: [Git, Repository, GitHub]
+categories: [技术]
 ---
 
 本文讲述如何上传本地代码到远程的空仓库。
