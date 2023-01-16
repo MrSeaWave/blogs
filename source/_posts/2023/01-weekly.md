@@ -20,6 +20,10 @@ Hi，我是 Sea，欢迎打开新一期的「每周菜谱」，这是第「01」
 - [周刊 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/weekly/): 科技爱好者周刊. 记录每周值得分享的科技内容
 - [云谦和他的朋友们](https://mp.weixin.qq.com/s/NGux3r0P1JJH_z4-vfeksQ)：Umi、Dva 等库作者
 - [前端食堂](https://mp.weixin.qq.com/s/86Cz3KUWqutu9J0V4tyabQ)：你的前端食堂，吃好每一顿饭
+- [早早鸟日刊](https://www.yuque.com/zaotalk/worm)：前端早早聊日刊
+- [潮流最前端·周刊](https://www.yuque.com/alibabaf2e/weekly)：阿里团队的前端周刊
+- [前端早读课](https://mp.weixin.qq.com/s/6q4tXbTfDxfrfANcGBOseg): 每天凌晨 5 点的早读时间
+- [字节前端 ByteFE](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg2ODQ1OTExOA==&action=getalbum&album_id=1706105889872527361#wechat_redirect): 字节前端技术周报
 
 ## 小结
 
