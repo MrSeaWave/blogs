@@ -114,3 +114,15 @@
 - Color
 - Clean
 - Source Code
+
+## Config
+
+`rc.json`: 存放自定义配置文件
+
+### 配置字段
+
+| Name     | Type     | Desc               |
+| -------- | -------- | ------------------ |
+| NoWeekly | `Number` | 每周食堂的文件编号 |
+|          |          |                    |
+|          |          |                    |
