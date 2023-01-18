@@ -3,7 +3,7 @@ title: 第 00 菜谱：自我介绍
 author: Sea
 toc: true
 cover: >-
-  https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2023/fjB4xZ_weekly.jpg
+  https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2023/1674035440710.jpg
 tags:
   - Weekly
 categories:

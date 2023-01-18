@@ -3,7 +3,7 @@ title: 第 {{ title }} 菜谱：
 date: {{ date }}
 author: Sea
 toc: true
-cover: https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2023/fjB4xZ_weekly.jpg
+cover: https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2023/1674035440710.jpg
 tags: [Weekly]
 categories: [Weekly]
 ---

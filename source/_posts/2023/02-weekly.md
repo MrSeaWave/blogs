@@ -3,7 +3,7 @@ title: 第 02 菜谱：菜谱开动了！
 author: Sea
 toc: true
 cover: >-
-  https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2023/fjB4xZ_weekly.jpg
+  https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2023/1674035440710.jpg
 tags:
   - Weekly
 categories:
@@ -137,7 +137,7 @@ https://github.com/jaywcjlove/awesome-mac
 
 收集各种类别非常好用的 Mac 应用程序、软件以及工具。
 
-![image-20230116162859092](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2023/Fxwuiv_image-20230116162859092.png)
+![image-20230116162859092](https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2023/Fxwuiv_image-20230116162859092.png)
 
 ### Carbon
 
@@ -145,7 +145,7 @@ https://carbon.now.sh/
 
 代码图片生成
 
-![image-20230116162757436](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2023/VbXLnM_image-20230116162757436.png)
+![image-20230116162757436](https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2023/VbXLnM_image-20230116162757436.png)
 
 ### tinypng
 
@@ -153,7 +153,7 @@ https://tinypng.com/
 
 图片压缩
 
-![image-20230116162724054](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2023/Xtj5Uk_image-20230116162724054.png)
+![image-20230116162724054](https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2023/Xtj5Uk_image-20230116162724054.png)
 
 ### CodeTour
 
@@ -161,7 +161,7 @@ https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour
 
 VSCode 插件，`CodeTour` 可以在多人协同开发时，给项目添加 `新手指引` 方便快速熟悉上手新项目，也可以用于 `code review`，现在更可以用来[记录源码](https://juejin.cn/post/6939576820492664845)，该工具由 [Microsoft 开源团队](https://github.com/microsoft) 提供，github 仓库地址 [microsoft/codetour](https://github.com/microsoft/codetour)
 
-![CodeTour](https://cdn.jsdelivr.net/gh/MrSeaWave/figure-bed-profile@main/uPic/2023/Yvt8DT_76165260-c6c00500-6112-11ea-9cda-0a6cb9b72e8f.gif)
+![CodeTour](https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2023/Yvt8DT_76165260-c6c00500-6112-11ea-9cda-0a6cb9b72e8f.gif)
 
 ### DownloadFullInstaller
 
