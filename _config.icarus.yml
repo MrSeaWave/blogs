@@ -99,6 +99,7 @@ navbar:
   # Navigation menu items
   menu:
     首页: /
+    每周菜谱: /categories/Weekly
     时间轴: /archives
     分类: /categories
     标签: /tags

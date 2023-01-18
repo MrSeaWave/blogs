@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "new": "hexo new",
+    "new:weekly": "node ./custom-scripts/createWeekly.js",
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
