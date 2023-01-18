@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2023-01-10T03:39:36.000Z</updated>
+  <updated>2023-01-18T01:30:01.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第 02 菜谱：菜谱开动了！</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2023/01/16/02-weekly/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2023/01/16/02-weekly/</id>
+    <published>2023-01-16T04:24:57.000Z</published>
+    <updated>2023-01-18T01:30:01.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Hi，我是 Sea，欢迎打开新一期的「每周菜谱」，这是第「02」期，发表于 2023-01-16，今天开始每周菜谱的第一期内容，我们先来看看每周有什么值得推荐的&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    
+    
+    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第 01 菜谱：周刊一锅端</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2023/01/16/01-weekly/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2023/01/16/01-weekly/</id>
+    <published>2023-01-16T04:20:02.000Z</published>
+    <updated>2023-01-18T01:30:01.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Hi，我是 Sea，欢迎打开新一期的「每周菜谱」，这是第「01」期，发表于 2023-01-16，今天我们不讲菜谱，先来介绍下有哪些优秀的前端周刊&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    
+    
+    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第 00 菜谱：自我介绍</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2023/01/16/00-weekly/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2023/01/16/00-weekly/</id>
+    <published>2023-01-16T04:13:10.000Z</published>
+    <updated>2023-01-18T01:30:01.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Hi，我是 Sea，欢迎打开新一期的「每周菜谱」，这是第「00」期，发表于 2023-01-16，今天我们不讲菜谱，先来介绍下「每周菜谱」&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    
+    
+    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    
+  </entry>
   
   <entry>
     <title>Git 仓库瘦身</title>
@@ -395,85 +452,6 @@
     <category term="Workflow" scheme="https://mrseawave.github.io/blogs/tags/Workflow/"/>
     
     <category term="Cache" scheme="https://mrseawave.github.io/blogs/tags/Cache/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitHub Actions 如何手动触发</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/12/17/github-actions-manual-trigger/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/12/17/github-actions-manual-trigger/</id>
-    <published>2021-12-17T01:48:53.000Z</published>
-    <updated>2023-01-10T03:39:36.000Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;GitHub Ac­tions 在早期可能是处于初级开发阶段，它的功能非常原生，甚至没有直接提供一个手动触发按钮。一般的触发方式为代码变动（&lt;code&gt;push&lt;/code&gt; 、&lt;code&gt;pull_request&lt;/code&gt;），发布文件（&lt;code&gt;release&lt;/code&gt;）或者定时（&lt;code&gt;schedule&lt;/code&gt;）等，这些属于自动触发方式。如果我们需要在 GitHub 仓库没有任何变动的情况下&lt;strong&gt;手动触发&lt;/strong&gt;就需要使用一些奇技淫巧。经历了漫长的功能迭代，官方最终正式带来了手动触发功能，这也宣告了一个瞎折腾时代的结束，一个崭新的折腾时代开始。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="CI/CD" scheme="https://mrseawave.github.io/blogs/tags/CI-CD/"/>
-    
-    <category term="GitHub" scheme="https://mrseawave.github.io/blogs/tags/GitHub/"/>
-    
-    <category term="Actions" scheme="https://mrseawave.github.io/blogs/tags/Actions/"/>
-    
-    <category term="Workflow" scheme="https://mrseawave.github.io/blogs/tags/Workflow/"/>
-    
-    <category term="Manual" scheme="https://mrseawave.github.io/blogs/tags/Manual/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何使用Github Action 自动 lerna publish</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/12/16/github-actions-auto-publish/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/12/16/github-actions-auto-publish/</id>
-    <published>2021-12-16T01:46:00.000Z</published>
-    <updated>2023-01-10T03:39:36.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文讲述的是如何利用&lt;code&gt;Github Action&lt;/code&gt;自动化执行 &lt;code&gt;lerna publish&lt;/code&gt;。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="CI/CD" scheme="https://mrseawave.github.io/blogs/tags/CI-CD/"/>
-    
-    <category term="GitHub" scheme="https://mrseawave.github.io/blogs/tags/GitHub/"/>
-    
-    <category term="Lerna" scheme="https://mrseawave.github.io/blogs/tags/Lerna/"/>
-    
-    <category term="Publish" scheme="https://mrseawave.github.io/blogs/tags/Publish/"/>
-    
-    <category term="NPM" scheme="https://mrseawave.github.io/blogs/tags/NPM/"/>
-    
-    <category term="Actions" scheme="https://mrseawave.github.io/blogs/tags/Actions/"/>
-    
-    <category term="Workflow" scheme="https://mrseawave.github.io/blogs/tags/Workflow/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IDEA粘贴多行代码时，总是自动缩进</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/12/13/idea-reformat-on-paste/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/12/13/idea-reformat-on-paste/</id>
-    <published>2021-12-13T01:43:46.000Z</published>
-    <updated>2023-01-10T03:39:36.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;当我们在使用 IntelliJ IDEA 去粘贴多行代码时，会发现总是自动缩进，或者被格式化。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Tools" scheme="https://mrseawave.github.io/blogs/categories/Tools/"/>
-    
-    
-    <category term="JetBrains" scheme="https://mrseawave.github.io/blogs/tags/JetBrains/"/>
-    
-    <category term="Format" scheme="https://mrseawave.github.io/blogs/tags/Format/"/>
     
   </entry>
   
