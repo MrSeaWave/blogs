@@ -17,7 +17,7 @@ async function main() {
   // 生成新文章
   let no = autoSupplement(String(num));
   try {
-    let cmd = `pnpm run new weekly ${no}_weekly`;
+    let cmd = `pnpm run new weekly weekly-${no}`;
     console.log('run hexo cmd:', cmd);
     execSync(cmd, { stdio: 'inherit' });
   } catch (e) {
