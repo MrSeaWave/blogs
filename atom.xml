@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2023-01-30T08:57:03.000Z</updated>
+  <updated>2023-02-06T01:43:28.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第 04 菜谱：在浏览器控制台安装npm包是什么操作？</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2023/02/05/weekly-04/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2023/02/05/weekly-04/</id>
+    <published>2023-02-05T06:10:47.000Z</published>
+    <updated>2023-02-06T01:43:28.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Hi，我是 Sea，欢迎打开新一期的「每周菜谱」，这是第「04」期，发表于 2023-02-05，我们先来看看每周有什么值得推荐的&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    
+    
+    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    
+  </entry>
   
   <entry>
     <title>第 03 菜谱：Web Development Trends in 2023</title>
@@ -418,29 +437,6 @@
     <category term="G2" scheme="https://mrseawave.github.io/blogs/tags/G2/"/>
     
     <category term="Legend" scheme="https://mrseawave.github.io/blogs/tags/Legend/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何在MAC上安装Mysql</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2021/12/31/mysql-install/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2021/12/31/mysql-install/</id>
-    <published>2021-12-31T01:43:49.000Z</published>
-    <updated>2023-01-10T03:39:36.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文将介绍如何在 Mac 上安装 Mysql。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Tools" scheme="https://mrseawave.github.io/blogs/categories/Tools/"/>
-    
-    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="Install" scheme="https://mrseawave.github.io/blogs/tags/Install/"/>
-    
-    <category term="MySQL" scheme="https://mrseawave.github.io/blogs/tags/MySQL/"/>
     
   </entry>
   
