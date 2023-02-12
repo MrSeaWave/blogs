@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2023-02-06T01:43:28.000Z</updated>
+  <updated>2023-02-12T01:21:20.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第 weekly-05 菜谱：多学习点 CSS~</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2023/02/11/weekly-05/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2023/02/11/weekly-05/</id>
+    <published>2023-02-11T23:46:31.000Z</published>
+    <updated>2023-02-12T01:21:20.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Hi，我是 Sea，欢迎打开新一期的「每周菜谱」，这是第「05」期，发表于 2023-02-12，我们先来看看每周有什么值得推荐的&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    
+    
+    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    
+  </entry>
   
   <entry>
     <title>第 04 菜谱：在浏览器控制台安装npm包是什么操作？</title>
@@ -416,27 +435,6 @@
     <category term="Cross" scheme="https://mrseawave.github.io/blogs/tags/Cross/"/>
     
     <category term="Spawn" scheme="https://mrseawave.github.io/blogs/tags/Spawn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>G2 多图形图例问题</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2022/01/07/g2-multiple-geometry-legend/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2022/01/07/g2-multiple-geometry-legend/</id>
-    <published>2022-01-07T05:48:34.000Z</published>
-    <updated>2023-01-10T03:39:36.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;谨以此文记录下如何利用 G2 在同一个坐标系内绘制多图时使用图例问题。如无特殊说明，当前 G2 版本为：&lt;code&gt;4.1.37&lt;/code&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="G2" scheme="https://mrseawave.github.io/blogs/tags/G2/"/>
-    
-    <category term="Legend" scheme="https://mrseawave.github.io/blogs/tags/Legend/"/>
     
   </entry>
   
