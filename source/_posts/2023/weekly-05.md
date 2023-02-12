@@ -1,5 +1,5 @@
 ---
-title: 第 weekly-05 菜谱：多学习点 CSS~
+title: 第 05 菜谱：多学习点 CSS~
 author: Sea
 toc: true
 cover: >-
