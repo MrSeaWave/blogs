@@ -8,7 +8,7 @@ tags: [Weekly]
 categories: [Weekly]
 ---
 
-Hi，我是 Sea，欢迎打开新一期的「每周菜谱」，这是第「xxx」期，发表于 yyyy-MM-dd，我们先来看看每周有什么值得推荐的
+Hi，我是 Sea，欢迎打开新一期的「每周菜谱」，这是第「xxx」期，发表于 yyyy-MM-dd，我们先来看看每周有什么值得推荐的~
 
 <!--more-->
 
