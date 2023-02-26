@@ -1,3 +1,4 @@
+https://mrseawave.github.io/blogs/articles/2023/02/26/weekly-06/
 https://mrseawave.github.io/blogs/articles/2023/02/11/weekly-05/
 https://mrseawave.github.io/blogs/articles/2023/02/05/weekly-04/
 https://mrseawave.github.io/blogs/articles/2023/01/16/weekly-00/
@@ -17,7 +18,6 @@ https://mrseawave.github.io/blogs/articles/2021/11/15/git-pull-default/
 https://mrseawave.github.io/blogs/articles/2021/06/03/git-repository/
 https://mrseawave.github.io/blogs/articles/2021/12/16/github-actions-auto-publish/
 https://mrseawave.github.io/blogs/articles/2021/12/17/github-actions-cache/
-https://mrseawave.github.io/blogs/articles/2021/04/01/chrome-history-download/
 https://mrseawave.github.io/blogs/articles/2021/12/17/github-actions-manual-trigger/
 https://mrseawave.github.io/blogs/articles/2021/08/29/github-login-token/
 https://mrseawave.github.io/blogs/articles/2021/01/08/hexo-configuration/
@@ -66,6 +66,7 @@ https://mrseawave.github.io/blogs/articles/2022/11/16/reduce-git-repo/
 https://mrseawave.github.io/blogs/articles/2022/02/09/renovate/
 https://mrseawave.github.io/blogs/articles/2022/01/11/sequelize-start/
 https://mrseawave.github.io/blogs/articles/2022/01/10/soft-deleted-and-unique-index/
+https://mrseawave.github.io/blogs/articles/2021/04/01/chrome-history-download/
 https://mrseawave.github.io/blogs/articles/2021/09/01/charles-proxy/
 https://mrseawave.github.io/blogs/articles/2021/04/02/apple-gift-card/
 https://mrseawave.github.io/blogs/articles/2021/01/05/myBlogTestEmail/
