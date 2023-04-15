@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2023-03-23T03:56:22.000Z</updated>
+  <updated>2023-04-15T03:00:28.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第 07 菜谱：How to Name your Types</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2023/04/15/weekly-07/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2023/04/15/weekly-07/</id>
+    <published>2023-04-15T00:03:31.000Z</published>
+    <updated>2023-04-15T03:00:28.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;抱歉，很久没有更新，我是 Sea，欢迎打开新一期的「每周菜谱」，这是第「07」期，发表于 2023-04-15，我们先来看看每周有什么值得推荐的~&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    
+    
+    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    
+  </entry>
   
   <entry>
     <title>状态机</title>
@@ -406,27 +425,6 @@
     <category term="Sequelize" scheme="https://mrseawave.github.io/blogs/tags/Sequelize/"/>
     
     <category term="ORM" scheme="https://mrseawave.github.io/blogs/tags/ORM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软删除和唯一索引</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2022/01/10/soft-deleted-and-unique-index/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2022/01/10/soft-deleted-and-unique-index/</id>
-    <published>2022-01-10T08:20:28.000Z</published>
-    <updated>2023-01-10T03:39:36.000Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;目前基本上在使用数据库时，都会使用到软删除（逻辑删除），但当软删除与唯一索引（&lt;code&gt;unique-key&lt;/code&gt;）一起存在时可能会导致一些问题。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="MySQL" scheme="https://mrseawave.github.io/blogs/tags/MySQL/"/>
-    
-    <category term="SQL" scheme="https://mrseawave.github.io/blogs/tags/SQL/"/>
     
   </entry>
   
