@@ -71,7 +71,7 @@
 </ul>
 </blockquote>
 <blockquote>
-<p>注意，从<a href="mailto:&#110;&#x70;&#x6d;&#64;&#49;&#x2e;&#49;&#x2e;&#55;&#x31;" rel="external nofollow noreferrer">&#110;&#x70;&#x6d;&#64;&#49;&#x2e;&#49;&#x2e;&#55;&#x31;</a>开始 <code>prepublish</code>这个钩子不仅会在<code>npm publish</code>命令之前运行，还会在<code>npm install</code>（不带任何参数）命令之前运行，这种行为很容易让用户感到困惑，所以 npm 4 引入了一个新的钩子<code>prepare</code>，行为等同于<code>prepublish</code>，来替代上述功能，另外一种新钩子<code>prepublishOnly</code>作为替代策略，让用户避免以往 npm 版本的混乱行为，<code>prepublishOnly</code> 只在<code>npm publish</code>前执行，而从 npm 5 开始，<code>prepublish</code>将只在<code>npm publish</code>命令之前运行，即取代<code>prepublishOnly</code>，所以 npm6 即以后的版本会放弃<code>prepublishOnly</code>。</p>
+<p>注意，从<a href="mailto:&#110;&#112;&#109;&#64;&#x31;&#x2e;&#49;&#46;&#55;&#49;" rel="external nofollow noreferrer">&#110;&#112;&#109;&#64;&#x31;&#x2e;&#49;&#46;&#55;&#49;</a>开始 <code>prepublish</code>这个钩子不仅会在<code>npm publish</code>命令之前运行，还会在<code>npm install</code>（不带任何参数）命令之前运行，这种行为很容易让用户感到困惑，所以 npm 4 引入了一个新的钩子<code>prepare</code>，行为等同于<code>prepublish</code>，来替代上述功能，另外一种新钩子<code>prepublishOnly</code>作为替代策略，让用户避免以往 npm 版本的混乱行为，<code>prepublishOnly</code> 只在<code>npm publish</code>前执行，而从 npm 5 开始，<code>prepublish</code>将只在<code>npm publish</code>命令之前运行，即取代<code>prepublishOnly</code>，所以 npm6 即以后的版本会放弃<code>prepublishOnly</code>。</p>
 <ul>
 <li><code>prepare</code>: 在两种情况前运行，一是<code>npm publish</code>命令前，二是不带参数的<code>npm install</code>命令；它会在<code>prepublish</code>之后、<code>prepublishOnly</code>之前执行</li>
 <li><code>prepublishOnly</code>: 在<code>npm publish</code>命令前执行</li>

@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2023-04-15T03:00:28.000Z</updated>
+  <updated>2023-04-23T08:51:26.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第 08 菜谱：React SSR 实现原理：从 renderToString 到 hydrate</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2023/04/23/weekly-08/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2023/04/23/weekly-08/</id>
+    <published>2023-04-23T07:14:40.000Z</published>
+    <updated>2023-04-23T08:51:26.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Hi，我是 Sea，欢迎打开新一期的「每周菜谱」，这是第「08」期，发表于 2023-04-23，我们先来看看每周有什么值得推荐的~&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    
+    
+    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    
+  </entry>
   
   <entry>
     <title>第 07 菜谱：How to Name your Types</title>
@@ -402,29 +421,6 @@
     <category term="Source Code" scheme="https://mrseawave.github.io/blogs/tags/Source-Code/"/>
     
     <category term="Analysis" scheme="https://mrseawave.github.io/blogs/tags/Analysis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Sequelize 入门使用指南</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2022/01/11/sequelize-start/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2022/01/11/sequelize-start/</id>
-    <published>2022-01-11T01:53:44.000Z</published>
-    <updated>2023-01-10T03:39:36.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Sequelize 是一个基于 promise 的 Node.js &lt;a href=&quot;https://en.wikipedia.org/wiki/Object-relational_mapping&quot;&gt;ORM&lt;/a&gt;, 目前支持 &lt;a href=&quot;https://en.wikipedia.org/wiki/PostgreSQL&quot;&gt;Postgres&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/MySQL&quot;&gt;MySQL&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/MariaDB&quot;&gt;MariaDB&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/SQLite&quot;&gt;SQLite&lt;/a&gt; 以及 &lt;a href=&quot;https://en.wikipedia.org/wiki/Microsoft_SQL_Server&quot;&gt;Microsoft SQL Server&lt;/a&gt;. 它具有强大的事务支持, 关联关系, 预读和延迟加载,读取复制等功能。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="MySQL" scheme="https://mrseawave.github.io/blogs/tags/MySQL/"/>
-    
-    <category term="Sequelize" scheme="https://mrseawave.github.io/blogs/tags/Sequelize/"/>
-    
-    <category term="ORM" scheme="https://mrseawave.github.io/blogs/tags/ORM/"/>
     
   </entry>
   
