@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mrseawave.github.io/blogs/articles/2023/06/10/weekly-09/</loc>
+    
+    <lastmod>2023-06-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://mrseawave.github.io/blogs/articles/2023/04/23/weekly-08/</loc>
     
     <lastmod>2023-04-23</lastmod>
@@ -706,7 +715,7 @@
 
   <url>
     <loc>https://mrseawave.github.io/blogs</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -714,637 +723,637 @@
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Mac/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/GoodNotes/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Api/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Doc/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Hexo/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/CI-CD/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Chrome/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Download/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/History/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/JS/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Git/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Lint/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Engineered/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/GitHub/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Proxy/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/VPN/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Repository/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Lerna/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Publish/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/NPM/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Actions/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Workflow/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Cache/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Manual/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Token/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/SEO/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/MD/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Hooks/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Husky/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Sourcetree/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/JetBrains/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Prettier/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/WebStorm/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Format/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/WX/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Install/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Rust/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Process/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Koa/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Static/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Validator/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/JSON-Schema/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Monorepo/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/MultiRepo/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Recommend/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/MySQL/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Node/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Stream/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/File/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Cron/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Schedule/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Image/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Watermark/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Babel/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/ZSH/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Puppeteer/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Optimize/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Pkg/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/PM2/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/IPC/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/RGB/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/CSS/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Color/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/SSH/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Key/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/GitLab/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Terminal/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/uPic/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/VS-Code/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Plugins/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Ide/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Html/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Webpack/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Mini-Programs/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Cross/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Spawn/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Dependencies/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Clean/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/G2/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Legend/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Source-Code/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Analysis/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Script/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Monitor/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Sequelize/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/ORM/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/SQL/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Weekly/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Charles/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Apple/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/tags/Gift/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -1353,28 +1362,28 @@
   
   <url>
     <loc>https://mrseawave.github.io/blogs/categories/Tools/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/categories/Weekly/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://mrseawave.github.io/blogs/categories/Other/</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
