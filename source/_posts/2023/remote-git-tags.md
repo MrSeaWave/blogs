@@ -18,6 +18,8 @@ categories: [analysis]
 
 [remote-git-tags](https://github.com/sindresorhus/remote-git-tags.git) 是一个只有 22 行的相对比较简单的包，他的主要作用就是获取仓库中的所有 tags
 
+# 源码
+
 ## Entry
 
 老规矩，先看入口文件，`index.js`，（从 package.json 中的`exports`字段中可以找到）
@@ -83,7 +85,7 @@ export default async function remoteGitTags(repoUrl) {
 
 ![1700275681824_VRng7p](https://sea-notes.oss-cn-shanghai.aliyuncs.com/uPic/2023/1700275681824_VRng7p.png)
 
-## Dependencies
+# Dependencies
 
 ## node:util
 
