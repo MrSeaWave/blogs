@@ -6,7 +6,7 @@
   <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
   
   <link href="https://mrseawave.github.io/blogs/"/>
-  <updated>2023-06-17T03:40:12.000Z</updated>
+  <updated>2023-11-18T03:51:01.000Z</updated>
   <id>https://mrseawave.github.io/blogs/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阅读 remote-git-tags 源码</title>
+    <link href="https://mrseawave.github.io/blogs/articles/2023/11/18/remote-git-tags/"/>
+    <id>https://mrseawave.github.io/blogs/articles/2023/11/18/remote-git-tags/</id>
+    <published>2023-11-18T01:53:28.000Z</published>
+    <updated>2023-11-18T03:51:01.000Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;时隔很久，重新开始阅读源码的过程，因此找个相对比较简单的包&lt;a href=&quot;https://github.com/sindresorhus/remote-git-tags.git&quot;&gt;remote-git-tags&lt;/a&gt;进行阅读，并熟悉整套阅读流程（git subtree,vscode 中 nodejs 调试）&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="analysis" scheme="https://mrseawave.github.io/blogs/categories/analysis/"/>
+    
+    
+    <category term="analysis" scheme="https://mrseawave.github.io/blogs/tags/analysis/"/>
+    
+  </entry>
   
   <entry>
     <title>第 10 菜谱：前端性能优化</title>
@@ -392,27 +411,6 @@
     <category term="NPM" scheme="https://mrseawave.github.io/blogs/tags/NPM/"/>
     
     <category term="Script" scheme="https://mrseawave.github.io/blogs/tags/Script/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 np 快速发布 npm 包</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2022/01/27/np-publish/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2022/01/27/np-publish/</id>
-    <published>2022-01-27T02:00:00.000Z</published>
-    <updated>2023-01-10T03:39:36.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;在之前的文章中 《&lt;a href=&quot;/blogs/articles/2022/01/27/npm-publish/&quot; title=&quot;怎么发布 NPM 包&quot;&gt;怎么发布 NPM 包&lt;/a&gt;》中，已经介绍了如何使用 npm 进行发包，本文将会介绍一款发包工具 &lt;a href=&quot;https://www.npmjs.com/package/np&quot;&gt;np&lt;/a&gt; ，它是由 &lt;a href=&quot;https://github.com/sindresorhus&quot;&gt;sindresorhus&lt;/a&gt; 大神所创造的一套 npm published 工具，比 npm 原生的 &lt;code&gt;npm publish&lt;/code&gt; 多了更多方便的功能！&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="Publish" scheme="https://mrseawave.github.io/blogs/tags/Publish/"/>
-    
-    <category term="NPM" scheme="https://mrseawave.github.io/blogs/tags/NPM/"/>
     
   </entry>
   
