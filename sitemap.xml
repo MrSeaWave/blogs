@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hailangya.com/articles/2024/03/23/github-bind-domain/</loc>
+    
+    <lastmod>2024-03-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hailangya.com/articles/2023/11/18/remote-git-tags/</loc>
     
     <lastmod>2023-11-18</lastmod>
@@ -128,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/04/02/apple-gift-card/</loc>
+    <loc>https://hailangya.com/articles/2021/07/09/GoodNotes/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -146,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/01/07/ci-hexo-update-time/</loc>
+    <loc>https://hailangya.com/articles/2021/04/01/chrome-history-download/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -155,7 +164,16 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/04/01/chrome-history-download/</loc>
+    <loc>https://hailangya.com/articles/2021/09/01/charles-proxy/</loc>
+    
+    <lastmod>2023-01-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hailangya.com/articles/2021/01/07/ci-hexo-update-time/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -182,15 +200,6 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/03/31/git-commit-ci/</loc>
-    
-    <lastmod>2023-01-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://hailangya.com/articles/2021/03/31/git-commit-message/</loc>
     
     <lastmod>2023-01-10</lastmod>
@@ -200,7 +209,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/04/02/git-proxy/</loc>
+    <loc>https://hailangya.com/articles/2021/03/31/git-commit-ci/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -218,7 +227,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/12/16/github-actions-auto-publish/</loc>
+    <loc>https://hailangya.com/articles/2021/04/02/git-proxy/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -236,7 +245,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/09/01/charles-proxy/</loc>
+    <loc>https://hailangya.com/articles/2021/12/16/github-actions-auto-publish/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -326,7 +335,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/04/16/kill-lcasensor/</loc>
+    <loc>https://hailangya.com/articles/2021/07/15/koa-static/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -335,7 +344,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/07/15/koa-static/</loc>
+    <loc>https://hailangya.com/articles/2021/04/16/kill-lcasensor/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -372,6 +381,15 @@
   
   <url>
     <loc>https://hailangya.com/articles/2021/12/31/mysql-install/</loc>
+    
+    <lastmod>2023-01-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hailangya.com/articles/2021/04/02/apple-gift-card/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -434,7 +452,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/07/05/optimize-puppeteer/</loc>
+    <loc>https://hailangya.com/articles/2021/12/08/packageJson-field/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -443,7 +461,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/12/08/packageJson-field/</loc>
+    <loc>https://hailangya.com/articles/2021/07/05/optimize-puppeteer/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -461,15 +479,6 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/10/26/ssh-key/</loc>
-    
-    <lastmod>2023-01-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://hailangya.com/articles/2021/06/11/rgb-color-gradient-interpolation-principle-and-algorithm/</loc>
     
     <lastmod>2023-01-10</lastmod>
@@ -479,7 +488,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/01/06/start-github-actions/</loc>
+    <loc>https://hailangya.com/articles/2021/10/26/ssh-key/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -497,7 +506,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/03/24/upic-github/</loc>
+    <loc>https://hailangya.com/articles/2021/01/06/start-github-actions/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -506,7 +515,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/03/31/vscode-project-manager/</loc>
+    <loc>https://hailangya.com/articles/2021/03/24/upic-github/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -524,7 +533,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/07/09/watermark/</loc>
+    <loc>https://hailangya.com/articles/2021/03/31/vscode-project-manager/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -542,7 +551,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2021/01/05/writing-hexo/</loc>
+    <loc>https://hailangya.com/articles/2021/07/09/watermark/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -551,7 +560,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2022/06/28/begin-install/</loc>
+    <loc>https://hailangya.com/articles/2021/01/05/writing-hexo/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -569,7 +578,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2022/02/10/depcheck/</loc>
+    <loc>https://hailangya.com/articles/2022/06/28/begin-install/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -579,6 +588,15 @@
   
   <url>
     <loc>https://hailangya.com/articles/2022/01/08/cross-spawn/</loc>
+    
+    <lastmod>2023-01-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hailangya.com/articles/2022/02/10/depcheck/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -632,7 +650,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2022/01/25/only-allow/</loc>
+    <loc>https://hailangya.com/articles/2022/01/27/npm-script/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -641,7 +659,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/articles/2022/01/27/npm-script/</loc>
+    <loc>https://hailangya.com/articles/2022/01/25/only-allow/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -678,15 +696,6 @@
   
   <url>
     <loc>https://hailangya.com/articles/2022/01/10/soft-deleted-and-unique-index/</loc>
-    
-    <lastmod>2023-01-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hailangya.com/articles/2021/07/09/GoodNotes/</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -740,14 +749,14 @@
 
   
   <url>
-    <loc>https://hailangya.com/tags/Apple/</loc>
+    <loc>https://hailangya.com/tags/Mac/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hailangya.com/tags/Gift/</loc>
+    <loc>https://hailangya.com/tags/GoodNotes/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -762,20 +771,6 @@
   
   <url>
     <loc>https://hailangya.com/tags/Doc/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hailangya.com/tags/Hexo/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hailangya.com/tags/CI-CD/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -797,6 +792,27 @@
   
   <url>
     <loc>https://hailangya.com/tags/History/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hailangya.com/tags/Charles/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hailangya.com/tags/Hexo/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hailangya.com/tags/CI-CD/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -852,6 +868,13 @@
   </url>
   
   <url>
+    <loc>https://hailangya.com/tags/Repository/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://hailangya.com/tags/Lerna/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -881,20 +904,6 @@
   
   <url>
     <loc>https://hailangya.com/tags/Workflow/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hailangya.com/tags/Repository/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hailangya.com/tags/Charles/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1006,13 +1015,6 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/tags/Process/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://hailangya.com/tags/Koa/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -1021,6 +1023,13 @@
   
   <url>
     <loc>https://hailangya.com/tags/Static/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hailangya.com/tags/Process/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1055,13 +1064,6 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/tags/Mac/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://hailangya.com/tags/Recommend/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -1070,6 +1072,20 @@
   
   <url>
     <loc>https://hailangya.com/tags/MySQL/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hailangya.com/tags/Apple/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hailangya.com/tags/Gift/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1139,6 +1155,13 @@
   </url>
   
   <url>
+    <loc>https://hailangya.com/tags/Pkg/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://hailangya.com/tags/Puppeteer/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -1153,13 +1176,6 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/tags/Pkg/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://hailangya.com/tags/PM2/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -1168,27 +1184,6 @@
   
   <url>
     <loc>https://hailangya.com/tags/IPC/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hailangya.com/tags/SSH/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hailangya.com/tags/Key/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hailangya.com/tags/GitLab/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1210,6 +1205,27 @@
   
   <url>
     <loc>https://hailangya.com/tags/Color/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hailangya.com/tags/SSH/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hailangya.com/tags/Key/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hailangya.com/tags/GitLab/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1251,13 +1267,6 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/tags/Html/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://hailangya.com/tags/Webpack/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -1265,21 +1274,14 @@
   </url>
   
   <url>
+    <loc>https://hailangya.com/tags/Html/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://hailangya.com/tags/Mini-Programs/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hailangya.com/tags/Dependencies/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hailangya.com/tags/Clean/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1294,6 +1296,20 @@
   
   <url>
     <loc>https://hailangya.com/tags/Spawn/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hailangya.com/tags/Dependencies/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hailangya.com/tags/Clean/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1377,7 +1393,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/tags/GoodNotes/</loc>
+    <loc>https://hailangya.com/tags/Github/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1386,7 +1402,7 @@
 
   
   <url>
-    <loc>https://hailangya.com/categories/Other/</loc>
+    <loc>https://hailangya.com/categories/Tools/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1400,7 +1416,7 @@
   </url>
   
   <url>
-    <loc>https://hailangya.com/categories/Tools/</loc>
+    <loc>https://hailangya.com/categories/Other/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
