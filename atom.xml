@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Sea&#39;s Blog</title>
-  <icon>https://mrseawave.github.io/blogs/images/black-cat.svg</icon>
+  <icon>https://hailangya.com/blogs/images/black-cat.svg</icon>
   <subtitle>海浪的博客</subtitle>
-  <link href="https://mrseawave.github.io/blogs/atom.xml" rel="self"/>
+  <link href="https://hailangya.com/blogs/atom.xml" rel="self"/>
   
-  <link href="https://mrseawave.github.io/blogs/"/>
+  <link href="https://hailangya.com/blogs/"/>
   <updated>2023-11-18T03:58:33.000Z</updated>
-  <id>https://mrseawave.github.io/blogs/</id>
+  <id>https://hailangya.com/blogs/</id>
   
   <author>
     <name>Sea</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>阅读 remote-git-tags 源码</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2023/11/18/remote-git-tags/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2023/11/18/remote-git-tags/</id>
+    <link href="https://hailangya.com/blogs/articles/2023/11/18/remote-git-tags/"/>
+    <id>https://hailangya.com/blogs/articles/2023/11/18/remote-git-tags/</id>
     <published>2023-11-18T01:53:28.000Z</published>
     <updated>2023-11-18T03:58:33.000Z</updated>
     
@@ -28,17 +28,17 @@
     
     
     
-    <category term="analysis" scheme="https://mrseawave.github.io/blogs/categories/analysis/"/>
+    <category term="analysis" scheme="https://hailangya.com/blogs/categories/analysis/"/>
     
     
-    <category term="analysis" scheme="https://mrseawave.github.io/blogs/tags/analysis/"/>
+    <category term="analysis" scheme="https://hailangya.com/blogs/tags/analysis/"/>
     
   </entry>
   
   <entry>
     <title>第 10 菜谱：前端性能优化</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2023/06/17/weekly-10/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2023/06/17/weekly-10/</id>
+    <link href="https://hailangya.com/blogs/articles/2023/06/17/weekly-10/"/>
+    <id>https://hailangya.com/blogs/articles/2023/06/17/weekly-10/</id>
     <published>2023-06-17T01:02:28.000Z</published>
     <updated>2023-06-17T03:40:12.000Z</updated>
     
@@ -47,17 +47,17 @@
     
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/categories/Weekly/"/>
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/tags/Weekly/"/>
     
   </entry>
   
   <entry>
     <title>第 09 菜谱：Service Worker 使用 Workbox 预缓存实践</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2023/06/10/weekly-09/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2023/06/10/weekly-09/</id>
+    <link href="https://hailangya.com/blogs/articles/2023/06/10/weekly-09/"/>
+    <id>https://hailangya.com/blogs/articles/2023/06/10/weekly-09/</id>
     <published>2023-06-10T00:42:09.000Z</published>
     <updated>2023-06-10T03:09:29.000Z</updated>
     
@@ -66,17 +66,17 @@
     
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/categories/Weekly/"/>
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/tags/Weekly/"/>
     
   </entry>
   
   <entry>
     <title>第 08 菜谱：React SSR 实现原理：从 renderToString 到 hydrate</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2023/04/23/weekly-08/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2023/04/23/weekly-08/</id>
+    <link href="https://hailangya.com/blogs/articles/2023/04/23/weekly-08/"/>
+    <id>https://hailangya.com/blogs/articles/2023/04/23/weekly-08/</id>
     <published>2023-04-23T07:14:40.000Z</published>
     <updated>2023-04-23T08:51:26.000Z</updated>
     
@@ -85,17 +85,17 @@
     
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/categories/Weekly/"/>
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/tags/Weekly/"/>
     
   </entry>
   
   <entry>
     <title>第 07 菜谱：How to Name your Types</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2023/04/15/weekly-07/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2023/04/15/weekly-07/</id>
+    <link href="https://hailangya.com/blogs/articles/2023/04/15/weekly-07/"/>
+    <id>https://hailangya.com/blogs/articles/2023/04/15/weekly-07/</id>
     <published>2023-04-15T00:03:31.000Z</published>
     <updated>2023-04-15T03:00:28.000Z</updated>
     
@@ -104,17 +104,17 @@
     
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/categories/Weekly/"/>
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/tags/Weekly/"/>
     
   </entry>
   
   <entry>
     <title>状态机</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2023/03/23/state-machine-1/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2023/03/23/state-machine-1/</id>
+    <link href="https://hailangya.com/blogs/articles/2023/03/23/state-machine-1/"/>
+    <id>https://hailangya.com/blogs/articles/2023/03/23/state-machine-1/</id>
     <published>2023-03-23T03:47:18.000Z</published>
     <updated>2023-03-23T03:56:22.000Z</updated>
     
@@ -123,17 +123,17 @@
     
     
     
-    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://hailangya.com/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="JS" scheme="https://mrseawave.github.io/blogs/tags/JS/"/>
+    <category term="JS" scheme="https://hailangya.com/blogs/tags/JS/"/>
     
   </entry>
   
   <entry>
     <title>第 06 菜谱：Signal：更多前端框架的选择</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2023/02/26/weekly-06/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2023/02/26/weekly-06/</id>
+    <link href="https://hailangya.com/blogs/articles/2023/02/26/weekly-06/"/>
+    <id>https://hailangya.com/blogs/articles/2023/02/26/weekly-06/</id>
     <published>2023-02-26T07:28:21.000Z</published>
     <updated>2023-02-26T08:48:17.000Z</updated>
     
@@ -142,17 +142,17 @@
     
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/categories/Weekly/"/>
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/tags/Weekly/"/>
     
   </entry>
   
   <entry>
     <title>第 05 菜谱：多学习点 CSS~</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2023/02/11/weekly-05/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2023/02/11/weekly-05/</id>
+    <link href="https://hailangya.com/blogs/articles/2023/02/11/weekly-05/"/>
+    <id>https://hailangya.com/blogs/articles/2023/02/11/weekly-05/</id>
     <published>2023-02-11T23:46:31.000Z</published>
     <updated>2023-02-12T01:32:52.000Z</updated>
     
@@ -161,17 +161,17 @@
     
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/categories/Weekly/"/>
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/tags/Weekly/"/>
     
   </entry>
   
   <entry>
     <title>第 04 菜谱：在浏览器控制台安装npm包是什么操作？</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2023/02/05/weekly-04/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2023/02/05/weekly-04/</id>
+    <link href="https://hailangya.com/blogs/articles/2023/02/05/weekly-04/"/>
+    <id>https://hailangya.com/blogs/articles/2023/02/05/weekly-04/</id>
     <published>2023-02-05T06:10:47.000Z</published>
     <updated>2023-02-06T01:43:28.000Z</updated>
     
@@ -180,17 +180,17 @@
     
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/categories/Weekly/"/>
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/tags/Weekly/"/>
     
   </entry>
   
   <entry>
     <title>第 03 菜谱：Web Development Trends in 2023</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2023/01/29/weekly-03/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2023/01/29/weekly-03/</id>
+    <link href="https://hailangya.com/blogs/articles/2023/01/29/weekly-03/"/>
+    <id>https://hailangya.com/blogs/articles/2023/01/29/weekly-03/</id>
     <published>2023-01-29T06:00:00.000Z</published>
     <updated>2023-01-30T08:57:03.000Z</updated>
     
@@ -199,17 +199,17 @@
     
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/categories/Weekly/"/>
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/tags/Weekly/"/>
     
   </entry>
   
   <entry>
     <title>为什么更换图床</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2023/01/18/why-change-image-hosting/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2023/01/18/why-change-image-hosting/</id>
+    <link href="https://hailangya.com/blogs/articles/2023/01/18/why-change-image-hosting/"/>
+    <id>https://hailangya.com/blogs/articles/2023/01/18/why-change-image-hosting/</id>
     <published>2023-01-18T11:10:26.000Z</published>
     <updated>2023-01-18T11:49:02.000Z</updated>
     
@@ -218,19 +218,19 @@
     
     
     
-    <category term="Tools" scheme="https://mrseawave.github.io/blogs/categories/Tools/"/>
+    <category term="Tools" scheme="https://hailangya.com/blogs/categories/Tools/"/>
     
     
-    <category term="GitHub" scheme="https://mrseawave.github.io/blogs/tags/GitHub/"/>
+    <category term="GitHub" scheme="https://hailangya.com/blogs/tags/GitHub/"/>
     
-    <category term="Image" scheme="https://mrseawave.github.io/blogs/tags/Image/"/>
+    <category term="Image" scheme="https://hailangya.com/blogs/tags/Image/"/>
     
   </entry>
   
   <entry>
     <title>第 02 菜谱：菜谱开动了！</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2023/01/16/weekly-02/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2023/01/16/weekly-02/</id>
+    <link href="https://hailangya.com/blogs/articles/2023/01/16/weekly-02/"/>
+    <id>https://hailangya.com/blogs/articles/2023/01/16/weekly-02/</id>
     <published>2023-01-16T04:24:57.000Z</published>
     <updated>2023-01-30T08:57:03.000Z</updated>
     
@@ -239,17 +239,17 @@
     
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/categories/Weekly/"/>
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/tags/Weekly/"/>
     
   </entry>
   
   <entry>
     <title>第 01 菜谱：周刊一锅端</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2023/01/16/weekly-01/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2023/01/16/weekly-01/</id>
+    <link href="https://hailangya.com/blogs/articles/2023/01/16/weekly-01/"/>
+    <id>https://hailangya.com/blogs/articles/2023/01/16/weekly-01/</id>
     <published>2023-01-16T04:20:02.000Z</published>
     <updated>2023-01-30T08:57:03.000Z</updated>
     
@@ -258,17 +258,17 @@
     
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/categories/Weekly/"/>
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/tags/Weekly/"/>
     
   </entry>
   
   <entry>
     <title>第 00 菜谱：自我介绍</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2023/01/16/weekly-00/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2023/01/16/weekly-00/</id>
+    <link href="https://hailangya.com/blogs/articles/2023/01/16/weekly-00/"/>
+    <id>https://hailangya.com/blogs/articles/2023/01/16/weekly-00/</id>
     <published>2023-01-16T04:13:10.000Z</published>
     <updated>2023-01-30T08:57:03.000Z</updated>
     
@@ -277,17 +277,17 @@
     
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/categories/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/categories/Weekly/"/>
     
     
-    <category term="Weekly" scheme="https://mrseawave.github.io/blogs/tags/Weekly/"/>
+    <category term="Weekly" scheme="https://hailangya.com/blogs/tags/Weekly/"/>
     
   </entry>
   
   <entry>
     <title>Git 仓库瘦身</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2022/11/16/reduce-git-repo/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2022/11/16/reduce-git-repo/</id>
+    <link href="https://hailangya.com/blogs/articles/2022/11/16/reduce-git-repo/"/>
+    <id>https://hailangya.com/blogs/articles/2022/11/16/reduce-git-repo/</id>
     <published>2022-11-16T13:00:11.000Z</published>
     <updated>2023-01-10T03:39:36.000Z</updated>
     
@@ -296,21 +296,21 @@
     
     
     
-    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://hailangya.com/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="Git" scheme="https://mrseawave.github.io/blogs/tags/Git/"/>
+    <category term="Git" scheme="https://hailangya.com/blogs/tags/Git/"/>
     
-    <category term="GitHub" scheme="https://mrseawave.github.io/blogs/tags/GitHub/"/>
+    <category term="GitHub" scheme="https://hailangya.com/blogs/tags/GitHub/"/>
     
-    <category term="GitLab" scheme="https://mrseawave.github.io/blogs/tags/GitLab/"/>
+    <category term="GitLab" scheme="https://hailangya.com/blogs/tags/GitLab/"/>
     
   </entry>
   
   <entry>
     <title>从零安装必备软件</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2022/06/28/begin-install/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2022/06/28/begin-install/</id>
+    <link href="https://hailangya.com/blogs/articles/2022/06/28/begin-install/"/>
+    <id>https://hailangya.com/blogs/articles/2022/06/28/begin-install/</id>
     <published>2022-06-28T06:27:32.000Z</published>
     <updated>2023-01-10T03:39:36.000Z</updated>
     
@@ -319,17 +319,17 @@
     
     
     
-    <category term="Tools" scheme="https://mrseawave.github.io/blogs/categories/Tools/"/>
+    <category term="Tools" scheme="https://hailangya.com/blogs/categories/Tools/"/>
     
     
-    <category term="Mac" scheme="https://mrseawave.github.io/blogs/tags/Mac/"/>
+    <category term="Mac" scheme="https://hailangya.com/blogs/tags/Mac/"/>
     
   </entry>
   
   <entry>
     <title>使用 depcheck 清理 package.json 中用不到的依赖</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2022/02/10/depcheck/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2022/02/10/depcheck/</id>
+    <link href="https://hailangya.com/blogs/articles/2022/02/10/depcheck/"/>
+    <id>https://hailangya.com/blogs/articles/2022/02/10/depcheck/</id>
     <published>2022-02-10T02:39:06.000Z</published>
     <updated>2023-01-10T03:39:36.000Z</updated>
     
@@ -338,21 +338,21 @@
     
     
     
-    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://hailangya.com/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="Pkg" scheme="https://mrseawave.github.io/blogs/tags/Pkg/"/>
+    <category term="Pkg" scheme="https://hailangya.com/blogs/tags/Pkg/"/>
     
-    <category term="Dependencies" scheme="https://mrseawave.github.io/blogs/tags/Dependencies/"/>
+    <category term="Dependencies" scheme="https://hailangya.com/blogs/tags/Dependencies/"/>
     
-    <category term="Clean" scheme="https://mrseawave.github.io/blogs/tags/Clean/"/>
+    <category term="Clean" scheme="https://hailangya.com/blogs/tags/Clean/"/>
     
   </entry>
   
   <entry>
     <title>使用 renovate 监控第三方依赖更新</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2022/02/09/renovate/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2022/02/09/renovate/</id>
+    <link href="https://hailangya.com/blogs/articles/2022/02/09/renovate/"/>
+    <id>https://hailangya.com/blogs/articles/2022/02/09/renovate/</id>
     <published>2022-02-09T01:56:19.000Z</published>
     <updated>2023-01-10T03:39:36.000Z</updated>
     
@@ -361,19 +361,19 @@
     
     
     
-    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://hailangya.com/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="Dependencies" scheme="https://mrseawave.github.io/blogs/tags/Dependencies/"/>
+    <category term="Dependencies" scheme="https://hailangya.com/blogs/tags/Dependencies/"/>
     
-    <category term="Monitor" scheme="https://mrseawave.github.io/blogs/tags/Monitor/"/>
+    <category term="Monitor" scheme="https://hailangya.com/blogs/tags/Monitor/"/>
     
   </entry>
   
   <entry>
     <title>定制 Github 主页</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2022/01/27/github-profile-readme/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2022/01/27/github-profile-readme/</id>
+    <link href="https://hailangya.com/blogs/articles/2022/01/27/github-profile-readme/"/>
+    <id>https://hailangya.com/blogs/articles/2022/01/27/github-profile-readme/</id>
     <published>2022-01-27T06:55:10.000Z</published>
     <updated>2023-01-10T03:39:36.000Z</updated>
     
@@ -386,17 +386,17 @@
     
     
     
-    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://hailangya.com/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="GitHub" scheme="https://mrseawave.github.io/blogs/tags/GitHub/"/>
+    <category term="GitHub" scheme="https://hailangya.com/blogs/tags/GitHub/"/>
     
   </entry>
   
   <entry>
     <title>Npm Script</title>
-    <link href="https://mrseawave.github.io/blogs/articles/2022/01/27/npm-script/"/>
-    <id>https://mrseawave.github.io/blogs/articles/2022/01/27/npm-script/</id>
+    <link href="https://hailangya.com/blogs/articles/2022/01/27/npm-script/"/>
+    <id>https://hailangya.com/blogs/articles/2022/01/27/npm-script/</id>
     <published>2022-01-27T05:38:31.000Z</published>
     <updated>2023-01-10T03:39:36.000Z</updated>
     
@@ -405,12 +405,12 @@
     
     
     
-    <category term="技术" scheme="https://mrseawave.github.io/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://hailangya.com/blogs/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="NPM" scheme="https://mrseawave.github.io/blogs/tags/NPM/"/>
+    <category term="NPM" scheme="https://hailangya.com/blogs/tags/NPM/"/>
     
-    <category term="Script" scheme="https://mrseawave.github.io/blogs/tags/Script/"/>
+    <category term="Script" scheme="https://hailangya.com/blogs/tags/Script/"/>
     
   </entry>
   
