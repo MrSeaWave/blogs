@@ -87,3 +87,4 @@ nofollow:
   field: site
   exclude:
     - 'https://hailangya.com'
+    - 'https://mrseawave.github.io'
