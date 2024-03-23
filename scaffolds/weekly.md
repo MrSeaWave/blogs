@@ -42,6 +42,6 @@ desc
 
 如果你喜欢每周菜谱，请转发给你的朋友，告诉他们来这里进行订阅~
 
-订阅地址：https://mrseawave.github.io/blogs/
+订阅地址：https://hailangya.com/blogs/
 
 每周菜谱，让你做饭更开心~

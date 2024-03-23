@@ -5,7 +5,7 @@ keywords: sea,技术,代码,JS,Javascript,Typescript,ts,HTML,HTML5,H5,CSS,CSS3,E
 author: Sea
 language: zh-CN
 timezone: Asia/Shanghai
-url: https://mrseawave.github.io/blogs
+url: https://hailangya.com/blogs
 root: /blogs
 permalink: "articles/:year/:month/:day/:name/"
 permalink_defaults: null
@@ -83,4 +83,4 @@ nofollow:
   enable: true
   field: site
   exclude:
-    - "https://mrseawave.github.io"
+    - "https://hailangya.com"
