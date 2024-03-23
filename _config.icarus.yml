@@ -230,7 +230,7 @@ sidebar:
 widgets:
   # Profile widget configurations
   - # Where should the widget be placed, left sidebar or right sidebar
-    position: left
+    position: right
     type: profile
     # Author name
     author: Sea
@@ -267,30 +267,30 @@ widgets:
     collapsed: true
     # Maximum level of headings to show (1-6)
     depth: 3
-  # Categories widget configurations
-  - # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: categories
-  # Recent posts widget configurations
-  - # Where should the widget be placed, left sidebar or right sidebar
-    position: right
-    type: recent_posts
-  # Tags widget configurations
-  - # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: tags
-  # Archives widget configurations
-  - # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: archives
-  # Recommendation links widget configurations
-  - # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: links
-    # Names and URLs of the sites
-    links:
-      Hexo: 'https://hexo.io'
-      Bulma: 'https://bulma.io'
+  # # Categories widget configurations
+  # - # Where should the widget be placed, left sidebar or right sidebar
+  #   position: left
+  #   type: categories
+  # # Recent posts widget configurations
+  # - # Where should the widget be placed, left sidebar or right sidebar
+  #   position: right
+  #   type: recent_posts
+  # # Tags widget configurations
+  # - # Where should the widget be placed, left sidebar or right sidebar
+  #   position: left
+  #   type: tags
+  # # Archives widget configurations
+  # - # Where should the widget be placed, left sidebar or right sidebar
+  #   position: left
+  #   type: archives
+  # # Recommendation links widget configurations
+  # - # Where should the widget be placed, left sidebar or right sidebar
+  #   position: left
+  #   type: links
+  #   # Names and URLs of the sites
+  #   links:
+  #     Hexo: 'https://hexo.io'
+  #     Bulma: 'https://bulma.io'
   # Google FeedBurner email subscription widget configurations has deprecated.
   # now we use follow.it
   - # Where should the widget be placed, left sidebar or right sidebar
