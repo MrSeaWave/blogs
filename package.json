@@ -29,7 +29,7 @@
     "hexo-renderer-marked": "^3.0.0",
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
-    "hexo-theme-icarus": "^4.1.1",
+    "hexo-theme-icarus": "^6.0.0",
     "hexo-theme-landscape": "^0.0.3"
   },
   "devDependencies": {
