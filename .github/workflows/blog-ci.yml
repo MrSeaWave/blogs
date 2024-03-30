@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           persist-credentials: false
           # 0 indicates all history for all branches and tags.
@@ -18,11 +18,29 @@ jobs:
         run: |
           echo "将source文件夹下的md文件的修改时间恢复成该文件最新的提交时间"
           find source -name '*.md' | while read file; do touch -d "$(git log -1 --format="@%ct" "$file")" "$file"; done
+      # https://github.com/actions/setup-node/issues/480
+      - name: Enable Corepack 🧱
+        run: corepack enable
+
+      - name: Setup Node.js 🧱
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Setup Pnpm 🧱
+        run: corepack prepare pnpm@8.15.4 --activate
+
+        # Verify Corepack and Yarn versions
+      - name: Verify Corepack and pnpm versions
+        run: |
+          corepack -v
+          pnpm -v
+
       - name: Install and Build 🔧
         run: |
           echo "Install && Publish site to github pages ..."
-          npm install
-          npm run build
+          pnpm install
+          pnpm run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
