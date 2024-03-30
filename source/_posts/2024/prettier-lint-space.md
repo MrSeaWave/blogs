@@ -5,7 +5,7 @@ toc: true
 date: 2024-03-30 08:54:17
 cover: https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2024/1711762533890_P5S3TX.png
 tags:
-categories:
+categories: ['技术']
 ---
 
 最近在做 blog 依赖升级，使用 `pnpm update --latest` 升级完所有的依赖后，发现 `prettier@3` 不再支持[盘古之白](https://github.com/vinta/pangu.js/blob/master/README.md)（分隔中文与英语的空白间隔）
