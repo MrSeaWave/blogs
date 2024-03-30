@@ -6,7 +6,7 @@
   <link href="https://hailangya.com/atom.xml" rel="self"/>
   
   <link href="https://hailangya.com/"/>
-  <updated>2024-03-23T06:38:04.000Z</updated>
+  <updated>2024-03-30T02:03:42.000Z</updated>
   <id>https://hailangya.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Prettier V3 中英文之间不支持空格</title>
+    <link href="https://hailangya.com/articles/2024/03/30/prettier-lint-space/"/>
+    <id>https://hailangya.com/articles/2024/03/30/prettier-lint-space/</id>
+    <published>2024-03-30T00:54:17.000Z</published>
+    <updated>2024-03-30T02:03:42.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近在做 blog 依赖升级，使用 &lt;code&gt;pnpm update --latest&lt;/code&gt; 升级完所有的依赖后，发现 &lt;code&gt;prettier@3&lt;/code&gt; 不再支持&lt;a href=&quot;https://github.com/vinta/pangu.js/blob/master/README.md&quot;&gt;盘古之白&lt;/a&gt;（分隔中文与英语的空白间隔）&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>GitHub Pages 绑定个人域名</title>
@@ -386,29 +401,6 @@
     <category term="Dependencies" scheme="https://hailangya.com/tags/Dependencies/"/>
     
     <category term="Monitor" scheme="https://hailangya.com/tags/Monitor/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>定制 Github 主页</title>
-    <link href="https://hailangya.com/articles/2022/01/27/github-profile-readme/"/>
-    <id>https://hailangya.com/articles/2022/01/27/github-profile-readme/</id>
-    <published>2022-01-27T06:55:10.000Z</published>
-    <updated>2023-01-10T03:39:36.000Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Github 作为一个资源托管平台，我们有没有想过在主页锦上添花否？&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这不，你可以通过 yourUsername/yourUsername 来制作你的名片。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;先跟大家展示下我最终实现的效果，在线体验地址：&lt;a href=&quot;https://github.com/MrSeaWave&quot;&gt;Github 主页&lt;/a&gt;。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://hailangya.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="GitHub" scheme="https://hailangya.com/tags/GitHub/"/>
     
   </entry>
   
