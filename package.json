@@ -30,12 +30,12 @@
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
     "hexo-theme-icarus": "^6.0.0",
-    "hexo-theme-landscape": "^1.0.0"
+    "hexo-theme-landscape": "^1.0.0",
+    "prettier": "2.8.8"
   },
   "devDependencies": {
     "husky": "9.0.11",
-    "lint-staged": "^15.2.2",
-    "prettier": "^3.2.5"
+    "lint-staged": "^15.2.2"
   },
   "lint-staged": {
     "**/*.{js,ts,json,css,md}": [
