@@ -1,6 +1,6 @@
 # Blogs
 
-[个人博客](https://hailangya.com/blogs/)，记录、分享一写随笔和技术知识
+[个人博客](https://hailangya.com)，记录、分享一写随笔和技术知识
 
 ## Category
 
