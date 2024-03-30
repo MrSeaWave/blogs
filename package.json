@@ -11,7 +11,7 @@
     "start": "hexo server",
     "prepare": "husky install"
   },
-  "packageManager": "pnpm@8.15.5",
+  "packageManager": "pnpm@8.15.4",
   "hexo": {
     "version": "7.1.1"
   },
