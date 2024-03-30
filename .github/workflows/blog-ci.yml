@@ -28,7 +28,9 @@ jobs:
           node-version: 18
 
       - name: Setup Pnpm 🧱
-        run: corepack prepare pnpm@8.15.4 --activate
+        run: |
+          corepack prepare pnpm@8.15.4 --activate
+          pnpm -v
 
         # Verify Corepack and Yarn versions
       - name: Verify Corepack and pnpm versions
