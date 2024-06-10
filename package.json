@@ -31,7 +31,7 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-icarus": "^6.0.0",
     "hexo-theme-landscape": "^1.0.0",
-    "prettier": "2.8.8"
+    "prettier": "3.3.1"
   },
   "devDependencies": {
     "husky": "9.0.11",
