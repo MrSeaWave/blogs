@@ -10,6 +10,8 @@ categories: ['技术']
 
 在我们的 git 项目中，操作远程仓库信息的命令为
 
+<!-- more -->
+
 ```bash
 $ git remote  # 查看当前所有的远程仓库的名称
 $ git remote -v # 查看远程仓库的名称和远程仓库的网址
