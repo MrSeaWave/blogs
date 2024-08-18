@@ -6,7 +6,7 @@
   <link href="https://hailangya.com/atom.xml" rel="self"/>
   
   <link href="https://hailangya.com/"/>
-  <updated>2024-03-30T07:11:21.000Z</updated>
+  <updated>2024-08-18T08:55:57.000Z</updated>
   <id>https://hailangya.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何为一个项目添加多个远程仓库</title>
+    <link href="https://hailangya.com/articles/2024/08/18/add-remote-repo/"/>
+    <id>https://hailangya.com/articles/2024/08/18/add-remote-repo/</id>
+    <published>2024-08-18T08:51:30.000Z</published>
+    <updated>2024-08-18T08:55:57.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在我们的 git 项目中，操作远程仓库信息的命令为&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://hailangya.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Git" scheme="https://hailangya.com/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>Prettier V3 中英文之间不支持空格</title>
@@ -335,9 +361,9 @@
     <category term="技术" scheme="https://hailangya.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="GitHub" scheme="https://hailangya.com/tags/GitHub/"/>
-    
     <category term="Git" scheme="https://hailangya.com/tags/Git/"/>
+    
+    <category term="GitHub" scheme="https://hailangya.com/tags/GitHub/"/>
     
     <category term="GitLab" scheme="https://hailangya.com/tags/GitLab/"/>
     
@@ -382,27 +408,6 @@
     <category term="Dependencies" scheme="https://hailangya.com/tags/Dependencies/"/>
     
     <category term="Clean" scheme="https://hailangya.com/tags/Clean/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 renovate 监控第三方依赖更新</title>
-    <link href="https://hailangya.com/articles/2022/02/09/renovate/"/>
-    <id>https://hailangya.com/articles/2022/02/09/renovate/</id>
-    <published>2022-02-09T01:56:19.000Z</published>
-    <updated>2023-01-10T03:39:36.000Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;当一个公共依赖包的使用者数量逐渐庞大的时候，如何保证当此包发布新版本时，所有使用者都能尽可能快地得到更新？或者如何保证自己仓库的使用的第三方库一直保持&lt;strong&gt;安全情况下&lt;/strong&gt;的最新状态呢？&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://hailangya.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="Dependencies" scheme="https://hailangya.com/tags/Dependencies/"/>
-    
-    <category term="Monitor" scheme="https://hailangya.com/tags/Monitor/"/>
     
   </entry>
   
