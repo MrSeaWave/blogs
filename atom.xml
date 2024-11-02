@@ -6,7 +6,7 @@
   <link href="https://hailangya.com/atom.xml" rel="self"/>
   
   <link href="https://hailangya.com/"/>
-  <updated>2024-08-18T08:57:09.000Z</updated>
+  <updated>2024-11-02T03:34:27.000Z</updated>
   <id>https://hailangya.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nas 家庭影音的搭建</title>
+    <link href="https://hailangya.com/articles/2024/11/02/nas-video/"/>
+    <id>https://hailangya.com/articles/2024/11/02/nas-video/</id>
+    <published>2024-11-02T01:26:26.000Z</published>
+    <updated>2024-11-02T03:34:27.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;有了 nas 就会想如何搭建一套自己的本地影音系统，让自己想看就看，避免自己想看的资源被正版进行和谐 🐶，下面将会展开介绍如何搭建。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="https://hailangya.com/categories/Tools/"/>
+    
+    
+    <category term="Nas" scheme="https://hailangya.com/tags/Nas/"/>
+    
+  </entry>
   
   <entry>
     <title>如何为一个项目添加多个远程仓库</title>
@@ -378,29 +397,6 @@
     
     
     <category term="Mac" scheme="https://hailangya.com/tags/Mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用 depcheck 清理 package.json 中用不到的依赖</title>
-    <link href="https://hailangya.com/articles/2022/02/10/depcheck/"/>
-    <id>https://hailangya.com/articles/2022/02/10/depcheck/</id>
-    <published>2022-02-10T02:39:06.000Z</published>
-    <updated>2023-01-10T03:39:36.000Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;随着时间的推移，项目中 package.json 中的依赖越来越臃肿，安装依赖的速度越来越慢，各种奇奇怪怪的包，不一定都会用到，因此我们可以为项目减负，使用 &lt;a href=&quot;https://www.npmjs.com/package/depcheck&quot;&gt;depcheck&lt;/a&gt; 检测项目中不用的依赖包，然后移除它们。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://hailangya.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="Pkg" scheme="https://hailangya.com/tags/Pkg/"/>
-    
-    <category term="Dependencies" scheme="https://hailangya.com/tags/Dependencies/"/>
-    
-    <category term="Clean" scheme="https://hailangya.com/tags/Clean/"/>
     
   </entry>
   

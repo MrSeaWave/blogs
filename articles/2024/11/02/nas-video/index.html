@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="zh"><head><!-- hexo injector head_begin start --><meta name="google-site-verification" content="TBdWfG8iKkd2DhrAEq6qNuJT10KjlP-jQLE3TWq7osk" /><meta name="google-site-verification" content="R0Too8dtf3BOLeRcQuJernRnUiOqxtPwP-RpfVIGdN4" /><!-- hexo injector head_begin end --><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Nas 家庭影音的搭建 - Sea&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Sea&#039;s Blog"><meta name="msapplication-TileImage" content="/images/black-cat.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Sea&#039;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="有了 nas 就会想如何搭建一套自己的本地影音系统，让自己想看就看，避免自己想看的资源被正版进行和谐 🐶，下面将会展开介绍如何搭建。"><meta property="og:type" content="blog"><meta property="og:title" content="Nas 家庭影音的搭建"><meta property="og:url" content="https://hailangya.com/articles/2024/11/02/nas-video/"><meta property="og:site_name" content="Sea&#039;s Blog"><meta property="og:description" content="有了 nas 就会想如何搭建一套自己的本地影音系统，让自己想看就看，避免自己想看的资源被正版进行和谐 🐶，下面将会展开介绍如何搭建。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2024/1730511834277_awNIXu.png"><meta property="article:published_time" content="2024-11-02T01:26:26.000Z"><meta property="article:modified_time" content="2024-11-02T03:34:27.000Z"><meta property="article:author" content="Sea"><meta property="article:tag" content="Nas"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2024/1730511834277_awNIXu.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://hailangya.com/articles/2024/11/02/nas-video/"},"headline":"Nas 家庭影音的搭建","image":["https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2024/1730511834277_awNIXu.png"],"datePublished":"2024-11-02T01:26:26.000Z","dateModified":"2024-11-02T03:34:27.000Z","author":{"@type":"Person","name":"Sea"},"publisher":{"@type":"Organization","name":"Sea's Blog","logo":{"@type":"ImageObject","url":"https://hailangya.com/images/black-cat.svg"}},"description":"有了 nas 就会想如何搭建一套自己的本地影音系统，让自己想看就看，避免自己想看的资源被正版进行和谐 🐶，下面将会展开介绍如何搭建。"}</script><link rel="canonical" href="https://hailangya.com/articles/2024/11/02/nas-video/"><link rel="icon" href="/images/black-cat.svg"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.loli.net/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-VV4C01BLET" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-VV4C01BLET');</script><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Sea's Blog" type="application/atom+xml">
+</head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/black-cat.svg" alt="Sea&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/categories/Weekly">每周菜谱</a><a class="navbar-item" href="/archives">时间轴</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/messages">留言板</a><a class="navbar-item" href="/friends">友人帐</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener external nofollow noreferrer" title="Download on GitHub" href="https://github.com/MrSeaWave/blogs"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;" rel="external nofollow noreferrer"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;" rel="external nofollow noreferrer"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2024/1730511834277_awNIXu.png" alt="Nas 家庭影音的搭建"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-11-02T01:26:26.000Z" title="11/2/2024, 1:26:26 AM">2024-11-02</time>发表</span><span class="level-item"><time dateTime="2024-11-02T03:34:27.000Z" title="11/2/2024, 3:34:27 AM">2024-11-02</time>更新</span><span class="level-item"> Sea </span><span class="level-item"><a class="link-muted" href="/categories/Tools/">Tools</a></span><span class="level-item">20 分钟读完 (大约3031个字)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">Nas 家庭影音的搭建</h1><div class="content"><p>有了 nas 就会想如何搭建一套自己的本地影音系统，让自己想看就看，避免自己想看的资源被正版进行和谐 🐶，下面将会展开介绍如何搭建。</p>
+<span id="more"></span>
+
+<h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>可以学习此 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.bilibili.com/video/BV1fL411g72a">视频</a> 了解基础概念。</p>
+<details>
+  <summary>BT 与 PT 区别? </summary>
+  <section>
+PT 就是一个私有的下载站，你在下载的过程中也会帮别人下载（分享率）。 分享出去走的是宽带的上传。我为人人，人人为我，BT 就是公有的下载站，人人为我 🐶。
+
+<p>详细了解可以看</p>
+<ul>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://post.smzdm.com/p/a30q5l8d/">此篇文章</a></li>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://linux.do/t/topic/181768">PT 介绍</a></section>
+</details></li>
+</ul>
+<h2 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h2><p>古老方案有 <code>qBittorrent + Jackett + Radarr &amp; Sonarr + ChineseSubFinder + Emby + Jellyseerr</code>，每个应用各司其职，搜索资源、下载种子、下载字幕等，最终实现自动化的观影。该途径因配置过于复杂，需要较强的动手能力。</p>
+<p>网上部署教程有很多，见：</p>
+<ul>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://leishi.io/blog/posts/2021-12/home-nas-media-center/">利用 NAS 实现全自动观影追剧</a></li>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://reorx.com/blog/track-and-download-shows-automatically-with-sonarr/">使用 Sonarr 搭建自动化追番系统 | Reorx’s Forge</a></li>
+</ul>
+<p>本文重点介绍我当前使用的一套方案：</p>
+<p>&#x3D;&#x3D; qBittorrent + MoviePilot + ChineseSubFinder + Emby &#x3D;&#x3D;</p>
+<p>选片、下载、整理、刮削、观看一条龙应用，其资源核心为 PT</p>
+<p><img src="https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2024/1730513254953_RMkVTc.png" alt="1730513254953_RMkVTc"></p>
+<h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><ol>
+<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/qbittorrent/qBittorrent">qBittorent</a></p>
+<p>一个常用的 BT 下载器，同类的还有  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://transmissionbt.com/">Transmission</a>。</p>
+</li>
+<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jxxghp/MoviePilot">MoviePilot</a></p>
+<p>媒体库资源归集整理工具，替代了方案一的 Radarr &amp; Sonarr，由国人开发对中文支持很好</p>
+</li>
+<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/ChineseSubFinder/ChineseSubFinder">ChineseSubFinder</a></p>
+<p>自动化中文字幕</p>
+</li>
+<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://emby.media/">Emby</a></p>
+<p>一款媒体服务器软件，可以方便地在家庭内的各种设备上观看您喜爱的电影、电视剧和其他视频内容。提供了解析资源文件&#x2F;文件夹，利用 IMDB&#x2F;TMDB&#x2F;TVDB 等影视索引网站索引你的本地资源（即刮削），并播放的功能。同类的还有 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://jellyfin.org/">Jellyfin</a>，<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.plex.tv/">Plex</a>，本地播放推荐 Kodi，苹果全家桶用户强烈推荐  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://firecore.com/infuse">Infuse</a>（需要付费订阅但不贵，建议土区年付）</p>
+</li>
+</ol>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>这套方案优点：</p>
+<ol>
+<li>开源免费，版本迭代很快，有现成的群晖套件，部署相对简单</li>
+<li>对 PT 站非常友好，支持自动登录保号签到，聚合资源搜索匹配，支持限制做种时间</li>
+<li>专为中文环境优化，支持国产剧集和动漫，重命名和刮削准确率高，剧集分季符合国人习惯，支持细化分类，高质量文件自动覆盖</li>
+<li>支持与豆瓣联动，在豆瓣中标记想看后台自动检索下载，未出全的自动加入订阅，资源自动实时追新</li>
+<li>支持 ServerChan、微信、Telegram、Bark 等图文消息通知，符合国内网络环境，支持通过微信、Telegram 远程控制订阅和下载</li>
+<li>支持对接 Emby&#x2F;Jellyfin&#x2F;Plex，通知播放状态</li>
+</ol>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>这套方案核心就是 Moviepilot，下面将会介绍如何配置 Moviepilot</p>
+<h2 id="Moviepilot"><a href="#Moviepilot" class="headerlink" title="Moviepilot"></a>Moviepilot</h2><p>索引 + 整理 + 刮削</p>
+<p><img src="https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2024/1729516867302_ruDJbU.png" alt="1729516867302_ruDJbU"></p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>群晖套件一键式安装</p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>请先准备好 <code>认证站点</code>，否则装了也无法使用。</p>
+<p>具体 <code>认证站点</code> 可参考官方仓库下 AUTH_SITE 的内容</p>
+<ul>
+<li>请注意 <code>认证站点</code> 和 <code>支持站点</code> 并不相同。MoviePilot 支持管理的站点并不代表能够用来认证！！！<br><img src="https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2024/1729603017127_YH07Nx.png" alt="1729603017127_YH07Nx"></li>
+</ul>
+<h3 id="认证"><a href="#认证" class="headerlink" title="认证"></a>认证</h3><ol>
+<li>直接安装插件 IYUU 认证站点绑定插件，添加相关配置即可</li>
+<li>iyuu 申请 token 后，其实并未激活，需要安装 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://doc.iyuu.cn/guide/install-synology">iyuuPlus</a>，再找 iyuu 的合作站点激活（感觉在套娃！）</li>
+</ol>
+<p>BTW，我这里使用的是<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.hdkyl.in/">麒麟</a>进行上面认证，但是迟迟认证不成功，因此选择直接在配置中添加认证站点的密钥&amp;uid，简单高效~</p>
+<p><img src="https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2024/1730514701841_2cnRRu.png" alt="1730514701841_2cnRRu"></p>
+<h4 id="添加站点"><a href="#添加站点" class="headerlink" title="添加站点"></a>添加站点</h4><p>认证完成后，可以使用 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/easychen/CookieCloud">CookieCloud</a> 方式添加站点，方便快捷，按照官网介绍操作即可</p>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>推荐进行如下配置</p>
+<ul>
+<li>媒体数据目录（文件硬链接目录）：<code>/volume1/media/movie</code></li>
+<li>qBittorrent 数据下载目录: <code>/volume1/media/downloads/qBittorrent/media/movie</code></li>
+</ul>
+<p><img src="https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2024/1730514265410_csO3rd.png" alt="1730514265410_csO3rd"></p>
+<blockquote>
+<p>目录之间不能跨磁盘 &amp; 共享文件夹，见 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://wiki.movie-pilot.org/install#:~:text=%E5%A6%82%E6%9E%9C%E4%BD%A0%E8%AE%A1%E5%88%92%E4%BD%BF%E7%94%A8%E7%A1%AC%E9%93%BE%E6%8E%A5%E6%9D%A5%E6%95%B4%E7%90%86%E6%96%87%E4%BB%B6%EF%BC%8C%E9%82%A3%E4%B9%88%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E7%9B%AE%E5%BD%95%E5%92%8C%E6%95%B4%E7%90%86%E5%90%8E%E7%9A%84%E5%AA%92%E4%BD%93%E5%BA%93%E7%9B%AE%E5%BD%95%E5%8F%AA%E8%83%BD%E6%98%A0%E5%B0%84%E4%B8%80%E4%B8%AA%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8D%E8%83%BD%E5%88%86%E5%BC%80%E6%98%A0%E5%B0%84%EF%BC%8C%E5%90%A6%E5%88%99%E5%B0%86%E4%BC%9A%E5%AF%BC%E8%87%B4%E8%B7%A8%E7%9B%98%E6%97%A0%E6%B3%95%E7%A1%AC%E9%93%BE%E6%8E%A5%E3%80%82">官网</a></p>
+</blockquote>
+<h3 id="插件推荐"><a href="#插件推荐" class="headerlink" title="插件推荐"></a>插件推荐</h3><ul>
+<li><p>目录监控</p>
+<p>可以用来 &#x3D;&#x3D; 整理非 MoviePilot 下载的资源 &#x3D;&#x3D; ，比如说移动硬盘上的资源，手动用 qBittorrent 下载文件，流程图中的两种手动方式必备的插件</p>
+</li>
+<li><p>站点自动签到</p>
+</li>
+<li><p>清理硬链接</p>
+</li>
+<li><p>ChineseSubFinder</p>
+<p>资源入库时通知 ChineseSubFinder 进行字幕下载，不装也可以，ChineseSubFinder 自动定时对媒体库的字幕查漏补缺</p>
+</li>
+<li><p>媒体库刮削</p>
+<p>定时对媒体库进行查漏补缺</p>
+</li>
+</ul>
+<h2 id="Emby"><a href="#Emby" class="headerlink" title="Emby"></a>Emby</h2><p>资源刮削完毕后，还是需要一个影音服务器对资源进行海报墙展示&amp;播放，</p>
+<p><img src="https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2024/1730516036805_pWU3t2.png" alt="1730516036805_pWU3t2"></p>
+<h3 id="为什么需要影音服务器"><a href="#为什么需要影音服务器" class="headerlink" title="为什么需要影音服务器"></a>为什么需要影音服务器</h3><p>首先可以通过海报墙的方式查看资源，当然你也可以不进行配置，直接通过 smb 共享文件进行资源查看，但是这样的话海报墙效果不就等同于无了吗 🐶</p>
+<h4 id="共享文件夹播放"><a href="#共享文件夹播放" class="headerlink" title="共享文件夹播放"></a>共享文件夹播放</h4><p><img src="https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2024/1729335958034_ygBraE.jpg" alt="1729335958034_ygBraE"></p>
+<p>优点</p>
+<ul>
+<li>对 Nas 性能要求低，nas 只需要保证文件共享的能力大于需要播放视频的码率</li>
+<li>Nas 不对视频文件做任何处理，仅将源文件发送给播放设备</li>
+<li>响应速度快</li>
+</ul>
+<p>缺点</p>
+<ul>
+<li>只能以源码率进行播放</li>
+<li>&#x3D;&#x3D;如果在外面进行连接会造成带宽和流量的问题&#x3D;&#x3D;</li>
+<li>播放设备无法对源码率进行解码（这种方式需要客户端解码</li>
+</ul>
+<h4 id="基于影音服务器的影音分享"><a href="#基于影音服务器的影音分享" class="headerlink" title="基于影音服务器的影音分享"></a>基于影音服务器的影音分享</h4><p><img src="https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2024/1729336592977_gC26bK.jpg" alt="1729336592977_gC26bK"></p>
+<p>优点</p>
+<ul>
+<li>可以有海报墙</li>
+<li>如果客户端支持源码率，则可以以本地文件共享的方式进行播放，不会影响 nas 性能，如果客户端不支持，则会进行转码再推送。</li>
+</ul>
+<p>更多可查看此 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.bilibili.com/video/BV1fL411g72a">视频</a></p>
+<h3 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h3><p>媒体库 –&gt; 电影</p>
+<blockquote>
+<p>文件夹选择上文配置的媒体数据库: <code>/volume1/media/movie</code></p>
+</blockquote>
+<p><img src="https://sea-figure-bed.oss-cn-shanghai.aliyuncs.com/uPic/2024/1730516132912_FwiGOW.png" alt="1730516132912_FwiGOW"></p>
+<blockquote>
+<p>注: emby 自带刮削功能，也可以直接使用 moviepilot 的刮削，或者使用 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.bilibili.com/video/BV1YWtyeVEUG">tmm</a> 手动去刮削</p>
+</blockquote>
+<h2 id="ChineseSubFinder"><a href="#ChineseSubFinder" class="headerlink" title="ChineseSubFinder"></a>ChineseSubFinder</h2><p>emby 本身字幕下载用不了，因此推荐使用 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/ChineseSubFinder/ChineseSubFinder">ChineseSubFinder</a>，使用方式见<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.bilibili.com/video/BV1pe411U7x7/">视频</a> 进行字幕下载或者手动下载字幕（字幕下载网站：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://subhd.tv/%EF%BC%89">https://subhd.tv/）</a>, 手动加载的方式需要将字幕文件放到视频平级，并且需要字幕名称改成和电影源一样。（如：xxx.default.srt，PS：ass 字幕 emby web 版支持 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.v2ex.com/t/866088">较差</a> )</p>
+<p>以上配置好后，即可享受自己的家庭影音了，玩的愉快~</p>
+<h2 id="PT-资源"><a href="#PT-资源" class="headerlink" title="PT 资源"></a>PT 资源</h2><h3 id="BT"><a href="#BT" class="headerlink" title="BT"></a>BT</h3><table>
+<thead>
+<tr>
+<th>网站</th>
+<th>地址</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>萌番组</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://bangumi.moe/">https://bangumi.moe/</a></td>
+<td>动漫</td>
+</tr>
+<tr>
+<td>蜜柑计划</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://mikanani.me/">https://mikanani.me/</a></td>
+<td>动漫</td>
+</tr>
+<tr>
+<td>动漫花园</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://dmhy.org/">https://dmhy.org/</a></td>
+<td>动漫</td>
+</tr>
+<tr>
+<td>漫猫动漫</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.comicat.org/">http://www.comicat.org/</a></td>
+<td>动漫</td>
+</tr>
+<tr>
+<td>ACG.RIP</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://acg.rip/">https://acg.rip/</a></td>
+<td>动漫</td>
+</tr>
+<tr>
+<td>Nyaa.si</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://nyaa.si/">https://nyaa.si/</a></td>
+<td>动漫</td>
+</tr>
+<tr>
+<td>EZTV</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://eztv.re/">https://eztv.re/</a></td>
+<td>综合</td>
+</tr>
+<tr>
+<td>RARBG</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://rargb.to/">https://rargb.to/</a></td>
+<td>综合</td>
+</tr>
+<tr>
+<td>海盗湾</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://thepiratebay.org/">https://thepiratebay.org/</a></td>
+<td>综合</td>
+</tr>
+<tr>
+<td>torrentgalaxy</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://tgx.rs/">https://tgx.rs/</a> 官方代理列表：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://proxygalaxy.me/">https://proxygalaxy.me/</a></td>
+<td>综合</td>
+</tr>
+</tbody></table>
+<h3 id="PT"><a href="#PT" class="headerlink" title="PT"></a>PT</h3><table>
+<thead>
+<tr>
+<th>网站</th>
+<th>地址</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>kufei</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://kufei.org/">https://kufei.org/</a></td>
+<td>综合</td>
+</tr>
+<tr>
+<td>hdkyl</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.hdkyl.in/">https://www.hdkyl.in/</a></td>
+<td>综合，短剧</td>
+</tr>
+<tr>
+<td>m-team</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://m-team.cc/">https://m-team.cc/</a></td>
+<td>综合</td>
+</tr>
+</tbody></table>
+<p>…</p>
+<h4 id="玩法"><a href="#玩法" class="headerlink" title="玩法"></a>玩法</h4><p>参考 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://linux.do/uploads/short-url/rftsfaDEuIdJkajVjATKDsirJBt.pdf">从零开始玩 PT.pdf</a>，讲的明明白白，最好在入手 PT 时读几遍，免得把 PT 号玩死，被拉入黑名单。</p>
+<p>另外关于名词，可以了解下面几个:</p>
+<ul>
+<li><strong>free</strong>：不计算下载量，但计算上传量，对过考很重要</li>
+<li><strong>2xfree</strong>：不计算下载量，但计算 2 倍上传量，对过考很重要<br>一般站点会考核上传，下载和魔力&#x2F;保种时长，</li>
+<li><strong>50</strong>：计算 50%的下载量</li>
+<li><strong>保种</strong>：下载好文件后处于上传的状态</li>
+<li><strong>上传</strong>：我们要先去找到站点的免费种（free），时间是最近的，上传只有一个人，体积大于 10G 的种（越大越好），下载好让它上传就行。注意最好有公网 ip，没有 v4 就开 v6 公网，打开 upnp，或者 dmz 主机，以增加连接性。</li>
+</ul>
+<p>更多介绍可看此篇<a target="_blank" rel="noopener external nofollow noreferrer" href="https://linux.do/t/topic/181768">文章</a></p>
+<h2 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h2><h3 id="为什么推荐用-TR-保种，而不是-qb-保种？"><a href="#为什么推荐用-TR-保种，而不是-qb-保种？" class="headerlink" title="为什么推荐用 TR 保种，而不是 qb 保种？"></a>为什么推荐用 TR 保种，而不是 qb 保种？</h3><p>A：QB 种子数多的时候性能消耗大，保种少的话无所谓</p>
+<h3 id="刮削数据失败，迟迟没有刮削图片"><a href="#刮削数据失败，迟迟没有刮削图片" class="headerlink" title="刮削数据失败，迟迟没有刮削图片"></a>刮削数据失败，迟迟没有刮削图片</h3><p>A：需要手动修改 host</p>
+<p>首先打开 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://dnschecker.org/country/cn/">https://dnschecker.org/country/cn/</a> 搜索 <code>api.themoviedb.org</code> 可用的 dns，然后进行如下操作</p>
+<ol>
+<li>可以直接在本地电脑上修改 nas 的 host，（使用 <code>ssh@你的用户名@群晖地址</code>，修改 host，具体可查看此篇 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/alinathz/article/details/132397458">文章</a></li>
+<li>或者修改路由器匹配的 host</li>
+</ol>
+<h3 id="为什么需要在路由器上固定-nas-ip-地址"><a href="#为什么需要在路由器上固定-nas-ip-地址" class="headerlink" title="为什么需要在路由器上固定 nas ip 地址"></a>为什么需要在路由器上固定 nas ip 地址</h3><p>A: 因为很多软件（Moviepilot）配置需要依赖其他软件（emby）服务，固定 ip 地址后也不用进行时刻更换</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.goalonez.site/blog/MoviePilot%E9%85%8D%E7%BD%AE-Nas%E5%AA%92%E4%BD%93%E5%BA%93%E8%87%AA%E5%8A%A8%E5%8C%96%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7.html">MoviePilot 配置-Nas 媒体库自动化管理工具 | Goalonez Blog</a></li>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hackfang.me/movie-pilot-install-and-guide">自动化观影平台 MoviePilot 安装与使用</a></li>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://nas.zwbcc.cn:8090/archives/1711674204030">MoviePilot 部署教程|新手指南|媒体整理|信息刮削|搜索下载|媒体订阅 - 折腾笔记</a></li>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://linux.do/t/topic/36073">利用 MoviePilot 打造家庭影视库全自动追剧（初帖+分帖） - 资源荟萃 - LINUX DO</a></li>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.youtube.com/watch?v=5whbI_Xv2Vk">搭建自动化个人影院-海报削刮-字幕下载-自动订阅-kodi&#x2F;Plex&#x2F;Emby&#x2F;Jellyfin 观看蓝光 4K 电影-一键开箱的 nas 个人影院 - YouTube</a></li>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Putarku/MoviePilot-Help">GitHub - Putarku&#x2F;MoviePilot-Help: MoviePilot 配置及使用过程的中的常见问题</a></li>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.bilibili.com/video/BV1vQ4y1e7wu/">手把手教你从零开始设置群晖 NAS 家庭影院存储系统 KODI NFS 和 FTP 共享</a></li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Nas 家庭影音的搭建</p><p><a href="https://hailangya.com/articles/2024/11/02/nas-video/">https://hailangya.com/articles/2024/11/02/nas-video/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>Sea</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2024-11-02</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2024-11-02</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener external nofollow noreferrer" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener external nofollow noreferrer" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener external nofollow noreferrer" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Nas/">Nas</a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="/images/alipay.jpeg" alt="支付宝"></span></a><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="/images/wechat.jpeg" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/articles/2024/08/18/add-remote-repo/"><span class="level-item">如何为一个项目添加多个远程仓库</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><script src="https://utteranc.es/client.js" repo="MrSeaWave/blogs" issue-term="og:title" label="comments" theme="github-light" crossorigin="anonymous" async></script></div></div></div><!--!--><div class="column column-right is-4-tablet is-4-desktop is-4-widescreen  order-3 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#前提"><span class="level-left"><span class="level-item">1</span><span class="level-item">前提</span></span></a></li><li><a class="level is-mobile" href="#搭建"><span class="level-left"><span class="level-item">2</span><span class="level-item">搭建</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#软件"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">软件</span></span></a></li><li><a class="level is-mobile" href="#分析"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">分析</span></span></a></li><li><a class="level is-mobile" href="#部署"><span class="level-left"><span class="level-item">2.3</span><span class="level-item">部署</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Moviepilot"><span class="level-left"><span class="level-item">3</span><span class="level-item">Moviepilot</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#安装"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">安装</span></span></a></li><li><a class="level is-mobile" href="#配置"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">配置</span></span></a></li><li><a class="level is-mobile" href="#认证"><span class="level-left"><span class="level-item">3.3</span><span class="level-item">认证</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#添加站点"><span class="level-left"><span class="level-item">3.3.1</span><span class="level-item">添加站点</span></span></a></li></ul></li><li><a class="level is-mobile" href="#目录"><span class="level-left"><span class="level-item">3.4</span><span class="level-item">目录</span></span></a></li><li><a class="level is-mobile" href="#插件推荐"><span class="level-left"><span class="level-item">3.5</span><span class="level-item">插件推荐</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Emby"><span class="level-left"><span class="level-item">4</span><span class="level-item">Emby</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#为什么需要影音服务器"><span class="level-left"><span class="level-item">4.1</span><span class="level-item">为什么需要影音服务器</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#共享文件夹播放"><span class="level-left"><span class="level-item">4.1.1</span><span class="level-item">共享文件夹播放</span></span></a></li><li><a class="level is-mobile" href="#基于影音服务器的影音分享"><span class="level-left"><span class="level-item">4.1.2</span><span class="level-item">基于影音服务器的影音分享</span></span></a></li></ul></li><li><a class="level is-mobile" href="#配置-1"><span class="level-left"><span class="level-item">4.2</span><span class="level-item">配置</span></span></a></li></ul></li><li><a class="level is-mobile" href="#ChineseSubFinder"><span class="level-left"><span class="level-item">5</span><span class="level-item">ChineseSubFinder</span></span></a></li><li><a class="level is-mobile" href="#PT-资源"><span class="level-left"><span class="level-item">6</span><span class="level-item">PT 资源</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#BT"><span class="level-left"><span class="level-item">6.1</span><span class="level-item">BT</span></span></a></li><li><a class="level is-mobile" href="#PT"><span class="level-left"><span class="level-item">6.2</span><span class="level-item">PT</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#玩法"><span class="level-left"><span class="level-item">6.2.1</span><span class="level-item">玩法</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="#FAQ"><span class="level-left"><span class="level-item">7</span><span class="level-item">FAQ</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#为什么推荐用-TR-保种，而不是-qb-保种？"><span class="level-left"><span class="level-item">7.1</span><span class="level-item">为什么推荐用 TR 保种，而不是 qb 保种？</span></span></a></li><li><a class="level is-mobile" href="#刮削数据失败，迟迟没有刮削图片"><span class="level-left"><span class="level-item">7.2</span><span class="level-item">刮削数据失败，迟迟没有刮削图片</span></span></a></li><li><a class="level is-mobile" href="#为什么需要在路由器上固定-nas-ip-地址"><span class="level-left"><span class="level-item">7.3</span><span class="level-item">为什么需要在路由器上固定 nas ip 地址</span></span></a></li></ul></li><li><a class="level is-mobile" href="#参考链接"><span class="level-left"><span class="level-item">8</span><span class="level-item">参考链接</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=github/Ptyw&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="github/Ptyw" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div><p class="help">邮件订阅，更新早知道</p></form></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/images/black-cat.svg" alt="Sea&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2024 Sea</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener external nofollow noreferrer">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener external nofollow noreferrer">Icarus</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener external nofollow noreferrer" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener external nofollow noreferrer" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener external nofollow noreferrer" title="Download on GitHub" href="https://github.com/MrSeaWave/blogs"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;" rel="external nofollow noreferrer"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;" rel="external nofollow noreferrer">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
