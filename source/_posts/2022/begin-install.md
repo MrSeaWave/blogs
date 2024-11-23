@@ -12,6 +12,213 @@ categories: [Tools]
 
 <!--more-->
 
+# 2024
+
+尽可能使用 ==homebrew== 进行软件的 安装 （便于管理与已移除，尤其是字体部分
+
+## 系统设置
+
+- 关闭所有系统快捷键设定
+- {% post_link simple-ways-to-set-macos-consecutive-input 如何让 Mac 长按一个按键连续输入 %}
+
+### 关闭系统快捷键
+
+系统设置 ->键盘 ->键盘快捷键
+所有的快捷键配置几乎都可以进行关闭
+
+## 开始
+
+### Clash
+
+众所周知的原因，这里不展开介绍
+
+### Chrome
+
+必备浏览器
+
+### Brew
+
+后面安装软件的工具
+
+### 1Password
+
+密码管理工具
+
+```bash
+$ brew install --cask 1password
+```
+
+### Karbiner-Elements
+
+调整键盘工具，具体配置见 [[Karabiner-Elements 配置]]
+
+```bash
+$ brew install --cask karabiner-elements
+```
+
+### Kitty
+
+终端工具，具体配置见 [[Kitty 配置]]
+
+```bash
+$ brew install --cask kitty
+```
+
+### Oh-my-zsh
+
+插件：
+
+```bash
+# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#homebrew
+# 这个插件也可以不用装，AmazonQ 自带行内提示功能
+$ brew install zsh-autosuggestions
+$ echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >>! ~/.zshrc
+# https://github.com/wting/autojump
+$ brew install autojump
+# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
+$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+```
+
+### AmazonQ
+
+命令行提示工具
+
+```bash
+$ brew install --cask amazon-q
+```
+
+### 字体安装
+
+```bash
+$ brew install --cask font-jetbrains-mono
+$ brew install --cask font-jetbrains-mono-nerd-font
+# [霞鹜文楷](https://github.com/lxgw/LxgwWenKai-Screen)
+$ brew install font-lxgw-wenkai
+```
+
+细节见 [[用 HomeBrew 安装字体]]
+
+### Node
+
+```bash
+$ brew install node
+$ brew install n
+$ brew install pnpm
+$ npm install -g nrm
+```
+
+### VS Code
+
+代码编辑工具
+
+### Nvim
+
+代码编辑工具
+
+```bash
+$ brew install neovim
+```
+
+具体配置见 [[如何配置nvim]]
+
+### fork
+
+git 客戶端
+
+```bash
+$ brew install fork
+```
+
+### Obsidian
+
+笔记工具
+
+### Alfred
+
+聚焦搜索
+
+```bash
+$ brew install alfred
+```
+
+### Bardenter
+
+状态栏管理工具
+
+```bash
+$ brew install bartender
+```
+
+### Squirrer
+
+```bash
+$ brew install --cask squirrel
+```
+
+细节见 [[squirrel - rime 输入法]]
+
+### iina
+
+视频观影工具
+
+```bash
+$ brew install iina
+```
+
+### unarchiver
+
+解压缩工具
+
+```bash
+$ brew install --cask the-unarchiver
+```
+
+### Omnifocus
+
+TODO 清单
+
+```bash
+$ brew install --cask omnifocus
+```
+
+### 欧陆词典
+
+英文词典
+
+```bash
+$ brew install --cask eudic
+```
+
+### AltTab
+
+窗口切换
+
+```bash
+$ brew install --cask alt-tab
+```
+
+### Upic
+
+图床上传工具，需要搭配阿里云等 oss 平台进行使用，如何配置详见 [此篇文章](https://hailangya.com/articles/2021/03/24/upic-github/)
+
+```bash
+$ brew install bigwig-club/brew/upic --cask
+```
+
+## 软件推荐
+
+- [[Mac 软件推荐]]
+- [[终端配置|个人配置]]
+
+## 参考链接
+
+- [folke/dot: ☕️ My Dot Files](https://github.com/folke/dot/tree/master)：Cool
+
+# Before
+
+老版配置如下
+
 ## Iterm
 
 从官网下载 [iterm2](https://iterm2.com/)

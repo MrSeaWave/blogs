@@ -13,7 +13,7 @@
   },
   "packageManager": "pnpm@8.15.5",
   "hexo": {
-    "version": "7.1.1"
+    "version": "7.3.0"
   },
   "dependencies": {
     "hexo": "^7.3.0",
